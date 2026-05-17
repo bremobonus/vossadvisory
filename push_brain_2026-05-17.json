@@ -1,0 +1,258 @@
+{
+  "session_date": "2026-05-17",
+  "session_summary": "Daily push session. IndexNow batch ping (39 URLs, HTTP 200). 10 outreach email drafts created in Gmail (SMTP/SSH blocked by cloud env network policy). Drafts ready to send from allastairvoss@gmail.com.",
+  "network_constraint": "Cloud execution environment blocks all outbound non-HTTP ports (21, 22, 465, 587). All emails must be sent from Gmail drafts manually, or SMTP must be enabled in environment settings.",
+  "indexnow": {
+    "status": "done",
+    "date": "2026-05-17",
+    "http_status": 200,
+    "urls_submitted": [
+      "https://artonly.io/post/loyle-carner-hugo",
+      "https://artonly.io/post/alewya-architecture-of-zero",
+      "https://artonly.io/post/masego-trap-house-jazz",
+      "https://artonly.io/post/toyin-ojih-odutola-mark-on-skin",
+      "https://artonly.io/post/cautious-clay-fighting-demons",
+      "https://artonly.io/post/snoh-aalegra-cinematic-soul",
+      "https://artonly.io/post/lagos-art-capital-2026",
+      "https://artonly.io/post/ballroom-culture-2026",
+      "https://artonly.io/post/amy-sherald-american-sublime",
+      "https://artonly.io/post/amos-le-blanc-artists-in-development-2026",
+      "https://artonly.io/post/amos-le-blanc-the-plan-is-a-starting-point",
+      "https://artonly.io/post/amos-leblanc-mmva-debut-2014",
+      "https://artonly.io/post/autoerotique-asphyxiation",
+      "https://artonly.io/post/venice-architecture-biennale-2026",
+      "https://artonly.io/post/ravyn-lenae-starchild",
+      "https://artonly.io/post/syd-the-internet-intimacy",
+      "https://artonly.io/post/nicolas-jaar-multi-channel",
+      "https://artonly.io/post/kelly-lee-owens-bio",
+      "https://artonly.io/post/tschabalala-self-body-as-monument",
+      "https://artonly.io/post/new-museum-oma",
+      "https://artonly.io/post/duendita-existential-thottie",
+      "https://artonly.io/post/artxiv-digital-archive-art",
+      "https://artonly.io/post/niki-black-wild-is-the-wind",
+      "https://artonly.io/post/majid-jordan-life-2-next-chapter",
+      "https://artonly.io/post/keys-n-krates-treat-me-right",
+      "https://artonly.io/post/keys-n-krates-dum-dee-dum",
+      "https://artonly.io/post/rudimental-sun-comes-up",
+      "https://artonly.io/post/toronto-best-directors-2021",
+      "https://artonly.io/post/thugli-sic-em",
+      "https://artonly.io/post/thugli-run-this",
+      "https://artonly.io/post/unknown-mortal-orchestra-no-setlist",
+      "https://artonly.io/post/we-buy-souls-first-transaction",
+      "https://artonly.io/post/young-empires-the-gates",
+      "https://artonly.io/post/program-waiting-2013",
+      "https://artonly.io/post/odutola-ile-oriaku",
+      "https://artonly.io/post/odutola-grief-house",
+      "https://artonly.io/post/listening-bars-global-rise",
+      "https://artonly.io/post/venice-architecture-biennale-2026",
+      "https://artonly.io/post/masego-trap-house-jazz"
+    ]
+  },
+  "email_drafts_created": [
+    {
+      "gmail_draft_id": "r-3620629410278744395",
+      "to": "sarah@diymag.com",
+      "publication": "DIY Magazine (UK)",
+      "article": "alewya-architecture-of-zero",
+      "subject": "Alewya feature on artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r6537147780272915126",
+      "to": "laurie@thequietus.com",
+      "publication": "The Quietus (New Music Editor)",
+      "article": "alewya-architecture-of-zero",
+      "subject": "Alewya feature at artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r5092783356414167795",
+      "to": "news@thelineofbestfit.com",
+      "publication": "The Line of Best Fit",
+      "article": "loyle-carner-hugo",
+      "subject": "Loyle Carner: hugo revisited at artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r-3171556444071494840",
+      "to": "info@thequietus.com",
+      "publication": "The Quietus",
+      "article": "loyle-carner-hugo",
+      "subject": "Loyle Carner hugo feature on artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r-8600137491733688288",
+      "to": "editorial@thefader.com",
+      "publication": "The FADER",
+      "article": "masego-trap-house-jazz",
+      "subject": "Masego feature on artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r131520737268440106",
+      "to": "submissions@pigeonsandplanes.com",
+      "publication": "Pigeons and Planes",
+      "article": "masego-trap-house-jazz",
+      "subject": "Masego feature at artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r1655395080665305765",
+      "to": "info@ratedrnb.com",
+      "publication": "Rated R&B",
+      "article": "snoh-aalegra-cinematic-soul",
+      "subject": "Snoh Aalegra feature on artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r4845435617614051704",
+      "to": "pitch@hyperallergic.com",
+      "publication": "Hyperallergic",
+      "article": "toyin-ojih-odutola-mark-on-skin",
+      "subject": "Toyin Ojih Odutola feature on artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r-4270393853181843365",
+      "to": "editor@artafricamagazine.org",
+      "publication": "Art Africa Magazine",
+      "article": "lagos-art-capital-2026",
+      "subject": "Lagos art capital piece on artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    },
+    {
+      "gmail_draft_id": "r-8744315376653983425",
+      "to": "tips@hyperallergic.com",
+      "publication": "Hyperallergic",
+      "article": "amy-sherald-american-sublime",
+      "subject": "Amy Sherald feature on artonly.io",
+      "status": "drafted",
+      "date": "2026-05-17",
+      "do_not_email_again_until": "2026-05-24"
+    }
+  ],
+  "new_articles_identified_last_7_days": [
+    "loyle-carner-hugo",
+    "alewya-architecture-of-zero",
+    "masego-trap-house-jazz",
+    "toyin-ojih-odutola-mark-on-skin",
+    "cautious-clay-fighting-demons",
+    "snoh-aalegra-cinematic-soul",
+    "lagos-art-capital-2026",
+    "ballroom-culture-2026",
+    "amy-sherald-american-sublime",
+    "amos-le-blanc-artists-in-development-2026",
+    "amos-le-blanc-the-plan-is-a-starting-point",
+    "amos-leblanc-mmva-debut-2014",
+    "autoerotique-asphyxiation",
+    "venice-architecture-biennale-2026",
+    "ravyn-lenae-starchild",
+    "syd-the-internet-intimacy",
+    "nicolas-jaar-multi-channel",
+    "kelly-lee-owens-bio",
+    "tschabalala-self-body-as-monument",
+    "new-museum-oma",
+    "duendita-existential-thottie",
+    "artxiv-digital-archive-art",
+    "niki-black-wild-is-the-wind",
+    "majid-jordan-life-2-next-chapter",
+    "keys-n-krates-treat-me-right",
+    "keys-n-krates-dum-dee-dum",
+    "rudimental-sun-comes-up",
+    "toronto-best-directors-2021",
+    "thugli-sic-em",
+    "thugli-run-this",
+    "unknown-mortal-orchestra-no-setlist",
+    "we-buy-souls-first-transaction",
+    "young-empires-the-gates",
+    "program-waiting-2013",
+    "odutola-ile-oriaku",
+    "odutola-grief-house",
+    "listening-bars-global-rise",
+    "masego-trap-house-jazz"
+  ],
+  "articles_needing_more_outreach_next_session": [
+    {
+      "slug": "ballroom-culture-2026",
+      "angle": "LGBTQ+ ballroom culture history",
+      "targets": ["them.us", "Paper Magazine", "Out Magazine"]
+    },
+    {
+      "slug": "cautious-clay-fighting-demons",
+      "angle": "Brooklyn indie R&B, multi-instrumentalist",
+      "targets": ["The FADER", "Pigeons and Planes", "NPR Music"]
+    },
+    {
+      "slug": "nicolas-jaar-multi-channel",
+      "angle": "Chilean-American experimental electronic",
+      "targets": ["Resident Advisor", "Fact Magazine", "The Wire"]
+    },
+    {
+      "slug": "kelly-lee-owens-bio",
+      "angle": "Welsh electronic artist, club music",
+      "targets": ["Resident Advisor", "DIY Magazine", "The Quietus"]
+    },
+    {
+      "slug": "ravyn-lenae-starchild",
+      "angle": "Chicago R&B, Steve Lacy collaboration",
+      "targets": ["Rated R&B", "The FADER", "Okayplayer"]
+    },
+    {
+      "slug": "tschabalala-self-body-as-monument",
+      "angle": "Harlem-born visual artist, Black female body",
+      "targets": ["Hyperallergic", "Artsy", "The Art Newspaper"]
+    }
+  ],
+  "strategy_additions": [
+    {
+      "tactic": "Art publications use different email addresses by content type: pitch@ for individual artist features, tips@ for news items. Use the right entry point.",
+      "added": "2026-05-17"
+    },
+    {
+      "tactic": "Batch IndexNow submissions via POST to save time and avoid rate limits. One call covers all new articles.",
+      "added": "2026-05-17"
+    },
+    {
+      "tactic": "For UK experimental artists like Alewya, pitch both The Quietus (experimental/electronic angle) and DIY Magazine (XL Recordings artist angle) with different framings. Same artist, two different editorial hooks.",
+      "added": "2026-05-17"
+    },
+    {
+      "tactic": "When pitching The FADER on an artist they have already covered (Masego), name the specific journalist (Marcus J. Moore) and the specific article. Shows you read them. Opens a conversation.",
+      "added": "2026-05-17"
+    }
+  ],
+  "follow_up_queue": [
+    {
+      "date": "2026-05-23",
+      "action": "Follow up with all 12 intl publications from 2026-05-16 session if no reply",
+      "contacts": ["crack@crackmagazine.net", "contribute@loudandquiet.com", "nicholas@notion.online", "info@soyoungmagazine.com", "lauren.martin@djmag.com", "robin@clashmusic.com", "submissions@okayafrica.com", "music@notjustok.com", "contact@onlife.co.za", "castillo@bandwagon.asia", "editor@rollingstone-india.com", "editorial@nylon.com.sg"]
+    },
+    {
+      "date": "2026-05-24",
+      "action": "Follow up with today's 10 drafts if sent and no reply",
+      "contacts": ["sarah@diymag.com", "laurie@thequietus.com", "news@thelineofbestfit.com", "info@thequietus.com", "editorial@thefader.com", "submissions@pigeonsandplanes.com", "info@ratedrnb.com", "pitch@hyperallergic.com", "editor@artafricamagazine.org", "tips@hyperallergic.com"]
+    }
+  ],
+  "blocked_contacts_until": {
+    "2026-05-23": ["crack@crackmagazine.net", "contribute@loudandquiet.com", "nicholas@notion.online", "info@soyoungmagazine.com", "lauren.martin@djmag.com", "robin@clashmusic.com", "submissions@okayafrica.com", "music@notjustok.com", "contact@onlife.co.za", "castillo@bandwagon.asia", "editor@rollingstone-india.com", "editorial@nylon.com.sg", "editorial@crackmagazine.net", "editorial@loudandquiet.com", "alex@exclaim.ca", "megan@exclaim.ca", "music@nowtoronto.com", "arts@theglobeandmail.com", "lovetoveloofficial@gmail.com", "hello@okayafrica.com", "hello@bandwagon.asia"]
+  }
+}

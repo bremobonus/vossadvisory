@@ -429,5 +429,29 @@
     "exclaim": {"outreach_sent": "2026-05-16"},
     "now_magazine": {"outreach_sent": "2026-05-16"},
     "globe_and_mail": {"outreach_sent": "2026-05-16"}
-  }
+  },
+  "contacts_log": [
+    {"artist": "Mick Jenkins", "slug": "mick-jenkins", "contact_email": "Mickjenkinsbusiness@gmail.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Rejjie Snow", "slug": "rejjie-snow", "contact_email": "james@lemonademanagement.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Tirzah", "slug": "tirzah", "contact_email": "aoife@dominorecordco.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Unknown Mortal Orchestra", "slug": "unknown-mortal-orchestra-no-setlist", "contact_email": "tom@friendlyannouncer.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Kara Walker", "slug": "kara-walker", "contact_email": "scott@sikkemajenkinsco.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Arlo Parks", "slug": "arlo-parks-ambiguous-desire-2026", "contact_email": "international@transgressive.co.uk", "sent": true, "date": "2026-05-18"},
+    {"artist": "Caroline Polachek", "slug": "caroline-polachek-desire-2023", "contact_email": "info@tapmgmt.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Majid Jordan", "slug": "majid-jordan-life-2-next-chapter", "contact_email": "info@threesixzero.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Kelela", "slug": "kelela-raven-2023", "contact_email": "editor@warprecords.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Arooj Aftab", "slug": "arooj-aftab-vulture-prince", "contact_email": "erik@friendsatwork.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Sampha", "slug": "sampha", "contact_email": "management@y-o-u-n-g.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "James Blake", "slug": "james-blake-playing-robots-2023", "contact_email": "amy@sept.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Thundercat", "slug": "thundercat-distracted-2026", "contact_email": "joe@blowuplive.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Sudan Archives", "slug": "sudan-archives-natural-brown-prom-queen", "contact_email": "david.exley@paradigmagency.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Amy Sherald", "slug": "amy-sherald-american-sublime", "contact_email": "alina@paveconsult.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Masego", "slug": "masego-trap-house-jazz", "contact_email": "noah.simon@unitedtalent.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Moses Sumney", "slug": "moses-sumney-grae", "contact_email": "nick@orienteer.us", "sent": true, "date": "2026-05-18"},
+    {"artist": "Mk.gee", "slug": "mk-gee-two-star-dream-police", "contact_email": "theo@icu.studio", "sent": true, "date": "2026-05-18"},
+    {"artist": "Kelly Lee Owens", "slug": "kelly-lee-owens-bio", "contact_email": "twiggy@projectgold.co.uk", "sent": true, "date": "2026-05-18"},
+    {"artist": "Nourished By Time", "slug": "nourished-by-time-passionate-ones", "contact_email": "theo@scenicrouteinc.com", "sent": true, "date": "2026-05-18"},
+    {"artist": "Blood Orange", "slug": "blood-orange-coachella-2026", "contact_email": "info@bloodorange.net", "sent": true, "date": "2026-05-18"},
+    {"artist": "English Teacher", "slug": "english-teacher-2025", "contact_email": "pete@dead-sound.com", "sent": true, "date": "2026-05-18"}
+  ]
 }

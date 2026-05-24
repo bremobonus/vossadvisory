@@ -1,0 +1,35 @@
+name: Image Framing Audit (artonly.io)
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Copy audit script to server
+        env:
+          SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+        run: |
+          sshpass -e scp \
+            -o PreferredAuthentications=password \
+            -o StrictHostKeyChecking=no \
+            image-audit-server.py \
+            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com:~/artonly.io/agent/image-audit-server.py
+
+      - name: Run image audit on server
+        env:
+          SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+        run: |
+          sshpass -e ssh \
+            -o PreferredAuthentications=password \
+            -o StrictHostKeyChecking=no \
+            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
+            'python3 ~/artonly.io/agent/image-audit-server.py'

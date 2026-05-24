@@ -1,0 +1,49 @@
+{
+  "sent": [
+    {
+      "slug": "jpegmafia-experimental-rap",
+      "artist": "JPEGMAFIA",
+      "email": "info@wasserman.com",
+      "contact_type": "booking_management",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-6075199035912993988",
+      "status": "drafted"
+    },
+    {
+      "slug": "bleachers-everyone-for-ten-minutes",
+      "artist": "Bleachers",
+      "email": "press@dirtyhit.com",
+      "contact_type": "label_management",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r8256127543638446691",
+      "status": "drafted"
+    },
+    {
+      "slug": "masego-trap-house-jazz",
+      "artist": "Masego",
+      "email": "noah.simon@unitedtalent.com",
+      "contact_type": "booking_agent_UTA",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r2097916216499867598",
+      "status": "drafted"
+    },
+    {
+      "slug": "majid-jordan-life-2-next-chapter",
+      "artist": "Majid Jordan",
+      "email": "info@threesixzero.com",
+      "contact_type": "management_three_six_zero",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-2128919038236681805",
+      "status": "drafted"
+    },
+    {
+      "slug": "andrewbates",
+      "artist": "ANDREWBATES",
+      "email": "info@mananamusicmanagement.com",
+      "contact_type": "management_manana_electronic",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-2484744359298816949",
+      "status": "drafted"
+    }
+  ]
+}

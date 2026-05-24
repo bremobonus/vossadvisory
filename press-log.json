@@ -22,9 +22,47 @@
     "alerts": [
       "IndexNow blocked by container network policy",
       "SSH to DreamHost timed out",
-      "Site health checks blocked \u2014 not a site outage"
+      "Site health checks blocked — not a site outage"
     ],
     "email_sent": true,
     "email_to": "amosleblanc@gmail.com"
+  },
+  {
+    "run_date": "2026-05-24T14:12:00Z",
+    "run_type": "social-card-agent",
+    "agent": "artonly-social-card-agent",
+    "posts_audited": 2,
+    "posts_needing_cards": 2,
+    "cards_generated": 0,
+    "cards_skipped_no_image": 0,
+    "cards_failed": 2,
+    "posts": [
+      {
+        "slug": "jpegmafia-experimental-rap",
+        "status": "PENDING",
+        "download_tag_in_local_json": true,
+        "card_generated": false,
+        "reason": "SSH blocked from container"
+      },
+      {
+        "slug": "bleachers-everyone-for-ten-minutes",
+        "status": "PENDING",
+        "download_tag_in_local_json": true,
+        "card_generated": false,
+        "reason": "SSH blocked from container"
+      }
+    ],
+    "ssh_status": "BLOCKED",
+    "http_artonly_status": "403-host_not_allowed",
+    "alerts": [
+      "SSH port 22 blocked at network level from cloud container (confirmed via nc, paramiko)",
+      "artonly.io HTTPS returns 403 host_not_allowed for all paths from cloud IPs",
+      "FTP port 21 also blocked",
+      "Both post JSONs are complete with correct [download:] tags in local repo",
+      "deploy-artonly-2026-05-24.sh is ready and correct",
+      "GitHub Actions workflow created: .github/workflows/deploy-artonly.yml",
+      "To unblock: add DREAMHOST_SSH_PASS secret to GitHub repo, then trigger Deploy ArtOnly workflow manually"
+    ],
+    "action_required": "Run deploy-artonly-2026-05-24.sh on DreamHost via SSH from a machine with outbound port 22 access, OR trigger the GitHub Actions workflow after adding DREAMHOST_SSH_PASS secret"
   }
 ]

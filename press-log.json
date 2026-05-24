@@ -1,0 +1,30 @@
+[
+  {
+    "run_date": "2026-05-24T08:00:00Z",
+    "run_type": "weekly_sunday",
+    "posts_submitted": 2,
+    "posts": [
+      {
+        "slug": "jpegmafia-experimental-rap",
+        "date": "2026-05-24",
+        "indexnow_status": "FAILED-403"
+      },
+      {
+        "slug": "bleachers-everyone-for-ten-minutes",
+        "date": "2026-05-24",
+        "indexnow_status": "FAILED-403"
+      }
+    ],
+    "sitemap_status": "403-network-policy",
+    "homepage_status": "403-network-policy",
+    "rss_status": "403-network-policy",
+    "ssh_status": "TIMEOUT",
+    "alerts": [
+      "IndexNow blocked by container network policy",
+      "SSH to DreamHost timed out",
+      "Site health checks blocked \u2014 not a site outage"
+    ],
+    "email_sent": true,
+    "email_to": "amosleblanc@gmail.com"
+  }
+]

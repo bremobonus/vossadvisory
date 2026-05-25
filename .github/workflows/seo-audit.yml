@@ -1,0 +1,34 @@
+name: artonly.io SEO Audit
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Every Monday 06:00 UTC
+  workflow_dispatch:        # Allow manual runs
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Upload and run SEO audit on DreamHost
+        env:
+          SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+        run: |
+          # Upload the audit script to the server
+          sshpass -e scp \
+            -o PreferredAuthentications=password \
+            -o StrictHostKeyChecking=no \
+            seo_audit.py \
+            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com:/tmp/seo_audit_run.py
+
+          # Run it with OMP_NUM_THREADS=1
+          sshpass -e ssh \
+            -o PreferredAuthentications=password \
+            -o StrictHostKeyChecking=no \
+            -o ConnectTimeout=60 \
+            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
+            'OMP_NUM_THREADS=1 python3 /tmp/seo_audit_run.py && rm /tmp/seo_audit_run.py'

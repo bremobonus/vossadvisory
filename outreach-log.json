@@ -44,6 +44,51 @@
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-2484744359298816949",
       "status": "drafted"
+    },
+    {
+      "slug": "mick-jenkins",
+      "artist": "Mick Jenkins",
+      "email": "Mickjenkinsbusiness@gmail.com",
+      "contact_type": "direct_artist",
+      "drafted_at": "2026-05-25T00:00:00Z",
+      "gmail_draft_id": "r-7276924605759582172",
+      "status": "drafted"
+    },
+    {
+      "slug": "rejjie-snow",
+      "artist": "Rejjie Snow",
+      "email": "james@lemonademanagement.com",
+      "contact_type": "management_lemonade",
+      "drafted_at": "2026-05-25T00:00:00Z",
+      "gmail_draft_id": "r3206990952553048387",
+      "status": "drafted"
+    },
+    {
+      "slug": "tirzah",
+      "artist": "Tirzah",
+      "email": "aoife@dominorecordco.com",
+      "contact_type": "label_pr_domino",
+      "drafted_at": "2026-05-25T00:00:00Z",
+      "gmail_draft_id": "r-2656214012945917210",
+      "status": "drafted"
+    },
+    {
+      "slug": "unknown-mortal-orchestra-no-setlist",
+      "artist": "Unknown Mortal Orchestra",
+      "email": "tom@friendlyannouncer.com",
+      "contact_type": "management_friendly_announcer",
+      "drafted_at": "2026-05-25T00:00:00Z",
+      "gmail_draft_id": "r9006861950151252442",
+      "status": "drafted"
+    },
+    {
+      "slug": "little-simz",
+      "artist": "Little Simz",
+      "email": "versetti@theirnewreligion.com",
+      "contact_type": "management_their_new_religion",
+      "drafted_at": "2026-05-25T00:00:00Z",
+      "gmail_draft_id": "r7948781680296298365",
+      "status": "drafted"
     }
   ]
 }

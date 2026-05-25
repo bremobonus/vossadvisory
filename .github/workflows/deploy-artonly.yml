@@ -1,0 +1,91 @@
+name: Deploy ArtOnly Posts + Generate Social Cards
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: 'Deploy script filename in repo root (e.g. deploy-artonly-2026-05-25.sh)'
+        required: true
+        default: 'deploy-artonly-2026-05-25.sh'
+  push:
+    branches:
+      - main
+    paths:
+      - 'deploy-artonly-*.sh'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Resolve deploy script name
+        id: resolve
+        run: |
+          if [ -n "${{ github.event.inputs.script }}" ]; then
+            SCRIPT="${{ github.event.inputs.script }}"
+          else
+            # Auto-detect: use the latest deploy-artonly-*.sh added in this push
+            SCRIPT=$(git diff-tree --no-commit-id -r --name-only ${{ github.sha }} | grep '^deploy-artonly-.*\.sh$' | sort | tail -1)
+            if [ -z "$SCRIPT" ]; then
+              SCRIPT=$(ls deploy-artonly-*.sh 2>/dev/null | sort | tail -1)
+            fi
+          fi
+          echo "script=$SCRIPT" >> $GITHUB_OUTPUT
+          echo "Resolved script: $SCRIPT"
+
+      - name: Verify deploy script exists
+        run: |
+          SCRIPT="${{ steps.resolve.outputs.script }}"
+          if [ ! -f "$SCRIPT" ]; then
+            echo "ERROR: $SCRIPT not found in repo"
+            exit 1
+          fi
+          echo "Script found: $SCRIPT"
+
+      - name: Run deploy script on DreamHost
+        env:
+          SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+        run: |
+          SCRIPT="${{ steps.resolve.outputs.script }}"
+          sshpass -e ssh \
+            -o PreferredAuthentications=password \
+            -o StrictHostKeyChecking=no \
+            -o ConnectTimeout=60 \
+            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
+            'bash -s' < "$SCRIPT"
+
+      - name: Confirm social cards exist on server
+        env:
+          SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+        run: |
+          sshpass -e ssh \
+            -o PreferredAuthentications=password \
+            -o StrictHostKeyChecking=no \
+            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
+            'python3 -c "
+import json, os, glob
+posts = []
+cards = []
+missing = []
+for p in sorted(glob.glob(\"/home/dh_yadmw3/artonly.io/posts/*.json\")):
+    with open(p) as f:
+        try: d = json.load(f)
+        except: continue
+    slug = d.get(\"slug\", os.path.basename(p).replace(\".json\",\"\"))
+    has_dl = \"[download:\" in d.get(\"body\",\"\")
+    card_path = f\"/home/dh_yadmw3/artonly.io/assets/images/artists/{slug}-social-9x16.jpg\"
+    card_exists = os.path.exists(card_path)
+    posts.append(slug)
+    if has_dl and card_exists:
+        cards.append(slug)
+    else:
+        missing.append(f\"{slug} (download_tag={has_dl}, card_file={card_exists})\")
+print(f\"Total posts: {len(posts)}\")
+print(f\"Cards complete: {len(cards)}\")
+print(f\"Missing: {len(missing)}\")
+for m in missing: print(f\"  - {m}\")
+"'

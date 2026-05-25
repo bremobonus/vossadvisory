@@ -1,6 +1,7 @@
 #!/bin/bash
 # ArtOnly Album Monitor Deploy Script
 # Generated: 2026-05-25
+# Run: 2026-05-25T07:27Z
 # Posts: aho-ssan-the-sun-turned-black, odd-beholder-honest-work
 # Run this on the DreamHost server via SSH:
 # sshpass -p PASSWORD ssh dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-05-25.sh

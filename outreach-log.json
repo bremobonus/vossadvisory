@@ -1,0 +1,94 @@
+{
+  "sent": [
+    {
+      "slug": "jpegmafia-experimental-rap",
+      "artist": "JPEGMAFIA",
+      "email": "info@wasserman.com",
+      "contact_type": "booking_management",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-6075199035912993988",
+      "status": "drafted"
+    },
+    {
+      "slug": "bleachers-everyone-for-ten-minutes",
+      "artist": "Bleachers",
+      "email": "press@dirtyhit.com",
+      "contact_type": "label_management",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r8256127543638446691",
+      "status": "drafted"
+    },
+    {
+      "slug": "masego-trap-house-jazz",
+      "artist": "Masego",
+      "email": "noah.simon@unitedtalent.com",
+      "contact_type": "booking_agent_UTA",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r2097916216499867598",
+      "status": "drafted"
+    },
+    {
+      "slug": "majid-jordan-life-2-next-chapter",
+      "artist": "Majid Jordan",
+      "email": "info@threesixzero.com",
+      "contact_type": "management_three_six_zero",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-2128919038236681805",
+      "status": "drafted"
+    },
+    {
+      "slug": "andrewbates",
+      "artist": "ANDREWBATES",
+      "email": "info@mananamusicmanagement.com",
+      "contact_type": "management_manana_electronic",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-2484744359298816949",
+      "status": "drafted"
+    },
+    {
+      "slug": "aja-monet-color-of-rain",
+      "artist": "Aja Monet",
+      "email": "daphne@ajamonet.com",
+      "contact_type": "management_direct",
+      "drafted_at": "2026-05-26T00:00:00Z",
+      "gmail_draft_id": "r5021112727425101811",
+      "status": "drafted"
+    },
+    {
+      "slug": "ed-obrien-blue-morpho",
+      "artist": "Ed O'Brien",
+      "email": "international@transgressive.co.uk",
+      "contact_type": "label_transgressive",
+      "drafted_at": "2026-05-26T00:00:00Z",
+      "gmail_draft_id": "r-8493939612930799805",
+      "status": "drafted"
+    },
+    {
+      "slug": "mick-jenkins",
+      "artist": "Mick Jenkins",
+      "email": "Mickjenkinsbusiness@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-05-26T00:00:00Z",
+      "gmail_draft_id": "r-5819225907922565877",
+      "status": "drafted"
+    },
+    {
+      "slug": "tirzah",
+      "artist": "Tirzah",
+      "email": "sam@nativemgmt.co.uk",
+      "contact_type": "management_native",
+      "drafted_at": "2026-05-26T00:00:00Z",
+      "gmail_draft_id": "r2047682194780624015",
+      "status": "drafted"
+    },
+    {
+      "slug": "unknown-mortal-orchestra-no-setlist",
+      "artist": "Unknown Mortal Orchestra",
+      "email": "tom@friendlyannouncer.com",
+      "contact_type": "management_friendly_announcer",
+      "drafted_at": "2026-05-26T00:00:00Z",
+      "gmail_draft_id": "r1649862298178726417",
+      "status": "drafted"
+    }
+  ]
+}

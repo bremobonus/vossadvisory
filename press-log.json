@@ -64,5 +64,48 @@
       "To unblock: add DREAMHOST_SSH_PASS secret to GitHub repo, then trigger Deploy ArtOnly workflow manually"
     ],
     "action_required": "Run deploy-artonly-2026-05-24.sh on DreamHost via SSH from a machine with outbound port 22 access, OR trigger the GitHub Actions workflow after adding DREAMHOST_SSH_PASS secret"
+  },
+  {
+    "run_date": "2026-05-26T00:00:00Z",
+    "run_type": "album_monitor",
+    "posts_submitted": 2,
+    "posts": [
+      {
+        "slug": "ed-obrien-blue-morpho",
+        "title": "Ed O'Brien Called Himself EOB for Six Years. Blue Morpho Is What Came After.",
+        "artist": "Ed O'Brien",
+        "album": "Blue Morpho",
+        "release_date": "2026-05-22",
+        "label": "Transgressive Records",
+        "date": "2026-05-26",
+        "author": "Leelou Blanc",
+        "photo_source": "Wikimedia Commons: Ed-obrien2006-05Radiohead.jpg",
+        "outreach_email": "international@transgressive.co.uk",
+        "indexnow_status": "PENDING-SSH-BLOCKED"
+      },
+      {
+        "slug": "aja-monet-color-of-rain",
+        "title": "Aja Monet Read the News Every Day and Made an Album That Could Survive It",
+        "artist": "Aja Monet",
+        "album": "the color of rain",
+        "release_date": "2026-05-22",
+        "label": "Drink Sum Wtr",
+        "date": "2026-05-26",
+        "author": "Allastair Voss",
+        "photo_source": "Wikimedia Commons: Aja_Monet_2017.jpg",
+        "outreach_email": "press@secretlygroup.com",
+        "indexnow_status": "PENDING-SSH-BLOCKED"
+      }
+    ],
+    "ssh_status": "BLOCKED",
+    "http_artonly_status": "403-host_not_allowed",
+    "alerts": [
+      "SSH port 22 blocked at network level from cloud container",
+      "artonly.io HTTPS returns 403 host_not_allowed from cloud IPs",
+      "Post JSONs written locally: ed-obrien-blue-morpho.json, aja-monet-color-of-rain.json",
+      "Deploy script ready: deploy-artonly-2026-05-26.sh",
+      "Pushed to GitHub: bremobonus/vossadvisory"
+    ],
+    "action_required": "Run deploy-artonly-2026-05-26.sh on DreamHost via SSH from a machine with outbound port 22 access, OR trigger the GitHub Actions workflow after adding DREAMHOST_SSH_PASS secret"
   }
 ]

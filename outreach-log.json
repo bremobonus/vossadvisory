@@ -44,6 +44,51 @@
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-2484744359298816949",
       "status": "drafted"
+    },
+    {
+      "slug": "aja-monet-color-of-rain",
+      "artist": "Aja Monet",
+      "email": "daphne@ajamonet.com",
+      "contact_type": "management_daphne_kolader",
+      "drafted_at": "2026-05-27T00:00:00Z",
+      "gmail_draft_id": "r8386968468278288373",
+      "status": "drafted"
+    },
+    {
+      "slug": "balming-tiger-gongbu",
+      "artist": "Balming Tiger",
+      "email": "balmingtigerpr@shorefire.com",
+      "contact_type": "pr_shore_fire_media",
+      "drafted_at": "2026-05-27T00:00:00Z",
+      "gmail_draft_id": "r4111361687807018966",
+      "status": "drafted"
+    },
+    {
+      "slug": "ed-obrien-blue-morpho",
+      "artist": "Ed O'Brien",
+      "email": "international@transgressive.co.uk",
+      "contact_type": "label_transgressive_records",
+      "drafted_at": "2026-05-27T00:00:00Z",
+      "gmail_draft_id": "r5417630721736197373",
+      "status": "drafted"
+    },
+    {
+      "slug": "lowertown-ugly-duckling-union",
+      "artist": "Lowertown",
+      "email": "max@anniversarygroup.com",
+      "contact_type": "booking_anniversary_group",
+      "drafted_at": "2026-05-27T00:00:00Z",
+      "gmail_draft_id": "r5824702032563541534",
+      "status": "drafted"
+    },
+    {
+      "slug": "unknown-mortal-orchestra-no-setlist",
+      "artist": "Unknown Mortal Orchestra",
+      "email": "tom@friendlyannouncer.com",
+      "contact_type": "management_friendly_announcer",
+      "drafted_at": "2026-05-27T00:00:00Z",
+      "gmail_draft_id": "r6642499298651649422",
+      "status": "drafted"
     }
   ]
 }

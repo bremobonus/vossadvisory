@@ -1,0 +1,32 @@
+=== DATE ===
+Thu May 28 14:18:22 UTC 2026
+
+=== INSTALL SSHPASS ===
+Reading package lists...
+Building dependency tree...
+Reading state information...
+sshpass is already the newest version (1.09-1).
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+sshpass 1.09
+(C) 2006-2011 Lingnu Open Source Consulting Ltd.
+(C) 2015-2016, 2021 Shachar Shemesh
+This program is free software, and can be distributed under the terms of the GPL
+See the COPYING file for more information.
+
+Using "assword" as the default password prompt indicator.
+
+=== DNS LOOKUP ===
+205.196.217.52
+
+=== TCP PORT 22 TEST ===
+Port 22: OPEN
+
+=== SSH HELLO TEST ===
+Warning: Permanently added 'pdx1-shared-a2-06.dreamhost.com' (ED25519) to the list of known hosts.
+SSH_CONNECTION_OK
+Linux pdx1-shared-a2-06 6.6.116-grsec-jammy-dirty #1 SMP Sat Nov  8 00:02:42 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+=== AUDIT RUN ===
+AUDIT FAILED exit 1
+
+=== DONE ===

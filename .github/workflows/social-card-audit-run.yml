@@ -9,25 +9,52 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install sshpass
-        run: sudo apt-get install -y sshpass
-
-      - name: Test SSH connectivity
+      - name: Diagnose + run audit (capture all output)
         run: |
-          echo "Testing TCP reach to DreamHost port 22..."
-          timeout 15 bash -c 'cat < /dev/null > /dev/tcp/pdx1-shared-a2-06.dreamhost.com/22' \
-            && echo "Port 22 OPEN" \
-            || echo "Port 22 UNREACHABLE - SSH will fail"
+          {
+            echo "=== DATE ==="
+            date -u
+            echo ""
+            echo "=== INSTALL SSHPASS ==="
+            sudo apt-get install -y sshpass 2>&1 || echo "INSTALL FAILED exit $?"
+            sshpass -V 2>&1 || echo "sshpass not found"
+            echo ""
+            echo "=== DNS LOOKUP ==="
+            python3 -c "import socket; print(socket.gethostbyname('pdx1-shared-a2-06.dreamhost.com'))" 2>&1 || echo "DNS failed"
+            echo ""
+            echo "=== TCP PORT 22 TEST ==="
+            timeout 10 bash -c 'cat < /dev/null > /dev/tcp/pdx1-shared-a2-06.dreamhost.com/22' \
+              && echo "Port 22: OPEN" || echo "Port 22: UNREACHABLE"
+            echo ""
+            echo "=== SSH HELLO TEST ==="
+            sshpass -p 'Neverending48!' ssh \
+              -o PreferredAuthentications=password \
+              -o StrictHostKeyChecking=no \
+              -o ConnectTimeout=30 \
+              dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
+              'echo SSH_CONNECTION_OK && uname -a' 2>&1 || echo "SSH hello FAILED exit $?"
+            echo ""
+            echo "=== AUDIT RUN ==="
+            sshpass -p 'Neverending48!' ssh \
+              -o PreferredAuthentications=password \
+              -o StrictHostKeyChecking=no \
+              -o ConnectTimeout=120 \
+              -o ServerAliveInterval=30 \
+              dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
+              'bash -s' < social-card-audit.sh 2>&1 || echo "AUDIT FAILED exit $?"
+            echo ""
+            echo "=== DONE ==="
+          } | tee diagnostics.txt
 
-      - name: Run social card audit on DreamHost
+      - name: Commit diagnostics back to branch
         run: |
-          sshpass -p 'Neverending48!' ssh \
-            -o PreferredAuthentications=password \
-            -o StrictHostKeyChecking=no \
-            -o ConnectTimeout=120 \
-            -o ServerAliveInterval=30 \
-            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
-            'bash -s' < social-card-audit.sh
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add diagnostics.txt
+          git commit -m "diagnostics [skip ci] $(date -u +%Y%m%dT%H%M%SZ)" || echo "nothing to commit"
+          git push origin run-social-card-audit

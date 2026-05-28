@@ -22,7 +22,7 @@
     "alerts": [
       "IndexNow blocked by container network policy",
       "SSH to DreamHost timed out",
-      "Site health checks blocked — not a site outage"
+      "Site health checks blocked \u2014 not a site outage"
     ],
     "email_sent": true,
     "email_to": "amosleblanc@gmail.com"
@@ -107,5 +107,46 @@
       "Pushed to GitHub: bremobonus/vossadvisory"
     ],
     "action_required": "Run deploy-artonly-2026-05-26.sh on DreamHost via SSH from a machine with outbound port 22 access, OR trigger the GitHub Actions workflow after adding DREAMHOST_SSH_PASS secret"
+  },
+  {
+    "run_date": "2026-05-28T00:00:00Z",
+    "run_type": "album_monitor",
+    "posts_submitted": 2,
+    "posts": [
+      {
+        "slug": "traumprinz-life",
+        "title": "In the Rush of the Deep, Traumprinz Makes His Case with Life",
+        "date": "2026-05-28",
+        "author": "Allastair Voss",
+        "release_date": "2026-05-22",
+        "artist": "Traumprinz",
+        "label": "All Possible Worlds",
+        "spotify_id": "7AOdp2CXbaCubZirZQRz6z",
+        "indexnow_status": "PENDING-deploy"
+      },
+      {
+        "slug": "ruido-tovar",
+        "title": "Cumbia at the Edge of Chaos, Ruido Tovar and the Joy of Going Too Far",
+        "date": "2026-05-28",
+        "author": "Leelou Blanc",
+        "release_date": "2026-05-22",
+        "artist": "Mexican Institute of Sound & Meridian Brothers",
+        "label": "Ansonia Records",
+        "spotify_id": "4TPTW3cTwUtiihgOMSQfmy",
+        "indexnow_status": "PENDING-deploy"
+      }
+    ],
+    "ssh_status": "BLOCKED",
+    "http_artonly_status": "403-host_not_allowed",
+    "deploy_script": "deploy-artonly-2026-05-28.sh",
+    "gmail_summary_draft_id": "r-4504947931511704528",
+    "outreach_draft_ruido_tovar": "r1377795477908069771",
+    "alerts": [
+      "SSH port 22 blocked from container (same as all previous runs)",
+      "artonly.io blocked by container network policy",
+      "Deploy script saved locally; must be run manually on DreamHost server"
+    ],
+    "email_sent": true,
+    "email_to": "amosleblanc@gmail.com"
   }
 ]

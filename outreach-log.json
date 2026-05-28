@@ -44,6 +44,24 @@
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-2484744359298816949",
       "status": "drafted"
+    },
+    {
+      "slug": "ruido-tovar",
+      "artist": "Mexican Institute of Sound",
+      "email": "mexicaninstituteofsound@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-05-28T00:00:00Z",
+      "gmail_draft_id": "r1377795477908069771",
+      "status": "drafted"
+    },
+    {
+      "slug": "traumprinz-life",
+      "artist": "Traumprinz",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-05-28T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
     }
   ]
 }

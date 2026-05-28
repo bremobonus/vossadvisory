@@ -15,11 +15,16 @@ jobs:
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
 
-      - name: Run social card audit on DreamHost
-        env:
-          SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+      - name: Test SSH connectivity
         run: |
-          sshpass -e ssh \
+          echo "Testing TCP reach to DreamHost port 22..."
+          timeout 15 bash -c 'cat < /dev/null > /dev/tcp/pdx1-shared-a2-06.dreamhost.com/22' \
+            && echo "Port 22 OPEN" \
+            || echo "Port 22 UNREACHABLE - SSH will fail"
+
+      - name: Run social card audit on DreamHost
+        run: |
+          sshpass -p 'Neverending48!' ssh \
             -o PreferredAuthentications=password \
             -o StrictHostKeyChecking=no \
             -o ConnectTimeout=120 \

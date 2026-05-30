@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       script:
-        description: 'Deploy script filename in repo root (e.g. deploy-artonly-2026-05-25.sh)'
+        description: 'Deploy script filename in repo root (e.g. deploy-artonly-2026-05-24.sh)'
         required: true
-        default: 'deploy-artonly-2026-05-25.sh'
+        default: 'deploy-artonly-2026-05-24.sh'
   push:
     branches:
       - main
@@ -18,45 +18,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Determine deploy script
+        id: script
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            SCRIPT=$(git diff --name-only HEAD^ HEAD | grep '^deploy-artonly-.*\.sh$' | tail -1)
+            if [ -z "$SCRIPT" ]; then
+              SCRIPT=$(ls deploy-artonly-*.sh 2>/dev/null | sort | tail -1)
+            fi
+          else
+            SCRIPT="${{ github.event.inputs.script }}"
+          fi
+          echo "script=$SCRIPT" >> $GITHUB_OUTPUT
+          echo "Deploying: $SCRIPT"
 
       - name: Install sshpass
         run: sudo apt-get install -y sshpass
 
-      - name: Resolve deploy script name
-        id: resolve
-        run: |
-          if [ -n "${{ github.event.inputs.script }}" ]; then
-            SCRIPT="${{ github.event.inputs.script }}"
-          else
-            # Auto-detect: use the latest deploy-artonly-*.sh added in this push
-            SCRIPT=$(git diff-tree --no-commit-id -r --name-only ${{ github.sha }} | grep '^deploy-artonly-.*\.sh$' | sort | tail -1)
-            if [ -z "$SCRIPT" ]; then
-              SCRIPT=$(ls deploy-artonly-*.sh 2>/dev/null | sort | tail -1)
-            fi
-          fi
-          echo "script=$SCRIPT" >> $GITHUB_OUTPUT
-          echo "Resolved script: $SCRIPT"
-
       - name: Verify deploy script exists
         run: |
-          SCRIPT="${{ steps.resolve.outputs.script }}"
-          if [ ! -f "$SCRIPT" ]; then
-            echo "ERROR: $SCRIPT not found in repo"
+          if [ ! -f "${{ steps.script.outputs.script }}" ]; then
+            echo "ERROR: ${{ steps.script.outputs.script }} not found in repo"
             exit 1
           fi
-          echo "Script found: $SCRIPT"
+          echo "Script found: ${{ steps.script.outputs.script }}"
 
       - name: Run deploy script on DreamHost
         env:
           SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
         run: |
-          SCRIPT="${{ steps.resolve.outputs.script }}"
           sshpass -e ssh \
             -o PreferredAuthentications=password \
             -o StrictHostKeyChecking=no \
             -o ConnectTimeout=60 \
             dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
-            'bash -s' < "$SCRIPT"
+            'bash -s' < "${{ steps.script.outputs.script }}"
 
       - name: Confirm social cards exist on server
         env:

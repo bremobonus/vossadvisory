@@ -62,6 +62,51 @@
       "drafted_at": "2026-05-28T00:00:00Z",
       "gmail_draft_id": null,
       "status": "skipped_no_contact"
+    },
+    {
+      "slug": "lowertown-ugly-duckling-union",
+      "artist": "Lowertown",
+      "email": "resnik.jackie@gmail.com",
+      "contact_type": "management_jackie_resnik",
+      "drafted_at": "2026-05-30T00:00:00Z",
+      "gmail_draft_id": "r-2005296399544352240",
+      "status": "drafted"
+    },
+    {
+      "slug": "boards-of-canada-inferno",
+      "artist": "Boards of Canada",
+      "email": "press@warp.net",
+      "contact_type": "label_warp_records",
+      "drafted_at": "2026-05-30T00:00:00Z",
+      "gmail_draft_id": "r91106086364040072",
+      "status": "drafted"
+    },
+    {
+      "slug": "future-islands-from-a-hole-in-the-floor",
+      "artist": "Future Islands",
+      "email": "info@atcmanagement.com",
+      "contact_type": "management_atc",
+      "drafted_at": "2026-05-30T00:00:00Z",
+      "gmail_draft_id": "r703840392090263396",
+      "status": "drafted"
+    },
+    {
+      "slug": "ed-obrien-blue-morpho",
+      "artist": "Ed O'Brien",
+      "email": "international@transgressive.co.uk",
+      "contact_type": "label_transgressive_records",
+      "drafted_at": "2026-05-30T00:00:00Z",
+      "gmail_draft_id": "r-5580913160567120992",
+      "status": "drafted"
+    },
+    {
+      "slug": "balming-tiger-gongbu",
+      "artist": "Balming Tiger",
+      "email": "mgmt@balmingtiger.com",
+      "contact_type": "management_direct",
+      "drafted_at": "2026-05-30T00:00:00Z",
+      "gmail_draft_id": "r-5082554704052803187",
+      "status": "drafted"
     }
   ]
 }

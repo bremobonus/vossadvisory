@@ -65,26 +65,4 @@ jobs:
             -o PreferredAuthentications=password \
             -o StrictHostKeyChecking=no \
             dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
-            'python3 -c "
-import json, os, glob
-posts = []
-cards = []
-missing = []
-for p in sorted(glob.glob(\"/home/dh_yadmw3/artonly.io/posts/*.json\")):
-    with open(p) as f:
-        try: d = json.load(f)
-        except: continue
-    slug = d.get(\"slug\", os.path.basename(p).replace(\".json\",\"\"))
-    has_dl = \"[download:\" in d.get(\"body\",\"\")
-    card_path = f\"/home/dh_yadmw3/artonly.io/assets/images/artists/{slug}-social-9x16.jpg\"
-    card_exists = os.path.exists(card_path)
-    posts.append(slug)
-    if has_dl and card_exists:
-        cards.append(slug)
-    else:
-        missing.append(f\"{slug} (download_tag={has_dl}, card_file={card_exists})\")
-print(f\"Total posts: {len(posts)}\")
-print(f\"Cards complete: {len(cards)}\")
-print(f\"Missing: {len(missing)}\")
-for m in missing: print(f\"  - {m}\")
-"'
+            "python3 -c \"import json,os,glob;D='/home/dh_yadmw3/artonly.io';data=[json.load(open(p)) for p in sorted(glob.glob(D+'/posts/*.json')) if os.path.getsize(p)>2];ok=[d.get('slug','') for d in data if '[download:' in d.get('body','') and os.path.exists(D+'/assets/images/artists/'+d.get('slug','')+'-social-9x16.jpg')];ng=[d.get('slug','') for d in data if '[download:' not in d.get('body','') or not os.path.exists(D+'/assets/images/artists/'+d.get('slug','')+'-social-9x16.jpg')];print(f'Total: {len(data)} | OK: {len(ok)} | Missing: {len(ng)}');[print('  MISSING:',s) for s in ng]\""

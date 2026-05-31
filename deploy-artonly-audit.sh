@@ -1,10 +1,8 @@
 #!/bin/bash
-# social-card-audit.sh
-# Run on DreamHost server: audits all posts, generates missing social cards,
+# deploy-artonly-audit.sh
+# Social card audit — triggered via push to run on DreamHost via deploy-artonly.yml.
+# Audits all posts, generates missing social cards,
 # fixes Rule 5 (hero image repeated in body) and wrong-format download tags.
-# Usage: bash -s < social-card-audit.sh
-# Last triggered: 2026-05-31
-# Or via GitHub Actions workflow (deploy-artonly.yml), input: social-card-audit.sh
 
 set -e
 echo "=== ArtOnly Social Card Audit ==="

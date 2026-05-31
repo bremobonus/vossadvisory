@@ -1,0 +1,29 @@
+{
+  "created": "2026-05-31T10:30:00Z",
+  "status": "SETUP_REQUIRED",
+  "reason": "SSH to DreamHost server pdx1-shared-a2-06.dreamhost.com timed out from cloud environment. bluesky-creds.json could not be checked on remote server.",
+  "handle_availability": {
+    "artonly.bsky.social": "TAKEN",
+    "artonly-mag.bsky.social": "AVAILABLE",
+    "artonlyio.bsky.social": "AVAILABLE"
+  },
+  "recommended_handle": "artonly-mag.bsky.social",
+  "action_required": "Create Bluesky account manually at bsky.app, generate App Password, save creds to ~/artonly.io/agent/bluesky-creds.json on DreamHost server",
+  "email_sent_to": "amosleblanc@gmail.com",
+  "articles_pending": [
+    {
+      "slug": "boards-of-canada-inferno",
+      "title": "Boards of Canada Break Thirteen Years of Silence and Mean Every Second of It",
+      "date": "2026-05-30",
+      "url": "https://artonly.io/boards-of-canada-inferno",
+      "hashtags": ["#NewMusic", "#IndieMusic"]
+    },
+    {
+      "slug": "kurt-vile-philadelphias-been-good-to-me",
+      "title": "Kurt Vile Writes the Hometown Record He Has Been Circling His Entire Career",
+      "date": "2026-05-30",
+      "url": "https://artonly.io/kurt-vile-philadelphias-been-good-to-me",
+      "hashtags": ["#NewMusic", "#IndieMusic"]
+    }
+  ]
+}

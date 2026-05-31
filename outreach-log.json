@@ -62,6 +62,51 @@
       "drafted_at": "2026-05-28T00:00:00Z",
       "gmail_draft_id": null,
       "status": "skipped_no_contact"
+    },
+    {
+      "slug": "6lack-love-is-the-new-gangsta",
+      "artist": "6LACK",
+      "email": "info@lvrn.com",
+      "contact_type": "label_management_lvrn",
+      "sent_at": "2026-05-31T00:00:00Z",
+      "gmail_draft_id": "r-4718423335617642209",
+      "status": "drafted"
+    },
+    {
+      "slug": "aja-monet-color-of-rain",
+      "artist": "Aja Monet",
+      "email": "aja@ajamonet.com",
+      "contact_type": "artist_direct",
+      "sent_at": "2026-05-31T00:00:00Z",
+      "gmail_draft_id": "r3034221443261924874",
+      "status": "drafted"
+    },
+    {
+      "slug": "balming-tiger-gongbu",
+      "artist": "Balming Tiger",
+      "email": "mgmt@balmingtiger.com",
+      "contact_type": "management_direct",
+      "sent_at": "2026-05-31T00:00:00Z",
+      "gmail_draft_id": "r-486868845202969163",
+      "status": "drafted"
+    },
+    {
+      "slug": "boards-of-canada-inferno",
+      "artist": "Boards of Canada",
+      "email": "editor@warp.net",
+      "contact_type": "label_warp_records",
+      "sent_at": "2026-05-31T00:00:00Z",
+      "gmail_draft_id": "r6702369767487858057",
+      "status": "drafted"
+    },
+    {
+      "slug": "ed-obrien-blue-morpho",
+      "artist": "Ed O'Brien",
+      "email": "international@transgressive.co.uk",
+      "contact_type": "label_transgressive_press",
+      "sent_at": "2026-05-31T00:00:00Z",
+      "gmail_draft_id": "r7065595484551095194",
+      "status": "drafted"
     }
   ]
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2026-05-31",
+    "session": "distribution-agent",
+    "action": "queue_drafted",
+    "notes": "SSH to DreamHost unavailable from cloud environment. Reddit API creds at ~/artonly.io/agent/reddit-creds.json could not be checked. No direct posting attempted. Queue of 2 posts drafted for manual posting. Reddit.com unreachable from this environment so subreddit rules verified from training knowledge only. Both subreddits accept editorial link posts about music. 48 hour rule: no prior log exists, first session.",
+    "posts_queued": [
+      {
+        "slug": "boards-of-canada-inferno",
+        "subreddit": "r/electronicmusic",
+        "status": "queued"
+      },
+      {
+        "slug": "6lack-love-is-the-new-gangsta",
+        "subreddit": "r/rnb",
+        "status": "queued"
+      }
+    ],
+    "posts_considered_not_queued": [
+      {
+        "slug": "kurt-vile-philadelphias-been-good-to-me",
+        "reason": "Max 2 posts per day limit reached. Strong candidate for r/indieheads on 2026-06-01."
+      },
+      {
+        "slug": "future-islands-from-a-hole-in-the-floor",
+        "reason": "Max 2 posts per day limit reached. Strong candidate for r/indieheads on 2026-06-01 if kurt-vile post goes first."
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "date": "2026-06-01",
+    "action": "queue_drafted",
+    "posts": [
+      {
+        "slug": "boards-of-canada-inferno",
+        "subreddit": "r/electronicmusic",
+        "status": "queued_for_manual_post",
+        "note": "Reddit API creds not accessible (SSH timeout to DreamHost). Draft queued for manual posting."
+      },
+      {
+        "slug": "kurt-vile-philadelphias-been-good-to-me",
+        "subreddit": "r/indieheads",
+        "status": "queued_for_manual_post",
+        "note": "Reddit API creds not accessible (SSH timeout to DreamHost). Draft queued for manual posting."
+      }
+    ],
+    "agent_notes": "SSH connection to pdx1-shared-a2-06.dreamhost.com timed out. Could not verify reddit-creds.json at ~/artonly.io/agent/. Proceeded to draft queue. Max 2 posts per day rule applied. Both posts from 2026-05-30 publication date. Different subreddits used."
+  }
+]

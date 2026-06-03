@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026-06-03",
+    "action": "queue_draft",
+    "agent_run": true,
+    "posts_drafted": 2,
+    "posts_considered": 4,
+    "posts_today_on_site": [
+      "ada-lea",
+      "amyl-and-the-sniffers",
+      "cassandra-jenkins",
+      "helena-deland"
+    ],
+    "selected": [
+      {
+        "slug": "ada-lea",
+        "subreddit": "r/indieheads",
+        "reason": "Indie folk from Montreal, Polaris nominated, strong editorial angle"
+      },
+      {
+        "slug": "cassandra-jenkins",
+        "subreddit": "r/ContemporaryArt",
+        "reason": "Tagged art on artonly.io, conceptual field recording composition practice, different subreddit from pick 1"
+      }
+    ],
+    "skipped": [
+      {
+        "slug": "amyl-and-the-sniffers",
+        "reason": "Max 2 posts per day reached"
+      },
+      {
+        "slug": "helena-deland",
+        "reason": "Max 2 posts per day reached"
+      }
+    ],
+    "api_posting": false,
+    "reason_no_api": "SSH to server unavailable from this environment (port 22 blocked). Could not verify reddit-creds.json. Falling back to manual queue.",
+    "queue_file": "reddit-queue.json",
+    "subreddits_used_today": ["r/indieheads", "r/ContemporaryArt"],
+    "note": "r/listentothis excluded: accepts only direct music links, not editorial articles. r/listentothis requires YouTube/Spotify/Bandcamp URLs."
+  }
+]

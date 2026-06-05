@@ -5,5 +5,12 @@
     "articles_count": 6,
     "sent_to_count": 0,
     "notes": "artonly.io API blocked by cloud env proxy; Gmail draft created (id: r6348807264726417662); subscribers file not found on server"
+  },
+  {
+    "date": "2026-06-05T20:00:00Z",
+    "subject": "ArtOnly Weekly: June 5, 2026",
+    "articles_count": 4,
+    "sent_to_count": 0,
+    "notes": "artonly.io API blocked by cloud env proxy (Host not in allowlist); Gmail draft created (id: r-2004721989709101138); subscribers file not found on server; SSH port 22 blocked from cloud env"
   }
 ]

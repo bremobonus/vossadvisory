@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-05",
+  "agent_run": "2026-06-05T00:00:00Z",
+  "ssh_status": "unavailable (connection timeout from cloud environment)",
+  "reddit_api_creds_checked": false,
+  "posts_drafted": 2,
+  "posts_attempted": 0,
+  "queue": [
+    {
+      "slug": "nick-leon",
+      "title": "Nick León Finally Made the Miami Record He Owed the City",
+      "subreddit": "r/electronicmusic",
+      "url": "https://artonly.io/post/nick-leon",
+      "date": "2026-06-05",
+      "status": "queued",
+      "body": "Nick León spent over a decade making underground Miami club music before releasing his debut album A Tropical Entropy in 2025, fusing Florida bass, reggaeton, cumbia, and compas into tracks that deliberately resist commercial accessibility. The record features collaborations with Ela Minus and Erika de Casier, with the single Bikini named Resident Advisor's best track of 2024 and described as something that should have happened to R&B years earlier.\n\nhttps://artonly.io/post/nick-leon"
+    },
+    {
+      "slug": "aldous-harding",
+      "title": "On Train on the Island, Aldous Harding Earns Her Strangeness",
+      "subreddit": "r/indieheads",
+      "url": "https://artonly.io/post/aldous-harding",
+      "date": "2026-06-05",
+      "status": "queued",
+      "body": "Aldous Harding's fifth album Train on the Island earned an 87 on Metacritic and Pitchfork's Best New Music designation, built on minimalist arrangements of pedal steel, harp, synthesizer, and organ layered with deliberate restraint. The New Zealand artist creates what the review calls oceans of implication, building meaning through what is withheld rather than stated.\n\nhttps://artonly.io/post/aldous-harding"
+    }
+  ],
+  "skipped_posts": [
+    {
+      "slug": "lankum",
+      "reason": "over daily limit of 2 posts"
+    },
+    {
+      "slug": "sudan-archives",
+      "reason": "over daily limit of 2 posts"
+    }
+  ],
+  "email_sent": true,
+  "email_to": "amosleblanc@gmail.com",
+  "email_draft_id": "r-1749404650412883534",
+  "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out from cloud execution environment. Reddit API creds not verified. Posts drafted for manual submission. Server log at ~/artonly.io/data/reddit-log.json could not be written this run."
+}

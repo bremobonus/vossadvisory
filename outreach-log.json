@@ -46,48 +46,111 @@
       "status": "drafted"
     },
     {
+      "slug": "ruido-tovar",
+      "artist": "Mexican Institute of Sound",
+      "email": "mexicaninstituteofsound@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-05-28T00:00:00Z",
+      "gmail_draft_id": "r1377795477908069771",
+      "status": "drafted"
+    },
+    {
+      "slug": "traumprinz-life",
+      "artist": "Traumprinz",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-05-28T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "6lack-love-is-the-new-gangsta",
+      "artist": "6LACK",
+      "email": "domof@lvrn.com",
+      "contact_type": "management_lvrn",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r-5857390782402710349",
+      "status": "drafted"
+    },
+    {
       "slug": "aja-monet-color-of-rain",
       "artist": "Aja Monet",
-      "email": "daphne@ajamonet.com",
+      "email": "info@drinksumwtr.com",
+      "contact_type": "label_drink_sum_wtr",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r-233767054267777712",
+      "status": "drafted"
+    },
+    {
+      "slug": "balming-tiger-gongbu",
+      "artist": "Balming Tiger",
+      "email": "mgmt@balmingtiger.com",
       "contact_type": "management_direct",
-      "drafted_at": "2026-05-26T00:00:00Z",
-      "gmail_draft_id": "r5021112727425101811",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r1040521899691216058",
+      "status": "drafted"
+    },
+    {
+      "slug": "boards-of-canada-inferno",
+      "artist": "Boards of Canada",
+      "email": "editor@warprecords.com",
+      "contact_type": "label_warp_press",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r-5741549192505647997",
       "status": "drafted"
     },
     {
       "slug": "ed-obrien-blue-morpho",
       "artist": "Ed O'Brien",
       "email": "international@transgressive.co.uk",
-      "contact_type": "label_transgressive",
-      "drafted_at": "2026-05-26T00:00:00Z",
-      "gmail_draft_id": "r-8493939612930799805",
+      "contact_type": "label_transgressive_press",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r4938862354011839529",
       "status": "drafted"
     },
     {
-      "slug": "mick-jenkins",
-      "artist": "Mick Jenkins",
-      "email": "Mickjenkinsbusiness@gmail.com",
-      "contact_type": "artist_direct",
-      "drafted_at": "2026-05-26T00:00:00Z",
-      "gmail_draft_id": "r-5819225907922565877",
+      "slug": "future-islands-from-a-hole-in-the-floor",
+      "artist": "Future Islands",
+      "email": "mediaenquiries@4ad.com",
+      "contact_type": "label_4ad_media_enquiries",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r5576446822189950609",
       "status": "drafted"
     },
     {
-      "slug": "tirzah",
-      "artist": "Tirzah",
-      "email": "sam@nativemgmt.co.uk",
-      "contact_type": "management_native",
-      "drafted_at": "2026-05-26T00:00:00Z",
-      "gmail_draft_id": "r2047682194780624015",
+      "slug": "kurt-vile-philadelphias-been-good-to-me",
+      "artist": "Kurt Vile",
+      "email": "info@anothermgmtco.com",
+      "contact_type": "management_another_management_company",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-2754991000569296163",
       "status": "drafted"
     },
     {
-      "slug": "unknown-mortal-orchestra-no-setlist",
-      "artist": "Unknown Mortal Orchestra",
-      "email": "tom@friendlyannouncer.com",
-      "contact_type": "management_friendly_announcer",
-      "drafted_at": "2026-05-26T00:00:00Z",
-      "gmail_draft_id": "r1649862298178726417",
+      "slug": "lowertown-ugly-duckling-union",
+      "artist": "Lowertown",
+      "email": "resnik.jackie@gmail.com",
+      "contact_type": "management_jackie_resnik",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-6880020365084578962",
+      "status": "drafted"
+    },
+    {
+      "slug": "vince-staples-cry-baby",
+      "artist": "Vince Staples",
+      "email": "carla@lomavistarecordings.com",
+      "contact_type": "label_loma_vista_press",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r7492716559331230289",
+      "status": "drafted"
+    },
+    {
+      "slug": "jalen-ngonda-doctrine-of-love",
+      "artist": "Jalen Ngonda",
+      "email": "info@daptonerecords.com",
+      "contact_type": "label_daptone_records",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-544253373339923642",
       "status": "drafted"
     }
   ]

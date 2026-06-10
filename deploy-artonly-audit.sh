@@ -3,6 +3,7 @@
 # Social card audit — triggered via push to run on DreamHost via deploy-artonly.yml.
 # Audits all posts, generates missing social cards,
 # fixes Rule 5 (hero image repeated in body) and wrong-format download tags.
+# Last triggered: 2026-06-10
 
 set -e
 echo "=== ArtOnly Social Card Audit ==="

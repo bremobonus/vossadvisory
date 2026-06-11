@@ -152,6 +152,388 @@
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-544253373339923642",
       "status": "drafted"
+    },
+    {
+      "slug": "bedouine-neon-summer-skin",
+      "artist": "Bedouine",
+      "email": "karl@arrivalartists.com",
+      "contact_type": "booking_arrival_artists",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "cate-le-bon",
+      "artist": "Cate Le Bon",
+      "email": "brid@pitchperfectpr.com",
+      "emails_also": ["jessica@pitchperfectpr.com"],
+      "contact_type": "press_pitch_perfect_pr",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "navy-blue-sir-render",
+      "artist": "Navy Blue",
+      "email": "cv@somethingincommon.com",
+      "emails_also": ["kanya@somethingincommon.com"],
+      "contact_type": "management_something_in_common",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "nick-leon",
+      "artist": "Nick León",
+      "email": "nickleon954@gmail.com",
+      "emails_also": ["cdanis@tbaagency.com"],
+      "contact_type": "artist_direct_and_booking_tba",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "grouper",
+      "artist": "Grouper",
+      "email": "jim@groundcontroltouring.com",
+      "emails_also": ["brianjfoote@me.com"],
+      "contact_type": "booking_gct_and_press_kranky",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "julia-holter",
+      "artist": "Julia Holter",
+      "email": "cdanis@tbaagency.com",
+      "emails_also": ["will@atc-live.com"],
+      "contact_type": "booking_tba_and_atc",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "florist",
+      "artist": "Florist",
+      "email": "timmy@groundcontroltouring.com",
+      "emails_also": ["eloyl@grandstandhq.com"],
+      "contact_type": "booking_gct_and_press_grandstand",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "jamila-woods",
+      "artist": "Jamila Woods",
+      "email": "jamilawoodsmgmt@gmail.com",
+      "emails_also": ["shirin.nury@caa.com"],
+      "contact_type": "management_direct_and_booking_caa",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "perfume-genius",
+      "artist": "Perfume Genius",
+      "email": "info@brilliantcorners.com",
+      "emails_also": ["tmany@teamwass.com"],
+      "contact_type": "management_brilliant_corners_and_booking_wasserman",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "death-cab-for-cutie-i-built-you-a-tower",
+      "artist": "Death Cab for Cutie",
+      "email": "info@brilliantcorners.com",
+      "emails_also": ["tmany@the.team"],
+      "contact_type": "management_brilliant_corners_and_booking_the_team",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "angel-olsen",
+      "artist": "Angel Olsen",
+      "email": "jessica@pitchperfectpr.com",
+      "emails_also": ["jaycee@pitchperfectpr.com"],
+      "contact_type": "press_pitch_perfect_pr",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "burial",
+      "artist": "Burial",
+      "email": "info@hyperdub.net",
+      "contact_type": "label_hyperdub_press",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "weyes-blood",
+      "artist": "Weyes Blood",
+      "email": "weyesblood@blueraincoatmusic.com",
+      "contact_type": "management_blue_raincoat",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "aldous-harding",
+      "artist": "Aldous Harding",
+      "email": "martin@associatedlondonmanagement.com",
+      "contact_type": "management_associated_london",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "lankum",
+      "artist": "Lankum",
+      "email": "taliamiller@roughtraderecords.com",
+      "contact_type": "label_rough_trade_press",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "sudan-archives",
+      "artist": "Sudan Archives",
+      "email": "ben@constantartists.com",
+      "contact_type": "management_constant_artists",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "ada-lea",
+      "artist": "Ada Lea",
+      "email": "dawood@bloody-knuckles.com",
+      "emails_also": ["gil@firstdatetouring.com"],
+      "contact_type": "management_bloody_knuckles_and_booking",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "amyl-and-the-sniffers",
+      "artist": "Amyl and the Sniffers",
+      "email": "parisi.andrew@gmail.com",
+      "emails_also": ["alex@atc-live.com"],
+      "contact_type": "management_direct_and_booking_atc",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "cassandra-jenkins",
+      "artist": "Cassandra Jenkins",
+      "email": "cassandracomplexrecs@gmail.com",
+      "emails_also": ["ari@friendlyannouncer.com"],
+      "contact_type": "artist_direct_and_management_friendly_announcer",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "helena-deland",
+      "artist": "Helena Deland",
+      "email": "nycholasfortin@chivichivi.com",
+      "emails_also": ["kmorse@paradigmagency.com"],
+      "contact_type": "management_chivi_chivi_and_booking_paradigm",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "special-interest",
+      "artist": "Special Interest",
+      "email": "panachebooking@gmail.com",
+      "emails_also": ["taliamiller@roughtraderecords.com"],
+      "contact_type": "booking_panache_and_label_rough_trade",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "waxahatchee",
+      "artist": "Waxahatchee",
+      "email": "rennie@anothermgmtco.com",
+      "emails_also": ["timmy@groundcontroltouring.com"],
+      "contact_type": "management_another_mgmt_and_booking_gct",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "yeule",
+      "artist": "Yeule",
+      "email": "jeff@gallerie.us",
+      "emails_also": ["emily@orienteer.us"],
+      "contact_type": "management_gallerie_and_press_ninja_tune",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "klein-thirteen-sense",
+      "artist": "Klein",
+      "email": "freakazoidsklein@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "mk-ultra-dream",
+      "artist": "Mk Ultra (John Vanderslice)",
+      "email": "jv@tinytelephone.com",
+      "emails_also": ["mahmood@concertedefforts.com"],
+      "contact_type": "artist_direct_and_booking_concerted_efforts",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "nick-leon-tropical-entropy",
+      "artist": "Nick León",
+      "email": "nickleon954@gmail.com",
+      "emails_also": ["carin@outer-agency.com"],
+      "contact_type": "artist_direct_and_booking_outer_agency",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "nick-leon-tropical",
+      "artist": "Nick León",
+      "email": "nickleon954@gmail.com",
+      "emails_also": ["carin@outer-agency.com"],
+      "contact_type": "artist_direct_and_booking_outer_agency",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "charli-xcx",
+      "artist": "Charli XCX",
+      "email": "Ted.Sullivan@AtlanticRecords.com",
+      "contact_type": "label_atlantic_press",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "divide-and-dissolve",
+      "artist": "Divide and Dissolve",
+      "email": "hello@divideanddissolve.com",
+      "emails_also": ["bellaunionmgmt@gmail.com"],
+      "contact_type": "artist_direct_and_management_bella_union",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "lana-del-rey",
+      "artist": "Lana Del Rey",
+      "email": "info@tapmgmt.com",
+      "contact_type": "management_tap_music",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "nephillm-ny2mia",
+      "artist": "Nephillm",
+      "email": "hello@7cult.com",
+      "contact_type": "label_7cult",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "arooj-aftab",
+      "artist": "Arooj Aftab",
+      "email": "erik@friendsatwork.com",
+      "emails_also": ["AroojAftabTeam@unitedtalent.com"],
+      "contact_type": "management_friends_at_work_and_booking_uta",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "bar-italia",
+      "artist": "Bar Italia",
+      "email": "thomas@redmanagement.info",
+      "emails_also": ["timmy@groundcontroltouring.com"],
+      "contact_type": "management_red_and_booking_gct",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "mdou-moctar",
+      "artist": "Mdou Moctar",
+      "email": "aaron@matadorrecords.com",
+      "emails_also": ["jim@groundcontroltouring.com"],
+      "contact_type": "label_matador_press_and_booking_gct",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "nightly-1989",
+      "artist": "Nightly",
+      "email": "contact@neon-coast.com",
+      "contact_type": "management_neon_coast",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "tamino",
+      "artist": "Tamino",
+      "email": "tamino@caa.com",
+      "emails_also": ["taminomgmt@wearefoundations.com"],
+      "contact_type": "booking_caa_and_management_foundations",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "ethel-cain",
+      "artist": "Ethel Cain",
+      "email": "undertaker@reapermgmt.com",
+      "emails_also": ["reid.kutrow@sacksco.com"],
+      "contact_type": "management_reaper_and_press_sacks",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "horsegirl",
+      "artist": "Horsegirl",
+      "email": "rennie@anothermgmtco.com",
+      "emails_also": ["timmy@groundcontroltouring.com"],
+      "contact_type": "management_another_mgmt_and_booking_gct",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "jane-schoenbrun",
+      "artist": "Jane Schoenbrun",
+      "email": "press@mubi.com",
+      "contact_type": "distributor_mubi_press",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "toyin-ojih-odutola",
+      "artist": "Toyin Ojih Odutola",
+      "email": "info@jackshainman.com",
+      "contact_type": "gallery_jack_shainman",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "japanese-breakfast",
+      "artist": "Japanese Breakfast",
+      "email": "ryan@tenatoms.com",
+      "emails_also": ["eloyl@grandstandhq.com"],
+      "contact_type": "management_ten_atoms_and_press_grandstand",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "nite-jewel",
+      "artist": "Nite Jewel",
+      "email": "Nytejewel@gmail.com",
+      "emails_also": ["daniel@forcefieldpr.com"],
+      "contact_type": "artist_direct_and_press_forcefield",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "oklou",
+      "artist": "Oklou",
+      "email": "loumar.mayniel@gmail.com",
+      "emails_also": ["pasricha.robin@gmail.com"],
+      "contact_type": "artist_direct_and_management_giant_artist",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
+    },
+    {
+      "slug": "wet-leg",
+      "artist": "Wet Leg",
+      "email": "aoife@dominorecordco.com",
+      "contact_type": "label_domino_press",
+      "drafted_at": "2026-06-11T00:00:00Z",
+      "status": "sent"
     }
   ]
 }

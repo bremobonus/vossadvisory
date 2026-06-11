@@ -112,3 +112,60 @@ with open(path, "w") as f:
 print("Updated: yaeji-dancing-in-both-languages")
 PYEOF
 
+
+# ---- POST 3: yame-ebem-2025 ----
+echo "--- Updating: yame-ebem-2025 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yame-ebem-2025.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:album/4UPHNEDkuwpqz1GlcFOm2s]
+
+## Neither and Both
+
+Yame is French. Yame is Cameroonian. On Ebem, his debut album released in June 2025, he is neither trying to reconcile those identities nor keep them separate. He is doing something more interesting: letting them speak to each other in real time, across the same song, sometimes across the same bar.
+
+Ebem means a communal space where wisdom is passed on, a gathering place in Bassa, one of the Cameroonian languages Yame grew up around. The album uses that concept as a frame rather than an answer. Whose gathering? Which version of belonging? The one in Paris where Yame built his career, or the one that lives in the music his family made before he was born? The record proposes that belonging is not a fixed location but a practice, something you enact through the music you make and the people you make it for.
+
+## Afropop Filtered Through French Melancholy
+
+The production on Ebem occupies a genuinely unusual space. There are Cameroonian rhythmic structures, makossa influence, bikutsi patterns, that have been processed through the kind of atmospheric French pop production that Yame absorbed growing up in Paris. The result does not sound like fusion, which is usually a polite word for compromise. It sounds like a native language that happens to be made of two others.
+
+On "Je Reviendrai," the guitar work is unmistakably West African in origin but the chord choices are Europop. The vocal sits between the two without apologizing for either. Yame does not explain the junction. He inhabits it.
+
+That instinct, to present rather than explain, is the defining quality of Ebem as a record. Yame is not making an album about being between cultures. He is making an album from inside that position, which is entirely different and far more valuable. The album's intelligence lies in its refusal to turn its own complexity into subject matter.
+
+The record is layered with electronic beats, textures drawn from French chanson, and African rhythmic foundations. Yame's voice, a high-pitched instrument with theatrical range, moves through this terrain with the assurance of someone who has been preparing for this record for years. The theatrical quality is not performance in the mannered sense. It is delivery, the understanding that a song is a construction that needs to be inhabited rather than simply executed.
+
+## The Voice as Instrument
+
+Yame's voice has unusual warmth in the lower registers and remarkable range at its upper limit. He uses it sparingly. On several tracks he barely pushes above a murmur, which means when he does open up, on the chorus of "Douala," on the final minute of "Mere," it lands harder than any technical display would.
+
+He has cited Stromae, Asa, and Keziah Jones as influences, and you can hear all three without any of them dominating. What Yame has taken from each is not a sound but an attitude: the willingness to be emotionally direct without being sentimental, to be personal without being confessional, to make music that is clearly rooted in a specific life without closing the door on anyone who does not share it.
+
+Asa in particular is a useful reference point because she is herself a Franco-Nigerian artist who navigated similar cultural terrain in her work. The comparison is not about influence in a direct sense but about a shared understanding of what it means to make music that is rooted in African traditions while being shaped by French cultural infrastructure. Yame knows this territory because he has lived it, and the knowing is audible in the specificity of the choices.
+
+## Why This Record Matters Now
+
+The conversation about African artists in European markets has been dominated for the past several years by Afrobeats, a genre that has proven its global reach definitively and irrefutably. Afrobeats is one sound from one part of a continent that contains multitudes. Yame is making music that draws from Central and West African traditions that rarely appear in that conversation, presented through a production sensibility shaped by Paris rather than Lagos or Accra.
+
+That is not a criticism of Afrobeats. It is an observation about what Yame is doing differently, and why Ebem deserves attention that is distinct from the Afrobeats conversation rather than adjacent to it. The makossa and bikutsi influences are not well-known to most European or North American listeners precisely because the circuits through which Central African popular music travels have been different, less connected to the infrastructure of streaming-era global pop.
+
+Yame's viral 2023 COLORS performance of "Becane" drew personal praise from Timbaland and charted across France, Belgium, and Luxembourg. He won Best Male Newcomer at the Victoires de la Musique in 2024 and the grand jury prize at the Music Moves Europe Awards in 2025. That trajectory of recognition confirms what the music itself argues: that specificity travels. The more particular you are about where you come from and what that heritage actually sounds like, the more legible you become to listeners who have no context for that heritage. The particularity is the point of connection.
+
+## What Comes Next
+
+He is twenty-six. Ebem is a debut. Both of those facts feel almost impossible given how settled and self-possessed the record sounds. The composure of a first album this assured usually signals an artist who has been making work for years before the public arrived, building something in private that only becomes visible when the conditions are right.
+
+The conditions are now right. The record places him in a lineage of francophone African artists who have expanded the vocabulary of French pop rather than simply adapting to it. That lineage has historically required patience: the music often arrives to a broad audience on a delayed timeline, the recognition coming later than the work's quality warrants. Ebem is the record that shortens that delay. Pay attention to this name.
+
+[download:/assets/images/artists/yame-ebem-2025-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yame-ebem-2025")
+PYEOF
+

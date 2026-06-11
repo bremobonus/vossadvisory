@@ -218,3 +218,51 @@ with open(path, "w") as f:
 print("Updated: yaya-bey-2023")
 PYEOF
 
+
+# ---- POST 5: yayoi-kusama-infinity-rooms-2023-2024 ----
+echo "--- Updating: yayoi-kusama-infinity-rooms-2023-2024 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yayoi-kusama-infinity-rooms-2023-2024.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[youtube:0-C69t22twQ]
+## The Tour That Will Not End
+
+Yayoi Kusama's infinity mirror rooms have been touring global institutions for years now, and the demand shows no sign of diminishing. Through 2023 and into 2024, exhibitions featuring her immersive installations continued to sell out across multiple continents, with wait times for timed entry slots stretching into months. The David Zwirner exhibition "I Spend Each Day Embracing Flowers," which ran from May through July 2023 across three connected gallery spaces in New York, was one of the largest gallery presentations of her career. It introduced a new Infinity Mirror Room called "Dreaming of Earth's Sphericity, I Would Offer My Love," which then traveled to SFMOMA for "Yayoi Kusama: Infinite Love," opening in October 2023 as the artist's first solo museum presentation in Northern California. In an art world that constantly chases the next thing, Kusama's enduring popularity is both remarkable and instructive.
+
+## The Experience Itself
+
+For those who have not yet stepped inside one, an infinity mirror room is difficult to describe adequately. The mirrored walls create the illusion of infinite space, and the carefully positioned lights or objects within that space are reflected endlessly in every direction. The visitor stands inside what looks like a boundless cosmos. The effect is immediate, visceral, and profoundly moving in a way that has nothing to do with intellectual understanding.
+
+This is the key to Kusama's mass appeal. Her installations do not require art historical knowledge or critical vocabulary to appreciate. They operate on a sensory level that is accessible to anyone who walks through the door. A five-year-old and an art history professor will have different frameworks for processing the experience, but both will feel something genuine.
+
+The rooms also achieve something technically difficult: they make the visitor's body part of the work. You are not standing in front of the art looking at it. You are inside it, reflected infinitely, dissolved into the pattern while also remaining distinct. Kusama has spoken for decades about her obsessions with dots and with the dissolution of the self into the universe, and the infinity rooms are the most complete expression of that philosophical project. The philosophical content is not separate from the sensory experience. The two arrive simultaneously.
+
+Each new room adds variables to the investigation. The 2023 "Dreaming of Earth's Sphericity" room uses natural light through colored windows in a way that earlier rooms did not, meaning the experience changes throughout the day and across seasons. Visiting at noon and visiting at dusk produces different works, in effect. That is not the product of an artist repeating herself. It is the product of someone still finding new variables in an equation they have been working on for half a century.
+
+## The Social Media Question
+
+Critics have raised the question of whether the popularity of infinity rooms is driven primarily by their Instagram-friendliness. The rooms are undeniably photogenic, and social media has certainly amplified their visibility. Dismissing the work as mere content fodder is condescending to both the artist and her audience.
+
+People photograph things that move them. The impulse to capture and share the experience of standing inside infinite reflected light is not a corruption of the artistic encounter. It is a natural extension of it. Kusama herself has spoken about wanting to dissolve the boundaries between self and universe, and the act of sharing that dissolution with others through photography is entirely consistent with her artistic philosophy.
+
+The more interesting question is what the social media attention does to the experience of the work. When you enter a Kusama room knowing that thousands of people have photographed themselves there, your experience of the room is not the same as it would have been for an earlier visitor without that context. The collective imagination of the space precedes your arrival. This is not necessarily a problem. It is a feature of how art functions in the current moment, where the conversation around a work is itself part of what the work becomes. Kusama's work, which has always been about the dissolution of boundaries between self and world, accommodates this expansion of meaning better than most art would.
+
+## An Artist Beyond Categorization
+
+Kusama, now in her nineties, continues to produce work at a pace that would exhaust artists half her age. Her studio output remains prolific, and each new exhibition demonstrates that her creative vision has not diminished. The infinity rooms are the most visible expression of a practice that spans painting, sculpture, film, and writing over seven decades.
+
+Her early career is worth recalling in this context. Kusama moved from Japan to New York in the late 1950s, placed herself at the centre of the avant-garde, created proto-performance art, and was largely written out of art history for decades while male artists who absorbed her ideas received the credit. The belated recognition that came later, the retrospectives and the museum surveys and the gallery exhibitions, restored her place in that history but also revealed how extensive the erasure had been. She continued working through all of it. The obsessive quality of her practice, the return to the same motifs across seventy years, is inseparable from her biography. The work is the record of someone who would not stop.
+
+Her continued relevance is not a fluke. It is evidence that art which connects with fundamental human experiences, the experience of smallness in relation to the universe, the desire for dissolution, the fear and attraction of infinity, transcends trends, market cycles, and critical fashion. The rooms will still be selling out when the current art world conversation has moved on from its present preoccupations entirely.
+
+[download:/assets/images/artists/yayoi-kusama-infinity-rooms-2023-2024-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yayoi-kusama-infinity-rooms-2023-2024")
+PYEOF
+

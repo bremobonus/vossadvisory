@@ -41,10 +41,9 @@ def download_img(src, dest, referer=None):
 
 dest = '/home/dh_yadmw3/artonly.io/assets/images/artists/boards-of-canada-inferno.jpg'
 
-# Try Pitchfork review
 try:
     html = fetch('https://pitchfork.com/reviews/albums/boards-of-canada-inferno/')
-    imgs = re.findall(r'(https?://media\.pitchfork\.com/photos/[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://media\.pitchfork\.com/photos/[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://pitchfork.com/')
         print('Downloaded from Pitchfork')
@@ -52,12 +51,11 @@ try:
 except Exception as e:
     print(f'Pitchfork failed: {e}')
 
-# Try Resident Advisor
 try:
     html = fetch('https://ra.co/reviews/boards-of-canada-inferno')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+(?:boards.of.canada|boc)[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\'\'<>]+(?:boards.of.canada|boc)[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if not imgs:
-        imgs = re.findall(r'(https?://ra\.co/images/[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://ra\.co/images/[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://ra.co/')
         print('Downloaded from Resident Advisor')
@@ -65,13 +63,12 @@ try:
 except Exception as e:
     print(f'Resident Advisor failed: {e}')
 
-# Try DJ Mag review
 try:
     html = fetch('https://djmag.com/reviews/boards-of-canada-inferno')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
-    imgs = [i for i in imgs if 'boards' in i.lower() or 'canada' in i.lower() or 'boc' in i.lower()]
+    imgs = re.findall(r'(https?://[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = [i for i in imgs if 'boards' in i.lower() or 'canada' in i.lower()]
     if not imgs:
-        imgs = re.findall(r'(https?://djmag\.com/[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://djmag\.com/[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://djmag.com/')
         print('Downloaded from DJ Mag')
@@ -79,36 +76,18 @@ try:
 except Exception as e:
     print(f'DJ Mag failed: {e}')
 
-# Try Consequence of Sound
 try:
     html = fetch('https://consequence.net/2026/05/boards-of-canada-release-inferno-stream/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     imgs = [i for i in imgs if 'boards' in i.lower() or 'canada' in i.lower()]
-    if not imgs:
-        imgs = re.findall(r'(https?://consequence\.net/[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://consequence.net/')
-        print('Downloaded from Consequence of Sound')
+        print('Downloaded from Consequence')
         sys.exit(0)
 except Exception as e:
-    print(f'Consequence of Sound failed: {e}')
+    print(f'Consequence failed: {e}')
 
-# Try Warp Records
-try:
-    html = fetch('https://warp.net/releases/590960-inferno/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg|webp))', html, re.IGNORECASE)
-    imgs = [i for i in imgs if 'boards' in i.lower() or 'canada' in i.lower() or 'inferno' in i.lower() or 'warp' in i.lower()]
-    if not imgs:
-        imgs = re.findall(r'(https?://[^\s\"\'<>]+warp[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
-    if imgs:
-        download_img(imgs[0], dest, referer='https://warp.net/')
-        print('Downloaded from Warp Records')
-        sys.exit(0)
-except Exception as e:
-    print(f'Warp Records failed: {e}')
-
-# Fallback: generate placeholder
-print('All image sources failed; generating ImageMagick placeholder')
+print('All sources failed; generating placeholder')
 os.system(f'convert -size 1200x800 gradient:\"#0a0a0f-#1a1a2a\" -gravity center -pointsize 52 -fill white -annotate 0 \"Boards of Canada\" {dest}')
 "
 
@@ -142,12 +121,8 @@ cat > ~/artonly.io/posts/boards-of-canada-inferno.json << 'ENDJSON'
 ENDJSON
 echo "JSON deployed: boards-of-canada-inferno.json"
 
-# Verify live
-echo "Verifying boards-of-canada-inferno..."
 STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://artonly.io/post/boards-of-canada-inferno)
 echo "HTTP status: $STATUS"
-
-# Ping IndexNow
 curl -s "https://api.indexnow.org/indexnow?url=https://artonly.io/post/boards-of-canada-inferno&key=5a4a5c1b5f124ccc9e6c4e5c5a4a5c1b"
 echo "IndexNow pinged: boards-of-canada-inferno"
 
@@ -155,7 +130,6 @@ echo "IndexNow pinged: boards-of-canada-inferno"
 # ---- POST 2: Kurt Vile - Philadelphia's Been Good to Me ----
 echo "--- Deploying: kurt-vile-philadelphias-been-good-to-me ---"
 
-# Download press photo
 python3 -c "
 import urllib.request, re, sys, os
 
@@ -185,10 +159,9 @@ def download_img(src, dest, referer=None):
 
 dest = '/home/dh_yadmw3/artonly.io/assets/images/artists/kurt-vile-philadelphias-been-good-to-me.jpg'
 
-# Try Pitchfork review
 try:
     html = fetch('https://pitchfork.com/reviews/albums/kurt-vile-philadelphias-been-good-to-me/')
-    imgs = re.findall(r'(https?://media\.pitchfork\.com/photos/[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://media\.pitchfork\.com/photos/[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://pitchfork.com/')
         print('Downloaded from Pitchfork')
@@ -196,12 +169,11 @@ try:
 except Exception as e:
     print(f'Pitchfork failed: {e}')
 
-# Try WHYY
 try:
     html = fetch('https://whyy.org/episodes/kurt-vile-philadelphias-been-good-to-me/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+(?:kurt|vile)[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\'\'<>]+(?:kurt|vile)[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if not imgs:
-        imgs = re.findall(r'(https?://whyy\.org/[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://whyy\.org/[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://whyy.org/')
         print('Downloaded from WHYY')
@@ -209,12 +181,11 @@ try:
 except Exception as e:
     print(f'WHYY failed: {e}')
 
-# Try Rolling Stone
 try:
     html = fetch('https://www.rollingstone.com/music/music-features/kurt-vile-philadelphia-new-music-interview-1235569502/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+(?:kurt|vile)[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\'\'<>]+(?:kurt|vile)[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if not imgs:
-        imgs = re.findall(r'(https?://[^\s\"\'<>]+rollingstone[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://[^\s\"\'\'<>]+rollingstone[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://www.rollingstone.com/')
         print('Downloaded from Rolling Stone')
@@ -222,24 +193,9 @@ try:
 except Exception as e:
     print(f'Rolling Stone failed: {e}')
 
-# Try Stereogum review
-try:
-    html = fetch('https://www.stereogum.com/albums/kurt-vile/philadelphias-been-good-to-me/review/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
-    imgs = [i for i in imgs if 'kurt' in i.lower() or 'vile' in i.lower() or 'philadelphia' in i.lower()]
-    if not imgs:
-        imgs = re.findall(r'(https?://[^\s\"\'<>]+stereogum[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
-    if imgs:
-        download_img(imgs[0], dest, referer='https://www.stereogum.com/')
-        print('Downloaded from Stereogum')
-        sys.exit(0)
-except Exception as e:
-    print(f'Stereogum failed: {e}')
-
-# Try AllMusic
 try:
     html = fetch('https://www.allmusic.com/album/philadelphias-been-good-to-me-mw0004794128')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\'\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     imgs = [i for i in imgs if 'kurt' in i.lower() or 'vile' in i.lower()]
     if imgs:
         download_img(imgs[0], dest, referer='https://www.allmusic.com/')
@@ -248,8 +204,7 @@ try:
 except Exception as e:
     print(f'AllMusic failed: {e}')
 
-# Fallback: generate placeholder
-print('All image sources failed; generating ImageMagick placeholder')
+print('All sources failed; generating placeholder')
 os.system(f'convert -size 1200x800 gradient:\"#0f100a-#1e2010\" -gravity center -pointsize 52 -fill white -annotate 0 \"Kurt Vile\" {dest}')
 "
 
@@ -283,12 +238,8 @@ cat > ~/artonly.io/posts/kurt-vile-philadelphias-been-good-to-me.json << 'ENDJSO
 ENDJSON
 echo "JSON deployed: kurt-vile-philadelphias-been-good-to-me.json"
 
-# Verify live
-echo "Verifying kurt-vile-philadelphias-been-good-to-me..."
 STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://artonly.io/post/kurt-vile-philadelphias-been-good-to-me)
 echo "HTTP status: $STATUS"
-
-# Ping IndexNow
 curl -s "https://api.indexnow.org/indexnow?url=https://artonly.io/post/kurt-vile-philadelphias-been-good-to-me&key=5a4a5c1b5f124ccc9e6c4e5c5a4a5c1b"
 echo "IndexNow pinged: kurt-vile-philadelphias-been-good-to-me"
 
@@ -296,7 +247,6 @@ echo "IndexNow pinged: kurt-vile-philadelphias-been-good-to-me"
 # ---- Outreach emails ----
 echo "--- Sending outreach emails ---"
 
-# Boards of Canada / Warp Records
 curl -s -X POST https://artonly.io/api/send-mail.php \
   -d "to=press@warp.net" \
   -d "subject=Your album is on ArtOnly" \
@@ -304,7 +254,6 @@ curl -s -X POST https://artonly.io/api/send-mail.php \
   -d "bcc=amosleblanc@gmail.com"
 echo "Outreach sent: press@warp.net (Boards of Canada)"
 
-# Kurt Vile / Verve Forecast
 curl -s -X POST https://artonly.io/api/send-mail.php \
   -d "to=press@verveforecast.com" \
   -d "subject=Your album is on ArtOnly" \

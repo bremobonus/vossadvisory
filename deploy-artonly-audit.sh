@@ -3,6 +3,7 @@
 # Social card audit — triggered via push to run on DreamHost via deploy-artonly.yml.
 # Audits all posts, generates missing social cards,
 # fixes Rule 5 (hero image repeated in body) and wrong-format download tags.
+# Last triggered: 2026-06-10
 
 set -e
 echo "=== ArtOnly Social Card Audit ==="
@@ -46,7 +47,6 @@ for p in sorted(glob.glob(f'{POSTS_DIR}/*.json')):
     # Rule 5: hero image must not be first [img:] in body
     img_tags = re.findall(r'\[img:([^\]]+)\]', body)
     if img_tags and img_tags[0].strip() == hero.strip():
-        # Find next unused image for this post (not the hero, not the social card)
         hero_basename = os.path.basename(hero)
         alternatives = sorted([
             f for f in os.listdir(IMAGES_DIR)
@@ -61,7 +61,6 @@ for p in sorted(glob.glob(f'{POSTS_DIR}/*.json')):
             body = body.replace(old_tag, new_tag, 1)
             print(f'  Rule5: replaced {old_tag} -> {new_tag}')
         else:
-            # No replacement available: remove the tag and extra blank line
             body = re.sub(r'\n+\[img:' + re.escape(img_tags[0]) + r'\]\n+', '\n\n', body)
             print(f'  Rule5: removed repeating hero img tag (no replacement found)')
         fixed_r5.append(slug)
@@ -93,7 +92,6 @@ for p in sorted(glob.glob(f'{POSTS_DIR}/*.json')):
             else:
                 print(f'  Fixed (card exists, download tag present)')
         else:
-            # Has tag but card file missing - regenerate
             print(f'  Card file missing; regenerating...')
             hero_path = f'{IMAGES_DIR}/{slug}.jpg'
             if not os.path.exists(hero_path):
@@ -120,7 +118,6 @@ for p in sorted(glob.glob(f'{POSTS_DIR}/*.json')):
             generated.append(slug)
             print(f'  Card regenerated: {IMAGES_DIR}/{slug}-social-9x16.jpg')
     else:
-        # Missing download tag: ensure hero exists, generate card, append tag
         hero_path = f'{IMAGES_DIR}/{slug}.jpg'
         if not os.path.exists(hero_path):
             src_path = os.path.expanduser('~/artonly.io' + hero) if hero else ''

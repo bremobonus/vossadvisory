@@ -3,8 +3,8 @@
 # Run on DreamHost server: audits all posts, generates missing social cards,
 # fixes Rule 5 (hero image repeated in body) and wrong-format download tags.
 # Usage: bash -s < social-card-audit.sh
+# Last triggered: 2026-06-09
 # Or via GitHub Actions workflow (deploy-artonly.yml), input: social-card-audit.sh
-# Last triggered: 2026-05-31
 
 set -e
 echo "=== ArtOnly Social Card Audit ==="

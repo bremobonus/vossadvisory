@@ -29,12 +29,12 @@ dest = '/home/dh_yadmw3/artonly.io/assets/images/artists/lowertown-ugly-duckling
 # Try Brooklyn Vegan article
 try:
     html = fetch('https://www.brooklynvegan.com/lowertown-announce-new-album-tour-share-i-like-you-a-lot/')
-    imgs = re.findall(r'https?://[^\s\"\'<>]*lowertown[^\s\"\'<>]*\.(jpg|jpeg)', html, re.IGNORECASE)
+    imgs = re.findall(r'https?://[^\s\"\x27<>]*lowertown[^\s\"\x27<>]*\.(jpg|jpeg)', html, re.IGNORECASE)
     if not imgs:
-        # get any large article image
-        imgs = re.findall(r'https?://[^\s\"\'<>]+media\.brooklynvegan[^\s\"\'<>]*\.(jpg|jpeg)', html, re.IGNORECASE)
+        imgs = re.findall(r'https?://[^\s\"\x27<>]+media\.brooklynvegan[^\s\"\x27<>]*\.(jpg|jpeg)', html, re.IGNORECASE)
     if imgs:
-        download_img(imgs[0][0] if isinstance(imgs[0], tuple) else imgs[0], dest)
+        url = imgs[0][0] if isinstance(imgs[0], tuple) else imgs[0]
+        download_img(url, dest)
         print('Downloaded from Brooklyn Vegan')
         sys.exit(0)
 except Exception as e:
@@ -43,9 +43,9 @@ except Exception as e:
 # Try Brooklyn Vegan 5/22 notable releases article
 try:
     html = fetch('https://www.brooklynvegan.com/notable-releases-of-the-week-5-22/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]*lowertown[^\s\"\'<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\x27<>]*lowertown[^\s\"\x27<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if not imgs:
-        imgs = re.findall(r'(https?://media\.brooklynvegan\.com/img/[^\s\"\'<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://media\.brooklynvegan\.com/img/[^\s\"\x27<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest)
         print('Downloaded from Brooklyn Vegan weekly')
@@ -53,23 +53,12 @@ try:
 except Exception as e:
     print(f'BV weekly failed: {e}')
 
-# Try Still Listening Magazine
-try:
-    html = fetch('https://www.stilllisteningmagazine.com/features/lowertown-announce-new-album-ugly-duckling-union')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg|webp))', html, re.IGNORECASE)
-    if imgs:
-        download_img(imgs[0], dest)
-        print('Downloaded from Still Listening')
-        sys.exit(0)
-except Exception as e:
-    print(f'Still Listening failed: {e}')
-
 # Fallback: album art from Bandcamp
 try:
     html = fetch('https://lowertown.bandcamp.com/album/ugly-duckling-union')
-    imgs = re.findall(r'(https?://f4\.bcbits\.com/img/[^\s\"\'<>]+\.jpg)', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://f4\.bcbits\.com/img/[^\s\"\x27<>]+\.jpg)', html, re.IGNORECASE)
     if not imgs:
-        imgs = re.findall(r'\"tralbumArt\".*?(https?://[^\s\"\'<>]+\.jpg)', html, re.IGNORECASE | re.DOTALL)
+        imgs = re.findall(r'\"tralbumArt\".*?(https?://[^\s\"\x27<>]+\.jpg)', html, re.IGNORECASE | re.DOTALL)
     if imgs:
         download_img(imgs[0], dest)
         print('Downloaded Bandcamp album art as fallback')
@@ -104,7 +93,7 @@ cat > ~/artonly.io/posts/lowertown-ugly-duckling-union.json << 'JSONEOF'
   "image": "/assets/images/artists/lowertown-ugly-duckling-union.jpg",
   "image_alt": "Lowertown press photo",
   "image_position": "center 30%",
-  "body": "[spotify:artist/1yI0RRPnOA9BFJmiZ6cEzw]\n\nThere is a specific kind of artistic statement that can only be made from inside a basement. Not the polished version of grit that gets recorded in expensive rooms designed to sound imperfect, but actual imperfection, actual rats, actual walls that breathe with the city above them. Lowertown's second album, Ugly Duckling Union, was written and recorded and produced and mixed entirely by Olivia Osby and Avsha Weinberg in Weinberg's basement in New York, and that fact is not incidental to what the album is. It is the album's first argument.\n\nOsby and Weinberg met in a high school math class in Atlanta in 2018. They were both listening to things no one around them seemed to be listening to, and the shared obsession became a friendship, and the friendship became a band. Lowertown has been building toward this record since then, through years of DIY releases and European tours and a quiet, sustained credibility that comes from never overselling what you are. They signed to Summer Shade, a boutique imprint under Run For Cover Records, and they made an album that earns the trust of everyone who has been watching.\n\nThe first track is called Mice Protection. The title is Weinberg's homage to the rats that shared the basement while the record was being made. That particular detail, a track named after the rodents in the room, tells you almost everything you need to know about Lowertown's relationship to authenticity. This is not an aesthetic choice being performed. This is an account of actual conditions.\n\n## A Story About Who Controls the Story\n\nUgly Duckling Union is a concept album, but it is a concept album in the tradition of Gorillaz and Fugazi rather than in the tradition of prog rock or stadium opera. The concept serves the music rather than demanding it. At its center is Dale, a duckling protagonist who leaves home, finds a community of misfits, and leads them in an effort to dismantle LBH, a tyrannical media corporation that profits from separating and isolating people. The story is told across twelve tracks, and it is accompanied by a playable Minecraft world, a handbook, comics drawn by Doctor Nowhere, and handmade plush dolls of the characters.\n\nThe reference to Gorillaz is one the band has made explicitly. The transmedia dimension of Gorillaz, the cartoon personas and the visual world and the way the music existed as part of a larger project rather than as the whole project, is something Lowertown has taken seriously as a model. But where Gorillaz uses the extended world to maintain a kind of mystery about its creators, Lowertown uses it to invite listeners in. The Minecraft world is not a promotion. It is a place where the community of Ugly Duckling Union can actually gather.\n\nThe Fugazi reference is subtler but more important. Fugazi built a practice of music as a collective resource rather than as a commodity. Their commitment to affordable shows, to direct distribution, to rejecting the machinery that separates artists from audiences, was not a marketing strategy. It was a philosophy. Lowertown does not have Fugazi's intensity or their politics exactly, but they have the same core instinct: that music should actually reach the people it is for, and that the structures built around music often prevent that from happening.\n\nLBH, the villain of Ugly Duckling Union, is obviously a stand-in for those structures. What makes the album's politics function is that they are not abstract. They are embodied in the duckling and his community, in the story of misfits who are better off together than apart.\n\n## What Living in the Margins Sounds Like\n\nThe music itself is what Stereogum, in naming it Album of the Week, called gnarled and heady. That is accurate. The album moves between thrashing garage rock and soothing lullaby passages without warning and without explanation, and the transitions feel like the record breathing. The production is lo-fi not because Osby and Weinberg could not afford otherwise but because the grit is load-bearing. Mice Protection opens the record with an acoustic confession. Worst Friend is abrasion and yearning in roughly equal measure. I Like You a Lot, the lead single, is the closest thing to a pop song on the record and still sounds like it was made in the same basement, with the same rats, at the same hour.\n\nPaste Magazine wrote that the album disentangles a friendship in a sprawling, concept-forward meditation on shame, blame, desire, isolation, and companionship. That is a fair description of the content. But the form matters as much as the content here. The fact that this record is self-produced is not a technical detail. It means that every sound on Ugly Duckling Union was chosen by the people who wrote the songs, that no outside process inserted itself between the feeling and the recording of the feeling. That kind of directness is increasingly rare in indie music, where the aesthetics of DIY are often purchased rather than practiced.\n\n## What the Mainstream Missed\n\nLowertown is one of the five best albums of May 22, 2026 according to NPR Music, and Stereogum gave it the week. That recognition matters not because critical attention is the point but because it confirms that the album is operating at a level where the argument it is making can actually be heard.\n\nThe argument is about what music can be when it is made without the infrastructure of the mainstream. Not smaller or quieter, not less ambitious. The Ugly Duckling Union transmedia world is more ambitious than most major label album rollouts. It is just structured differently, for a different kind of attention, for an audience that wants to be participants rather than consumers.\n\nOsby and Weinberg have the talent and the songwriting instincts to navigate the machinery of the music industry if they chose to. The fact that they do not choose to is the point. \"Ugly is not a bad term to me,\" Osby told The Needle Drop in an interview around the album. The world they built in that New York basement is ugly in the best sense, alive with friction and weirdness and the smell of whatever was growing in the walls. It is also, in twelve tracks and a Minecraft world and a handful of plush ducks, a complete argument for a different way of existing in music.\n\nSome Things Never End is the last track on Ugly Duckling Union. The title is the record's final statement. The community Dale builds in the story, the one that defeats the media corporation by refusing to be isolated, does not dissolve when the record ends. It continues, somewhere, in the Minecraft world, in the comics, in the hands of whoever bought the plush doll. Lowertown built a world in a basement. That is not nothing. That is, in fact, the whole point.\n\n[download:/assets/images/artists/lowertown-ugly-duckling-union-social-9x16.jpg|Download Social Card]"
+  "body": "[spotify:artist/1yI0RRPnOA9BFJmiZ6cEzw]\n\nThere is a specific kind of artistic statement that can only be made from inside a basement. Not the polished version of grit that gets recorded in expensive rooms designed to sound imperfect, but actual imperfection, actual rats, actual walls that breathe with the city above them. Lowertown's second album, Ugly Duckling Union, was written and recorded and produced and mixed entirely by Olivia Osby and Avsha Weinberg in Weinberg's basement in New York, and that fact is not incidental to what the album is. It is the album's first argument.\n\nOsby and Weinberg met in a high school math class in Atlanta in 2018. They were both listening to things no one around them seemed to be listening to, and the shared obsession became a friendship, and the friendship became a band. Lowertown has been building toward this record since then, through years of DIY releases and European tours and a quiet, sustained credibility that comes from never overselling what you are. They signed to Summer Shade, a boutique imprint under Run For Cover Records, and they made an album that earns the trust of everyone who has been watching.\n\nThe first track is called Mice Protection. The title is Weinberg's homage to the rats that shared the basement while the record was being made. That particular detail, a track named after the rodents in the room, tells you almost everything you need to know about Lowertown's relationship to authenticity. This is not an aesthetic choice being performed. This is an account of actual conditions.\n\n## A Story About Who Controls the Story\n\nUgly Duckling Union is a concept album, but it is a concept album in the tradition of Gorillaz and Fugazi rather than in the tradition of prog rock or stadium opera. The concept serves the music rather than demanding it. At its center is Dale, a duckling protagonist who leaves home, finds a community of misfits, and leads them in an effort to dismantle LBH, a tyrannical media corporation that profits from separating and isolating people. The story is told across twelve tracks, and it is accompanied by a playable Minecraft world, a handbook, comics drawn by Doctor Nowhere, and handmade plush dolls of the characters.\n\nThe reference to Gorillaz is one the band has made explicitly. The transmedia dimension of Gorillaz, the cartoon personas and the visual world and the way the music existed as part of a larger project rather than as the whole project, is something Lowertown has taken seriously as a model. But where Gorillaz uses the extended world to maintain a kind of mystery about its creators, Lowertown uses it to invite listeners in. The Minecraft world is not a promotion. It is a place where the community of Ugly Duckling Union can actually gather.\n\nThe Fugazi reference is subtler but more important. Fugazi built a practice of music as a collective resource rather than as a commodity. Their commitment to affordable shows, to direct distribution, to rejecting the machinery that separates artists from audiences, was not a marketing strategy. It was a philosophy. Lowertown does not have Fugazi's intensity or their politics exactly, but they have the same core instinct: that music should actually reach the people it is for, and that the structures built around music often prevent that from happening.\n\nLBH, the villain of Ugly Duckling Union, is obviously a stand-in for those structures. What makes the album's politics function is that they are not abstract. They are embodied in the duckling and his community, in the story of misfits who are better off together than apart.\n\n## What Living in the Margins Sounds Like\n\nThe music itself is what Stereogum, in naming it Album of the Week, called gnarled and heady. That is accurate. The album moves between thrashing garage rock and soothing lullaby passages without warning and without explanation, and the transitions feel like the record breathing. The production is lo-fi not because Osby and Weinberg could not afford otherwise but because the grit is load-bearing. Mice Protection opens the record with an acoustic confession. Worst Friend is abrasion and yearning in roughly equal measure. I Like You a Lot, the lead single, is the closest thing to a pop song on the record and still sounds like it was made in the same basement, with the same rats, at the same hour.\n\nPaste Magazine wrote that the album disentangles a friendship in a sprawling, concept-forward meditation on shame, blame, desire, isolation, and companionship. That is a fair description of the content. But the form matters as much as the content here. The fact that this record is self-produced is not a technical detail. It means that every sound on Ugly Duckling Union was chosen by the people who wrote the songs, that no outside process inserted itself between the feeling and the recording of the feeling. That kind of directness is increasingly rare in indie music, where the aesthetics of DIY are often purchased rather than practiced.\n\n## What the Mainstream Missed\n\nLowertown is one of the five best albums of May 22, 2026 according to NPR Music, and Stereogum gave it the week. That recognition matters not because critical attention is the point but because it confirms that the album is operating at a level where the argument it is making can actually be heard.\n\nThe argument is about what music can be when it is made without the infrastructure of the mainstream. Not smaller or quieter, not less ambitious. The Ugly Duckling Union transmedia world is more ambitious than most major label album rollouts. It is just structured differently, for a different kind of attention, for an audience that wants to be participants rather than consumers.\n\nOsby and Weinberg have the talent and the songwriting instincts to navigate the machinery of the music industry if they chose to. The fact that they do not choose to is the point. \\\"Ugly is not a bad term to me,\\\" Osby told The Needle Drop in an interview around the album. The world they built in that New York basement is ugly in the best sense, alive with friction and weirdness and the smell of whatever was growing in the walls. It is also, in twelve tracks and a Minecraft world and a handful of plush ducks, a complete argument for a different way of existing in music.\n\nSome Things Never End is the last track on Ugly Duckling Union. The title is the record's final statement. The community Dale builds in the story, the one that defeats the media corporation by refusing to be isolated, does not dissolve when the record ends. It continues, somewhere, in the Minecraft world, in the comics, in the hands of whoever bought the plush doll. Lowertown built a world in a basement. That is not nothing. That is, in fact, the whole point.\n\n[download:/assets/images/artists/lowertown-ugly-duckling-union-social-9x16.jpg|Download Social Card]"
 }
 JSONEOF
 
@@ -144,12 +133,12 @@ for year_month in ['2024/03', '2024/04', '2023/12', '2025/01']:
     except Exception as e:
         print(f'G-A-Y Heaven {year_month} failed: {e}')
 
-# Try Shore Fire Media press releases page for downloadable photo
+# Try Shore Fire Media
 try:
     html = fetch('https://shorefire.com/roster/releases/16540')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]*balming.?tiger[^\s\"\'<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\x27<>]*balming.?tiger[^\s\"\x27<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if not imgs:
-        imgs = re.findall(r'(https?://shorefire\.com/wp-content/uploads/[^\s\"\'<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://shorefire\.com/wp-content/uploads/[^\s\"\x27<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, 'https://shorefire.com/')
         print('Downloaded from Shore Fire Media')
@@ -157,12 +146,10 @@ try:
 except Exception as e:
     print(f'Shore Fire failed: {e}')
 
-# Try their official site
+# Try official site
 try:
     html = fetch('https://balmingtiger.com/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+(?:press|photo|artist|members)[^\s\"\'<>]*\.(?:jpg|jpeg|webp|png))', html, re.IGNORECASE)
-    if not imgs:
-        imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, 'https://balmingtiger.com/')
         print('Downloaded from official site')
@@ -170,24 +157,10 @@ try:
 except Exception as e:
     print(f'Official site failed: {e}')
 
-# Try Clash Magazine article
-try:
-    html = fetch('https://www.clashmusic.com/news/balming-tiger-confirm-new-album-gongbu/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]*(?:cdn|media|images)\.clashmusic[^\s\"\'<>]*\.(?:jpg|jpeg))', html, re.IGNORECASE)
-    if not imgs:
-        imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
-        imgs = [i for i in imgs if 'balming' in i.lower() or 'tiger' in i.lower() or 'clash' in i.lower()]
-    if imgs:
-        download_img(imgs[0], dest, 'https://www.clashmusic.com/')
-        print('Downloaded from Clash Magazine')
-        sys.exit(0)
-except Exception as e:
-    print(f'Clash failed: {e}')
-
-# Fallback: album art from Bandcamp page
+# Fallback: album art from Bandcamp
 try:
     html = fetch('https://balmingtiger.bandcamp.com/')
-    imgs = re.findall(r'(https?://f4\.bcbits\.com/img/[^\s\"\'<>]+\.jpg)', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://f4\.bcbits\.com/img/[^\s\"\x27<>]+\.jpg)', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest)
         print('Downloaded Bandcamp fallback')

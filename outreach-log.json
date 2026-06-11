@@ -107,6 +107,51 @@
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r4938862354011839529",
       "status": "drafted"
+    },
+    {
+      "slug": "future-islands-from-a-hole-in-the-floor",
+      "artist": "Future Islands",
+      "email": "mediaenquiries@4ad.com",
+      "contact_type": "label_4ad_media_enquiries",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r5576446822189950609",
+      "status": "drafted"
+    },
+    {
+      "slug": "kurt-vile-philadelphias-been-good-to-me",
+      "artist": "Kurt Vile",
+      "email": "info@anothermgmtco.com",
+      "contact_type": "management_another_management_company",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-2754991000569296163",
+      "status": "drafted"
+    },
+    {
+      "slug": "lowertown-ugly-duckling-union",
+      "artist": "Lowertown",
+      "email": "resnik.jackie@gmail.com",
+      "contact_type": "management_jackie_resnik",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-6880020365084578962",
+      "status": "drafted"
+    },
+    {
+      "slug": "vince-staples-cry-baby",
+      "artist": "Vince Staples",
+      "email": "carla@lomavistarecordings.com",
+      "contact_type": "label_loma_vista_press",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r7492716559331230289",
+      "status": "drafted"
+    },
+    {
+      "slug": "jalen-ngonda-doctrine-of-love",
+      "artist": "Jalen Ngonda",
+      "email": "info@daptonerecords.com",
+      "contact_type": "label_daptone_records",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-544253373339923642",
+      "status": "drafted"
     }
   ]
 }

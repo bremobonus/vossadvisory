@@ -50,10 +50,10 @@ dest = '/home/dh_yadmw3/artonly.io/assets/images/artists/jalen-ngonda-doctrine-o
 # Try Soulbounce announcement
 try:
     html = fetch('https://soulbounce.com/2026/03/jalen-ngonda-doctrine-of-love-audio-album-announcement/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     imgs = [i for i in imgs if 'ngonda' in i.lower() or 'jalen' in i.lower() or 'soulbounce' in i.lower()]
     if not imgs:
-        imgs = re.findall(r'(https?://[^\s\"\'<>]+soulbounce[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://[^\s\"\x27<>]+soulbounce[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://soulbounce.com/')
         print('Downloaded from Soulbounce')
@@ -64,10 +64,10 @@ except Exception as e:
 # Try The Line of Best Fit
 try:
     html = fetch('https://www.thelineofbestfit.com/news/jalen-ngonda-announces-second-album-doctrine-of-love')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     imgs = [i for i in imgs if 'ngonda' in i.lower() or 'jalen' in i.lower()]
     if not imgs:
-        imgs = re.findall(r'(https?://[^\s\"\'<>]+lineofbestfit[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://[^\s\"\x27<>]+lineofbestfit[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://www.thelineofbestfit.com/')
         print('Downloaded from The Line of Best Fit')
@@ -78,10 +78,10 @@ except Exception as e:
 # Try Consequence announcement
 try:
     html = fetch('https://consequence.net/2026/03/jalen-ngonda-doctrine-of-love-new-album-title-track-stream/')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     imgs = [i for i in imgs if 'ngonda' in i.lower() or 'jalen' in i.lower()]
     if not imgs:
-        imgs = re.findall(r'(https?://consequence\.net/[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+        imgs = re.findall(r'(https?://consequence\.net/[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://consequence.net/')
         print('Downloaded from Consequence of Sound')
@@ -92,7 +92,7 @@ except Exception as e:
 # Try Pitchfork review
 try:
     html = fetch('https://pitchfork.com/reviews/albums/jalen-ngonda-doctrine-of-love/')
-    imgs = re.findall(r'(https?://media\.pitchfork\.com/photos/[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://media\.pitchfork\.com/photos/[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     if imgs:
         download_img(imgs[0], dest, referer='https://pitchfork.com/')
         print('Downloaded from Pitchfork')
@@ -103,7 +103,7 @@ except Exception as e:
 # Try DIY Magazine
 try:
     html = fetch('https://diymag.com/interview/jalen-ngonda-come-around-and-love-me-september-2023')
-    imgs = re.findall(r'(https?://[^\s\"\'<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
+    imgs = re.findall(r'(https?://[^\s\"\x27<>]+\.(?:jpg|jpeg))', html, re.IGNORECASE)
     imgs = [i for i in imgs if 'ngonda' in i.lower() or 'jalen' in i.lower() or 'diymag' in i.lower()]
     if imgs:
         download_img(imgs[0], dest, referer='https://diymag.com/')

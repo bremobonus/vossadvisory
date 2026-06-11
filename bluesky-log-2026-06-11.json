@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-11",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED_NO_SSH",
+  "reason": "SSH port 22/2222/2200/8022 all timeout from remote agent environment",
+  "bluesky_handle": "artonly.bsky.social",
+  "bluesky_did": "did:plc:4666lyeouf2kdo3s6bvkhtmn",
+  "bluesky_creds_status": "CANNOT_VERIFY (SSH blocked)",
+  "articles_ready": [
+    {
+      "slug": "vince-staples-cry-baby",
+      "title": "Vince Staples Picks Up the Guitar and Starts Exactly the Conversation This Country Needed",
+      "url": "https://artonly.io/post/vince-staples-cry-baby",
+      "post_text": "Vince Staples Picks Up the Guitar and Starts Exactly the Conversation This Country Needed",
+      "hashtags": "#NewMusic #HipHop",
+      "status": "PENDING_CREDENTIALS"
+    },
+    {
+      "slug": "jalen-ngonda-doctrine-of-love",
+      "title": "Jalen Ngonda Builds a Doctrine Worth Believing On His Tender Sophomore Record",
+      "url": "https://artonly.io/post/jalen-ngonda-doctrine-of-love",
+      "post_text": "Jalen Ngonda Builds a Doctrine Worth Believing On His Tender Sophomore Record",
+      "hashtags": "#NewMusic #IndieMusic",
+      "status": "PENDING_CREDENTIALS"
+    }
+  ],
+  "action_taken": "Draft email created for amosleblanc@gmail.com requesting app password"
+}

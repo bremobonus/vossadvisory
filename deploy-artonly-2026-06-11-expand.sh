@@ -266,3 +266,158 @@ with open(path, "w") as f:
 print("Updated: yayoi-kusama-infinity-rooms-2023-2024")
 PYEOF
 
+
+# ---- POST 6: ye-sofi-bully-2026 ----
+echo "--- Updating: ye-sofi-bully-2026 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/ye-sofi-bully-2026.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:album/5poA9SAx0Xiz1cf17fWBLS]
+
+There is a scene that keeps circulating from SoFi Stadium this week: a figure standing alone on top of a massive rotating globe, smoke pouring around him, 80,000 people screaming below. It is the kind of image that is either grandiose to the point of self-parody, or so audacious it crosses back into genius. With Ye, it has always been both, and that is exactly the point.
+
+On April 1 and April 3, 2026, Kanye West performed two sold-out shows at SoFi Stadium in Inglewood. Combined, they grossed a reported $33 million, setting a record for the venue and landing among the highest-grossing single concert events in live music history. The Friday night show alone pulled over $18 million. For an artist who has spent the better part of three years being cut from rosters, dropped by labels, stripped of partnerships, and publicly exiled from the mainstream music industry, those numbers are not just impressive. They are a rupture in how we think about power in this business.
+
+## The Industry Wrote Him Off. The Fans Did Not.
+
+The context matters. In the years leading up to these shows, Ye lost virtually everything the traditional music industry had granted him. Adidas terminated their decade-long partnership following his antisemitic public statements, costing him an estimated $1.5 billion in net worth overnight. Gap ended their collaboration. Talent agencies dropped him. Radio stations pulled his records. Major institutions put distance between themselves and his name. By every conventional metric, the gatekeepers had closed the gates.
+
+Two nights, $33 million, sold out.
+
+That math does not work by the old logic. Under the old logic, you needed brand backing, industry infrastructure, radio support, and a clean public image to fill a stadium. Ye proved none of that is actually required when the body of work is strong enough and the fanbase is deep enough. It is uncomfortable for a lot of people to sit with, and it should prompt a more honest conversation about where actual cultural leverage lives. The discomfort does not resolve the question. It is the question.
+
+The audience's relationship to this work is not unconditional. It is conditional on something other than institutional approval. The people who showed up to SoFi Stadium did so because they have a direct relationship with music that has mattered to them across twenty years: from "College Dropout" through "Graduation" through "My Beautiful Dark Twisted Fantasy" through "Yeezus" and forward. That relationship does not disappear because of press releases and contract terminations. It resides in a different place entirely.
+
+## What Happened on That Stage
+
+[youtube:k9XpmiAdWdQ]
+
+The set itself was 44 songs across two hours. Not a greatest hits victory lap, a statement. He opened with material from *Bully*, his new album that debuted at No. 2 on the Billboard 200 with 98 million streams in its first week, then spiraled through 20 years of catalog: "Can't Tell Me Nothing," "Power," "Blood on the Leaves," "Heartless," "Runaway." The hits hit harder in a stadium of 80,000 people who have carried them for a decade.
+
+The guests were a flex in their own right. Lauryn Hill joined for a performance of "All Falls Down" and stayed to deliver "Doo Wop (That Thing)" into "Believe What I Say," one of the most genuinely moving moments in recent live music memory. Travis Scott came out for "Father," the lead Bully single, and the crowd lost their minds. CeeLo Green performed the title track. North West, twelve years old, rapped "Talking" and "Piercing on My Hand" on the same stage as her father, and held it down.
+
+The globe stage deserves its own paragraph. Designed to rotate slowly and shift between projections, a bare moon, the spinning Earth, a smoke-emitting orb, it was not just a set piece. It was a declaration. The man the industry tried to shrink to nothing built a world and put himself on top of it. The visual language of the stage design is entirely consistent with twenty years of work that has always treated scale as an argument: the argument that this music and this artist are operating at a level that makes conventional modesty dishonest.
+
+## The Larger Question
+
+What this run of shows proves is not that controversy has no consequences. Ye's UK ban and the collapse of the Wireless Festival headlining slot make clear there are still real walls. What it proves is that the grip labels and brand partners once had over an artist's entire livelihood was always more conditional than they let on. When the audience relationship is direct enough, deep enough, and old enough, no intermediary controls the outcome.
+
+The economics of this independence are stark. No label taking a cut of recordings. No brand partner extracting a percentage of the Ye name's commercial value. The $33 million flows differently than it would inside a major label system, and that difference is what makes the numbers so significant as a demonstration of principle. Independent touring at this scale is not available to most artists. The precondition is having built an audience over twenty years of releasing records that people cared about enough to carry with them. Ye has that audience. The shows at SoFi were the demonstration of what that audience is worth when the intermediaries are removed.
+
+The tour continues through Europe and beyond. The album is out. The world keeps spinning.
+
+And Ye keeps standing on top of it.
+
+[download:/assets/images/artists/ye-sofi-bully-2026-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: ye-sofi-bully-2026")
+PYEOF
+
+
+# ---- POST 7: yeule-softscars-2023 ----
+echo "--- Updating: yeule-softscars-2023 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yeule-softscars-2023.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:artist/1WZarnZpWEv7dDtjAETt4X]
+
+## Reception Problems
+
+I have tried to play Yeule's music for people who do not already know it and watched their faces do something complicated, a flicker of confusion, maybe discomfort, occasionally a kind of bewilderment that tips into curiosity. It does not land the same way for everyone. Softscars, her third record and probably her most direct, still requires something from the listener that not everyone wants to give.
+
+Yeule, Nat Cmiel, based in London and originally from Singapore, makes music somewhere between shoegaze, hyperpop, and something that does not have a name yet. Her vocals are processed and layered until they become more texture than voice, but the emotional content is never obscured. If anything the processing intensifies it, makes the vulnerability of the lyrics feel more exposed rather than protected. That is a counterintuitive move and it works completely.
+
+Softscars is her hardest record. Not hard as in difficult, though it is that, but hard as in aggressive, distorted, willing to be abrasive in service of something. There are guitars here that sound like something collapsing. The title track is one of the more emotionally overwhelming things I heard all year: a song about self-harm and recovery that does not make either comfortable, that holds both the damage and the survival without resolving them neatly into lesson or warning.
+
+## The Question of Sincerity
+
+Something has happened in indie music over the past few years where sincerity has become aesthetically complicated. Expressing real emotion directly risks feeling naive or uncool. Ironic distance has calcified into a default mode. Yeule is doing something that cuts directly against this. The emotional stakes on Softscars are real and visible and sometimes almost unbearably so.
+
+The line between confession and performance in this music is worth thinking about. The aesthetic elements, the processed vocals, the distortion, the visual world she has built around the record, do not insulate the personal content. They make it more present. There is a Japanese concept, mono no aware, sometimes translated as the pathos of things, a sensitivity to impermanence tinged with both sadness and appreciation. Yeule's music carries that quality. The beauty and the damage are inseparable.
+
+The production on Softscars involves contributions from various collaborators but Yeule's fingerprints are everywhere. The record sounds expensive in its ambition but not slick. It has a rawness that survives all the layers, an essential quality that the production serves rather than obscures. That is a delicate balance and it holds throughout.
+
+## What the Record Is Actually Doing
+
+Softscars was recorded at a period when Yeule was processing significant personal difficulty, including experiences with illness that she has discussed in interviews with precision and care. The album's emotional texture reflects that. It is not a record about suffering in an abstract sense. It is a record about specific kinds of damage and specific kinds of survival, and the specificity is what gives it its force.
+
+The track sequencing is not arbitrary. The album opens with relative accessibility and moves progressively into more difficult territory, so that by the time you reach the most demanding material you have been prepared for it, not by reassurance but by accumulation. You have been shown what the record is capable of before it asks you to receive its most serious content. This is compositional intelligence applied to emotional experience, and it is what distinguishes Softscars from records that are merely confrontational without purpose.
+
+The shoegaze influence is real but the comparison only goes so far. Classic shoegaze used sonic density as a form of protection, wrapping feeling in noise in a way that made the vulnerability deniable. Yeule uses sonic density as amplification. The noise makes the feeling louder rather than safer. The effect is the opposite of a protective wall, and the courage required to make that choice is not incidental to the record's quality. It is the source of it.
+
+## Who This Is For
+
+There is a specificity to Softscars that suggests a particular listener, someone who has spent time in their own head in ways that are not always comfortable, who recognises something in the texture of the music before processing the lyrics. Yeule has spoken about her own experiences with illness and mental health in ways that are careful and precise, not performing damage but not hiding it either. The music reflects that precision. It knows exactly what it is doing with the most difficult material. Nothing here is gratuitous.
+
+I find myself returning to this record in late evenings when the light has gone and the city has gone quiet. It fits that specific time in a way I cannot fully explain, something about the frequency, the way the sound moves between soft and harsh, the way Yeule's voice sits in the mix like something overheard rather than performed. There is a privacy to it that is genuinely comforting even when the content is anything but comfortable.
+
+Softscars is not an album I recommend casually. It requires something, it costs something, it gives back in ways that are not immediately comfortable. This profile of experience is exactly what distinguishes art from entertainment, and I am not using those terms pejoratively. Entertainment is valuable. Pleasure is valuable. Softscars is doing something else, something that requires the kind of engagement you give to things that matter.
+
+Certain people will find it. The frequency is specific. If you are one of those people, you will know within the first few minutes. I knew immediately. I have been returning ever since.
+
+[download:/assets/images/artists/yeule-softscars-2023-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yeule-softscars-2023")
+PYEOF
+
+
+# ---- POST 8: yu-su-2024 ----
+echo "--- Updating: yu-su-2024 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yu-su-2024.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:artist/69zPIMRgsZieOHFtHtvnj0]
+
+Yu Su makes music the way certain novelists write sentences, each element considered for its specific contribution to the whole, nothing decorative, nothing wasted, the form serving the meaning without announcing itself as form. I have been listening to her work across a year now and every listen reveals something I missed before, some production choice or harmonic decision or rhythmic nuance that was there all along but that I did not have the attention to receive yet. That quality of depth that reveals itself incrementally is one of the markers of music that is genuinely well-made, as opposed to music that is well-produced, which is a different thing and a less interesting one.
+
+She is based in Vancouver, originally from China, and her music carries both of those geographical contexts in ways that are not surface-level. The influence of Chinese musical tradition is not in the instrumentation or the scale choices in the way that "world music" fusion often works, a flute here, a pentatonic run there, but in something more fundamental, something about the relationship between sound and silence, between the music and the space it occupies. There is a patience in her work that I associate with certain East Asian aesthetic traditions, the understanding that what you withhold can be as meaningful as what you include.
+
+The electronic music context she operates in, the Vancouver and Montreal scenes, the overlapping circles of producers and DJs and label people, gives her work a contemporary legibility, a sense of being in conversation with the current moment. The current moment alone does not explain the depth. The depth comes from somewhere else.
+
+## The Dance Floor as Contemplative Space
+
+This is a strange thing to claim, because dance floors are by conventional understanding the opposite of contemplative. They are physical, communal, extroverted. But the best dance music, the music that functions at the highest level in those spaces, creates a particular kind of collective contemplation, bodies moving together in response to something that is also addressing something interior. Yu Su understands this. Her DJ sets, which I have listened to in recorded form and heard described by people who have experienced them in rooms, operate at this level. The music does not tell you how to feel. It creates the conditions for feeling.
+
+Her 2020 debut album *Yellow River Blue*, released on Technicolour, established this approach formally. The record moves between ambient electronic passages and club-oriented material with a fluency that declines to separate contemplation from movement. The title announces the dual geography that her music inhabits without making that duality into an explicit subject. The Yellow River is a specific place. Blue is a mood, a register, an emotional frequency. Together they describe something about where the music comes from and what it is trying to do, without reducing either to the other.
+
+The production on her records has a similar quality to the DJ sets. You are not being told where the emotion is. You are being given an environment in which emotion can arise, on your own terms, from your own interior. This is a very different project from most music, which is much more directive about the emotional experience it is offering. Most music hands you the feeling pre-packaged. Yu Su gives you the space to find it yourself.
+
+## The Work of Restraint
+
+Restraint in music is often misread as coldness. Yu Su's work demonstrates that restraint is a form of trust, trust that the listener has the capacity to complete what the artist begins, to bring something of their own to what the music offers. The space in her tracks is not emptiness. It is invitation.
+
+This extends to the harmonic choices. She does not resolve tension at the moments when resolution would be easiest and most expected. She holds the unresolved chord, lets it breathe, gives it room to develop its own complexity before deciding what it wants to do next. This produces a particular quality of listening attention, an alertness to what might change, a presence in the moment that more resolved music does not demand.
+
+The relationship to Chinese classical music in her work is worth understanding on its own terms rather than as simply an "influence." Certain formal properties of that tradition, including an approach to time that is less metronomic and more fluid, a tolerance for sustained ambiguity in harmonic language, an aesthetic of restraint that treats absence as productive rather than deficient, are structural presences in how Yu Su makes music, not ornamental additions to an otherwise Western electronic framework.
+
+## On Making Music on Your Own Terms
+
+The phrase "on her own terms" is doing real work. The music industry, even the independent and underground parts of it, has expectations about what artists should do: the release cycle, the promotional activity, the genre legibility that makes you recommendable to algorithms and playlist curators. Yu Su navigates this infrastructure with a clarity about what she will and will not compromise that produces music recognisably her own rather than shaped by external demands.
+
+There is a self-possession in her work, a quality of knowing what it is and being willing to be exactly that, that is rarer than it should be and more valuable than it is given credit for being. Music made freely sounds different from music made under constraint. The autonomy is audible.
+
+I keep coming back to her records late in the evening, when my own demands on the day have relaxed enough to listen properly. They reward that attention every time. The most honest thing I can say is that her music has changed my relationship with what I expect from electronic music, widened it, made it more patient, more willing to sit with something before demanding it give me what I think I want. Yu Su made me a better listener for her work, and for that I am grateful in the specific and lasting way you are grateful for things that change your capacity rather than just your mood.
+
+[download:/assets/images/artists/yu-su-2024-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yu-su-2024")
+PYEOF
+

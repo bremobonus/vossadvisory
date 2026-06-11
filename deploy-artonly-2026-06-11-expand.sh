@@ -169,3 +169,52 @@ with open(path, "w") as f:
 print("Updated: yame-ebem-2025")
 PYEOF
 
+
+# ---- POST 4: yaya-bey-2023 ----
+echo "--- Updating: yaya-bey-2023 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yaya-bey-2023.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:artist/6tpaMMCs8X6o8j9H5OmWmT]
+
+R&B as a genre has a complicated relationship with its own interior life. The expectation, the structural demand, is emotion, vulnerability, the laying bare of feeling. But the form that emotion can take, the range of things that can be said and how they can be said, is more constrained than it looks from the outside. Yaya Bey is pushing against those constraints in ways that are quiet rather than loud, incremental rather than revolutionary, and consequently more interesting than a lot of music that announces its radicalism more explicitly.
+
+*Remember Your North Star* was the record that brought her to the attention of people who were not already paying close attention. Released in June 2022 on Big Dada, the eighteen-track album moves through jazz, R&B, soul, and reggae with a fluency that suggests someone who has absorbed a great deal of music and decided not to pick a lane. What she does with lineage is particular. She is clearly steeped in classic soul and neo-soul. There are moments in her music where I hear Erykah Badu, or Nina Simone, or something even older, the gospel roots that run under all of this, and she uses that lineage not as a costume but as a foundation, something she has built on and is now building away from.
+
+## The Specificity of Grief
+
+There is a specificity to Yaya Bey's emotional world that I find rare and valuable. She is writing about family, about her father, about inheritance in the most literal and most complicated sense, about what it means to love someone who did not give you what you needed and to try to understand why and to carry that understanding into your own adult life. This is not generic heartbreak material. It is the kind of thing that takes time to arrive at, that requires real reckoning with real experience.
+
+The album examines romantic turbulence, female empowerment, fraught parental relationships, and the ongoing work of self-definition. These themes are not arranged as a therapy narrative. They are distributed across the record in the way that actual consciousness distributes them, circling back, contradicting, finding new angles on the same material. The non-linear structure is itself a formal argument about how we actually process things that have wounded us.
+
+The production serves this emotional specificity without overwhelming it. Things are stripped back when they need to be stripped back. The arrangements breathe. Bey's voice, which has this quality of stated plainness, she rarely overperforms, rarely reaches for the note that would demonstrate range at the expense of meaning, sits in the middle of the sound without fighting it, without the kind of vocal theatrics that R&B has sometimes used to substitute for depth.
+
+Tracks like "keisha" and "big daddy ya" demonstrate the range she operates across without losing the sense of a unified artistic perspective. "keisha" is sparse and conversational. "big daddy ya" is more layered, more rhythmically complex. The same writer inhabits both without strain. That range, the ability to move between formal registers while remaining recognisably yourself, is harder to achieve than it looks.
+
+## On Inheritance and Making Something New
+
+Inheritance is a complicated thing in music, as in life. You receive something from those who came before, their methods, their vocabulary, their emotional wisdom, sometimes their actual recordings, and you have to decide what to do with it. You can honour it by repetition, which is preservation but not creation. You can reject it, which is freedom but also a kind of loss. Or you can do the third thing, the difficult thing, which is to absorb it so completely that it becomes part of how you think rather than what you think about, and then make something that could not exist without that absorption but also could not exist if you had not brought yourself entirely to the work.
+
+Bey is doing the third thing. You can hear the lineage in her music and you can hear where it becomes something that belongs entirely to her. That transition, the point where the inheritance becomes the artist's own voice, is the most interesting moment in any career, and Bey is in the middle of it in a way that feels genuinely exciting to follow.
+
+The collaborators on *Remember Your North Star* include producer Aja Grant of Phony Ppl and DJ Nativesun. The range of production across eighteen tracks means that the album never settles into a single sonic register. The variety is not restlessness. It is evidence that Bey is interested in what different sonic environments do to the same emotional content. Grief sounds different over a spare jazz arrangement than it does over a more textured production. She uses both because they reveal different dimensions of the same experience.
+
+## What Specificity Does
+
+I have been pressing her records on people who say they do not really listen to R&B, and I have been watching them listen more carefully than they expected to. That is what specificity does. It cuts through the category resistance. It makes you feel like someone is talking to you, not to a demographic. You cannot dismiss someone who is being that precise about something that actually happened.
+
+The specificity is what stays with me after the record ends. Not a mood, not an atmosphere, not a general sense of having been in the presence of something good. Specific moments: a specific lyric, a specific note held a specific way, a specific arrangement choice that opens something up. Yaya Bey makes music full of specific moments. I keep finding new ones each time I return.
+
+The writing, the lyrics specifically, is what I would point anyone toward first, because it is where the specificity lives most vividly. Bey writes from the inside of experience rather than the outside, from within the feeling rather than looking back at it from a safe distance. The inside view is harder to sustain and more valuable to receive. It is what makes her records feel like accompaniment rather than commentary. She is in it with you. That company is worth seeking out and keeping.
+
+[download:/assets/images/artists/yaya-bey-2023-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yaya-bey-2023")
+PYEOF
+

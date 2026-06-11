@@ -105,6 +105,8 @@ What she is declaring is that the gap between cultures is not a problem to be so
 
 That is worth paying attention to for a long time.
 
+The broader implication of her work is one that gets discussed less than the bilingual angle but is equally significant: what happens when someone trained in a music that was always peripheral to the dominant conversations in dance music takes that peripheral position as a starting point rather than a limitation. Yaeji has never tried to make music that sounds like it belongs in a specific critical conversation. The music belongs to itself, which is why it travels in the way it does, through communities that recognise something real in it rather than through institutional channels that validate the recognisable.
+
 [download:/assets/images/artists/yaeji-dancing-in-both-languages-social-9x16.jpg|Download Social Card]"""
 
 with open(path, "w") as f:
@@ -161,6 +163,8 @@ Yame's viral 2023 COLORS performance of "Becane" drew personal praise from Timba
 He is twenty-six. Ebem is a debut. Both of those facts feel almost impossible given how settled and self-possessed the record sounds. The composure of a first album this assured usually signals an artist who has been making work for years before the public arrived, building something in private that only becomes visible when the conditions are right.
 
 The conditions are now right. The record places him in a lineage of francophone African artists who have expanded the vocabulary of French pop rather than simply adapting to it. That lineage has historically required patience: the music often arrives to a broad audience on a delayed timeline, the recognition coming later than the work's quality warrants. Ebem is the record that shortens that delay. Pay attention to this name.
+
+The critical reception of the album confirmed what the streaming numbers had already suggested: this is music that connects with people who are not already familiar with the specific traditions it draws from. That cross-cultural legibility without dilution is the hardest thing to achieve, and Yame achieves it by never simplifying the music to make it accessible. He trusts the specificity to do the work, and it does. The debut of a record this assured from an artist this young is a demonstration that the patience the music asks for is available on both sides of the exchange.
 
 [download:/assets/images/artists/yame-ebem-2025-social-9x16.jpg|Download Social Card]"""
 
@@ -259,6 +263,8 @@ Her early career is worth recalling in this context. Kusama moved from Japan to 
 
 Her continued relevance is not a fluke. It is evidence that art which connects with fundamental human experiences, the experience of smallness in relation to the universe, the desire for dissolution, the fear and attraction of infinity, transcends trends, market cycles, and critical fashion. The rooms will still be selling out when the current art world conversation has moved on from its present preoccupations entirely.
 
+The commercial infrastructure around her work is worth acknowledging directly. The timed-entry tickets, the branded merchandise, the queue management systems that have become standard at her exhibitions, represent a significant industry built around encounters with these rooms. One response to this infrastructure is suspicion about whether the art is being experienced or consumed. A more honest response is that Kusama has always been interested in scale and visibility, in the political act of making certain kinds of beauty available to large numbers of people, and the institutional apparatus that makes that happen is not incidental to the project. The crowd is part of what the room means. The fact that someone photographs their experience and shares it changes the room into something slightly different, which is entirely consistent with an art practice built around the dissolution of boundaries between self and world.
+
 [download:/assets/images/artists/yayoi-kusama-infinity-rooms-2023-2024-social-9x16.jpg|Download Social Card]"""
 
 with open(path, "w") as f:
@@ -312,6 +318,8 @@ The tour continues through Europe and beyond. The album is out. The world keeps 
 
 And Ye keeps standing on top of it.
 
+The Bully album itself deserves discussion separate from the spectacle of the shows. It debuted without a single appearance on traditional radio and without a major label structure behind it. The album is confrontational in ways that reward close attention: Ye is not in retreat or rehabilitation mode on this record. He is making music from exactly the position he occupies, which is a position of genuine cultural power operating outside conventional institutional structures. That tension, the power without the sanction, is the album as much as its circumstance. The music and the situation it was made in are the same argument, which is a level of coherence that most careers never achieve.
+
 [download:/assets/images/artists/ye-sofi-bully-2026-social-9x16.jpg|Download Social Card]"""
 
 with open(path, "w") as f:
@@ -364,6 +372,8 @@ I find myself returning to this record in late evenings when the light has gone 
 Softscars is not an album I recommend casually. It requires something, it costs something, it gives back in ways that are not immediately comfortable. This profile of experience is exactly what distinguishes art from entertainment, and I am not using those terms pejoratively. Entertainment is valuable. Pleasure is valuable. Softscars is doing something else, something that requires the kind of engagement you give to things that matter.
 
 Certain people will find it. The frequency is specific. If you are one of those people, you will know within the first few minutes. I knew immediately. I have been returning ever since.
+
+The record also demonstrates something important about the relationship between the underground and the mainstream in contemporary music. Softscars received significant critical attention from publications that cover both experimental and mainstream music, because the work is too specific to ignore even for critics whose usual frame is more commercial. The emotional precision of the record cuts through genre expectations in a way that demands engagement. You may not know what to call it, but you know what it is doing to you while you listen. That is a rarer achievement than good musicianship or technical proficiency, and it is the thing that makes Softscars matter beyond the communities that already understood Yeule's work.
 
 [download:/assets/images/artists/yeule-softscars-2023-social-9x16.jpg|Download Social Card]"""
 
@@ -461,6 +471,8 @@ The best argument for Yussef Dayes is Yussef Dayes. Play the records. Watch the 
 
 The vocabulary keeps expanding. Each record adds new words to the language he is building. Each live show adds new dimensions to the language the records captured. Following Yussef Dayes is the experience of watching a musical language develop in real time, which is one of the most exciting things available to a listener. I intend to keep following for as long as the language keeps developing. Which I suspect is a very long time.
 
+The relationship between the live show and the recorded work in Dayes's practice is worth understanding as a philosophical position rather than just a practical one. Some artists record in order to preserve what happens live. Dayes records in order to document one configuration of musical possibilities, knowing that the live show will produce different configurations of the same possibilities. The record is not the definitive version. It is one version, valuable as documentation but not as completion. This position places him in a long tradition of jazz musicians for whom the recording is a snapshot rather than an endpoint, and it changes how you listen to everything he releases.
+
 [download:/assets/images/artists/yussef-dayes-2023-social-9x16.jpg|Download Social Card]"""
 
 with open(path, "w") as f:
@@ -468,3 +480,111 @@ with open(path, "w") as f:
 print("Updated: yussef-dayes-2023")
 PYEOF
 
+
+# ---- POST 10: yves-tumor-heaven-2022 ----
+echo "--- Updating: yves-tumor-heaven-2022 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yves-tumor-heaven-2022.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:artist/0qu422H5MOoQxGjd4IzHbS]
+
+## The Specific Sensation
+
+There is a physical experience I associate with Heaven to a Tortured Mind, not a metaphor but an actual sensation, something in the chest and solar plexus, a feeling of rapid descent followed by an involuntary catch. Like a dream-fall. Like the moment before you step off a curb you did not see. Yves Tumor makes music that operates on the body before it operates on the mind, and this album is the most extreme version of that so far.
+
+Yves Tumor, an American artist based in Europe whose gender presentation and personal information are deliberately ambiguous and always evolving, has been making music that resists categorization since at least 2016. The journey from the noise-textured early work through *Safe in the Hands of Love* and then to *Heaven to a Tortured Mind* describes an arc toward something that sounds almost like rock music but has been through so many other things on the way that it emerges transformed.
+
+*Heaven to a Tortured Mind* came out in April 2020 on Warp Records to widespread critical acclaim, earning a Metacritic score of 88 and landing on numerous year-end lists as one of the defining records of that year. I was still inside it in 2022, still finding corners I had not fully explored. That is the kind of record it is. It uses the grammar of 1970s glam and soul, the guitar tones, the call-and-response, the kind of dramatic orchestration that sounds like curtains being drawn, but the context is entirely different, the emotional content more complicated, the sonic palette saturated to the point of distortion.
+
+## What Excess Reveals
+
+This is an album that understands excess as a tool. The production is too much in exactly the right ways, too compressed, too dramatic, too willing to push guitar tones into feedback and let them stay there. It has been said that this is Yves Tumor's rock record, but that framing undersells how alien it sounds. It is rock the way a memory of rock filtered through forty years of subsequent music sounds.
+
+"Kerosene!" is the track I keep reaching for as evidence. Three and a half minutes of something that should sound dated, the guitar tones, the screaming, the gospel-adjacent choir, and instead it sounds urgent and present and slightly dangerous. The danger is not threat exactly. It is more the danger of something genuinely feeling, genuinely reaching for something, genuinely unprotected by irony or aesthetic distance.
+
+Yves Tumor's voice on this record is extraordinary. It moves between falsetto and chest voice with a fluidity that makes the transitions feel less like technique and more like emotional necessity, as if the voice is finding the register that the feeling requires rather than the other way around. There are moments where it breaks, where you can hear the effort and the strain, and those moments are the most alive things on the album.
+
+The lead single "Gospel for a New Century," released to announce the album in February 2020, set the terms for what would follow. The title is both accurate and ironic. The gospel element is real, a tradition of transcendence and community summoned from below the surface of the noise. The "new century" framing acknowledges that the tradition is being brought forward through a great deal of intervening history. The two things together produce something that is neither pure gospel nor pure glam nor pure noise, but something that borrows the structural force of all three and produces a fourth thing in the synthesis.
+
+## The Question of the Body
+
+Much of the writing about Yves Tumor focuses on identity, on queerness, on the way the music moves between genres and gender presentations, on what it means to build an artistic persona that refuses fixed legibility. That is all interesting and relevant. But I find myself most arrested by the physical qualities of this music, by the way it registers in the body before anything else.
+
+This might be what glam was always doing and what the contemporary moment allows us to hear more clearly: the music as body, the music as sensation, the music as something that bypasses signification and goes straight to feeling. Not feeling as sentiment but feeling as physical event.
+
+The cover art of *Heaven to a Tortured Mind* is doing similar work. It is not documentation. It is performance, costume, construction. The record is the sonic version of that construction: something built with great care to produce a specific kind of experience in whoever encounters it. The care is audible. This is not music that arrived by accident or through improvisation. It is the product of someone who understands exactly what they are doing and has the technical capability to execute it at a very high level. The danger and the dissonance are crafted, not stumbled into.
+
+## What I Keep Coming Back For
+
+Falling and catching yourself. That sensation. Something about releasing the tension that holds you upright and then the involuntary response, the catch, the recovery, the moment of relief and adrenaline combined. This record gives me that, every time. I come back to it at specific times, not when I need music exactly, but when I need something to happen that the usual music cannot make happen.
+
+The physical response it produces is reliable in a way that feels almost like a bodily function. I have stopped trying to understand why and just accepted that this is one of the things the record does. Some music explains itself to you. Some music just does something. Heaven to a Tortured Mind is in the second category entirely, and I mean that as the highest possible form of praise.
+
+The Warp Records context matters for understanding the album's position in the landscape. Warp has spent thirty years releasing music that refuses easy categorisation while remaining connected to the formal traditions it departs from, and Heaven to a Tortured Mind fits that lineage while also extending it in a specific direction. The emotional directness of this particular record, the willingness to be genuinely vulnerable in a way that the more ironic or formally distant parts of the experimental canon avoid, gives it a quality that stands apart from the rest of that catalog. The dissonance between the distortion and the tenderness is the album's central formal achievement, and it is one that requires both the production vocabulary and the emotional courage to execute without one undermining the other.
+
+[download:/assets/images/artists/yves-tumor-heaven-2022-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yves-tumor-heaven-2022")
+PYEOF
+
+
+# ---- POST 11: zanele-muholi-2022 ----
+echo "--- Updating: zanele-muholi-2022 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/zanele-muholi-2022.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[youtube:-c02DXHz5bY]
+## What Visibility Costs
+
+Zanele Muholi calls themselves a visual activist rather than a photographer. The distinction matters. A photographer documents; a visual activist intervenes. The act of insisting on the visible presence of Black LGBTQ+ lives in South Africa, in images, in archives, in the history of representation, is an act that carries risk and requires commitment beyond the aesthetic.
+
+Muholi's *Somnyama Ngonyama* series, meaning "Hail the Dark Lioness" in Zulu, is where this visual activism takes its most confrontational form. These self-portraits, made in locations around the world over many years, feature Muholi with dramatically darkened skin, a manipulation of exposure and post-processing that intensifies the blackness of the skin to a degree that makes the viewer conscious of seeing Blackness, of the politics of what is seen and how.
+
+This confrontational hypervisibility is itself a response to a history of invisibility, of erasure, of the literal absence of certain kinds of bodies and certain kinds of lives from the archive. To be made very visible, aggressively, undeniably visible, is to counter that erasure. In 2022, the exhibition "Being Muholi: Portraits as Resistance" at the Isabella Stewart Gardner Museum in Boston brought more than 50 works together, pairing the iconic black and white self-portraits with recent paintings and a sculptural bronze, the first museum exhibition to make that specific combination of forms visible in a single presentation.
+
+## The Portrait as Act
+
+The individual portraits in *Somnyama Ngonyama* are among the more powerful things in contemporary photography. They use props and found materials, often sourced from the locations where they are made, to construct images that are simultaneously costume, commentary, and transformation. Muholi is depicted as warrior, as domestic worker, as archetype, as specific self, in images that refuse any single interpretive frame.
+
+The scale at which these images are printed and exhibited matters. At life size or larger, the gaze of the subject meets the viewer's gaze directly, at eye level. You cannot look down at these images. You cannot maintain the power differential that smaller prints sometimes allow. The eyes in these portraits hold. They do not ask for sympathy or understanding. They simply exist, fully, with a presence that is its own argument.
+
+Muholi's statement about the series is precise: "To me, *Somnyama Ngonyama* is one way of reckoning with this past, to address its politics of race, racism and colonialism, and it is also a way of addressing a past that still informs the present." The past that informs the present is not a metaphor. It is the specific legislative history of South Africa, the specific institutional history of how Black and LGBTQ+ bodies have been treated by systems of power, and the specific ongoing reality of violence against the communities Muholi documents.
+
+Muholi's earlier documentary work, photographing the LGBTQ+ community in South Africa over more than fifteen years, provides the archive of community from which the more formally ambitious self-portrait series grows. The two bodies of work are in dialogue: the community and the self, the documentary and the constructed, the plural and the singular. Neither is complete without the other. The self-portraits gain their weight from what we know about the community. The documentary work gains additional dimension from the self-portrait series's formal ambition.
+
+## The World the Work Is Made In
+
+South Africa has some of the highest rates of violent hate crimes against LGBTQ+ people in the world. "Corrective rape" is a documented phenomenon. The legal protections that exist on paper do not translate to safety in daily life for many of the people Muholi has been documenting.
+
+The work is made in this context. It exists in response to this context. The beauty of the images, and they are beautiful, is not an aestheticization of suffering but a refusal to accept that suffering is the only story. The insistence on beauty, on dignity, on full visual presence, in the face of a world that has worked to deny these things, is itself a form of courage.
+
+The materiality of the props is worth attention. Muholi uses electrical cables, latex gloves, cotton wool, combs, sponges, materials that carry associations with labor, with bodily care, with the infrastructure of daily life. Placed on a Black body in high-contrast black and white photography, these objects shift in meaning, become loaded with the histories of who has performed which kinds of labor and under what conditions. The transformation is achieved with objects that cost nothing. The power of the images does not depend on expensive materials or elaborate production. It depends on intelligence and intention, which is itself an argument about what photography is and what it is for.
+
+## The Archive as Resistance
+
+The archive of community that Muholi has built is invaluable independent of its artistic quality, though the artistic quality is real and high. To have this documentation, these images of lives that have been systematically threatened and erased, is itself a form of resistance, a refusal of the invisibility that violence seeks to impose.
+
+The photographs will outlast the hostility that made them necessary. They are already outlasting particular moments of that hostility. They are in collections, in institutions, in the permanent record of what was seen and documented and cared for enough to preserve. The visibility is the act. The preservation is the argument.
+
+I am not sure "art" is the right word for work this embedded in necessity. But "art" is the frame that allows it to travel, to be seen, to make its argument in places it might not otherwise reach. Wherever it lands, the argument holds, and the eyes in the portraits hold the viewer in return.
+
+The global reach of the exhibitions, which have traveled through institutions in Europe, North America, and Africa, raises questions about the relationship between the work's origin in a specific South African context and its circulation in gallery spaces whose audiences are primarily outside that context. Muholi has addressed this directly, arguing that visibility in global institutional spaces is itself part of the project, a way of making the argument in rooms where power accumulates and where the presence of these images changes what those rooms contain. The discomfort that the images can produce in certain contexts is not a side effect of their circulation. It is a purpose.
+
+[download:/assets/images/artists/zanele-muholi-2022-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: zanele-muholi-2022")
+PYEOF
+
+echo "=== All 11 posts updated ==="

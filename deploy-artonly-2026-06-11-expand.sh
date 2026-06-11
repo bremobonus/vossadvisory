@@ -421,3 +421,50 @@ with open(path, "w") as f:
 print("Updated: yu-su-2024")
 PYEOF
 
+
+# ---- POST 9: yussef-dayes-2023 ----
+echo "--- Updating: yussef-dayes-2023 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yussef-dayes-2023.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:artist/2rspptKP0lPBdlJJAJHqht]
+
+I saw Yussef Dayes play to a room that was too small for him and I have been thinking about it ever since. The drumming was commanding in the sense of a force that takes possession of a space. There was no moment where the kit was decorative or supporting or filling in the background. The drums were the argument, and everything else was evidence for the argument, and the argument was that rhythm is not time-keeping. Rhythm is meaning.
+
+The moment in British jazz over the last decade has produced several extraordinary musicians, and Dayes is central to it in a way that is both about his own prodigious talent and about his collaborative intelligence, his ability to create contexts in which other musicians are drawn to play beyond their usual capabilities. The Yussef Kamaal project, his collaboration with keyboardist Henry Wu, brought him to wider attention with the 2016 debut *Black Focus* on Brownswood Recordings. The solo work that followed has been establishing his individual voice in ways that are even more interesting to follow.
+
+*Black Classical Music*, the album that arrived in 2023, is an ambitious title that the music earns. It is jazz and it is not jazz; it is electronic music and it is not; it is soul and it is funk and it is something without an adequate name. It moves between these things with a fluency that does not experience them as different things. For Dayes, there is one music with many dialects.
+
+## The Live Show as Primary Text
+
+Dayes is one of those artists for whom the recorded music is a document of something that primarily happens in performance. The records are excellent, and *Black Classical Music* in particular is thoughtfully constructed, but the live experience is something different in kind. The improvisation, the way the music extends and changes direction in real time, the conversation between Dayes and his collaborators, these things are available in the recordings only in compressed form.
+
+This is not unique to jazz, where the live performance has always been the primary text. But it is a reminder that recorded music, as a medium, domesticates certain kinds of musical intelligence. The music that happens between the notes, in the decisions made in real time, in the risk and the recovery and the discovery, this is harder to document than the notes themselves.
+
+What makes the live show specifically important for Dayes is the way the drumming changes when there is an audience. The relationship between a drummer and a room is physical in a way that applies to other instruments only partially. The drummer's attack determines how much air moves, how the sound propagates, how the bodies in the room register the music physically. Dayes understands this. In the footage of the small-room show that I keep returning to, you can see the moment when he makes a decision about how hard to hit something based on what the room needs rather than what the song technically requires. That level of real-time adjustment is what separates great live drummers from good ones.
+
+## On the New British Jazz Moment
+
+A word about context, because context matters. The wave of British jazz that emerged in the early 2010s and has been building since, Yussef Dayes, Moses Boyd, Nubya Garcia, Shabaka Hutchings, Ezra Collective and their orbits, did not emerge from nowhere. It emerged from specific institutions, from Tomorrow's Warriors and the Jazz Refreshers' late-night sessions, from Dalston Jazz Bar and similar spaces, from communities of musicians who were in dialogue with each other and with diasporic musical traditions that British mainstream culture had undervalued. Dayes is a product of this ecosystem and its most visible current standard-bearer.
+
+Tomorrow's Warriors in particular deserves recognition as formative infrastructure. The organisation has been running workshops and performance opportunities for young British jazz musicians for over thirty years, and an astonishing proportion of the current wave passed through it. The scene did not produce itself. It was built by specific people making specific decisions about what to support and how. Gary Crosby and Janine Irons built an institution that made careers possible, and understanding the British jazz moment without understanding Tomorrow's Warriors is like understanding British punk without understanding the specific venues and fanzines that gave it infrastructure.
+
+What the scene is doing, what Dayes is doing with his live shows and his records, is establishing that jazz is not a finished form, is not a museum piece, is not defined by what happened in New York in the 1950s and 60s. It is a practice that continues, that develops, that absorbs and transforms everything that happens to reach it. That is what living music does. Yussef Dayes is living music.
+
+## The Vocabulary Keeps Expanding
+
+The best argument for Yussef Dayes is Yussef Dayes. Play the records. Watch the live footage. Let the drumming do what it does. The argument makes itself, more efficiently than any words, with a clarity that language can only gesture toward.
+
+The vocabulary keeps expanding. Each record adds new words to the language he is building. Each live show adds new dimensions to the language the records captured. Following Yussef Dayes is the experience of watching a musical language develop in real time, which is one of the most exciting things available to a listener. I intend to keep following for as long as the language keeps developing. Which I suspect is a very long time.
+
+[download:/assets/images/artists/yussef-dayes-2023-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yussef-dayes-2023")
+PYEOF
+

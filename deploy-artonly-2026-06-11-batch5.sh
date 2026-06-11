@@ -1,7 +1,7 @@
 #!/bin/bash
 # ArtOnly Blog Expand Script
 # Generated: 2026-06-11
-# Task: Expand 5 blog posts to 1000-1400 words
+# Task: Expand 5 blog posts to 1000-1400 words (shygirl, simone-leigh, slowthai, smiff, sofia-coppola)
 # Run this on the DreamHost server via SSH
 
 set -e

@@ -363,3 +363,199 @@ with open(path, "w") as f:
 print("Updated: yeule-softscars-2023")
 PYEOF
 
+
+# ---- POST 8: yu-su-2024 ----
+echo "--- Updating: yu-su-2024 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yu-su-2024.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:artist/69zPIMRgsZieOHFtHtvnj0]
+
+Yu Su makes music the way certain novelists write sentences, each element considered for its specific contribution to the whole, nothing decorative, nothing wasted, the form serving the meaning without announcing itself as form. I have been listening to her work across a year now and every listen reveals something I missed before, some production choice or harmonic decision or rhythmic nuance that was there all along but that I did not have the attention to receive yet. That quality of depth that reveals itself incrementally is one of the markers of music that is genuinely well-made.
+
+She is based in Vancouver, originally from China, and her music carries both of those geographical contexts in ways that are not surface-level. The influence of Chinese musical tradition is not in the instrumentation or the scale choices in the way that "world music" fusion often works, a flute here, a pentatonic run there, but in something more fundamental, something about the relationship between sound and silence, between the music and the space it occupies. There is a patience in her work that I associate with certain East Asian aesthetic traditions, the understanding that what you withhold can be as meaningful as what you include.
+
+The electronic music context she operates in, the Vancouver and Montreal scenes, the overlapping circles of producers and DJs and label people, gives her work a contemporary legibility, a sense of being in conversation with the current moment. The current moment alone does not explain the depth. The depth comes from somewhere else.
+
+## The Dance Floor as Contemplative Space
+
+This is a strange thing to claim, because dance floors are by conventional understanding the opposite of contemplative. They are physical, communal, extroverted. But the best dance music, the music that functions at the highest level in those spaces, creates a particular kind of collective contemplation, bodies moving together in response to something that is also addressing something interior. Yu Su understands this. Her DJ sets, which I have listened to in recorded form and heard described by people who have experienced them in rooms, operate at this level. The music does not tell you how to feel. It creates the conditions for feeling.
+
+Her 2020 debut album *Yellow River Blue*, released on Technicolour, established this approach formally. The record moves between ambient electronic passages and club-oriented material with a fluency that declines to separate contemplation from movement. The title itself, referencing the Yellow River of China and the more generalized blue of electronic music's emotional palette, announces the dual geography that her music inhabits without making that duality into an explicit subject.
+
+The production on her records has a similar quality to the DJ sets. You are not being told where the emotion is. You are being given an environment in which emotion can arise, on your own terms, from your own interior. This is a very different project from most music, which is much more directive about the emotional experience it is offering. Most music hands you the feeling pre-packaged. Yu Su gives you the space to find it.
+
+## The Work of Restraint
+
+Restraint in music is often misread as coldness. Yu Su's work demonstrates that restraint is a form of trust, trust that the listener has the capacity to complete what the artist begins, to bring something of their own to what the music offers. The space in her tracks is not emptiness. It is invitation.
+
+This extends to the harmonic choices. She does not resolve tension at the moments when resolution would be easiest and most expected. She holds the unresolved chord, lets it breathe, gives it room to develop its own complexity before deciding what it wants to do next. This produces a particular quality of listening attention, an alertness to what might change, a presence in the moment that more resolved music does not demand.
+
+## On Making Music on Your Own Terms
+
+The phrase "on her own terms" is doing real work. The music industry, even the independent and underground parts of it, has expectations about what artists should do: the release cycle, the promotional activity, the genre legibility that makes you recommendable to algorithms and playlist curators. Yu Su navigates this infrastructure with a clarity about what she will and will not compromise that produces music recognisably her own rather than shaped by external demands.
+
+There is a self-possession in her work, a quality of knowing what it is and being willing to be exactly that, that is rarer than it should be and more valuable than it is given credit for being. Music made freely sounds different from music made under constraint. The autonomy is audible.
+
+I keep coming back to her records late in the evening, when my own demands on the day have relaxed enough to listen properly. They reward that attention every time. The most honest thing I can say is that her music has changed my relationship with what I expect from electronic music, widened it, made it more patient, more willing to sit with something before demanding it give me what I think I want. Yu Su made me a better listener for her work, and for that I am grateful in the specific and lasting way you are grateful for things that change your capacity rather than just your mood.
+
+[download:/assets/images/artists/yu-su-2024-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yu-su-2024")
+PYEOF
+
+
+# ---- POST 9: yussef-dayes-2023 ----
+echo "--- Updating: yussef-dayes-2023 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yussef-dayes-2023.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:artist/2rspptKP0lPBdlJJAJHqht]
+
+I saw Yussef Dayes play to a room that was too small for him and I have been thinking about it ever since. The drumming was commanding in the sense of a force that takes possession of a space. There was no moment where the kit was decorative or supporting or filling in the background. The drums were the argument, and everything else was evidence for the argument, and the argument was that rhythm is not time-keeping. Rhythm is meaning.
+
+The moment in British jazz over the last decade has produced several extraordinary musicians, and Dayes is central to it in a way that is both about his own prodigious talent and about his collaborative intelligence, his ability to create contexts in which other musicians are drawn to play beyond their usual capabilities. The Yussef Kamaal project, his collaboration with keyboardist Henry Wu, brought him to wider attention with the 2016 debut *Black Focus* on Brownswood Recordings. The solo work that followed has been establishing his individual voice in ways that are even more interesting to follow.
+
+*Black Classical Music*, the album that arrived in 2023, is an ambitious title that the music earns. It is jazz and it is not jazz; it is electronic music and it is not; it is soul and it is funk and it is something without an adequate name. It moves between these things with a fluency that suggests someone who does not experience them as different things. For Dayes, there seems to be one music with many dialects.
+
+## The Live Show as Primary Text
+
+Dayes is one of those artists for whom the recorded music is a document of something that primarily happens in performance. The records are excellent, and *Black Classical Music* in particular is thoughtfully constructed, but the live experience is something different in kind. The improvisation, the way the music extends and changes direction in real time, the conversation between Dayes and his collaborators, these things are available in the recordings only in compressed form.
+
+This is not unique to jazz, where the live performance has always been the primary text. But it is a reminder that recorded music, as a medium, domesticates certain kinds of musical intelligence. The music that happens between the notes, in the decisions made in real time, in the risk and the recovery and the discovery, this is harder to document than the notes themselves.
+
+What makes the live show specifically important for Dayes is the way the drumming changes when there is an audience. The relationship between a drummer and a room is physical in a way that applies to other instruments only partially. The drummer's attack determines how much air moves, how the sound propagates, how the bodies in the room register the music physically. Dayes understands this. In the footage of the small-room show that I keep returning to, you can see the moment when he makes a decision about how hard to hit something based on what the room needs rather than what the song technically requires. That level of real-time adjustment is what separates great live drummers from good ones.
+
+## On the New British Jazz Moment
+
+A word about context, because context matters. The wave of British jazz that emerged in the early 2010s and has been building since, Yussef Dayes, Moses Boyd, Nubya Garcia, Shabaka Hutchings, Ezra Collective and their orbits, did not emerge from nowhere. It emerged from specific institutions, from Tomorrow's Warriors and the Jazz Refreshers' late-night sessions, from Dalston Jazz Bar and similar spaces, from communities of musicians who were in dialogue with each other and with diasporic musical traditions that British mainstream culture had undervalued. Dayes is a product of this ecosystem and its most visible current standard-bearer.
+
+Tomorrow's Warriors in particular deserves recognition as formative infrastructure. The organisation has been running workshops and performance opportunities for young British jazz musicians for over thirty years, and an astonishing proportion of the current wave passed through it. The scene did not produce itself. It was built by specific people making specific decisions about what to support and how.
+
+What the scene is doing, what Dayes is doing with his live shows and his records, is establishing that jazz is not a finished form, is not a museum piece, is not defined by what happened in New York in the 1950s and 60s. It is a practice that continues, that develops, that absorbs and transforms everything that happens to reach it. That is what living music does. Yussef Dayes is living music.
+
+## The Vocabulary Keeps Expanding
+
+The best argument for Yussef Dayes is Yussef Dayes. Play the records. Watch the live footage. Let the drumming do what it does. The argument makes itself, more efficiently than any words, with a clarity that language can only gesture toward.
+
+The vocabulary keeps expanding. Each record adds new words to the language he is building. Each live show adds new dimensions to the language the records captured. Following Yussef Dayes is the experience of watching a musical language develop in real time, which is one of the most exciting things available to a listener. I intend to keep following for as long as the language keeps developing. Which I suspect is a very long time.
+
+[download:/assets/images/artists/yussef-dayes-2023-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yussef-dayes-2023")
+PYEOF
+
+
+# ---- POST 10: yves-tumor-heaven-2022 ----
+echo "--- Updating: yves-tumor-heaven-2022 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/yves-tumor-heaven-2022.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[spotify:artist/0qu422H5MOoQxGjd4IzHbS]
+
+## The Specific Sensation
+
+There is a physical experience I associate with Heaven to a Tortured Mind, not a metaphor but an actual sensation, something in the chest and solar plexus, a feeling of rapid descent followed by an involuntary catch. Like a dream-fall. Like the moment before you step off a curb you did not see. Yves Tumor makes music that operates on the body before it operates on the mind, and this album is the most extreme version of that so far.
+
+Yves Tumor, an American artist based in Europe whose gender presentation and personal information are deliberately ambiguous and always evolving, has been making music that resists categorization since at least 2016. The journey from the noise-textured early work through *Safe in the Hands of Love* and then to *Heaven to a Tortured Mind* describes an arc toward something that sounds almost like rock music but has been through so many other things on the way that it emerges transformed.
+
+*Heaven to a Tortured Mind* came out in April 2020 on Warp Records to widespread critical acclaim, earning a Metacritic score of 88 and landing on numerous year-end lists as one of the defining records of that year. I was still inside it in 2022, still finding corners I had not fully explored. That is the kind of record it is. It uses the grammar of 1970s glam and soul, the guitar tones, the call-and-response, the kind of dramatic orchestration that sounds like curtains being drawn, but the context is entirely different, the emotional content more complicated, the sonic palette saturated to the point of distortion.
+
+## What Excess Reveals
+
+This is an album that understands excess as a tool. The production is too much in exactly the right ways, too compressed, too dramatic, too willing to push guitar tones into feedback and let them stay there. It has been said that this is Yves Tumor's rock record, but that framing undersells how alien it sounds. It is rock the way a memory of rock filtered through forty years of subsequent music sounds.
+
+"Kerosene!" is the track I keep reaching for as evidence. Three and a half minutes of something that should sound dated, the guitar tones, the screaming, the gospel-adjacent choir, and instead it sounds urgent and present and slightly dangerous. The danger is not threat exactly. It is more the danger of something genuinely feeling, genuinely reaching for something, genuinely unprotected by irony or aesthetic distance.
+
+Yves Tumor's voice on this record is extraordinary. It moves between falsetto and chest voice with a fluidity that makes the transitions feel less like technique and more like emotional necessity, as if the voice is finding the register that the feeling requires rather than the other way around. There are moments where it breaks, where you can hear the effort and the strain, and those moments are the most alive things on the album.
+
+The lead single "Gospel for a New Century," released to announce the album in February 2020, set the terms for what would follow. The title is both accurate and ironic. The gospel element is real, a tradition of transcendence and community summoned from below the surface of the noise. The "new century" framing acknowledges that the tradition is being brought forward through a great deal of intervening history. The two things together produce something that is neither pure gospel nor pure glam nor pure noise, but something that borrows the structural force of all three.
+
+## The Question of the Body
+
+Much of the writing about Yves Tumor focuses on identity, on queerness, on the way the music moves between genres and gender presentations, on what it means to build an artistic persona that refuses fixed legibility. That is all interesting and relevant. But I find myself most arrested by the physical qualities of this music, by the way it registers in the body before anything else.
+
+This might be what glam was always doing and what the contemporary moment allows us to hear more clearly: the music as body, the music as sensation, the music as something that bypasses signification and goes straight to feeling. Not feeling as sentiment but feeling as physical event.
+
+The cover art of *Heaven to a Tortured Mind*, featuring Yves Tumor in a red dress with another figure, is doing similar work. It is not documentation. It is performance, costume, construction. The record is the sonic version of that construction: something built with great care to produce a specific kind of experience in whoever encounters it.
+
+Falling and catching yourself. That sensation. Something about releasing the tension that holds you upright and then the involuntary response, the catch, the recovery, the moment of relief and adrenaline combined. This record gives me that, every time. I come back to it at specific times, not when I need music exactly, but when I need something to happen that the usual music cannot make happen. The physical response it produces is reliable in a way that feels almost like a bodily function. I have stopped trying to understand why and just accepted that this is one of the things the record does.
+
+Falling and catching yourself. That sensation. This record gives it to me every time.
+
+[download:/assets/images/artists/yves-tumor-heaven-2022-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: yves-tumor-heaven-2022")
+PYEOF
+
+
+# ---- POST 11: zanele-muholi-2022 ----
+echo "--- Updating: zanele-muholi-2022 ---"
+python3 << 'PYEOF'
+import json
+
+path = "/home/dh_yadmw3/artonly.io/posts/zanele-muholi-2022.json"
+with open(path) as f:
+    d = json.load(f)
+
+d["body"] = """[youtube:-c02DXHz5bY]
+## What Visibility Costs
+
+Zanele Muholi calls themselves a visual activist rather than a photographer. The distinction matters. A photographer documents; a visual activist intervenes. The act of insisting on the visible presence of Black LGBTQ+ lives in South Africa, in images, in archives, in the history of representation, is an act that carries risk and requires commitment beyond the aesthetic.
+
+Muholi's *Somnyama Ngonyama* series, meaning "Hail the Dark Lioness" in Zulu, is where this visual activism takes its most confrontational form. These self-portraits, made in locations around the world over many years, feature Muholi with dramatically darkened skin, a manipulation of exposure and post-processing that intensifies the blackness of the skin to a degree that makes the viewer conscious of seeing Blackness, of the politics of what is seen and how.
+
+This confrontational hypervisibility is itself a response to a history of invisibility, of erasure, of the literal absence of certain kinds of bodies and certain kinds of lives from the archive. To be made very visible, aggressively, undeniably visible, is to counter that erasure. In 2022, the exhibition "Being Muholi: Portraits as Resistance" at the Isabella Stewart Gardner Museum in Boston brought more than 50 works together, pairing the iconic black and white self-portraits with recent paintings and a sculptural bronze, the first museum exhibition to make that specific combination visible.
+
+## The Portrait as Act
+
+The individual portraits in *Somnyama Ngonyama* are among the more powerful things in contemporary photography. They use props and found materials, often sourced from the locations where they are made, to construct images that are simultaneously costume, commentary, and transformation. Muholi appears as warrior, as domestic worker, as archetype, as specific self, in images that refuse any single interpretive frame.
+
+The scale at which these images are printed and exhibited matters. At life size or larger, the gaze of the subject meets the viewer's gaze directly, at eye level. You cannot look down at these images. You cannot maintain the power differential that smaller prints sometimes allow. The eyes in these portraits hold. They do not ask for sympathy or understanding. They simply exist, fully, with a presence that is its own argument.
+
+Muholi's statement about the series is precise: "To me, *Somnyama Ngonyama* is one way of reckoning with this past, to address its politics of race, racism and colonialism, and it is also a way of addressing a past that still informs the present." The past that informs the present is not a metaphor. It is the specific legislative history of South Africa, the specific institutional history of how Black and LGBTQ+ bodies have been treated by systems of power, and the specific ongoing reality of violence against the communities Muholi documents.
+
+Muholi's earlier documentary work, photographing the LGBTQ+ community in South Africa over more than fifteen years, provides the archive of community from which the more formally ambitious self-portrait series grows. The two bodies of work are in dialogue: the community and the self, the documentary and the constructed, the plural and the singular. Neither is complete without the other.
+
+## The World the Work Is Made In
+
+South Africa has some of the highest rates of violent hate crimes against LGBTQ+ people in the world. "Corrective rape" is a documented phenomenon. The legal protections that exist on paper do not translate to safety in daily life for many of the people Muholi has been documenting.
+
+The work is made in this context. It exists in response to this context. The beauty of the images, and they are beautiful, is not an aestheticization of suffering but a refusal to accept that suffering is the only story. The insistence on beauty, on dignity, on full visual presence, in the face of a world that has worked to deny these things, is itself a form of courage.
+
+The materiality of the props is worth attention. Muholi uses electrical cables, latex gloves, cotton wool, combs, sponges, materials that carry associations with labor, with bodily care, with the infrastructure of daily life. Placed on a Black body in high-contrast black and white photography, these objects shift in meaning, become loaded with the histories of who has performed which kinds of labor and under what conditions. The transformation is achieved with objects that cost nothing. The power of the images does not depend on expensive materials or elaborate production. It depends on intelligence and intention.
+
+## The Archive as Resistance
+
+The archive of community that Muholi has built is invaluable independent of its artistic quality, though the artistic quality is real and high. To have this documentation, these images of lives that have been systematically threatened and erased, is itself a form of resistance, a refusal of the invisibility that violence seeks to impose.
+
+The photographs will outlast the hostility that made them necessary. They are already outlasting particular moments of that hostility. They are in collections, in institutions, in the permanent record of what was seen and documented and cared for enough to preserve. The visibility is the act. The preservation is the argument.
+
+I am not sure "art" is the right word for work this embedded in necessity. But "art" is the frame that allows it to travel, to be seen, to make its argument in places it might not otherwise reach. Wherever it lands, the argument holds.
+
+[download:/assets/images/artists/zanele-muholi-2022-social-9x16.jpg|Download Social Card]"""
+
+with open(path, "w") as f:
+    json.dump(d, f, indent=2, ensure_ascii=False)
+print("Updated: zanele-muholi-2022")
+PYEOF
+
+echo "=== All 11 posts updated ==="

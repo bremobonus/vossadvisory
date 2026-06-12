@@ -1,0 +1,486 @@
+{
+  "version": "1.5",
+  "created": "2026-05-16",
+  "last_updated": "2026-06-12",
+  "bot_credentials": {
+    "username": "Neverendersinc@neverending",
+    "password": "kgpheb2utlllohripi9f2sdg1hbam5me",
+    "account": "Neverendersinc",
+    "status": "BLOCKED",
+    "block_date": "2026-05-19",
+    "blocked_by": "Asilvering",
+    "block_reason": "LLMs, botting, COI, etc",
+    "block_expiry": "indefinite",
+    "block_id": 25412872
+  },
+  "campaign_status": "ON_HOLD",
+  "campaign_notes": "Account permanently blocked by Wikipedia admin Asilvering on 2026-05-19. Block confirmed still active (expiry: infinity) as of 2026-06-12 API check. No editing possible. Do not attempt to create a new account (block evasion). Do not edit from alternate IP. Legitimate path forward is human editor with no COI, or wait for organic Wikipedia coverage. All three external links on Tove Lo, Little Simz, and Tems were removed as of the 2026-05-25 session check.",
+  "articles": {
+    "Draft:Amos Le Blanc": {
+      "status": "blocked_account",
+      "pageid": 83027568,
+      "submitted": "2026-05-01",
+      "last_updated": "2026-06-12",
+      "last_revid": 1355058179,
+      "last_revid_timestamp": "2026-05-19T18:26:24Z",
+      "new_activity_since_block": false,
+      "decline_history": [
+        {
+          "date": "2026-04-26",
+          "decliner": "ChrysGalley",
+          "reason": "AI-generated content"
+        },
+        {
+          "date": "2026-05-19",
+          "decliner": "Theroadislong",
+          "reason": "Bio sourcing: unfamiliar referencing style (WP:REFB); YouTube and Vimeo not reliable sources"
+        }
+      ],
+      "open_reviewer_notes": [
+        {
+          "reviewer": "Theroadislong",
+          "date": "2026-05-17",
+          "note": "please read WP:REFB"
+        },
+        {
+          "reviewer": "Theroadislong",
+          "date": "2026-05-18",
+          "note": "In 20 years of editing here I have not come across this referencing style and YouTube and Vimeo are not considered reliable sources"
+        },
+        {
+          "reviewer": "Bearcat",
+          "date": "2026-05-19",
+          "note": "Notability does not hinge on the existence of the subjects work. Need media coverage about him in newspapers, magazines, books. YouTube, Vimeo, self-published websites, blogs not acceptable."
+        }
+      ],
+      "prepared_revision": {
+        "description": "Clean revision ready but blocked from posting",
+        "changes": [
+          "Converted all sfn+sfnRef citations to standard <ref> tags",
+          "Removed all YouTube citations (zero YouTube/Vimeo sources remain)",
+          "Removed all Vimeo citations",
+          "Removed Wikipedia self-citation (Dine Alone Records article)",
+          "Removed IMVDb citations",
+          "Removed Autobiography tag",
+          "Trimmed article to 9,996 bytes (from 45,425 bytes) keeping only RS-supported content",
+          "Added AFC submission template for resubmission",
+          "All remaining sources: LBBOnline, shots.net, adobo Magazine, Stereogum, VideoStatic, EDM Canada, Newswire.ca, Ad Age, EARMILK, The Music, Young Director Award, OnepointFour, The One Club, SHOOTonline, Campaign US, Exclaim!"
+        ],
+        "file": "amos_draft_v3_prepared.txt",
+        "note": "Cannot be posted because account is blocked. Needs human editor with no COI to implement."
+      },
+      "account_warning_timeline": [
+        {
+          "date": "2026-05-17",
+          "event": "Asilvering warned account about LLM-generated text (Template:uw-ai1), asked to declare COI"
+        },
+        {
+          "date": "2026-05-19T09:46:39Z",
+          "event": "Neverendersinc account blocked indefinitely by Asilvering for LLMs, botting, COI, etc"
+        },
+        {
+          "date": "2026-05-19",
+          "event": "Draft declined by Theroadislong for sourcing issues"
+        },
+        {
+          "date": "2026-05-19",
+          "event": "Bearcat added notability concern comment to draft"
+        }
+      ]
+    }
+  },
+  "external_links_live": {
+    "Tove_Lo": {
+      "status": "removed",
+      "verified_date": "2026-05-25",
+      "links": [
+        "https://artonly.io/post/tove-lo-estrus",
+        "https://artonly.io/post/tove-lo-criminally-underrated-heat-2024"
+      ],
+      "added_revid": 1354421236,
+      "note": "Links confirmed removed as of 2026-05-25 API check. Were still live 2026-05-23."
+    },
+    "Little_Simz": {
+      "status": "removed",
+      "verified_date": "2026-05-25",
+      "links": [
+        "artonly.io editorial on GREY Area through Introvert"
+      ],
+      "added_revid": 1354421353,
+      "note": "Links confirmed removed as of 2026-05-25 API check. Were still live 2026-05-23."
+    },
+    "Tems": {
+      "status": "removed",
+      "verified_date": "2026-05-25",
+      "links": [
+        "artonly.io editorial covering Free Mind through UK number one"
+      ],
+      "added_revid": 1354421363,
+      "note": "Links confirmed removed as of 2026-05-25 API check. Were still live 2026-05-23."
+    }
+  },
+  "targets": [
+    {
+      "title": "artonly.io",
+      "status": "blocked",
+      "reason": "Site too new. Requires independent coverage first. Check again after 3rd-party publications write about artonly.",
+      "check_after": "2026-08-01"
+    },
+    {
+      "title": "Amos Le Blanc (film director)",
+      "status": "on_hold_blocked_account",
+      "notes": "Draft exists at Draft:Amos Le Blanc but account is blocked. Clean revision prepared (9,996 bytes, zero YouTube/Vimeo, standard ref tags) but cannot be posted. Needs human editor with no COI."
+    }
+  ],
+  "new_wikipedia_candidates": {
+    "assessed_2026-05-25": [
+      {
+        "article": "JPEGMAFIA and EXPERIMENTAL RAP",
+        "artonly_url": "https://artonly.io/post/jpegmafia-experimental-rap",
+        "assessment": "JPEGMAFIA already has a Wikipedia article. No new article needed. Album article for EXPERIMENTAL RAP could be a candidate but requires third-party sourcing from Pitchfork, Rolling Stone, NME, etc. Not actionable with blocked account.",
+        "verdict": "not_actionable"
+      },
+      {
+        "article": "Bleachers and everyone for ten minutes",
+        "artonly_url": "https://artonly.io/post/bleachers-everyone-for-ten-minutes",
+        "assessment": "Bleachers and Jack Antonoff both have Wikipedia articles. Album article for everyone for ten minutes may be warranted given commercial and critical profile but requires third-party sourcing and an unblocked account.",
+        "verdict": "not_actionable"
+      }
+    ],
+    "assessed_2026-05-26": [
+      {
+        "article": "Aja Monet and the color of rain",
+        "artonly_url": "https://artonly.io/post/aja-monet-color-of-rain",
+        "artonly_date": "2026-05-26",
+        "wikipedia_artist_article": "EXISTS (pageid 41821194)",
+        "wikipedia_album_article": "MISSING (confirmed 2026-06-12)",
+        "assessment": "Aja Monet has an existing Wikipedia article. Her new album the color of rain (released May 22, 2026 on Drink Sum Wtr) does not yet have a Wikipedia album article. The artonly piece references AllMusic (score 90), Carnegie Hall performance, and notable collaborators (Meshell Ndegeocello, Ambrose Akinmusire, Brandee Younger, Mick Jenkins, Vic Mensa, Ganavya). Album is 21 days old as of 2026-06-12. Monitor for Pitchfork, Rolling Stone, NPR Music, Guardian coverage. Not actionable: account blocked.",
+        "verdict": "monitor_future",
+        "check_after": "2026-08-01"
+      },
+      {
+        "article": "Ed O'Brien and Blue Morpho",
+        "artonly_url": "https://artonly.io/post/ed-obrien-blue-morpho",
+        "artonly_date": "2026-05-26",
+        "wikipedia_artist_article": "EXISTS Ed O'Brien pageid=273486; EOB (musician) pageid=63179030",
+        "wikipedia_album_article": "EXISTS Blue Morpho (album) pageid=82710766",
+        "assessment": "Ed O'Brien has an existing Wikipedia article. EOB (musician) has an existing Wikipedia article. Blue Morpho (album) already has a Wikipedia article. No new article needed.",
+        "verdict": "no_action_needed"
+      }
+    ],
+    "assessed_2026-05-28": [
+      {
+        "article": "Traumprinz and Life",
+        "artonly_url": "https://artonly.io/post/traumprinz-life",
+        "artonly_date": "2026-05-28",
+        "wikipedia_artist_article": "MISSING (confirmed 2026-06-12; Traumprinz, Phillip Lauer, Tuff City Kids all absent from English Wikipedia)",
+        "wikipedia_album_article": "MISSING",
+        "assessment": "Phillip Lauer (Traumprinz) is a German electronic producer from the Cologne scene, also known as Prince of Denmark and one half of Tuff City Kids with Gerd Janson. Life is the fifth Traumprinz album on the All Possible Worlds imprint. No English Wikipedia articles exist for Traumprinz, Phillip Lauer, or Tuff City Kids. The artist has significant underground credibility but primarily exists within specialist electronic music press (Resident Advisor, Wire, etc.) rather than mainstream RS. Monitor for RS coverage. Not actionable: account blocked and notability would need verification against WP:GNG via RS search.",
+        "verdict": "monitor_future",
+        "check_after": "2026-08-01"
+      },
+      {
+        "article": "Lowertown and Ugly Duckling Union",
+        "artonly_url": "https://artonly.io/post/lowertown-ugly-duckling-union",
+        "artonly_date": "2026-05-27",
+        "wikipedia_artist_article": "EXISTS Lowertown (band) pageid=72035125 (last touched 2026-05-23, 6848 bytes). Article covers through debut album I Love to Lie (2022). Does not mention Ugly Duckling Union.",
+        "wikipedia_album_article": "MISSING (confirmed 2026-06-12)",
+        "assessment": "Lowertown (band) has an existing Wikipedia article. Their second album Ugly Duckling Union (May 2026, Summer Shade / Run For Cover Records) received Stereogum Album of the Week and NPR Music top 5 of its release week. The band article is outdated and does not mention the new album. An Ugly Duckling Union album article would be supportable given Stereogum and NPR Music coverage, but account is blocked. The band article itself could be updated with the new album when an unblocked editor is available.",
+        "verdict": "not_actionable_blocked_account",
+        "check_after": "when_account_unblocked",
+        "note": "Lowertown band article (pageid 72035125) needs updating to include Ugly Duckling Union. Album article creation viable if more RS coverage accumulates."
+      },
+      {
+        "article": "Mexican Institute of Sound and Meridian Brothers / Ruido Tovar",
+        "artonly_url": "https://artonly.io/post/ruido-tovar",
+        "artonly_date": "2026-05-28",
+        "wikipedia_artist_article": "Mexican Institute of Sound EXISTS pageid=13468391. Meridian Brothers EXISTS pageid=76600887. Rigo Tovar (historical figure referenced in title) EXISTS pageid=1668428.",
+        "wikipedia_album_article": "MISSING (confirmed 2026-06-12)",
+        "assessment": "Both collaborating artists have Wikipedia articles. The album Ruido Tovar is a 2026 release on Ansonia Records featuring a guest appearance by Beck. No Wikipedia album article exists. Given the profile of the collaborators (Camilo Lara / MIS and Eblis Alvarez / Meridian Brothers are both notable enough for existing Wikipedia articles) and the Beck feature, an album article may be viable if third-party RS coverage from Pitchfork, Bandcamp Daily, Resident Advisor, The Wire, or NPR Music materializes. Not actionable: account blocked.",
+        "verdict": "monitor_future",
+        "check_after": "2026-08-01"
+      }
+    ],
+    "assessed_2026-05-30": [
+      {
+        "article": "6LACK and Love Is the New Gangsta",
+        "artonly_url": "https://artonly.io/post/6lack-love-is-the-new-gangsta",
+        "artonly_date": "2026-05-29",
+        "wikipedia_artist_article": "EXISTS 6LACK pageid=54828427",
+        "wikipedia_album_article": "EXISTS Love Is the New Gangsta pageid=83182365",
+        "assessment": "6LACK has an existing Wikipedia article and Love Is the New Gangsta already has a Wikipedia album article (released May 22, 2026 on LVRN/Interscope). No new article needed.",
+        "verdict": "no_action_needed"
+      },
+      {
+        "article": "Future Islands and From a Hole in the Floor to a Fountain of Youth",
+        "artonly_url": "https://artonly.io/post/future-islands-from-a-hole-in-the-floor",
+        "artonly_date": "2026-05-29",
+        "wikipedia_artist_article": "EXISTS Future Islands pageid=18465370",
+        "wikipedia_album_article": "MISSING (confirmed 2026-06-12)",
+        "assessment": "Future Islands has an existing Wikipedia article. Their 20th anniversary rarities and B-sides collection From a Hole in the Floor to a Fountain of Youth (released May 22, 2026 on 4AD, 20 tracks including material never previously on streaming) has no Wikipedia album article. Given Future Islands' established notability, 4AD label, and the significance of a 20-year retrospective, an album article is a viable future candidate. Requires Pitchfork, Stereogum, NME, or Consequence coverage. Not actionable: account blocked.",
+        "verdict": "monitor_future",
+        "check_after": "2026-08-01"
+      },
+      {
+        "article": "Boards of Canada and Inferno",
+        "artonly_url": "https://artonly.io/post/boards-of-canada-inferno",
+        "artonly_date": "2026-05-30",
+        "wikipedia_artist_article": "EXISTS Boards of Canada pageid=101580",
+        "wikipedia_album_article": "EXISTS Inferno (Boards of Canada album) pageid=83012220",
+        "assessment": "Boards of Canada has an existing Wikipedia article and their fifth studio album Inferno (released May 29, 2026 on Warp, first album in 13 years) already has a Wikipedia album article. No new article needed.",
+        "verdict": "no_action_needed"
+      },
+      {
+        "article": "Kurt Vile and Philadelphia's Been Good to Me",
+        "artonly_url": "https://artonly.io/post/kurt-vile-philadelphias-been-good-to-me",
+        "artonly_date": "2026-05-30",
+        "wikipedia_artist_article": "EXISTS Kurt Vile pageid=23469157",
+        "wikipedia_album_article": "EXISTS Philadelphia's Been Good to Me pageid=83211808",
+        "assessment": "Kurt Vile has an existing Wikipedia article and his tenth studio album Philadelphia's Been Good to Me (released May 29, 2026 on Verve Forecast) already has a Wikipedia album article. No new article needed.",
+        "verdict": "no_action_needed"
+      },
+      {
+        "article": "Balming Tiger and Gongbu",
+        "artonly_url": "https://artonly.io/post/balming-tiger-gongbu",
+        "artonly_date": "2026-05-27",
+        "wikipedia_artist_article": "EXISTS Balming Tiger pageid=69527142 (last revid 1356791998, touched 2026-05-29)",
+        "wikipedia_album_article": "MISSING (confirmed 2026-06-12)",
+        "assessment": "Balming Tiger has an existing Wikipedia article (updated as recently as 2026-05-29). Their second full album Gongbu (released May 19, 2026, on their own infrastructure) has no Wikipedia album article. The album received NPR Music New Music Friday coverage. Balming Tiger's notable international profile, including the Sexy Nukim single with RM from BTS, makes them a recognized collective. An album article for Gongbu would require sustained RS coverage beyond a single NPR roundup mention. Monitor for Pitchfork, Rolling Stone, or NME dedicated reviews. Not actionable: account blocked and coverage volume insufficient at this date.",
+        "verdict": "monitor_future",
+        "check_after": "2026-08-01"
+      }
+    ],
+    "assessed_2026-06-10": [
+      {
+        "article": "Vince Staples and Cry Baby",
+        "artonly_url": "https://artonly.io/post/vince-staples-cry-baby",
+        "artonly_date": "2026-06-10",
+        "wikipedia_artist_article": "EXISTS Vince Staples pageid=32779348",
+        "wikipedia_album_article": "EXISTS Cry Baby (Vince Staples album) pageid=83119332",
+        "assessment": "Vince Staples has an existing Wikipedia article and Cry Baby (released June 5, 2026 on Section Eight Arthouse / Loma Vista Recordings, his seventh studio album and first on his own imprint) already has a Wikipedia album article. No new article needed.",
+        "verdict": "no_action_needed"
+      },
+      {
+        "article": "Jalen Ngonda and Doctrine of Love",
+        "artonly_url": "https://artonly.io/post/jalen-ngonda-doctrine-of-love",
+        "artonly_date": "2026-06-10",
+        "wikipedia_artist_article": "EXISTS Jalen Ngonda pageid=80307165",
+        "wikipedia_album_article": "MISSING (confirmed 2026-06-12)",
+        "assessment": "Jalen Ngonda has an existing Wikipedia article. His sophomore album Doctrine of Love (released June 5, 2026 on Daptone Records) has no Wikipedia album article. The album is 7 days old as of 2026-06-12. Jalen Ngonda was named to Rolling Stone's Future of Music list after his debut. With a confirmed existing artist article and a Daptone release, an album article is a viable future candidate if coverage grows. Not actionable: account blocked and album too new to have sufficient RS coverage depth. Monitor for Pitchfork, NPR Music, Stereogum, and Consequence dedicated reviews.",
+        "verdict": "monitor_future",
+        "check_after": "2026-08-01"
+      }
+    ],
+    "assessed_2026-06-12": [
+      {
+        "article": "Bedouine and Neon Summer Skin",
+        "artonly_url": "https://artonly.io/post/bedouine-neon-summer-skin",
+        "artonly_date": "2026-06-11",
+        "wikipedia_artist_article": "EXISTS Bedouine pageid=61061559 (11088 bytes)",
+        "wikipedia_album_article": "MISSING (confirmed 2026-06-12)",
+        "assessment": "Bedouine (Azniv Korkejian) has an existing Wikipedia article. Her fourth studio album Neon Summer Skin (her first for Thirty Tigers) has no Wikipedia album article. The artonly piece highlights the album's biographical weight: Korkejian traveled to Saudi Arabia to visit her parents before their planned relocation to Armenia, giving the record its emotional center. Production by Jonathan Rado (Foxygen, Weyes Blood). Collaborators include Guy Syffert and the D'Addario brothers from The Lemon Twigs. The album is 1 day old as of the artonly post date. An album article would require dedicated coverage from Pitchfork, NPR Music, Stereogum, The Guardian, or AllMusic. Not actionable: account blocked and album too new for RS coverage assessment.",
+        "verdict": "monitor_future",
+        "check_after": "2026-08-01"
+      },
+      {
+        "article": "Navy Blue (Sage Elsesser) and Sir Render",
+        "artonly_url": "https://artonly.io/post/navy-blue-sir-render",
+        "artonly_date": "2026-06-11",
+        "wikipedia_artist_article": "EXISTS Sage Elsesser pageid=61099853 (22181 bytes). Navy Blue (rapper) pageid=65204020 is a redirect to Sage Elsesser.",
+        "wikipedia_album_article": "MISSING (confirmed 2026-06-12)",
+        "assessment": "Sage Elsesser (Navy Blue) has an existing Wikipedia article. His third studio album Sir Render on his Freedom Sounds imprint has no Wikipedia album article. The album completes a trilogy beginning with Song of Sage: Post Panic! (2021) and The Sword and the Soaring (2022), functioning as a prequel addressing the spiritual and personal crisis that preceded those records. Features include a posthumous appearance by Ka (Brownsville rapper who died September 2024), Armand Hammer, and Earl Sweatshirt. The Ka posthumous feature on the track Circa carries particular significance given Ka's passing. Album is 1 day old as of the artonly post date. An album article would require dedicated coverage from Pitchfork, Stereogum, The Wire, Bandcamp Daily, or Consequence of Sound. Not actionable: account blocked and album too new for RS coverage assessment.",
+        "verdict": "monitor_future",
+        "check_after": "2026-08-01"
+      }
+    ]
+  },
+  "edit_history": [
+    {
+      "date": "2026-05-01",
+      "action": "Draft submitted",
+      "page": "Draft:Amos Le Blanc",
+      "revid": null,
+      "summary": "Initial AfC submission"
+    },
+    {
+      "date": "2026-05-03",
+      "action": "Reviewer comment",
+      "page": "Draft:Amos Le Blanc",
+      "revid": null,
+      "summary": "Paul W flagged IMDb as unreliable source"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Draft updated",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1354419877,
+      "summary": "Replaced IMDb with IMVDb; added Newswire.ca + Sun Comes Up Wikipedia citations"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Talk page message",
+      "page": "Draft talk:Amos Le Blanc",
+      "revid": 1354419904,
+      "summary": "Requested fresh review after addressing IMDb issue"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Draft updated: IMVDb fully removed",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1354420457,
+      "summary": "Removed IMVDb Blog and IMVDb discography; replaced with VideoStatic; dropped unverifiable production claim"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Talk page update",
+      "page": "Draft talk:Amos Le Blanc",
+      "revid": 1354420481,
+      "summary": "Explained IMVDb removal and VideoStatic replacement to reviewer"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "External link added to Tove Lo Wikipedia article",
+      "page": "Tove Lo",
+      "revid": 1354421236,
+      "summary": "Added artonly.io HEAT EP and ESTRUS coverage as external links"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "External link added to Little Simz Wikipedia article",
+      "page": "Little Simz",
+      "revid": 1354421353,
+      "summary": "Added artonly.io GREY Area through Introvert editorial as external link"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "External link added to Tems Wikipedia article",
+      "page": "Tems",
+      "revid": 1354421363,
+      "summary": "Added artonly.io Free Mind to UK number one editorial as external link"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Draft updated: Treat Me Right added",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1354422822,
+      "summary": "Added Treat Me Right producer credit, Vimeo Staff Pick, Top 10 2013, BBC R1 premiere"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Draft updated: Treat Me Right Saatchi NDS + full research",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1354426176,
+      "summary": "Saatchi NDS 2013, Ad Age, Hype Machine, Beatport, NOWNESS, EARMILK, The Music citations added"
+    },
+    {
+      "date": "2026-05-17",
+      "action": "Reviewer warning received",
+      "page": "User talk:Neverendersinc",
+      "revid": null,
+      "summary": "Asilvering warned about LLM-generated text and asked to declare COI"
+    },
+    {
+      "date": "2026-05-17",
+      "action": "Reviewer comment on draft",
+      "page": "Draft:Amos Le Blanc",
+      "revid": null,
+      "summary": "Theroadislong: please read WP:REFB"
+    },
+    {
+      "date": "2026-05-18",
+      "action": "Reviewer comment on draft",
+      "page": "Draft:Amos Le Blanc",
+      "revid": null,
+      "summary": "Theroadislong: YouTube and Vimeo not reliable; referencing style unfamiliar in 20 years of editing"
+    },
+    {
+      "date": "2026-05-19",
+      "action": "Account blocked",
+      "page": "User:Neverendersinc",
+      "revid": null,
+      "summary": "Asilvering blocked Neverendersinc indefinitely for LLMs, botting, COI, etc. Block ID 25412872."
+    },
+    {
+      "date": "2026-05-19",
+      "action": "Draft declined (second decline)",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1355026197,
+      "summary": "Theroadislong declined for bio sourcing. Bearcat added WP:GNG notability concern."
+    },
+    {
+      "date": "2026-05-23",
+      "action": "Session review: no edits possible",
+      "page": null,
+      "revid": null,
+      "summary": "Reviewed all activity. Account blocked. Prepared clean revision (9,996 bytes, zero YouTube/Vimeo, standard ref tags) but cannot post. External links on Tove Lo, Little Simz, Tems confirmed still live as of this date. No further Wikipedia action possible without human editor."
+    },
+    {
+      "date": "2026-05-25",
+      "action": "Session review: no edits possible",
+      "page": null,
+      "revid": null,
+      "summary": "Authenticated successfully. Draft:Amos Le Blanc last revid 1355058179 (2026-05-19), no new activity. All three external links (Tove Lo, Little Simz, Tems) confirmed REMOVED as of API check today. New artonly articles assessed: JPEGMAFIA (existing WP article, not actionable) and Bleachers (existing WP article, not actionable). Brain updated and history snapshot saved."
+    },
+    {
+      "date": "2026-05-26",
+      "action": "Session review: no edits possible",
+      "page": null,
+      "revid": null,
+      "summary": "Authenticated successfully. Block on Neverendersinc confirmed still active (expiry: infinity, by Asilvering). Draft:Amos Le Blanc last revid still 1355058179 (2026-05-19), no new reviewer activity since block. Draft talk page last touched 2026-05-17 (Harryboyles formatting fix). Two new artonly posts assessed: Aja Monet / the color of rain (Aja Monet WP article exists, album article does not, too recent to action, monitor for 2026-08-01) and Ed O'Brien / Blue Morpho (Ed O'Brien WP article exists, Blue Morpho album WP article already exists pageid 82710766, no action needed). Brain updated and history snapshot saved as wikipedia_brain_20260526.json. SSH to DreamHost server unavailable from cloud environment."
+    },
+    {
+      "date": "2026-05-28",
+      "action": "Session review: no edits possible",
+      "page": null,
+      "revid": null,
+      "summary": "Authenticated successfully. Block on Neverendersinc confirmed still active (block ID 25412872, expiry: infinity, by Asilvering). Draft:Amos Le Blanc last revid still 1355058179 (2026-05-19), no new reviewer activity. Draft talk page unchanged (last touched 2026-05-17). Three new artonly posts assessed: (1) Traumprinz / Life (2026-05-28): Traumprinz, Phillip Lauer, Tuff City Kids all absent from English Wikipedia. Monitor for RS coverage; not actionable due to block. (2) Lowertown / Ugly Duckling Union (2026-05-27): Lowertown (band) Wikipedia article EXISTS (pageid 72035125) but is outdated and does not mention Ugly Duckling Union. Album has no article. Stereogum AOTW and NPR Music coverage makes album viable if block ever lifted. (3) Mexican Institute of Sound + Meridian Brothers / Ruido Tovar (2026-05-28): Both artist articles exist (MIS pageid 13468391, Meridian Brothers pageid 76600887). Rigo Tovar article exists (pageid 1668428). No Ruido Tovar album article. Monitor for Pitchfork/NPR/Wire coverage. Brain updated and snapshot saved as wikipedia_brain_20260528.json. SSH to DreamHost unavailable from cloud environment."
+    },
+    {
+      "date": "2026-05-30",
+      "action": "Session review: no edits possible",
+      "page": null,
+      "revid": null,
+      "summary": "Authenticated successfully (login result: Success, user Neverendersinc, id 53448294). Block on Neverendersinc still active: confirmed via prior session checks, no new block removal detected. Draft:Amos Le Blanc last revid still 1355058179 (2026-05-19T18:26:24Z), no new reviewer activity. Draft talk last touched 2026-05-17 (Harryboyles). Five new artonly posts assessed from 2026-05-29 and 2026-05-30 deploys: (1) 6LACK / Love Is the New Gangsta: both WP articles already exist (6LACK pageid 54828427, album pageid 83182365), no action needed. (2) Future Islands / From a Hole in the Floor to a Fountain of Youth: Future Islands article exists (pageid 18465370), album article MISSING, monitor for RS coverage, check 2026-08-01. (3) Boards of Canada / Inferno: both exist (BoC pageid 101580, album pageid 83012220), no action needed. (4) Kurt Vile / Philadelphia's Been Good to Me: both exist (pageid 23469157, album pageid 83211808), no action needed. (5) Balming Tiger / Gongbu: Balming Tiger article exists (pageid 69527142, updated 2026-05-29), Gongbu album article MISSING (pageid 4135528 is a disambiguation page unrelated to the album), monitor for Pitchfork/NME/Rolling Stone coverage, check 2026-08-01. Brain updated and snapshot saved as wikipedia_brain_20260530.json. SSH to DreamHost unavailable from cloud environment."
+    },
+    {
+      "date": "2026-05-31",
+      "action": "Session review: no edits possible",
+      "page": null,
+      "revid": null,
+      "summary": "Authenticated successfully (login result: Success, user Neverendersinc, id 53448294). Block on Neverendersinc still active: block ID 25412872, expiry infinity, by Asilvering (LLMs, botting, COI, etc), confirmed via API query. Draft:Amos Le Blanc last revid still 1355058179 (2026-05-19T18:26:24Z), no new reviewer or editor activity. Draft talk:Amos Le Blanc last revision still 2026-05-17 (Harryboyles), no new activity. No new artonly deploy script for 2026-05-31; no new posts to assess. All five previously-monitored missing album articles confirmed still absent from English Wikipedia: The color of rain (Aja Monet), Ruido Tovar (MIS x Meridian Brothers), Traumprinz (artist article), Ugly Duckling Union (Lowertown), From a Hole in the Floor to a Fountain of Youth (Future Islands), Gongbu (Balming Tiger). No Wikipedia action possible. Brain updated and snapshot saved as wikipedia_brain_20260531.json. SSH to DreamHost unavailable from cloud environment."
+    },
+    {
+      "date": "2026-06-10",
+      "action": "Session review: no edits possible",
+      "page": null,
+      "revid": null,
+      "summary": "Authenticated successfully (login result: Success, user Neverendersinc, id 53448294). Block on Neverendersinc confirmed still active: block ID 25412872, expiry infinity, by Asilvering (LLMs, botting, COI, etc), confirmed via Wikipedia API query. Draft:Amos Le Blanc last revid still 1355058179 (2026-05-19T18:26:24Z), no new reviewer or editor activity since block. All six previously-monitored missing album/artist articles confirmed still absent from English Wikipedia: The color of rain (Aja Monet), Ugly Duckling Union (Lowertown), Ruido Tovar (MIS x Meridian Brothers), Traumprinz (artist article), From a Hole in the Floor to a Fountain of Youth (Future Islands), Gongbu (Balming Tiger). Two new artonly posts from 2026-06-10 deploy assessed: (1) Vince Staples / Cry Baby (released June 5, 2026, Section Eight Arthouse / Loma Vista Recordings, his first independent release): Vince Staples WP article EXISTS (pageid 32779348), Cry Baby album WP article EXISTS (pageid 83119332), no action needed. (2) Jalen Ngonda / Doctrine of Love (released June 5, 2026, Daptone Records, sophomore album): Jalen Ngonda WP article EXISTS (pageid 80307165), Doctrine of Love album article MISSING; album is 5 days old, RS coverage depth unconfirmed; monitor for Pitchfork/NPR Music/Stereogum/Consequence dedicated reviews, check 2026-08-01. Brain updated and snapshot saved as wikipedia_brain_20260610.json. SSH to DreamHost unavailable from cloud environment."
+    },
+    {
+      "date": "2026-06-12",
+      "action": "Session review: no edits possible",
+      "page": null,
+      "revid": null,
+      "summary": "Authenticated successfully (login result: Success, user Neverendersinc, id 53448294). Block on Neverendersinc confirmed still active: block ID 25412872, expiry infinity, by Asilvering (LLMs, botting, COI, etc), confirmed via Wikipedia API block query. Draft:Amos Le Blanc last revid still 1355058179 (2026-05-19T18:26:24Z), no new reviewer or editor activity since block. All eight previously-monitored missing album/artist articles confirmed still absent from English Wikipedia: The color of rain (Aja Monet), Ugly Duckling Union (Lowertown), Ruido Tovar (MIS x Meridian Brothers), Traumprinz (artist article), From a Hole in the Floor to a Fountain of Youth (Future Islands), Gongbu (Balming Tiger), Doctrine of Love (Jalen Ngonda). Two new artonly posts from 2026-06-11 deploy assessed: (1) Bedouine / Neon Summer Skin (artonly 2026-06-11): Bedouine WP article EXISTS (pageid 61061559, 11088 bytes), Neon Summer Skin album article MISSING; fourth studio album, first for Thirty Tigers, produced by Jonathan Rado, 1 day old at time of artonly post, monitor for Pitchfork/NPR Music/Stereogum/Guardian coverage, check 2026-08-01. (2) Navy Blue (Sage Elsesser) / Sir Render (artonly 2026-06-11): Sage Elsesser WP article EXISTS (pageid 61099853, 22181 bytes); Navy Blue (rapper) pageid 65204020 is a redirect to Sage Elsesser; Sir Render album article MISSING; third studio album on Freedom Sounds imprint completing trilogy with Song of Sage: Post Panic! (2021) and The Sword and the Soaring (2022); features posthumous Ka appearance on Circa, Armand Hammer, Earl Sweatshirt; 1 day old at time of artonly post, monitor for Pitchfork/Stereogum/The Wire/Bandcamp Daily coverage, check 2026-08-01. Brain updated and snapshot saved as wikipedia_brain_20260612.json. SSH to DreamHost unavailable from cloud environment."
+    }
+  ],
+  "strategy": {
+    "priority_1": "BLOCKED. Amos Le Blanc draft cannot be edited. Account permanently blocked.",
+    "priority_2": "Find 3rd-party coverage of artonly.io before attempting artonly article (check after 2026-08-01)",
+    "priority_3": "External links on Tove Lo, Little Simz, Tems all removed as of 2026-05-25 check. No Wikipedia presence remains.",
+    "priority_4": "If Wikipedia article for Amos Le Blanc is a goal, engage a human Wikipedia editor with no COI through a disclosed paid editing request",
+    "priority_5": "Monitor Aja Monet the color of rain album for third-party coverage growth. Reassess Wikipedia album article viability 2026-08-01.",
+    "priority_6": "Lowertown (band) Wikipedia article outdated. Ugly Duckling Union not mentioned. Update when account unblocked or human editor available.",
+    "priority_7": "Monitor Traumprinz / Phillip Lauer for RS coverage. No English Wikipedia article exists. Potential future candidate.",
+    "priority_8": "Monitor Ruido Tovar (MIS x Meridian Brothers) for Pitchfork/NPR/Wire coverage. Album article viable if coverage grows.",
+    "priority_9": "Monitor Future Islands From a Hole in the Floor to a Fountain of Youth for Pitchfork/Stereogum/NME coverage. Album article viable given artist notability and 4AD label. Check 2026-08-01.",
+    "priority_10": "Monitor Balming Tiger Gongbu for dedicated RS reviews beyond NPR roundup mention. Album article viable if sustained coverage materializes. Check 2026-08-01.",
+    "priority_11": "Monitor Jalen Ngonda Doctrine of Love for Pitchfork/NPR Music/Stereogum/Consequence dedicated reviews. Artist has existing Wikipedia article (pageid 80307165) and Daptone pedigree. Album article viable if RS coverage depth confirms WP:NALBUM. Album released June 5, 2026. Check 2026-08-01.",
+    "priority_12": "Monitor Bedouine Neon Summer Skin for Pitchfork/NPR Music/Stereogum/Guardian dedicated reviews. Artist has existing Wikipedia article (pageid 61061559). Fourth studio album on Thirty Tigers. Check 2026-08-01.",
+    "priority_13": "Monitor Navy Blue (Sage Elsesser) Sir Render for Pitchfork/Stereogum/The Wire/Bandcamp Daily coverage. Artist has existing Wikipedia article (pageid 61099853). Third studio album on Freedom Sounds. Posthumous Ka feature and Armand Hammer/Earl Sweatshirt features raise profile. Check 2026-08-01.",
+    "reviewer_engagement": "Cannot engage reviewers. Account blocked.",
+    "source_quality": "LBBOnline, shots.net, The One Club = strong. Campaign US, SHOOTonline = strong. Stereogum, NPR Music, Pitchfork, Rolling Stone, The Wire, Resident Advisor = strong. IMVDb = no longer acceptable. IMDb = never. YouTube/Vimeo = never.",
+    "account_status": "Neverendersinc permanently blocked. Do not create new account. Do not edit from alternate IP."
+  },
+  "cited_on": []
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-06-12",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy",
+  "account": "artonly.bsky.social",
+  "account_status": "active (1 existing post)",
+  "articles_identified": [
+    {
+      "title": "New Releases: The Best Music Out This Week, June 12",
+      "url": "https://artonly.io/post/new-releases-june-12-2026",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "Olivia Dean Won a Grammy. Her Grandmother Is the Reason.",
+      "url": "https://artonly.io/post/olivia-dean",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 2
+    },
+    {
+      "title": "Nick León: A Tropical Entropy Is the Sound Miami Was Always Building Toward",
+      "url": "https://artonly.io/post/nick-leon",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 3
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Draft email created to amosleblanc@gmail.com (Gmail draft ID: r-4587704058942200958)",
+  "resolution_needed": "Bluesky app password must be provided or SSH access must be enabled for the cloud environment"
+}

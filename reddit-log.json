@@ -26,5 +26,36 @@
         "reason": "Max 2 posts per day limit reached. Strong candidate for r/indieheads on 2026-06-01 if kurt-vile post goes first."
       }
     ]
+  },
+  {
+    "date": "2026-06-12",
+    "session": "distribution-agent",
+    "ssh_status": "unavailable (connection timeout from cloud environment)",
+    "reddit_api_creds_checked": false,
+    "posts_drafted": 1,
+    "posts_attempted": 0,
+    "queue": [
+      {
+        "slug": "olivia-dean",
+        "title": "Olivia Dean won Best New Artist at the Grammys at 26. This feature is really about her grandmother.",
+        "subreddit": "r/indieheads",
+        "url": "https://artonly.io/post/olivia-dean",
+        "date": "2026-06-12",
+        "status": "queued_manual",
+        "body": "Dean's grandmother came to Britain as part of the Windrush generation, Caribbean immigrants invited by the postwar British government to fill labor shortages. Three generations later, her granddaughter debuted at UK number one and won Best New Artist at this year's Grammys. The piece connects those two facts without collapsing them into a neat narrative.\n\nThe Art of Loving came out last September. She became the first female solo artist to have four simultaneous UK top ten singles. The Man I Need reached number one in the UK and number two on the Billboard Hot 100. What the ArtOnly feature focuses on is that none of this happened because the music makes a project of its history. The songs are specific and small, mostly about love, and the restraint is deliberate.\n\nShe sits in the lineage of Sade and Amy Winehouse in the piece's framing: British soul artists who chose emotional precision over message. Dean inherited a story worth telling and chose not to explain it to anyone. That turns out to be the most interesting thing about her.\n\nhttps://artonly.io/post/olivia-dean"
+      }
+    ],
+    "today_posts_available": [
+      "olivia-dean",
+      "dj-seinfeld-if-this-is-it",
+      "robyn-birthday-2026",
+      "new-releases-june-12-2026",
+      "nick-leon",
+      "laura-misch-lithic",
+      "afrobeats-artists-you-should-know-right-now",
+      "ariana-grande"
+    ],
+    "selection_reason": "olivia-dean chosen for Windrush generational angle. Specific, human, non-promotional hook. r/indieheads allows editorial feature links. nick-leon skipped (already queued 2026-06-05). robyn-birthday-2026 skipped (minimal article content, 1 min read). new-releases skipped (aggregator format, poor subreddit fit).",
+    "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Post drafted for manual submission at reddit.com/r/indieheads."
   }
 ]

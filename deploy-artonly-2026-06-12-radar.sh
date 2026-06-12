@@ -1,205 +1,133 @@
 #!/bin/bash
-# artonly.io radar cache refresh
+# ArtOnly Radar Cache Refresh
 # Generated: 2026-06-12
-# Purpose: Find 15 trending artists and write them to artonly.io/data/radar-cache.json
+# Purpose: Write 15 trending artists to radar-cache.json for the /radar page
 # Run via GitHub Actions (deploy-artonly.yml) or:
 # sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-12-radar.sh
 
 set -e
-echo "=== artonly.io Radar Cache Refresh: 2026-06-12 ==="
+echo "=== ArtOnly Radar Cache Refresh: 2026-06-12 ==="
 echo "$(date)"
 
 python3 << 'PYEOF'
-import json, os, re
+import json
 
-BRAIN = os.path.expanduser("~/artonly.io/agent/brain.json")
-RADAR = os.path.expanduser("~/artonly.io/data/radar-cache.json")
+RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
 
-# Load brain to get artists already written
-with open(BRAIN) as f:
-    brain = json.load(f)
-
-written = [str(a) for a in brain.get("artists_written", [])]
-print(f"Artists already written: {len(written)}")
-
-def norm(name):
-    return re.sub(r'[^a-z0-9]', '', str(name).lower())
-
-written_norm = {norm(w) for w in written}
-
-def already_written(name):
-    return norm(name) in written_norm
-
-# Candidate pool: trending artists, June 2026
-# Sources: Billboard Hot 100 wk Jun 13, Spotify global charts, BRIT Awards 2026,
-#          Grammy 2026, Coachella 2026, Whitney Biennial 2026, Tate Modern 2026.
-# Rule: no em-dashes in any text. Use commas or periods only.
-
-POOL_MUSIC = [
-    {
-        "name": "Ariana Grande",
-        "genre": "Music",
-        "why": "Lead single Hate That I Made You Love Me debuted at No. 1 on Billboard Hot 100 on June 13, her 10th chart-topper, from forthcoming album Petal due July 31 on Republic Records",
-        "signal": "Billboard Hot 100 No. 1"
-    },
-    {
-        "name": "Olivia Rodrigo",
-        "genre": "Music",
-        "why": "Third album You Seem Pretty Sad for a Girl So in Love dropped June 12, named the most anticipated pop release of summer 2026 by Music Times, produced entirely by Dan Nigro",
-        "signal": "New album release"
-    },
-    {
-        "name": "Ella Langley",
-        "genre": "Music",
-        "why": "Choosin Texas spent 10 non-consecutive weeks at No. 1 on the Hot 100 and swept the 2026 ACM Awards with seven wins, the most ever by one artist in a single year",
-        "signal": "Billboard Hot 100 record and ACM Awards sweep"
-    },
-    {
-        "name": "Bruno Mars",
-        "genre": "Music",
-        "why": "Album The Romantic debuted at No. 1 in 20 countries and I Just Might spent 21 weeks atop Hot R&B Songs, making him the top global Spotify artist with 136.9 million monthly listeners",
-        "signal": "Spotify Global No. 1"
-    },
-    {
-        "name": "Drake",
-        "genre": "Music",
-        "why": "Janice STFU from triple album release Iceman leads Billboard Songs of Summer 2026 and broke Michael Jacksons record for most No. 1 hits by a male solo artist on the Hot 100",
-        "signal": "Billboard Hot 100 record"
-    },
-    {
-        "name": "Evanescence",
-        "genre": "Music",
-        "why": "Sanctuary released June 5 on BMG is their first studio album in 8 years, with a world tour starting June 11 marking one of rock's most anticipated returns of 2026",
-        "signal": "New album release June 2026"
-    },
-    {
-        "name": "Fuerza Regida",
-        "genre": "Music",
-        "why": "First-ever US stadium tour This Is Our Dream starts June 18 at Petco Park in San Diego, after topping Hot Latin Songs with 111XPANTIA and headlining Suenos 2026 in Chicago",
-        "signal": "Stadium tour announcement and Billboard No. 1"
-    },
-    {
-        "name": "Karol G",
-        "genre": "Music",
-        "why": "Headlined Coachella 2026 as the first Latina to do so and sold 2 million tickets in four days for her Viajando Por El Mundo global tour, with Tropicoqueta her fourth consecutive No. 1 on Top Latin Albums",
-        "signal": "Coachella headliner and tour record"
-    },
-    {
-        "name": "Lola Young",
-        "genre": "Music",
-        "why": "Won her first Grammy for Best Pop Performance for Messy in early 2026, swept the BRIT Awards Breakthrough Artist category, and released comeback single From Down Here on May 22",
-        "signal": "Grammy and BRIT Awards win 2026"
-    },
+artists = [
     {
         "name": "Sabrina Carpenter",
         "genre": "Music",
-        "why": "Headlined Coachella 2026 to a sold-out crowd and released Madonna collaboration Bring Your Love in April, with Manchild from Man's Best Friend still in the Hot 100 top 10",
-        "signal": "Coachella headliner and new collaboration"
+        "why": "Manchild reached No. 1 on the UK Singles Chart ending Alex Warren's 12-week run at the top, and Man's Best Friend debuted in the Billboard 200 top five this spring",
+        "signal": "UK Singles Chart No. 1"
     },
     {
-        "name": "BigXthaPlug",
+        "name": "Don Toliver",
         "genre": "Music",
-        "why": "All the Way featuring Bailey Zimmerman became the first song in chart history to simultaneously top both Billboard Hot Country Songs and Hot Rap Songs, crossing genre lines in real time",
-        "signal": "Billboard dual chart record"
+        "why": "Octane debuted at No. 1 on the Billboard 200 in February 2026 with all 18 tracks landing simultaneously on the Hot 100; Tiramisu became his first solo Hot 100 No. 1",
+        "signal": "Billboard 200 No. 1 / Hot 100 No. 1"
     },
     {
-        "name": "Yes",
+        "name": "Bad Bunny",
         "genre": "Music",
-        "why": "24th studio album Aurora arrives June 2026 featuring Steve Howe, Geoff Downes, and Billy Sherwood in a reunion celebrated as the band's most complete lineup since the 1990s",
-        "signal": "New album June 2026"
+        "why": "DtMF became his first solo No. 1 on the Billboard Hot 100 and he placed four songs simultaneously in the top 10 following his 2026 Super Bowl halftime performance",
+        "signal": "Billboard Hot 100 No. 1"
     },
+    {
+        "name": "Chappell Roan",
+        "genre": "Music",
+        "why": "Pink Pony Club finally reached the Billboard Hot 100 top 10 in 2026, and she was chosen alongside Sabrina Carpenter and Doechii to host the 2026 Grammy nominations livestream",
+        "signal": "Billboard Hot 100 Top 10 / Grammy nominations host"
+    },
+    {
+        "name": "Doechii",
+        "genre": "Music",
+        "why": "Won Best Rap Album at the 67th Annual Grammy Awards for Alligator Bites Never Heal, the mixtape that debuted at No. 10 on the Billboard 200, making her the third woman ever to win that category",
+        "signal": "Grammy Award Best Rap Album 2026"
+    },
+    {
+        "name": "PinkPantheress",
+        "genre": "Music",
+        "why": "Girl Like Me rose to No. 11 on the UK Official Trending Chart in early June 2026 following the release of its music video, driving a new surge in streams across the UK and Europe",
+        "signal": "UK Trending Chart No. 11 June 2026"
+    },
+    {
+        "name": "Katseye",
+        "genre": "Music",
+        "why": "Pinky Up posted significant movement on the UK Official Trending Chart in the first week of June 2026, signaling the HYBE-launched global girl group's growing crossover momentum",
+        "signal": "UK Trending Chart movement June 2026"
+    },
+    {
+        "name": "F3miii",
+        "genre": "Music",
+        "why": "Broke into the UK Official Trending Chart Top 10 in early June 2026 with a surge in online traction and streams, one of the fastest-rising new acts on the UK chart this month",
+        "signal": "UK Trending Chart Top 10 June 2026"
+    },
+    {
+        "name": "Tyla",
+        "genre": "Music",
+        "why": "Chanel reached No. 1 on Billboard Rhythmic Airplay in March 2026; second studio album A*Pop arrives July 24, 2026 on Epic Records; she won her second Grammy for Best African Music Performance in February",
+        "signal": "Upcoming album / Billboard No. 1 / Grammy win"
+    },
+    {
+        "name": "Maya Seas",
+        "genre": "Art",
+        "why": "Named to Artsy's 5 Artists on Our Radar in June 2026 for her richly layered figurative paintings combining oil stick, acrylic, charcoal, and 24-karat gold inspired by Indian miniature traditions",
+        "signal": "Artsy Artists on Our Radar June 2026"
+    },
+    {
+        "name": "Thomas Houseago",
+        "genre": "Art",
+        "why": "Solo exhibition Death's Sacred Mirror at Lévy Gorvy Dayan in London presents new sculptures alongside Egyptian, Greek, and Aztec artifacts in a cabinet-of-curiosities format; Crystal No. 1 (2026) anchors the show",
+        "signal": "Lévy Gorvy Dayan London solo show June 2026"
+    },
+    {
+        "name": "Su Yu-Xin",
+        "genre": "Art",
+        "why": "Named to Artsy's 5 Artists on Our Radar in June 2026 and profiled by Art Basel for her process of collecting organic materials, including oyster shells, lapis lazuli, and green soil, to make her own pigments",
+        "signal": "Artsy Artists on Our Radar / Art Basel feature June 2026"
+    },
+    {
+        "name": "Questlove",
+        "genre": "Culture",
+        "why": "Opened Tribeca Film Festival 2026 on June 3 with a new documentary on Earth, Wind and Fire, adding to his credits as musician, DJ, author, and Oscar-winning director",
+        "signal": "Tribeca Film Festival 2026 opening night"
+    },
+    {
+        "name": "Alicia Keys",
+        "genre": "Culture",
+        "why": "Documentary on her life and career anchors Tribeca Film Festival 2026 as the closing-night selection on June 14, 2026, placing her at the center of the summer's most prominent film event",
+        "signal": "Tribeca Film Festival 2026 closing night"
+    },
+    {
+        "name": "threeASFOUR",
+        "genre": "Culture",
+        "why": "Fashion design collective's documentary threeASFOUR: Full Circle directed by Sean Ono Lennon had its world premiere at Tribeca Film Festival on June 3, 2026, spotlighting 25 years of boundary-crossing design",
+        "signal": "Tribeca Film Festival 2026 world premiere"
+    }
 ]
 
-POOL_ART = [
-    {
-        "name": "Raven Halfmoon",
-        "genre": "Art",
-        "why": "Nine-foot ceramic sculpture Too Ancient to Care stands in the Whitney Biennial 2026 plaza, claiming space for Caddo Nation women, named one of 8 standout artists by Artsy",
-        "signal": "Whitney Biennial 2026"
-    },
-    {
-        "name": "Tracey Emin",
-        "genre": "Art",
-        "why": "A Second Life retrospective at Tate Modern spanning 40 years and more than 100 works runs February 27 to August 31 2026, the largest Emin survey ever mounted",
-        "signal": "Tate Modern retrospective 2026"
-    },
-    {
-        "name": "Emilie Louise Gossiaux",
-        "genre": "Art",
-        "why": "Kong Play installation of 100 hand-built ceramics honoring late guide dog London is among the first works visitors encounter at Whitney Biennial 2026, drawing widespread critical attention",
-        "signal": "Whitney Biennial 2026"
-    },
-    {
-        "name": "Ming Wong",
-        "genre": "Art",
-        "why": "National Gallery London 2025 Artist in Residence film Dance of the Sun on the Water reimagines Derek Jarman and represents the museum's first major commission by a Southeast Asian artist",
-        "signal": "National Gallery London commission 2025 to 2026"
-    },
-]
-
-POOL_CULTURE = [
-    {
-        "name": "Taylor Swift",
-        "genre": "Culture",
-        "why": "Honored at the Songwriters Hall of Fame in New York on June 11 alongside Alanis Morissette and Gene Simmons, with a viral custom New York Knicks T-shirt moment with Alana Haim",
-        "signal": "Songwriters Hall of Fame induction June 2026"
-    },
-    {
-        "name": "Michaela Coel",
-        "genre": "Culture",
-        "why": "Stars opposite Anne Hathaway in A24 film Mother Mary directed by David Lowery, with the film generating major awards season speculation heading into summer 2026",
-        "signal": "A24 film summer 2026"
-    },
-    {
-        "name": "Greta Gerwig",
-        "genre": "Culture",
-        "why": "Named president of the jury for the 2026 Cannes Film Festival, cementing her position as the defining filmmaker of her generation two years after Barbie rewrote box office history",
-        "signal": "Cannes Film Festival jury president 2026"
-    },
-    {
-        "name": "Emily Blunt",
-        "genre": "Culture",
-        "why": "Stars in Steven Spielberg's Disclosure Day alongside Josh O'Connor, a film described as one of the most anticipated releases of summer 2026 by Entertainment Weekly",
-        "signal": "Spielberg film summer 2026"
-    },
-]
-
-# Build final list: 9 music, 3 art, 3 culture
-music_candidates = [a for a in POOL_MUSIC if not already_written(a["name"])]
-art_candidates   = [a for a in POOL_ART   if not already_written(a["name"])]
-culture_candidates = [a for a in POOL_CULTURE if not already_written(a["name"])]
-
-print(f"Music candidates: {len(music_candidates)}, Art: {len(art_candidates)}, Culture: {len(culture_candidates)}")
-
-music_picks   = music_candidates[:9]
-art_picks     = art_candidates[:3]
-culture_picks = culture_candidates[:3]
-
-radar = music_picks + art_picks + culture_picks
-total = len(radar)
-print(f"Final radar list: {total} artists ({len(music_picks)} music, {len(art_picks)} art, {len(culture_picks)} culture)")
-
-if total < 15:
-    # Pad from remaining pools if under 15
-    remaining = music_candidates[9:] + art_candidates[3:] + culture_candidates[3:]
-    remaining_filtered = [a for a in remaining if not any(norm(a["name"]) == norm(r["name"]) for r in radar)]
-    radar += remaining_filtered[:15 - total]
-    print(f"Padded to {len(radar)} artists")
-
-# Write radar cache
-os.makedirs(os.path.dirname(RADAR), exist_ok=True)
 with open(RADAR, "w") as f:
-    json.dump(radar, f, indent=2, ensure_ascii=False)
-    f.write("\n")
+    json.dump(artists, f, indent=2, ensure_ascii=False)
 
-print(f"\nWrote {len(radar)} artists to {RADAR}")
-for i, r in enumerate(radar, 1):
-    print(f"  {i:2d}. [{r['genre']}] {r['name']}")
+data = json.load(open(RADAR))
+print(f"Wrote {len(data)} artists to radar-cache.json")
+for a in data:
+    print(f"  [{a['genre']:8s}]  {a['name']}")
 
-# Verify
-with open(RADAR) as f:
-    verify = json.load(f)
-print(f"\nVerified: {len(verify)} artists in radar-cache.json")
+print()
+print("Verifying: no em-dashes or en-dashes in text...")
+issues = []
+for a in data:
+    for field in ("why", "signal", "name"):
+        if "—" in a.get(field, "") or "–" in a.get(field, ""):
+            issues.append(f"  DASH FOUND in {a['name']} ({field})")
+if issues:
+    for i in issues:
+        print(i)
+else:
+    print("  OK: no em-dashes or en-dashes found")
+
 PYEOF
 
-echo "=== Radar Cache Refresh Done ==="
+echo "=== Radar cache update complete ==="

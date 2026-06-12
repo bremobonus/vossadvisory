@@ -13,98 +13,97 @@ python3 << 'PYEOF'
 import json
 
 RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
-BRAIN = "/home/dh_yadmw3/artonly.io/agent/brain.json"
 
 artists = [
     {
-        "name": "Ariana Grande",
+        "name": "Sabrina Carpenter",
         "genre": "Music",
-        "why": "Lead single 'Hate That I Made You Love Me' debuted at No. 1 on the Billboard Hot 100 dated June 13, her 10th career chart-topper, ahead of new album 'petal' dropping July 31",
+        "why": "Manchild reached No. 1 on the UK Singles Chart ending Alex Warren's 12-week run at the top, and Man's Best Friend debuted in the Billboard 200 top five this spring",
+        "signal": "UK Singles Chart No. 1"
+    },
+    {
+        "name": "Don Toliver",
+        "genre": "Music",
+        "why": "Octane debuted at No. 1 on the Billboard 200 in February 2026 with all 18 tracks landing simultaneously on the Hot 100; Tiramisu became his first solo Hot 100 No. 1",
+        "signal": "Billboard 200 No. 1 / Hot 100 No. 1"
+    },
+    {
+        "name": "Bad Bunny",
+        "genre": "Music",
+        "why": "DtMF became his first solo No. 1 on the Billboard Hot 100 and he placed four songs simultaneously in the top 10 following his 2026 Super Bowl halftime performance",
         "signal": "Billboard Hot 100 No. 1"
     },
     {
-        "name": "Olivia Rodrigo",
+        "name": "Chappell Roan",
         "genre": "Music",
-        "why": "Third studio album 'you seem pretty sad for a girl so in love' released June 12, 2026, with 'Drop Dead' already charting globally and over 60 million monthly Spotify listeners",
-        "signal": "New album release"
+        "why": "Pink Pony Club finally reached the Billboard Hot 100 top 10 in 2026, and she was chosen alongside Sabrina Carpenter and Doechii to host the 2026 Grammy nominations livestream",
+        "signal": "Billboard Hot 100 Top 10 / Grammy nominations host"
     },
     {
-        "name": "Ella Langley",
+        "name": "Doechii",
         "genre": "Music",
-        "why": "'Choosin Texas' spent 10 non-consecutive weeks atop the Billboard Hot 100 and became the first song by a female artist to simultaneously lead the Hot 100, Hot Country Songs, and Country Airplay charts; she won 7 ACM Awards in a single year",
-        "signal": "Billboard Hot 100 No. 1 / ACM Awards sweep"
+        "why": "Won Best Rap Album at the 67th Annual Grammy Awards for Alligator Bites Never Heal, the mixtape that debuted at No. 10 on the Billboard 200, making her the third woman ever to win that category",
+        "signal": "Grammy Award Best Rap Album 2026"
     },
     {
-        "name": "Fuerza Regida",
+        "name": "PinkPantheress",
         "genre": "Music",
-        "why": "Launched first U.S. stadium tour 'This Is Our Dream' on June 18 in San Diego spanning nine stadiums nationwide; headlined Rolling Stone's SXSW Future of Music showcase in March 2026",
-        "signal": "U.S. stadium tour launch"
+        "why": "Girl Like Me rose to No. 11 on the UK Official Trending Chart in early June 2026 following the release of its music video, driving a new surge in streams across the UK and Europe",
+        "signal": "UK Trending Chart No. 11 June 2026"
     },
     {
-        "name": "Lola Young",
+        "name": "Katseye",
         "genre": "Music",
-        "why": "Returned from a voluntary hiatus with new single 'From Down Here' on May 22, 2026, co-produced with James Blake; won the 2026 Grammy Award for Best Pop Solo Performance for 'Messy'",
-        "signal": "New single / Grammy win"
+        "why": "Pinky Up posted significant movement on the UK Official Trending Chart in the first week of June 2026, signaling the HYBE-launched global girl group's growing crossover momentum",
+        "signal": "UK Trending Chart movement June 2026"
     },
     {
-        "name": "BigXthaPlug",
+        "name": "F3miii",
         "genre": "Music",
-        "why": "Headlined Rolling Stone's Future of Music SXSW showcase on March 14, 2026; 'All the Way' featuring Bailey Zimmerman was the first song to simultaneously top both Billboard Hot Country Songs and Hot Rap Songs",
-        "signal": "Rolling Stone Future of Music / Billboard chart history"
+        "why": "Broke into the UK Official Trending Chart Top 10 in early June 2026 with a surge in online traction and streams, one of the fastest-rising new acts on the UK chart this month",
+        "signal": "UK Trending Chart Top 10 June 2026"
     },
     {
         "name": "Tyla",
         "genre": "Music",
-        "why": "'Chanel' reached No. 1 on Billboard Rhythmic Airplay in March 2026 and second studio album 'A*Pop' arrives July 24, 2026; she won her second Grammy for Best African Music Performance in February",
-        "signal": "Upcoming album / Billboard No. 1"
+        "why": "Chanel reached No. 1 on Billboard Rhythmic Airplay in March 2026; second studio album A*Pop arrives July 24, 2026 on Epic Records; she won her second Grammy for Best African Music Performance in February",
+        "signal": "Upcoming album / Billboard No. 1 / Grammy win"
     },
     {
-        "name": "Charli XCX",
-        "genre": "Music",
-        "why": "Summer 2026 single 'Rock Music' and its TikTok glitch-edit format became an inescapable viral trend, sustaining over 30 million monthly Spotify listeners heading into festival season",
-        "signal": "TikTok viral trend"
-    },
-    {
-        "name": "Bloc Party",
-        "genre": "Music",
-        "why": "London post-punk band listed among Pitchfork's most anticipated 2026 releases with new material expected, their first project since 2022's 'Alpha Games'",
-        "signal": "Pitchfork 2026 anticipated release"
-    },
-    {
-        "name": "Tracey Emin",
+        "name": "Maya Seas",
         "genre": "Art",
-        "why": "Largest-ever career retrospective 'A Second Life' at Tate Modern runs through August 31, 2026, spanning 40 years across painting, video, installation, and sculpture including 'My Bed'",
-        "signal": "Tate Modern retrospective"
+        "why": "Named to Artsy's 5 Artists on Our Radar in June 2026 for her richly layered figurative paintings combining oil stick, acrylic, charcoal, and 24-karat gold inspired by Indian miniature traditions",
+        "signal": "Artsy Artists on Our Radar June 2026"
     },
     {
-        "name": "Hiba Schahbaz",
+        "name": "Thomas Houseago",
         "genre": "Art",
-        "why": "First major retrospective 'The Garden' at MOCA North Miami brought together 80 works across 15 years of the Pakistani American painter's Indo-Persian miniature influenced paintings",
-        "signal": "MOCA North Miami retrospective"
+        "why": "Solo exhibition Death's Sacred Mirror at Lévy Gorvy Dayan in London presents new sculptures alongside Egyptian, Greek, and Aztec artifacts in a cabinet-of-curiosities format; Crystal No. 1 (2026) anchors the show",
+        "signal": "Lévy Gorvy Dayan London solo show June 2026"
     },
     {
-        "name": "Claire Tabouret",
+        "name": "Su Yu-Xin",
         "genre": "Art",
-        "why": "French artist commissioned by France's Ministry of Culture to design six contemporary stained-glass windows for the restored Notre-Dame de Paris, with preparatory maquettes exhibited at the Grand Palais this spring",
-        "signal": "Notre-Dame de Paris commission"
+        "why": "Named to Artsy's 5 Artists on Our Radar in June 2026 and profiled by Art Basel for her process of collecting organic materials, including oyster shells, lapis lazuli, and green soil, to make her own pigments",
+        "signal": "Artsy Artists on Our Radar / Art Basel feature June 2026"
     },
     {
-        "name": "Precious Okoyomon",
+        "name": "Questlove",
         "genre": "Culture",
-        "why": "Multihyphenate artist, poet, and comedian selected for the 82nd Whitney Biennial at the Whitney Museum of American Art in New York, on view through August 23, 2026",
-        "signal": "Whitney Biennial 2026"
+        "why": "Opened Tribeca Film Festival 2026 on June 3 with a new documentary on Earth, Wind and Fire, adding to his credits as musician, DJ, author, and Oscar-winning director",
+        "signal": "Tribeca Film Festival 2026 opening night"
     },
     {
-        "name": "Raven Halfmoon",
+        "name": "Alicia Keys",
         "genre": "Culture",
-        "why": "Colossal figurative sculptor working with Indigenous iconography, named one of eight standout artists at the 82nd Whitney Biennial at the Whitney Museum of American Art, on view through August 23, 2026",
-        "signal": "Whitney Biennial 2026"
+        "why": "Documentary on her life and career anchors Tribeca Film Festival 2026 as the closing-night selection on June 14, 2026, placing her at the center of the summer's most prominent film event",
+        "signal": "Tribeca Film Festival 2026 closing night"
     },
     {
-        "name": "Julio Torres",
+        "name": "threeASFOUR",
         "genre": "Culture",
-        "why": "Comedy auteur and former Saturday Night Live writer featured as a multidisciplinary artist in the 82nd Whitney Biennial at the Whitney Museum of American Art, on view through August 23, 2026",
-        "signal": "Whitney Biennial 2026"
+        "why": "Fashion design collective's documentary threeASFOUR: Full Circle directed by Sean Ono Lennon had its world premiere at Tribeca Film Festival on June 3, 2026, spotlighting 25 years of boundary-crossing design",
+        "signal": "Tribeca Film Festival 2026 world premiere"
     }
 ]
 
@@ -117,7 +116,7 @@ for a in data:
     print(f"  [{a['genre']:8s}]  {a['name']}")
 
 print()
-print("Verifying: no em-dashes in text...")
+print("Verifying: no em-dashes or en-dashes in text...")
 issues = []
 for a in data:
     for field in ("why", "signal", "name"):

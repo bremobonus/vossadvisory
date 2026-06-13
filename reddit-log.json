@@ -26,5 +26,102 @@
         "reason": "Max 2 posts per day limit reached. Strong candidate for r/indieheads on 2026-06-01 if kurt-vile post goes first."
       }
     ]
+  },
+  {
+    "date": "2026-06-12",
+    "session": "distribution-agent",
+    "ssh_status": "unavailable (connection timeout from cloud environment)",
+    "reddit_api_creds_checked": false,
+    "posts_drafted": 1,
+    "posts_attempted": 0,
+    "queue": [
+      {
+        "slug": "olivia-dean",
+        "title": "Olivia Dean won Best New Artist at the Grammys at 26. This feature is really about her grandmother.",
+        "subreddit": "r/indieheads",
+        "url": "https://artonly.io/post/olivia-dean",
+        "date": "2026-06-12",
+        "status": "queued_manual",
+        "body": "Dean's grandmother came to Britain as part of the Windrush generation, Caribbean immigrants invited by the postwar British government to fill labor shortages. Three generations later, her granddaughter debuted at UK number one and won Best New Artist at this year's Grammys. The piece connects those two facts without collapsing them into a neat narrative.\n\nThe Art of Loving came out last September. She became the first female solo artist to have four simultaneous UK top ten singles. The Man I Need reached number one in the UK and number two on the Billboard Hot 100. What the ArtOnly feature focuses on is that none of this happened because the music makes a project of its history. The songs are specific and small, mostly about love, and the restraint is deliberate.\n\nShe sits in the lineage of Sade and Amy Winehouse in the piece's framing: British soul artists who chose emotional precision over message. Dean inherited a story worth telling and chose not to explain it to anyone. That turns out to be the most interesting thing about her.\n\nhttps://artonly.io/post/olivia-dean"
+      }
+    ],
+    "today_posts_available": [
+      "olivia-dean",
+      "dj-seinfeld-if-this-is-it",
+      "robyn-birthday-2026",
+      "new-releases-june-12-2026",
+      "nick-leon",
+      "laura-misch-lithic",
+      "afrobeats-artists-you-should-know-right-now",
+      "ariana-grande"
+    ],
+    "selection_reason": "olivia-dean chosen for Windrush generational angle. Specific, human, non-promotional hook. r/indieheads allows editorial feature links. nick-leon skipped (already queued 2026-06-05). robyn-birthday-2026 skipped (minimal article content, 1 min read). new-releases skipped (aggregator format, poor subreddit fit).",
+    "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Post drafted for manual submission at reddit.com/r/indieheads."
+  },
+  {
+    "date": "2026-06-13",
+    "session": "distribution-agent",
+    "ssh_status": "unavailable (connection timeout from cloud environment)",
+    "reddit_api_creds_checked": false,
+    "posts_drafted": 2,
+    "posts_attempted": 0,
+    "today_posts_available": [
+      "doechii",
+      "olivia-rodrigo",
+      "rivers-cuomo-birthday-2026",
+      "sabrina-carpenter",
+      "the-10-best-albums-of-the-1990s",
+      "tyler-the-creator",
+      "wiki-ancient-history"
+    ],
+    "queued": [
+      {
+        "slug": "doechii",
+        "title": "Doechii: The Swamp Princess Who Claimed the Throne",
+        "subreddit": "r/hiphopheads",
+        "post_date": "2026-06-13",
+        "status": "queued"
+      },
+      {
+        "slug": "rivers-cuomo-birthday-2026",
+        "title": "Happy Birthday Rivers Cuomo: The Work That Matters",
+        "subreddit": "r/indieheads",
+        "post_date": "2026-06-14",
+        "status": "queued",
+        "reason": "r/indieheads blocked June 13 due to 48 hour rule from olivia-dean draft on June 12. Earliest post date June 14. Rivers Cuomo birthday is today June 13 so still timely tomorrow."
+      }
+    ],
+    "skipped": [
+      {
+        "slug": "tyler-the-creator",
+        "reason": "Strong r/hiphopheads candidate for June 14. Cannot use same subreddit as doechii on same day."
+      },
+      {
+        "slug": "wiki-ancient-history",
+        "reason": "Strong r/hiphopheads candidate for June 14 or June 15. Cannot use same subreddit as doechii on same day."
+      },
+      {
+        "slug": "olivia-rodrigo",
+        "reason": "Best fit r/indieheads, blocked today. Candidate for June 14 after rivers-cuomo (max 2 per day cap)."
+      },
+      {
+        "slug": "sabrina-carpenter",
+        "reason": "Best fit r/indieheads, blocked today. Candidate for June 15 onward."
+      },
+      {
+        "slug": "the-10-best-albums-of-the-1990s",
+        "reason": "List format post. Low priority for subreddit distribution. Possible r/indieheads or r/hiphopheads depending on framing."
+      }
+    ],
+    "subreddit_48hr_status": {
+      "r/indieheads": "blocked until 2026-06-14 (last drafted 2026-06-12)",
+      "r/hiphopheads": "available",
+      "r/electronicmusic": "available",
+      "r/rnb": "available",
+      "r/afrobeats": "available",
+      "r/ambientmusic": "available",
+      "r/listentothis": "available but not applicable (requires direct music links only, not editorial article links)"
+    },
+    "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Reddit.com unreachable from cloud environment so subreddit rules verified from training knowledge only. r/hiphopheads accepts editorial link posts about hip hop artists. r/indieheads accepts editorial features and birthday posts specifically. r/listentothis requires direct music links only, not article links. 7 articles published June 13, all music genre. Max 2 posts per day cap applied. Doechii queued for r/hiphopheads today. Rivers Cuomo deferred to r/indieheads June 14. Email sent to amosleblanc@gmail.com with full queue."
   }
 ]

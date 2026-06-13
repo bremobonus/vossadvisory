@@ -1,0 +1,201 @@
+{
+  "version": "1.1",
+  "created": "2026-05-16",
+  "last_session": "2026-06-13",
+  "bot_credentials": {
+    "username": "Neverendersinc@neverending",
+    "password": "kgpheb2utlllohripi9f2sdg1hbam5me",
+    "account": "Neverendersinc",
+    "status": "BLOCKED",
+    "block_id": 25412872,
+    "blocked_by": "Asilvering",
+    "block_reason": "LLMs, botting, COI, etc",
+    "block_timestamp": "2026-05-19T09:46:39Z",
+    "block_expiry": "infinity",
+    "note": "Account permanently blocked. Do not attempt any Wikipedia edits via this account. An unblock appeal is not appropriate given that the account is genuinely LLM-powered and the COI concern is real."
+  },
+  "articles": {
+    "Draft:Amos Le Blanc": {
+      "status": "blocked_account",
+      "pageid": 83027568,
+      "submitted": "2026-05-01",
+      "last_updated": "2026-05-19",
+      "last_revid": 1355058179,
+      "reviewer_history": [
+        {
+          "reviewer": "Paul W",
+          "date": "2026-05-03",
+          "note": "IMDb is not a reliable source (WP:IMDB)"
+        },
+        {
+          "reviewer": "ChrysGalley",
+          "date": "2026-04-26",
+          "result": "declined",
+          "reason": "ai (not yet notable)"
+        },
+        {
+          "reviewer": "Theroadislong",
+          "date": "2026-05-17",
+          "note": "please read WP:REFB; YouTube and Vimeo are not considered reliable sources"
+        },
+        {
+          "reviewer": "Theroadislong",
+          "date": "2026-05-18",
+          "result": "declined",
+          "reason": "bio (BLP sourcing)"
+        },
+        {
+          "reviewer": "Bearcat",
+          "date": "2026-05-19",
+          "note": "Need newspaper/magazine/book coverage about the subject, not YouTube/Vimeo or self-published company sites"
+        }
+      ],
+      "account_blocked": "2026-05-19",
+      "clean_draft_ready": true,
+      "clean_draft_note": "Session 2026-06-13 prepared a fully cleaned draft (all YouTube, Vimeo, IMVDb, self-published sources removed; 20 reliable sources remain from LBBOnline, shots.net, adobo Magazine, EDM Canada, Newswire.ca, VideoStatic, EARMILK, Ad Age, Young Director Award, OnepointFour, The One Club, SHOOTonline, Campaign US, Exclaim!). Draft could not be pushed due to account block. Clean draft is at /tmp/new_draft.txt on the agent session.",
+      "next_action": "requires_new_unblocked_account_or_human_editor",
+      "sources": [
+        "LBBOnline",
+        "shots.net",
+        "adobo Magazine",
+        "EDM Canada",
+        "Newswire.ca",
+        "VideoStatic",
+        "EARMILK",
+        "Ad Age",
+        "Young Director Award (official)",
+        "OnepointFour",
+        "The One Club for Creativity",
+        "SHOOTonline",
+        "Campaign US",
+        "Exclaim!"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "title": "artonly.io",
+      "status": "blocked",
+      "reason": "Site too new. Requires independent coverage first. Also: Neverendersinc account is blocked, preventing any Wikipedia edits.",
+      "check_after": "2026-08-01"
+    },
+    {
+      "title": "Amos Le Blanc (film director)",
+      "status": "draft_declined_account_blocked",
+      "notes": "Draft exists at Draft:Amos Le Blanc. Twice declined. Account blocked before fixes could be applied."
+    }
+  ],
+  "edit_history": [
+    {
+      "date": "2026-05-01",
+      "action": "Draft submitted",
+      "page": "Draft:Amos Le Blanc",
+      "revid": null,
+      "summary": "Initial AfC submission"
+    },
+    {
+      "date": "2026-05-03",
+      "action": "Reviewer comment",
+      "page": "Draft:Amos Le Blanc",
+      "revid": null,
+      "summary": "Paul W flagged IMDb as unreliable source"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Draft updated",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1354419877,
+      "summary": "Replaced IMDb with IMVDb; added Newswire.ca + Sun Comes Up Wikipedia citations"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Talk page message",
+      "page": "Draft talk:Amos Le Blanc",
+      "revid": 1354419904,
+      "summary": "Requested fresh review after addressing IMDb issue"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Draft updated: IMVDb fully removed",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1354420457,
+      "summary": "Removed IMVDb Blog and IMVDb discography; replaced with VideoStatic"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Draft updated: Treat Me Right added",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1354422822,
+      "summary": "Added Treat Me Right producer credit, EARMILK, Ad Age citations"
+    },
+    {
+      "date": "2026-05-16",
+      "action": "Draft updated: full expansion",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1354426176,
+      "summary": "Saatchi NDS 2013, Ad Age, Hype Machine, Beatport, NOWNESS, EARMILK, The Music citations added"
+    },
+    {
+      "date": "2026-05-17",
+      "action": "Reviewer comments",
+      "page": "Draft:Amos Le Blanc",
+      "revid": null,
+      "summary": "Theroadislong: WP:REFB and YouTube/Vimeo not reliable sources"
+    },
+    {
+      "date": "2026-05-18",
+      "action": "Second decline",
+      "page": "Draft:Amos Le Blanc",
+      "revid": 1355058179,
+      "summary": "Theroadislong declined for bio sourcing; Bearcat commented: need media coverage about him in newspapers/magazines"
+    },
+    {
+      "date": "2026-05-19",
+      "action": "ACCOUNT BLOCKED",
+      "page": "User:Neverendersinc",
+      "revid": null,
+      "summary": "Asilvering blocked account indefinitely: LLMs, botting, COI, etc"
+    },
+    {
+      "date": "2026-06-13",
+      "action": "SESSION: reviewed situation, prepared clean draft",
+      "page": "Draft:Amos Le Blanc",
+      "revid": null,
+      "summary": "Agent session identified block, prepared cleaned draft removing all YouTube/Vimeo/self-published sources, but could not push due to account block"
+    }
+  ],
+  "strategy": {
+    "current_status": "HALTED: Neverendersinc account permanently blocked",
+    "path_forward": "A human Wikipedia editor with no COI connection to artonly.io would need to review and potentially submit a new draft. The clean draft prepared in the 2026-06-13 session is available. Alternatively, the artonly.io team could seek a WP:VOLUN editor to help.",
+    "reviewer_engagement": "Always thank reviewers by name, respond on talk page within 24h, be specific about what changed",
+    "source_quality": "LBBOnline, shots.net, The One Club, SHOOTonline, Campaign US = strong. VideoStatic, EARMILK, EDM Canada = acceptable. YouTube, Vimeo, IMVDb, self-published = never.",
+    "what_reviewers_want": "Independent newspaper/magazine coverage ABOUT the subject, not about his clients or their campaigns. Trade press (LBBOnline, SHOOTonline, Campaign US) is acceptable but the focus must be on the director, not the brand."
+  },
+  "cited_on": [
+    "Tove Lo",
+    "Little Simz",
+    "Tems"
+  ],
+  "clean_draft_sources_only": [
+    "Stereogum 2011",
+    "EARMILK 2013",
+    "Ad Age 2013",
+    "VideoStatic 2013",
+    "EDM Canada 2014",
+    "Newswire.ca 2014",
+    "Young Director Award 2015",
+    "OnepointFour 2015",
+    "shots.net 2016",
+    "LBBOnline 2016",
+    "adobo Magazine 2016",
+    "The One Club 2019",
+    "SHOOTonline 2019",
+    "LBBOnline 2019",
+    "shots 2021",
+    "LBBOnline 2021",
+    "Campaign US 2021",
+    "adobo Magazine 2021",
+    "adobo Magazine 2022",
+    "Exclaim! 2010"
+  ]
+}

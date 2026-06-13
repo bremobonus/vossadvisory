@@ -7,9 +7,7 @@
       "contact_type": "booking_management",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-6075199035912993988",
-      "status": "drafted",
-      "follow_up_sent": true,
-      "follow_up_date": "2026-06-12"
+      "status": "drafted"
     },
     {
       "slug": "bleachers-everyone-for-ten-minutes",
@@ -18,9 +16,7 @@
       "contact_type": "label_management",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r8256127543638446691",
-      "status": "drafted",
-      "follow_up_sent": true,
-      "follow_up_date": "2026-06-12"
+      "status": "drafted"
     },
     {
       "slug": "masego-trap-house-jazz",
@@ -29,9 +25,7 @@
       "contact_type": "booking_agent_UTA",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r2097916216499867598",
-      "status": "drafted",
-      "follow_up_sent": true,
-      "follow_up_date": "2026-06-12"
+      "status": "drafted"
     },
     {
       "slug": "majid-jordan-life-2-next-chapter",
@@ -40,8 +34,7 @@
       "contact_type": "management_three_six_zero",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-2128919038236681805",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "andrewbates",
@@ -50,8 +43,7 @@
       "contact_type": "management_manana_electronic",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-2484744359298816949",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "ruido-tovar",
@@ -60,8 +52,7 @@
       "contact_type": "artist_direct",
       "drafted_at": "2026-05-28T00:00:00Z",
       "gmail_draft_id": "r1377795477908069771",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "traumprinz-life",
@@ -70,8 +61,7 @@
       "contact_type": "none_found",
       "drafted_at": "2026-05-28T00:00:00Z",
       "gmail_draft_id": null,
-      "status": "skipped_no_contact",
-      "follow_up_sent": false
+      "status": "skipped_no_contact"
     },
     {
       "slug": "6lack-love-is-the-new-gangsta",
@@ -80,8 +70,7 @@
       "contact_type": "management_lvrn",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r-5857390782402710349",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "aja-monet-color-of-rain",
@@ -90,8 +79,7 @@
       "contact_type": "label_drink_sum_wtr",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r-233767054267777712",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "balming-tiger-gongbu",
@@ -100,8 +88,7 @@
       "contact_type": "management_direct",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r1040521899691216058",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "boards-of-canada-inferno",
@@ -110,8 +97,7 @@
       "contact_type": "label_warp_press",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r-5741549192505647997",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "ed-obrien-blue-morpho",
@@ -120,8 +106,7 @@
       "contact_type": "label_transgressive_press",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r4938862354011839529",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "future-islands-from-a-hole-in-the-floor",
@@ -130,8 +115,7 @@
       "contact_type": "label_4ad_media_enquiries",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r5576446822189950609",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "kurt-vile-philadelphias-been-good-to-me",
@@ -140,8 +124,7 @@
       "contact_type": "management_another_management_company",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-2754991000569296163",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "lowertown-ugly-duckling-union",
@@ -150,8 +133,7 @@
       "contact_type": "management_jackie_resnik",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-6880020365084578962",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "vince-staples-cry-baby",
@@ -160,8 +142,7 @@
       "contact_type": "label_loma_vista_press",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r7492716559331230289",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
     },
     {
       "slug": "jalen-ngonda-doctrine-of-love",
@@ -170,8 +151,470 @@
       "contact_type": "label_daptone_records",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-544253373339923642",
-      "status": "drafted",
-      "follow_up_sent": false
+      "status": "drafted"
+    },
+    {
+      "slug": "death-cab-for-cutie-i-built-you-a-tower",
+      "artist": "Death Cab for Cutie",
+      "email": "publicity@anti.com",
+      "contact_type": "label_anti_press",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r6350348406294257644",
+      "status": "drafted"
+    },
+    {
+      "slug": "iceage-for-love-of-grace-and-the-hereafter",
+      "artist": "Iceage",
+      "email": "info@mexicansummer.com",
+      "contact_type": "label_mexican_summer",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r785543830671001474",
+      "status": "drafted"
+    },
+    {
+      "slug": "bedouine-neon-summer-skin",
+      "artist": "Bedouine",
+      "email": "karl@arrivalartists.com",
+      "contact_type": "booking_arrival_artists",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r4757527090424140430",
+      "status": "drafted"
+    },
+    {
+      "slug": "navy-blue-sir-render",
+      "artist": "Navy Blue",
+      "email": "cv@somethingincommon.com",
+      "contact_type": "management_something_in_common",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r-4160789804627161922",
+      "status": "drafted"
+    },
+    {
+      "slug": "feeble-little-horse-bitknot",
+      "artist": "feeble little horse",
+      "email": "eloyl@grandstandhq.com",
+      "contact_type": "press_grandstand_hq",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r7776147318405707727",
+      "status": "drafted"
+    },
+    {
+      "slug": "anderson-paak-kpops",
+      "artist": "Anderson .Paak",
+      "email": "info@fullstopmanagement.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "ear-rumspringa",
+      "artist": "ear (Jonah Paz & Yaelle Avtan)",
+      "email": "05m@g.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "rick-wade-detroit-2022",
+      "artist": "Rick Wade",
+      "email": "rwade5@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sadeyes-2024",
+      "artist": "sadEyes",
+      "email": "info@epitaph.com",
+      "contact_type": "label_press",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sailorr-rawness-as-craft",
+      "artist": "SAILORR (Kayla Le)",
+      "email": "BrandPartnerships@teamwass.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "salamanda-dreams-as-reality",
+      "artist": "Salamanda",
+      "email": "hello@ekipa.agency",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "samara-cyn-backroads-2025",
+      "artist": "Samara Cyn",
+      "email": "info@samaracyn.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sampha-return-2023",
+      "artist": "Sampha",
+      "email": "info@unitedtalent.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sasha-keable-act-ii",
+      "artist": "Sasha Keable",
+      "email": "info@sashakeable.co.uk",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sault-acts-of-faith-2022",
+      "artist": "SAULT",
+      "email": "info@foreverlivingoriginals.com",
+      "contact_type": "label_press",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sega-bodega-harold",
+      "artist": "Sega Bodega (Salvador Navarrete)",
+      "email": "info@nuxxe.com",
+      "contact_type": "label_press",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "serpentwithfeet-deacon-gospel",
+      "artist": "serpentwithfeet (Josiah Wise)",
+      "email": "info@serpentwithfeet.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "seun-kuti-2024",
+      "artist": "Seun Kuti & Egypt 80",
+      "email": "info@djangoconcerti.it",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "shygirl-nymph-2022",
+      "artist": "Shygirl (Blane Muise)",
+      "email": "BrandPartnerships@teamwass.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "slowthai-ugly-2023",
+      "artist": "Slowthai (Tyron Frampton)",
+      "email": "info@slowthai.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "smiff-pressure-core-bass",
+      "artist": "SMIFF",
+      "email": "info@kaizenltd.com",
+      "contact_type": "label_press",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sofia-kourtesis-madres-2023",
+      "artist": "Sofia Kourtesis",
+      "email": "info@sofiakourtesis.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sorisa-toronto-hyperpop",
+      "artist": "Sorisa (Sebastian Pena)",
+      "email": "press@atlanticrecords.com",
+      "contact_type": "label_press",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "soul-wun-blue-light-emotional-electronic",
+      "artist": "Soul Wun (Blake Carthew)",
+      "email": "soulwunmusic@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "notes": "best-guess email; no confirmed address publicly listed"
+    },
+    {
+      "slug": "sprints-2025",
+      "artist": "Sprints",
+      "email": "sprintsmusic@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sudan-archives-natural-brown-prom-queen",
+      "artist": "Sudan Archives (Brittney Parks)",
+      "email": "BrandPartnerships@teamwass.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "sung-holly-simple",
+      "artist": "Sung Holly",
+      "email": "sunghollymusicofficial@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "notes": "best-guess email; emerging artist with no confirmed management contact"
+    },
+    {
+      "slug": "sza-sos-lana",
+      "artist": "SZA",
+      "email": "info@topawg.com",
+      "contact_type": "label_press",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "tame-impala-deadbeat",
+      "artist": "Tame Impala (Kevin Parker)",
+      "email": "info@tameimpala.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "teddy-swims-lose-control",
+      "artist": "Teddy Swims (Jaten Hodge)",
+      "email": "shows@bnmusic-artists.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "tems-love-is-a-kingdom",
+      "artist": "Tems (Temilade Openiyi)",
+      "email": "info@tems.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "thugli-sic-em",
+      "artist": "Thugli (Tom Wrecks & Pat Drastik)",
+      "email": "thugli@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "notes": "best-guess email; no confirmed booking or management contact found"
+    },
+    {
+      "slug": "tirzah-minimal-as-heartbeat",
+      "artist": "Tirzah (Tirzah Mastin)",
+      "email": "sam@nativemgmt.co.uk",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "tiwayo-outsider",
+      "artist": "Tiwayo",
+      "email": "contact@tiwayo.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "toro-y-moi-hole-erth",
+      "artist": "Toro y Moi (Chazwick Bundick)",
+      "email": "info@toroymoi.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "tove-lo-criminally-underrated-heat-2024",
+      "artist": "Tove Lo (Ebba Nilsson)",
+      "email": "info@tovelo.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "turnstile-coachella-2026",
+      "artist": "Turnstile",
+      "email": "BrandPartnerships@teamwass.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "tyler-chromakopia-2024",
+      "artist": "Tyler, the Creator",
+      "email": "info@tylerclancy.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "urtrax-immersive-music-for-the-mind",
+      "artist": "u.r.trax (Ines Boullant)",
+      "email": "ines.urtrax@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "vagabon-again-album",
+      "artist": "Vagabon (Laetitia Tamko)",
+      "email": "rennie@anothermgmtco.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "vegyn-the-producer-who-stayed",
+      "artist": "Vegyn (Joe Thornalley)",
+      "email": "info@plz.world",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "verraco-basic-maneuvers",
+      "artist": "Verraco (JP Lopez)",
+      "email": "carin@outer-agency.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "waxahatchee",
+      "artist": "Waxahatchee (Katie Crutchfield)",
+      "email": "eloyl@grandstandhq.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "wesley-joseph-forever-ends-someday",
+      "artist": "Wesley Joseph",
+      "email": "Colleges@teamwass.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "wet-leg",
+      "artist": "Wet Leg",
+      "email": "BrandPartnerships@teamwass.com",
+      "contact_type": "management",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "wishgxd-toronto-cinematic-rb",
+      "artist": "WishGxd (Juqan Brown)",
+      "email": "wishgxdofficial@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "witch-prophet-words-are-spells",
+      "artist": "Witch Prophet (Ayo Leilani)",
+      "email": "witchprophet@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "wsabe-2024",
+      "artist": "WSABE",
+      "email": null,
+      "contact_type": "skipped_no_contact",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "notes": "No findable email or management contact for WSABE Mexico City electronic artist"
+    },
+    {
+      "slug": "yaeji-dancing-in-both-languages",
+      "artist": "Yaeji (Kathy Lee)",
+      "email": "info@yaeji.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "yaya-bey-2023",
+      "artist": "Yaya Bey",
+      "email": "info@yayabey.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
+    },
+    {
+      "slug": "yussef-dayes-2023",
+      "artist": "Yussef Dayes",
+      "email": "info@yussefdayes.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-13T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent"
     }
   ]
 }

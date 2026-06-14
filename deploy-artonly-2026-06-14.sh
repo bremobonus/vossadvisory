@@ -339,7 +339,10 @@ echo "Outreach sent: wiksetnyc@gmail.com (Wiki)"
 
 
 # ---- Summary email ----
-python3 ~/artonly.io/api/gmail-send.py "amosleblanc@gmail.com" "ArtOnly Album Monitor: 2026-06-14" "Published today:
+python3 << 'PYEOF'
+import json, subprocess
+
+body = """Published today:
 
 1. Kelsey Lu - So Help Me God
    https://artonly.io/post/kelsey-lu-so-help-me-god
@@ -361,6 +364,22 @@ Outreach:
 - Kelsey Lu: email sent to press@dirtyhit.com (Dirty Hit label)
 - Wiki: email sent to wiksetnyc@gmail.com (best available contact, self-released)
 
-Both releases from June 12, 2026, not previously covered on ArtOnly."
+Both releases from June 12, 2026, not previously covered on ArtOnly."""
+
+payload = json.dumps({
+    "to": "amosleblanc@gmail.com",
+    "subject": "ArtOnly Album Monitor: 2026-06-14",
+    "body": body
+})
+
+import os, subprocess
+result = subprocess.run(
+    ["python3", os.path.expanduser("~/artonly.io/api/gmail-send.py")],
+    input=payload, text=True, capture_output=True
+)
+print(result.stdout)
+if result.returncode != 0:
+    print("gmail-send error:", result.stderr)
+PYEOF
 
 echo "=== Deploy complete: 2026-06-14 ==="

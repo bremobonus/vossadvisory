@@ -19,5 +19,22 @@
     "articles_count": 4,
     "sent_to_count": 0,
     "notes": "artonly.io API blocked by cloud env proxy (Host not in allowlist); Gmail draft created (id: r-1950593505159839542); subscribers file not found on server; SSH port 22 blocked from cloud env"
+  },
+  {
+    "date": "2026-06-14T00:00:00Z",
+    "subject": "This week on artonly.",
+    "articles_count": 7,
+    "sent_to_count": 2,
+    "subscribers": ["amosleblanc@gmail.com", "lahhofstee@gmail.com"],
+    "posts": [
+      "kelsey-lu-so-help-me-god",
+      "boy-george-birthday-2026",
+      "doechii",
+      "the-10-best-albums-of-the-1990s",
+      "dj-seinfeld-if-this-is-it",
+      "new-releases-june-12-2026",
+      "bedouine-neon-summer-skin"
+    ],
+    "notes": "Full send successful. SSH still blocked; subscribers.db fetched via HTTPS (publicly accessible). send-mail.php API working. Both sends confirmed success."
   }
 ]

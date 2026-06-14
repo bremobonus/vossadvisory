@@ -242,6 +242,581 @@
       "drafted_at": "2026-06-13T00:00:00Z",
       "gmail_draft_id": "r763506907609162439",
       "status": "drafted"
+    },
+    {
+      "slug": "boy-george-birthday-2026",
+      "artist": "Boy George",
+      "email": "live@intertalentgroup.com",
+      "contact_type": "management_intertalent",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "live@intertalentgroup.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "doechii",
+      "artist": "Doechii",
+      "email": "TDEBusiness@gmail.com",
+      "contact_type": "label_tde",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "TDEBusiness@gmail.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "rivers-cuomo-birthday-2026",
+      "artist": "Rivers Cuomo (Weezer)",
+      "email": "info@crushmusic.com",
+      "contact_type": "management_crush_music",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "info@crushmusic.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tyler-the-creator",
+      "artist": "Tyler, The Creator",
+      "email": "clancy@4strikes.com",
+      "contact_type": "management_4_strikes",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "clancy@4strikes.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wiki-ancient-history",
+      "artist": "Wiki",
+      "email": "wiksetenterprise@gmail.com",
+      "contact_type": "label_wikset_enterprise",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "wiksetenterprise@gmail.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ariana-grande",
+      "artist": "Ariana Grande",
+      "email": "jcarozza@republicrecords.com",
+      "contact_type": "label_republic_press",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "jcarozza@republicrecords.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "dj-seinfeld-if-this-is-it",
+      "artist": "DJ Seinfeld",
+      "email": "press_row@ninjatune.net",
+      "contact_type": "label_ninja_tune_press",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "press_row@ninjatune.net"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "laura-misch-lithic",
+      "artist": "Laura Misch",
+      "email": "natasha@motherartists.com",
+      "contact_type": "booking_mother_artists",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "natasha@motherartists.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nick-leon",
+      "artist": "Nick Le\u00f3n",
+      "email": "cdanis@tbaagency.com",
+      "contact_type": "booking_tba_agency",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "cdanis@tbaagency.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "2hollis-internet-pop-star",
+      "artist": "2hollis",
+      "email": "info@2hollis.com",
+      "contact_type": "management_direct",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "info@2hollis.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "absolutely-paracosm",
+      "artist": "Absolutely",
+      "email": "b@s10e.com",
+      "contact_type": "management_s10_entertainment",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "b@s10e.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "actress",
+      "artist": "Actress",
+      "email": "info@giantmanagement.com",
+      "contact_type": "management_giant_artist",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "info@giantmanagement.com",
+        "press_row@ninjatune.net"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ada-lea",
+      "artist": "Ada Lea",
+      "email": "dawood@bloody-knuckles.com",
+      "contact_type": "management_bloody_knuckles",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "dawood@bloody-knuckles.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "aisha-devi-frequency-as-devotion",
+      "artist": "Aisha Devi",
+      "email": "info@lb-agency.net",
+      "contact_type": "booking_littlebig_music_agency",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "info@lb-agency.net"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "aldous-harding",
+      "artist": "Aldous Harding",
+      "email": "martin@associatedlondonmanagement.com",
+      "contact_type": "management_associated_london",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "martin@associatedlondonmanagement.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "alewya-architecture-of-zero",
+      "artist": "Alewya",
+      "email": "me@alewya.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "me@alewya.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amaarae-2025",
+      "artist": "Amaarae",
+      "email": "info@goldchild.co.uk",
+      "contact_type": "management_golden_child",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "info@goldchild.co.uk"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amos-le-blanc-artists-in-development-2026",
+      "artist": "Amos Le Blanc",
+      "email": "a@thedream.io",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "a@thedream.io"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amy-sherald-american-sublime",
+      "artist": "Amy Sherald",
+      "email": "newyork@hauserwirth.com",
+      "contact_type": "gallery_hauser_wirth",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "newyork@hauserwirth.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amyl-and-the-sniffers",
+      "artist": "Amyl and the Sniffers",
+      "email": "taliamiller@roughtraderecords.com",
+      "contact_type": "label_rough_trade_press_na",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "taliamiller@roughtraderecords.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "anaiis-devotion-black-divine",
+      "artist": "anaiis",
+      "email": "taliamiller@roughtraderecords.com",
+      "contact_type": "label_rough_trade_press_na",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "taliamiller@roughtraderecords.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "andrewbates-emerging",
+      "artist": "ANDREWBATES",
+      "email": "info@mananamusicmanagement.com",
+      "contact_type": "management_manana_electronic",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "info@mananamusicmanagement.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "olivia-rodrigo",
+      "artist": "Olivia Rodrigo",
+      "email": "max.weinberg@umusic.com",
+      "contact_type": "label_geffen_press",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [
+        "max.weinberg@umusic.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "olivia-dean",
+      "artist": "Olivia Dean",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "the-10-best-albums-of-the-1990s",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "afrobeats-artists-you-should-know-right-now",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "new-releases-june-12-2026",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "robyn-birthday-2026",
+      "artist": "Robyn",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_content",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "field-test",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_test_post",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "test-structure-check",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_test_post",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "afrobeats-global-mainstream",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "afrobeats-stopped-asking-permission-and-the-world-had-no-cho",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ai-art-controversy-2023-2024",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ai-generated-art-museums-2026",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amapiano-global-rise-2023-2024",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amapiano-global-takeover-2026",
+      "artist": null,
+      "email": null,
+      "contact_type": "not_artist_feature",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_not_artist_feature",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sabrina-carpenter",
+      "artist": "Sabrina Carpenter",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_content",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "alewya-zero",
+      "artist": "Alewya",
+      "email": null,
+      "contact_type": "duplicate",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_duplicate_artist",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amaarae-black-star-2025",
+      "artist": "Amaarae",
+      "email": null,
+      "contact_type": "duplicate",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_duplicate_artist",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amaarae",
+      "artist": "Amaarae",
+      "email": null,
+      "contact_type": "duplicate",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_duplicate_artist",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amos-le-blanc-the-plan-is-a-starting-point",
+      "artist": "Amos Le Blanc",
+      "email": null,
+      "contact_type": "duplicate",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_duplicate_artist",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amos-leblanc-cannes-yda-fridays-for-future-a24",
+      "artist": "Amos Le Blanc",
+      "email": null,
+      "contact_type": "duplicate",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_duplicate_artist",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amos-leblanc-mmva-debut-2014",
+      "artist": "Amos Le Blanc",
+      "email": null,
+      "contact_type": "duplicate",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_duplicate_artist",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amos-leblanc-not-getting-better",
+      "artist": "Amos Le Blanc",
+      "email": null,
+      "contact_type": "duplicate",
+      "drafted_at": "2026-06-14T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_duplicate_artist",
+      "date_contacted": "2026-06-14",
+      "emails_sent": [],
+      "follow_up_sent": false
     }
   ]
 }

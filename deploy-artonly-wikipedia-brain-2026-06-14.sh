@@ -1,0 +1,128 @@
+#!/bin/bash
+# Wikipedia Brain Update Deploy Script
+# Generated: 2026-06-14
+# Purpose: Push brain_updated_2026-06-14.json to DreamHost Wikipedia brain
+# Run via GitHub Actions (deploy-artonly.yml)
+
+set -e
+echo "=== Wikipedia Brain Update: 2026-06-14 ==="
+
+python3 << 'PYEOF'
+import json, os, datetime
+
+BRAIN_PATH = '/home/dh_yadmw3/artonly.io/wikipedia/brain.json'
+HISTORY_DIR = '/home/dh_yadmw3/artonly.io/wikipedia/history'
+
+os.makedirs(HISTORY_DIR, exist_ok=True)
+
+brain = {
+  "version": "1.2",
+  "created": "2026-05-16",
+  "last_session": "2026-06-14",
+  "bot_credentials": {
+    "username": "Neverendersinc@neverending",
+    "password": "kgpheb2utlllohripi9f2sdg1hbam5me",
+    "account": "Neverendersinc",
+    "status": "BLOCKED",
+    "block_id": 25412872,
+    "blocked_by": "Asilvering",
+    "block_reason": "LLMs, botting, COI, etc",
+    "block_timestamp": "2026-05-19T09:46:39Z",
+    "block_expiry": "infinity",
+    "block_confirmed_active": "2026-06-14",
+    "note": "Account permanently blocked. Do not attempt any Wikipedia edits via this account. Block confirmed still active 2026-06-14 via API."
+  },
+  "articles": {
+    "Draft:Amos Le Blanc": {
+      "status": "blocked_account",
+      "pageid": 83027568,
+      "submitted": "2026-05-01",
+      "last_updated": "2026-06-14",
+      "last_revid": 1355058179,
+      "last_revid_by": "Bearcat",
+      "last_revid_timestamp": "2026-05-19T18:26:24Z",
+      "new_activity_since_block": False,
+      "decline_history": [
+        {
+          "date": "2026-04-26",
+          "decliner": "ChrysGalley",
+          "reason": "AI-generated content"
+        },
+        {
+          "date": "2026-05-19",
+          "decliner": "Theroadislong",
+          "reason": "Bio sourcing: YouTube and Vimeo not reliable sources (WP:REFB)"
+        }
+      ],
+      "reviewer_history": [
+        {"reviewer": "Paul W", "date": "2026-05-03", "note": "IMDb is not a reliable source (WP:IMDB)"},
+        {"reviewer": "ChrysGalley", "date": "2026-04-26", "result": "declined", "reason": "AI-generated content"},
+        {"reviewer": "Theroadislong", "date": "2026-05-17", "note": "please read WP:REFB; YouTube and Vimeo are not considered reliable sources"},
+        {"reviewer": "Theroadislong", "date": "2026-05-18", "action": "added Autobiography tag"},
+        {"reviewer": "Theroadislong", "date": "2026-05-19", "result": "declined", "reason": "bio sourcing"},
+        {"reviewer": "Bearcat", "date": "2026-05-19", "note": "Need media coverage about him in newspapers, magazines, or books. YouTube, Vimeo, self-published sites, and Wikipedia articles are not GNG-building references."}
+      ],
+      "account_blocked": "2026-05-19",
+      "clean_draft_ready": True,
+      "clean_draft_path": "wikipedia/draft_amos_le_blanc_clean_2026-06-13.txt",
+      "clean_draft_note": "Prepared 2026-06-13. All YouTube, Vimeo, IMVDb, self-published sources removed. 21 reliable sources remain. Cannot be pushed to Wikipedia due to account block.",
+      "next_action": "requires_human_editor_no_COI",
+      "sources_in_clean_draft": [
+        "Stereogum 2011", "EARMILK 2013", "Ad Age 2013", "Saatchi and Saatchi 2013",
+        "VideoStatic 2013", "EDM Canada 2014", "Young Director Award 2015",
+        "OnepointFour 2015", "shots.net 2016", "LBBOnline 2016", "adobo Magazine 2016",
+        "The One Club 2019", "SHOOTonline 2019", "LBBOnline 2019",
+        "shots 2021", "LBBOnline 2021", "Campaign US 2021", "adobo Magazine 2021",
+        "adobo Magazine 2022", "Exclaim! 2010", "Dine Alone Records"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "title": "artonly.io",
+      "status": "blocked",
+      "reason": "Site too new. Requires independent coverage first. Neverendersinc account is also blocked, preventing any Wikipedia edits.",
+      "check_after": "2026-08-01"
+    },
+    {
+      "title": "Amos Le Blanc (film director)",
+      "status": "draft_declined_account_blocked",
+      "notes": "Draft at Draft:Amos Le Blanc. Twice declined. Account blocked May 19, 2026. Clean draft ready in vossadvisory repo."
+    }
+  ],
+  "new_candidate_scan_2026-06-14": {
+    "conclusion": "artonly.io sitemap reviewed. All covered artists either have existing Wikipedia articles (Boy George, Bruno Mars, Kelsey Lu, Megan Thee Stallion, PinkPantheress, Charli XCX, Doechii, Olivia Rodrigo, etc.) or do not yet meet Wikipedia notability threshold. Potential future candidates to monitor: Cassandra Jenkins, Helena Deland, Jalen Ngonda, Florist. All Wikipedia editing halted due to account block.",
+    "future_candidates": ["Cassandra Jenkins", "Helena Deland", "Jalen Ngonda", "Florist"]
+  },
+  "edit_history": [
+    {"date": "2026-05-01", "action": "Draft submitted", "page": "Draft:Amos Le Blanc", "revid": None, "summary": "Initial AfC submission"},
+    {"date": "2026-05-16", "action": "Draft updated multiple times", "page": "Draft:Amos Le Blanc", "revid": 1354426176, "summary": "Replaced IMDb; removed IMVDb; added EARMILK, Ad Age, Saatchi NDS, VideoStatic; expanded to 45425 bytes"},
+    {"date": "2026-05-18", "action": "Reference formatting fixes", "page": "Draft:Amos Le Blanc", "revid": 1354870747, "summary": "Fixed cite blocks, added missing cite-web entries; Autobiography tag added by Theroadislong"},
+    {"date": "2026-05-19", "action": "Second decline and account block", "page": "Draft:Amos Le Blanc", "revid": 1355058179, "summary": "Theroadislong declined; Bearcat: need newspaper/magazine coverage; Asilvering blocked Neverendersinc indefinitely"},
+    {"date": "2026-06-13", "action": "SESSION: clean draft prepared", "page": None, "revid": None, "summary": "Block confirmed; clean draft prepared without YouTube/Vimeo; stored in vossadvisory repo; could not push due to block"},
+    {"date": "2026-06-14", "action": "SESSION: status check, artonly scan, brain update", "page": None, "revid": None, "summary": "Block confirmed active; draft no new activity since May 19; artonly sitemap scanned for candidates; brain updated to v1.2 and deployed via GitHub Actions"}
+  ],
+  "strategy": {
+    "current_status": "HALTED: Neverendersinc account permanently blocked since 2026-05-19",
+    "path_forward": "A human Wikipedia editor with no COI connection to artonly.io or Amos Le Blanc would need to review the clean draft (vossadvisory repo: wikipedia/draft_amos_le_blanc_clean_2026-06-13.txt) and submit it from their own account. The artonly.io team could seek a neutral editor via WP:VOLUN. Do not create new accounts to evade the block.",
+    "what_reviewers_want": "Independent newspaper or magazine coverage about the director as a person. LBBOnline, shots.net, SHOOTonline, and Campaign US trade publications are acceptable. The 2016 Sweet Shop signing coverage and 2019 Young Guns 17 LBBOnline dedicated article are the strongest GNG evidence.",
+    "source_quality": "LBBOnline, shots.net, SHOOTonline, Campaign US = strong. VideoStatic, EARMILK, EDM Canada, Ad Age, adobo Magazine = acceptable. YouTube, Vimeo, IMVDb, iSpot, Newswire.ca, self-published = never."
+  },
+  "cited_on": {
+    "note": "External links added to Tove Lo, Little Simz, and Tems Wikipedia articles in May 2026 were removed by other editors by May 25, 2026. No artonly.io links currently appear on Wikipedia.",
+    "articles": []
+  }
+}
+
+with open(BRAIN_PATH, 'w') as f:
+    json.dump(brain, f, indent=2)
+print(f"Brain updated at {BRAIN_PATH}")
+
+snapshot_path = f'{HISTORY_DIR}/brain_20260614.json'
+with open(snapshot_path, 'w') as f:
+    json.dump(brain, f, indent=2)
+print(f"History snapshot saved at {snapshot_path}")
+
+PYEOF
+
+echo "=== Wikipedia Brain Update Complete ==="

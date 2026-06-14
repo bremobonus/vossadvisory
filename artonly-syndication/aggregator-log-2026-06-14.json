@@ -1,0 +1,59 @@
+[
+  {
+    "platform": "Feedly",
+    "submitted_at": "2026-06-14T11:04:00Z",
+    "result": "checked - API returned empty array (no subscriber data exposed)"
+  },
+  {
+    "platform": "Google Sitemap Ping (sitemap.xml)",
+    "submitted_at": "2026-06-14T11:04:00Z",
+    "result": "DEPRECATED - Google returned 404: sitemap ping deprecated as of June 2023. No action needed; Google crawls sitemap.xml directly."
+  },
+  {
+    "platform": "Google Sitemap Ping (news-sitemap.xml)",
+    "submitted_at": "2026-06-14T11:04:00Z",
+    "result": "DEPRECATED - Google returned 404: sitemap ping deprecated as of June 2023."
+  },
+  {
+    "platform": "Bing Sitemap Ping",
+    "submitted_at": "2026-06-14T11:04:41Z",
+    "result": "HTTP 410 Gone - Bing sitemap ping endpoint deprecated. Recommend switching to IndexNow (already done)."
+  },
+  {
+    "platform": "Yandex Sitemap Ping",
+    "submitted_at": "2026-06-14T11:04:43Z",
+    "result": "HTTP 200 OK - rs_weight=1 (success)"
+  },
+  {
+    "platform": "IndexNow (api.indexnow.org)",
+    "submitted_at": "2026-06-14T11:05:00Z",
+    "result": "HTTP 200 OK - 10 URLs submitted successfully",
+    "urls_submitted": [
+      "https://artonly.io/post/boy-george-birthday-2026",
+      "https://artonly.io/post/bruno-mars",
+      "https://artonly.io/post/kelsey-lu-so-help-me-god",
+      "https://artonly.io/post/why-charli-xcx-changed-pop-music-forever",
+      "https://artonly.io/post/wiki-ancient-history",
+      "https://artonly.io/post/doechii.ar",
+      "https://artonly.io/post/doechii.de",
+      "https://artonly.io/post/doechii.es",
+      "https://artonly.io/post/doechii.fr",
+      "https://artonly.io/post/doechii.id"
+    ]
+  },
+  {
+    "platform": "NewsNow",
+    "submitted_at": "2026-06-14T11:05:00Z",
+    "result": "Submit URL page returned 404 - manual submission needed at newsnow.co.uk"
+  },
+  {
+    "platform": "Flipboard",
+    "submitted_at": "2026-06-14T11:05:00Z",
+    "result": "Zero results found for artonly.io on Flipboard - draft email sent to amosleblanc@gmail.com"
+  },
+  {
+    "platform": "AllTop",
+    "submitted_at": "2026-06-14T11:05:00Z",
+    "result": "artonly.io not listed on AllTop - draft submission email sent to amosleblanc@gmail.com"
+  }
+]

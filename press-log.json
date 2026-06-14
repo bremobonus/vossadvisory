@@ -148,5 +148,46 @@
     ],
     "email_sent": true,
     "email_to": "amosleblanc@gmail.com"
+  },
+  {
+    "run_date": "2026-06-14T08:00:00Z",
+    "run_type": "weekly_sunday",
+    "posts_submitted": 3,
+    "posts": [
+      {
+        "slug": "kelsey-lu-so-help-me-god",
+        "title": "Kelsey Lu Held Nothing Back on the Album She Spent Seven Years Becoming",
+        "author": "Leelou Blanc",
+        "date": "2026-06-14",
+        "indexnow_status": "FAILED-403-egress-blocked"
+      },
+      {
+        "slug": "bedouine-neon-summer-skin",
+        "title": "On Neon Summer Skin, Bedouine Holds the Places Time Has Already Taken",
+        "author": "Leelou Blanc",
+        "date": "2026-06-11",
+        "indexnow_status": "FAILED-403-egress-blocked"
+      },
+      {
+        "slug": "navy-blue-sir-render",
+        "title": "Sir Render Is Navy Blue at His Most Exposed and His Most Complete",
+        "author": "Allastair Voss",
+        "date": "2026-06-11",
+        "indexnow_status": "FAILED-403-egress-blocked"
+      }
+    ],
+    "sitemap_status": "403-egress-blocked",
+    "homepage_status": "403-egress-blocked",
+    "rss_status": "403-egress-blocked",
+    "ssh_status": "TIMEOUT-port-22-blocked",
+    "alerts": [
+      "ALERT: SSH port 22 blocked by container network egress policy \u2014 cannot reach DreamHost",
+      "ALERT: artonly.io blocked by container network egress policy (403 host_not_allowed)",
+      "ALERT: bing.com blocked by container network egress policy \u2014 IndexNow submissions failed for all 3 posts",
+      "NOTE: 403 responses are container network restrictions, NOT site outages",
+      "ACTION REQUIRED: Run IndexNow submissions manually or from a machine with unrestricted egress"
+    ],
+    "email_sent": true,
+    "email_to": "amosleblanc@gmail.com"
   }
 ]

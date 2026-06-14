@@ -1,0 +1,27 @@
+{
+  "date": "2026-06-14",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout). artonly.io returning HTTP 500 on all pages except sitemap.",
+  "account": "artonly.bsky.social",
+  "account_status": "active (1 existing post from July 2025, no recent posts)",
+  "articles_identified": [
+    {
+      "title": "Kelsey Lu Held Nothing Back on the Album She Spent Seven Years Becoming",
+      "url": "https://artonly.io/post/kelsey-lu-so-help-me-god",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "Wiki Made His Most Focused Album in Seven Years and Called It Ancient History",
+      "url": "https://artonly.io/post/wiki-ancient-history",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 2
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Draft email created to amosleblanc@gmail.com (Gmail draft ID: r1701996934849474555). Log committed to vossadvisory repo.",
+  "resolution_needed": "Fix artonly.io 500 errors. Provide SSH access or bluesky-creds.json app_password to enable cloud posting. This is the same SSH block that occurred June 12."
+}

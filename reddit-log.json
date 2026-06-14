@@ -57,5 +57,36 @@
     ],
     "selection_reason": "olivia-dean chosen for Windrush generational angle. Specific, human, non-promotional hook. r/indieheads allows editorial feature links. nick-leon skipped (already queued 2026-06-05). robyn-birthday-2026 skipped (minimal article content, 1 min read). new-releases skipped (aggregator format, poor subreddit fit).",
     "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Post drafted for manual submission at reddit.com/r/indieheads."
+  },
+  {
+    "date": "2026-06-14",
+    "session": "distribution-agent",
+    "ssh_status": "unavailable (connection timeout from cloud environment)",
+    "reddit_api_creds_checked": false,
+    "posts_drafted": 1,
+    "posts_attempted": 0,
+    "queue": [
+      {
+        "slug": "kelsey-lu-so-help-me-god",
+        "title": "Kelsey Lu's debut was 2019. Her second album came out three days ago. Piece on what seven years of grief and rebuilding sounds like when it's finished.",
+        "subreddit": "r/indieheads",
+        "url": "https://artonly.io/post/kelsey-lu-so-help-me-god",
+        "date": "2026-06-14",
+        "status": "queued_manual",
+        "body": "She released Blood in 2019 and then didn't put another record out for seven years. So Help Me God came out on June 12 via Dirty Hit. The album is not a casual thing. Track titles include Reaper, Portrait Of A Lady On Fire, and Cutting Off The Head Of A Ghost, and the sequencing earns that last one.\n\nShe is a classical cellist and the training is present in the architecture of the record even when the surface is distorted guitar or electronic texture. The article describes it as controlled instability, which is a good description of what the album feels like to sit with.\n\nSampha, Kamasi Washington, and Kim Gordon all appear on it. The piece makes the point that they were brought in because the material demanded people who understood what was at stake, not for decoration. Washington's saxophone work is described as carrying a quality that is not metaphor but literal aspiration. That lands.\n\nhttps://artonly.io/post/kelsey-lu-so-help-me-god"
+      }
+    ],
+    "today_posts_available": [
+      "kelsey-lu-so-help-me-god",
+      "pinkpantheress",
+      "why-charli-xcx-changed-pop-music-forever",
+      "boy-george-birthday-2026",
+      "bruno-mars",
+      "central-cee",
+      "megan-thee-stallion",
+      "wiki-ancient-history"
+    ],
+    "selection_reason": "kelsey-lu chosen for the seven-year gap and album freshness (released June 12). Sampha, Kamasi Washington, Kim Gordon collaborators give specific hooks. r/indieheads is the right home for Dirty Hit artist features. pinkpantheress and charli-xcx skipped as strong candidates for another day. central-cee skipped, could go r/hiphopheads.",
+    "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Post drafted for manual submission at reddit.com/r/indieheads. Today's posts sourced via sitemap.xml lastmod dates and confirmed via individual post JSON fetches."
   }
 ]

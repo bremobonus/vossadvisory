@@ -7,7 +7,9 @@
       "contact_type": "booking_management",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-6075199035912993988",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "bleachers-everyone-for-ten-minutes",
@@ -16,7 +18,9 @@
       "contact_type": "label_management",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r8256127543638446691",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "masego-trap-house-jazz",
@@ -25,7 +29,9 @@
       "contact_type": "booking_agent_UTA",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r2097916216499867598",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "majid-jordan-life-2-next-chapter",
@@ -34,7 +40,9 @@
       "contact_type": "management_three_six_zero",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-2128919038236681805",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "andrewbates",
@@ -43,7 +51,9 @@
       "contact_type": "management_manana_electronic",
       "drafted_at": "2026-05-24T00:00:00Z",
       "gmail_draft_id": "r-2484744359298816949",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "ruido-tovar",
@@ -52,7 +62,9 @@
       "contact_type": "artist_direct",
       "drafted_at": "2026-05-28T00:00:00Z",
       "gmail_draft_id": "r1377795477908069771",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "traumprinz-life",
@@ -70,7 +82,9 @@
       "contact_type": "management_lvrn",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r-5857390782402710349",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "aja-monet-color-of-rain",
@@ -79,7 +93,9 @@
       "contact_type": "label_drink_sum_wtr",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r-233767054267777712",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "balming-tiger-gongbu",
@@ -88,7 +104,9 @@
       "contact_type": "management_direct",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r1040521899691216058",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "boards-of-canada-inferno",
@@ -97,7 +115,9 @@
       "contact_type": "label_warp_press",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r-5741549192505647997",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "ed-obrien-blue-morpho",
@@ -106,7 +126,9 @@
       "contact_type": "label_transgressive_press",
       "drafted_at": "2026-06-06T00:00:00Z",
       "gmail_draft_id": "r4938862354011839529",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-15"
     },
     {
       "slug": "future-islands-from-a-hole-in-the-floor",

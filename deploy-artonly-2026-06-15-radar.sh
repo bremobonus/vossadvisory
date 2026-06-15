@@ -1,0 +1,133 @@
+#!/bin/bash
+# ArtOnly Radar Cache Refresh
+# Generated: 2026-06-15
+# Purpose: Write 15 trending artists to radar-cache.json for the /radar page
+# Run via GitHub Actions (deploy-artonly.yml) or:
+# sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-15-radar.sh
+
+set -e
+echo "=== ArtOnly Radar Cache Refresh: 2026-06-15 ==="
+echo "$(date)"
+
+python3 << 'PYEOF'
+import json
+
+RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
+
+artists = [
+    {
+        "name": "Drake",
+        "genre": "Music",
+        "why": "Janice STFU charted at No. 3 and Shabang at No. 8 on the Billboard Hot 100 the week of June 13, 2026, giving him two simultaneous top-10 entries and sustaining his run as the most active presence on the chart in the first half of 2026",
+        "signal": "Billboard Hot 100 two top-10 entries June 2026"
+    },
+    {
+        "name": "Vince Staples",
+        "genre": "Music",
+        "why": "Seventh studio album Cry Baby was released June 5, 2026, his most anticipated project since Prime Is Rage and his first solo record in six years, arriving to significant critical attention",
+        "signal": "New album June 5, 2026"
+    },
+    {
+        "name": "The Strokes",
+        "genre": "Music",
+        "why": "New album Reality Awaits drops June 26, 2026, their first studio release since The New Abnormal in 2020, generating the most pre-release rock excitement of the summer",
+        "signal": "New album June 26, 2026"
+    },
+    {
+        "name": "Myles Smith",
+        "genre": "Music",
+        "why": "Debut studio album My Mess, My Heart, My Life releases June 19, 2026, arriving on a wave of UK momentum after his MOBO Award win and multiple charting singles across Europe",
+        "signal": "Debut album June 19, 2026 / MOBO Award winner"
+    },
+    {
+        "name": "Death Cab for Cutie",
+        "genre": "Music",
+        "why": "Eleventh studio album I Built You a Tower dropped June 5, 2026 on Anti- label, with lead single Riptides climbing to No. 1 on indie charts the week of June 7, 2026",
+        "signal": "New album June 5, 2026 / Indie chart No. 1"
+    },
+    {
+        "name": "Tame Impala",
+        "genre": "Music",
+        "why": "Collaboration Dracula with Jennie hit No. 1 on Billboard Hot Rock and Alternative Songs and No. 10 on the Hot 100 the week of June 13, 2026, their first-ever Hot 100 top 10",
+        "signal": "Billboard Hot 100 No. 10 / Hot Rock No. 1 June 2026"
+    },
+    {
+        "name": "Lola Young",
+        "genre": "Music",
+        "why": "Named to Rolling Stone's Future 25 list of artists to watch in 2026, the British singer is gaining international attention for her raw, confessional songwriting and commanding live presence",
+        "signal": "Rolling Stone Future 25 2026"
+    },
+    {
+        "name": "Fuerza Regida",
+        "genre": "Music",
+        "why": "Named to Rolling Stone's Future 25 in 2026 as a Mexican regional act breaking into mainstream American markets, building on back-to-back Billboard Latin chart hits across 2025 and 2026",
+        "signal": "Rolling Stone Future 25 2026 / Billboard Latin charts"
+    },
+    {
+        "name": "J Balvin",
+        "genre": "Music",
+        "why": "Featured in Rolling Stone's June 2026 issue to announce a new collaborative partnership with Colombian artist Ryan Castro, confirming his continued relevance at the intersection of urban Latin and global pop",
+        "signal": "Rolling Stone June 2026 feature"
+    },
+    {
+        "name": "Hiba Schahbaz",
+        "genre": "Art",
+        "why": "First comprehensive retrospective The Garden opened at MOCA North Miami spanning fifteen years of work, tracing her training in traditional Indo-Persian miniature painting at the National College of Arts in Lahore and her evolution into a major contemporary voice",
+        "signal": "MOCA North Miami retrospective 2026"
+    },
+    {
+        "name": "Ming Wong",
+        "genre": "Art",
+        "why": "Landmark solo exhibition at London's National Gallery in 2026 marks the museum's first solo show by a Southeast Asian artist, placing the Singaporean filmmaker and multimedia artist at the center of global institutional attention this year",
+        "signal": "National Gallery London solo show 2026"
+    },
+    {
+        "name": "Mulgil Kim",
+        "genre": "Art",
+        "why": "Rising as one of the defining contemporary painters of 2026, building private mythologies from surreal personal symbols and psychological memory, with gallery and collector attention accelerating across Europe and North America",
+        "signal": "Maddox Gallery and Art Basel 2026 coverage"
+    },
+    {
+        "name": "Gigi Perez",
+        "genre": "Culture",
+        "why": "Sailor Song from her 2025 album At the Beach, in Every Life became a viral breakout on TikTok and she is now opening Noah Kahan's 23-date North American stadium tour running June 14 through August 26, 2026",
+        "signal": "Noah Kahan stadium tour opener / TikTok viral hit"
+    },
+    {
+        "name": "BigXthaPlug",
+        "genre": "Culture",
+        "why": "Named to Rolling Stone's Future 25 as a rising artist to watch in 2026, the Dallas rapper is gaining national profile and label attention for lyrical precision that is crossing him from underground credibility into wider audiences",
+        "signal": "Rolling Stone Future 25 2026"
+    },
+    {
+        "name": "Ryan Castro",
+        "genre": "Culture",
+        "why": "Featured alongside J Balvin in Rolling Stone's June 2026 issue to announce a new collaborative partnership, spotlighting the Colombian singer as a key figure in a new wave of urban Latin music gaining global reach",
+        "signal": "Rolling Stone June 2026 feature"
+    }
+]
+
+with open(RADAR, "w") as f:
+    json.dump(artists, f, indent=2, ensure_ascii=False)
+
+data = json.load(open(RADAR))
+print(f"Wrote {len(data)} artists to radar-cache.json")
+for a in data:
+    print(f"  [{a['genre']:8s}]  {a['name']}")
+
+print()
+print("Verifying: no em-dashes or en-dashes in text...")
+issues = []
+for a in data:
+    for field in ("why", "signal", "name"):
+        if "—" in a.get(field, "") or "–" in a.get(field, ""):
+            issues.append(f"  DASH FOUND in {a['name']} ({field})")
+if issues:
+    for i in issues:
+        print(i)
+else:
+    print("  OK: no em-dashes or en-dashes found")
+
+PYEOF
+
+echo "=== Radar cache update complete ==="

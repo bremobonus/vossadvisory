@@ -1,1 +1,755 @@
-ewogICJzZW50IjogWwogICAgewogICAgICAic2x1ZyI6ICJqcGVnbWFmaWEtZXhwZXJpbWVudGFsLXJhcCIsCiAgICAgICJhcnRpc3QiOiAiSlBFR01BRklBIiwKICAgICAgImVtYWlsIjogImluZm9Ad2Fzc2VybWFuLmNvbSIsCiAgICAgICJjb250YWN0X3R5cGUiOiAiYm9va2luZ19tYW5hZ2VtZW50IiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNS0yNFQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAici02MDc1MTk5MDM1OTEyOTkzOTg4IiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIiwKICAgICAgImZvbGxvd191cF9zZW50IjogdHJ1ZSwKICAgICAgImZvbGxvd191cF9kYXRlIjogIjIwMjYtMDYtMTQiCiAgICB9LAogICAgewogICAgICAic2x1ZyI6ICJibGVhY2hlcnMtZXZlcnlvbmUtZm9yLXRlbi1taW51dGVzIiwKICAgICAgImFydGlzdCI6ICJCbGVhY2hlcnMiLAogICAgICAiZW1haWwiOiAicHJlc3NAZGlydHloaXQuY29tIiwKICAgICAgImNvbnRhY3RfdHlwZSI6ICJsYWJlbF9tYW5hZ2VtZW50IiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNS0yNFQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAicjgyNTYxMjc1NDM2Mzg0NDY2OTEiLAogICAgICAic3RhdHVzIjogImRyYWZ0ZWQiLAogICAgICAiZm9sbG93X3VwX3NlbnQiOiB0cnVlLAogICAgICAiZm9sbG93X3VwX2RhdGUiOiAiMjAyNi0wNi0xNCIKICAgIH0sCiAgICB7CiAgICAgICJzbHVnIjogIm1hc2Vnby10cmFwLWhvdXNlLWphenoiLAogICAgICAiYXJ0aXN0IjogIk1hc2VnbyIsCiAgICAgICJlbWFpbCI6ICJub2FoLnNpbW9uQHVuaXRlZHRhbGVudC5jb20iLAogICAgICAiY29udGFjdF90eXBlIjogImJvb2tpbmdfYWdlbnRfVVRBIiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNS0yNFQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAicjIwOTc5MTYyMTY0OTk4Njc1OTgiLAogICAgICAic3RhdHVzIjogImRyYWZ0ZWQiLAogICAgICAiZm9sbG93X3VwX3NlbnQiOiB0cnVlLAogICAgICAiZm9sbG93X3VwX2RhdGUiOiAiMjAyNi0wNi0xNCIKICAgIH0sCiAgICB7CiAgICAgICJzbHVnIjogIm1hamlkLWpvcmRhbi1saWZlLTItbmV4dC1jaGFwdGVyIiwKICAgICAgImFydGlzdCI6ICJNYWppZCBKb3JkYW4iLAogICAgICAiZW1haWwiOiAiaW5mb0B0aHJlZXNpeHplcm8uY29tIiwKICAgICAgImNvbnRhY3RfdHlwZSI6ICJtYW5hZ2VtZW50X3RocmVlX3NpeF96ZXJvIiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNS0yNFQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAici0yMTI4OTE5MDM4MjM2NjgxODA1IiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIiwKICAgICAgImZvbGxvd191cF9zZW50IjogdHJ1ZSwKICAgICAgImZvbGxvd191cF9kYXRlIjogIjIwMjYtMDYtMTQiCiAgICB9LAogICAgewogICAgICAic2x1ZyI6ICJhbmRyZXdiYXRlcyIsCiAgICAgICJhcnRpc3QiOiAiQU5EUkVXQkFURVMiLAogICAgICAiZW1haWwiOiAiaW5mb0BtYW5hbmFtdXNpY21hbmFnZW1lbnQuY29tIiwKICAgICAgImNvbnRhY3RfdHlwZSI6ICJtYW5hZ2VtZW50X21hbmFuYV9lbGVjdHJvbmljIiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNS0yNFQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAici0yNDg0NzQ0MzU5Mjk4ODE2OTQ5IiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIiwKICAgICAgImZvbGxvd191cF9zZW50IjogdHJ1ZSwKICAgICAgImZvbGxvd191cF9kYXRlIjogIjIwMjYtMDYtMTQiCiAgICB9LAogICAgewogICAgICAic2x1ZyI6ICJydWlkby10b3ZhciIsCiAgICAgICJhcnRpc3QiOiAiTWV4aWNhbiBJbnN0aXR1dGUgb2YgU291bmQiLAogICAgICAiZW1haWwiOiAibWV4aWNhbmluc3RpdHV0ZW9mc291bmRAZ21haWwuY29tIiwKICAgICAgImNvbnRhY3RfdHlwZSI6ICJhcnRpc3RfZGlyZWN0IiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNS0yOFQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAicjEzNzc3OTU0Nzc5MDgwNjk3NzEiLAogICAgICAic3RhdHVzIjogImRyYWZ0ZWQiLAogICAgICAiZm9sbG93X3VwX3NlbnQiOiB0cnVlLAogICAgICAiZm9sbG93X3VwX2RhdGUiOiAiMjAyNi0wNi0xNCIKICAgIH0sCiAgICB7CiAgICAgICJzbHVnIjogInRyYXVtcHJpbnotbGlmZSIsCiAgICAgICJhcnRpc3QiOiAiVHJhdW1wcmlueiIsCiAgICAgICJlbWFpbCI6IG51bGwsCiAgICAgICJjb250YWN0X3R5cGUiOiAibm9uZV9mb3VuZCIsCiAgICAgICJkcmFmdGVkX2F0IjogIjIwMjYtMDUtMjhUMDA6MDA6MDBaIiwKICAgICAgImdtYWlsX2RyYWZ0X2lkIjogbnVsbCwKICAgICAgInN0YXR1cyI6ICJza2lwcGVkX25vX2NvbnRhY3QiCiAgICB9LAogICAgewogICAgICAic2x1ZyI6ICI2bGFjay1sb3ZlLWlzLXRoZS1uZXctZ2FuZ3N0YSIsCiAgICAgICJhcnRpc3QiOiAiNkxBQ0siLAogICAgICAiZW1haWwiOiAiZG9tb2ZAbHZybi5jb20iLAogICAgICAiY29udGFjdF90eXBlIjogIm1hbmFnZW1lbnRfbHZybiIsCiAgICAgICJkcmFmdGVkX2F0IjogIjIwMjYtMDYtMDZUMDA6MDA6MDBaIiwKICAgICAgImdtYWlsX2RyYWZ0X2lkIjogInItNTg1NzM5MDc4MjQwMjcxMDM0OSIsCiAgICAgICJzdGF0dXMiOiAiZHJhZnRlZCIsCiAgICAgICJmb2xsb3dfdXBfc2VudCI6IHRydWUsCiAgICAgICJmb2xsb3dfdXBfZGF0ZSI6ICIyMDI2LTA2LTE0IgogICAgfSwKICAgIHsKICAgICAgInNsdWciOiAiYWphLW1vbmV0LWNvbG9yLW9mLXJhaW4iLAogICAgICAiYXJ0aXN0IjogIkFqYSBNb25ldCIsCiAgICAgICJlbWFpbCI6ICJpbmZvQGRyaW5rc3Vtd3RyLmNvbSIsCiAgICAgICJjb250YWN0X3R5cGUiOiAibGFiZWxfZHJpbmtfc3VtX3d0ciIsCiAgICAgICJkcmFmdGVkX2F0IjogIjIwMjYtMDYtMDZUMDA6MDA6MDBaIiwKICAgICAgImdtYWlsX2RyYWZ0X2lkIjogInItMjMzNzY3MDU0MjY3Nzc3NzEyIiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIiwKICAgICAgImZvbGxvd191cF9zZW50IjogdHJ1ZSwKICAgICAgImZvbGxvd191cF9kYXRlIjogIjIwMjYtMDYtMTQiCiAgICB9LAogICAgewogICAgICAic2x1ZyI6ICJiYWxtaW5nLXRpZ2VyLWdvbmdidSIsCiAgICAgICJhcnRpc3QiOiAiQmFsbWluZyBUaWdlciIsCiAgICAgICJlbWFpbCI6ICJtZ210QGJhbG1pbmd0aWdlci5jb20iLAogICAgICAiY29udGFjdF90eXBlIjogIm1hbmFnZW1lbnRfZGlyZWN0IiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNi0wNlQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAicjEwNDA1MjE4OTk2OTEyMTYwNTgiLAogICAgICAic3RhdHVzIjogImRyYWZ0ZWQiLAogICAgICAiZm9sbG93X3VwX3NlbnQiOiB0cnVlLAogICAgICAiZm9sbG93X3VwX2RhdGUiOiAiMjAyNi0wNi0xNCIKICAgIH0sCiAgICB7CiAgICAgICJzbHVnIjogImJvYXJkcy1vZi1jYW5hZGEtaW5mZXJubyIsCiAgICAgICJhcnRpc3QiOiAiQm9hcmRzIG9mIENhbmFkYSIsCiAgICAgICJlbWFpbCI6ICJlZGl0b3JAd2FycHJlY29yZHMuY29tIiwKICAgICAgImNvbnRhY3RfdHlwZSI6ICJsYWJlbF93YXJwX3ByZXNzIiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNi0wNlQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAici01NzQxNTQ5MTkyNTA1NjQ3OTk3IiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIiwKICAgICAgImZvbGxvd191cF9zZW50IjogdHJ1ZSwKICAgICAgImZvbGxvd191cF9kYXRlIjogIjIwMjYtMDYtMTQiCiAgICB9LAogICAgewogICAgICAic2x1ZyI6ICJlZC1vYnJpZW4tYmx1ZS1tb3JwaG8iLAogICAgICAiYXJ0aXN0IjogIkVkIE8nQnJpZW4iLAogICAgICAiZW1haWwiOiAiaW50ZXJuYXRpb25hbEB0cmFuc2dyZXNzaXZlLmNvLnVrIiwKICAgICAgImNvbnRhY3RfdHlwZSI6ICJsYWJlbF90cmFuc2dyZXNzaXZlX3ByZXNzIiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNi0wNlQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAicjQ5Mzg4NjIzNTQwMTE4Mzk1MjkiLAogICAgICAic3RhdHVzIjogImRyYWZ0ZWQiLAogICAgICAiZm9sbG93X3VwX3NlbnQiOiB0cnVlLAogICAgICAiZm9sbG93X3VwX2RhdGUiOiAiMjAyNi0wNi0xNCIKICAgIH0sCiAgICB7CiAgICAgICJzbHVnIjogImZ1dHVyZS1pc2xhbmRzLWZyb20tYS1ob2xlLWluLXRoZS1mbG9vciIsCiAgICAgICJhcnRpc3QiOiAiRnV0dXJlIElzbGFuZHMiLAogICAgICAiZW1haWwiOiAibWVkaWFlbnF1aXJpZXNANGFkLmNvbSIsCiAgICAgICJjb250YWN0X3R5cGUiOiAibGFiZWxfNGFkX21lZGlhX2VucXVpcmllcyIsCiAgICAgICJkcmFmdGVkX2F0IjogIjIwMjYtMDYtMTBUMDA6MDA6MDBaIiwKICAgICAgImdtYWlsX2RyYWZ0X2lkIjogInI1NTc2NDQ2ODIyMTg5OTUwNjA5IiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIgogICAgfSwKICAgIHsKICAgICAgInNsdWciOiAia3VydC12aWxlLXBoaWxhZGVscGhpYXMtYmVlbi1nb29kLXRvLW1lIiwKICAgICAgImFydGlzdCI6ICJLdXJ0IFZpbGUiLAogICAgICAiZW1haWwiOiAiaW5mb0Bhbm90aGVybWdtdGNvLmNvbSIsCiAgICAgICJjb250YWN0X3R5cGUiOiAibWFuYWdlbWVudF9hbm90aGVyX21hbmFnZW1lbnRfY29tcGFueSIsCiAgICAgICJkcmFmdGVkX2F0IjogIjIwMjYtMDYtMTBUMDA6MDA6MDBaIiwKICAgICAgImdtYWlsX2RyYWZ0X2lkIjogInItMjc1NDk5MTAwMDU2OTI5NjE2MyIsCiAgICAgICJzdGF0dXMiOiAiZHJhZnRlZCIKICAgIH0sCiAgICB7CiAgICAgICJzbHVnIjogImxvd2VydG93bi11Z2x5LWR1Y2tsaW5nLXVuaW9uIiwKICAgICAgImFydGlzdCI6ICJMb3dlcnRvd24iLAogICAgICAiZW1haWwiOiAicmVzbmlrLmphY2tpZUBnbWFpbC5jb20iLAogICAgICAiY29udGFjdF90eXBlIjogIm1hbmFnZW1lbnRfamFja2llX3Jlc25payIsCiAgICAgICJkcmFmdGVkX2F0IjogIjIwMjYtMDYtMTBUMDA6MDA6MDBaIiwKICAgICAgImdtYWlsX2RyYWZ0X2lkIjogInItNjg4MDAyMDM2NTA4NDU3ODk2MiIsCiAgICAgICJzdGF0dXMiOiAiZHJhZnRlZCIKICAgIH0sCiAgICB7CiAgICAgICJzbHVnIjogInZpbmNlLXN0YXBsZXMtY3J5LWJhYnkiLAogICAgICAiYXJ0aXN0IjogIlZpbmNlIFN0YXBsZXMiLAogICAgICAiZW1haWwiOiAiY2FybGFAbG9tYXZpc3RhcmVjb3JkaW5ncy5jb20iLAogICAgICAiY29udGFjdF90eXBlIjogImxhYmVsX2xvbWFfdmlzdGFfcHJlc3MiLAogICAgICAiZHJhZnRlZF9hdCI6ICIyMDI2LTA2LTEwVDAwOjAwOjAwWiIsCiAgICAgICJnbWFpbF9kcmFmdF9pZCI6ICJyNzQ5MjcxNjU1OTMzMTIzMDI4OSIsCiAgICAgICJzdGF0dXMiOiAiZHJhZnRlZCIKICAgIH0sCiAgICB7CiAgICAgICJzbHVnIjogImphbGVuLW5nb25kYS1kb2N0cmluZS1vZi1sb3ZlIiwKICAgICAgImFydGlzdCI6ICJKYWxlbiBOZ29uZGEiLAogICAgICAiZW1haWwiOiAiaW5mb0BkYXB0b25lcmVjb3Jkcy5jb20iLAogICAgICAiY29udGFjdF90eXBlIjogImxhYmVsX2RhcHRvbmVfcmVjb3JkcyIsCiAgICAgICJkcmFmdGVkX2F0IjogIjIwMjYtMDYtMTBUMDA6MDA6MDBaIiwKICAgICAgImdtYWlsX2RyYWZ0X2lkIjogInItNTQ0MjUzMzczMzM5OTIzNjQyIiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIgogICAgfSwKICAgIHsKICAgICAgInNsdWciOiAiZGVhdGgtY2FiLWZvci1jdXRpZS1pLWJ1aWx0LXlvdS1hLXRvd2VyIiwKICAgICAgImFydGlzdCI6ICJEZWF0aCBDYWIgZm9yIEN1dGllIiwKICAgICAgImVtYWlsIjogInB1YmxpY2l0eUBhbnRpLmNvbSIsCiAgICAgICJjb250YWN0X3R5cGUiOiAibGFiZWxfYW50aV9wcmVzcyIsCiAgICAgICJkcmFmdGVkX2F0IjogIjIwMjYtMDYtMTJUMDA6MDA6MDBaIiwKICAgICAgImdtYWlsX2RyYWZ0X2lkIjogInI2MzUwMzQ4NDA2Mjk0MjU3NjQ0IiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIgogICAgfSwKICAgIHsKICAgICAgInNsdWciOiAiaWNlYWdlLWZvci1sb3ZlLW9mLWdyYWNlLWFuZC10aGUtaGVyZWFmdGVyIiwKICAgICAgImFydGlzdCI6ICJJY2VhZ2UiLAogICAgICAiZW1haWwiOiAiaW5mb0BtZXhpY2Fuc3VtbWVyLmNvbSIsCiAgICAgICJjb250YWN0X3R5cGUiOiAibGFiZWxfbWV4aWNhbl9zdW1tZXIiLAogICAgICAiZHJhZnRlZF9hdCI6ICIyMDI2LTA2LTEyVDAwOjAwOjAwWiIsCiAgICAgICJnbWFpbF9kcmFmdF9pZCI6ICJyNzg1NTQzODMwNjcxMDAxNDc0IiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIgogICAgfSwKICAgIHsKICAgICAgInNsdWciOiAiYmVkb3VpbmUtbmVvbi1zdW1tZXItc2tpbiIsCiAgICAgICJhcnRpc3QiOiAiQmVkb3VpbmUiLAogICAgICAiZW1haWwiOiAia2FybEBhcnJpdmFsYXJ0aXN0cy5jb20iLAogICAgICAiY29udGFjdF90eXBlIjogImJvb2tpbmdfYXJyaXZhbF9hcnRpc3RzIiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNi0xMlQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAicjQ3NTc1MjcwOTA0MjQxNDA0MzAiLAogICAgICAic3RhdHVzIjogImRyYWZ0ZWQiCiAgICB9LAogICAgewogICAgICAic2x1ZyI6ICJuYXZ5LWJsdWUtc2lyLXJlbmRlciIsCiAgICAgICJhcnRpc3QiOiAiTmF2eSBCbHVlIiwKICAgICAgImVtYWlsIjogImN2QHNvbWV0aGluZ2luY29tbW9uLmNvbSIsCiAgICAgICJjb250YWN0X3R5cGUiOiAibWFuYWdlbWVudF9zb21ldGhpbmdfaW5fY29tbW9uIiwKICAgICAgImRyYWZ0ZWRfYXQiOiAiMjAyNi0wNi0xMlQwMDowMDowMFoiLAogICAgICAiZ21haWxfZHJhZnRfaWQiOiAici00MTYwNzg5ODA0NjI3MTYxOTIyIiwKICAgICAgInN0YXR1cyI6ICJkcmFmdGVkIgogICAgfSwKICAgIHsKICAgICAgInNsdWciOiAiZmVlYmxlLWxpdHRsZS1ob3JzZS1iaXRrbm90IiwKICAgICAgImFydGlzdCI6ICJmZWVibGUgbGl0dGxlIGhvcnNlIiwKICAgICAgImVtYWlsIjogImVsb3lsQGdyYW5kc3RhbmRocS5jb20iLAogICAgICAiY29udGFjdF90eXBlIjogInByZXNzX2dyYW5kc3RhbmRfaHEiLAogICAgICAiZHJhZnRlZF9hdCI6ICIyMDI2LTA2LTEyVDAwOjAwOjAwWiIsCiAgICAgICJnbWFpbF9kcmFmdF9pZCI6ICJyNzc3NjE0NzMxODQwNTcwNzcyNyIsCiAgICAgICJzdGF0dXMiOiAiZHJhZnRlZCIKICAgIH0KICBdCn0=
+{
+  "sent": [
+    {
+      "slug": "jpegmafia-experimental-rap",
+      "artist": "JPEGMAFIA",
+      "email": "info@wasserman.com",
+      "contact_type": "booking_management",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-6075199035912993988",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "bleachers-everyone-for-ten-minutes",
+      "artist": "Bleachers",
+      "email": "press@dirtyhit.com",
+      "contact_type": "label_management",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r8256127543638446691",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "masego-trap-house-jazz",
+      "artist": "Masego",
+      "email": "noah.simon@unitedtalent.com",
+      "contact_type": "booking_agent_UTA",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r2097916216499867598",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "majid-jordan-life-2-next-chapter",
+      "artist": "Majid Jordan",
+      "email": "info@threesixzero.com",
+      "contact_type": "management_three_six_zero",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-2128919038236681805",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "andrewbates",
+      "artist": "ANDREWBATES",
+      "email": "info@mananamusicmanagement.com",
+      "contact_type": "management_manana_electronic",
+      "drafted_at": "2026-05-24T00:00:00Z",
+      "gmail_draft_id": "r-2484744359298816949",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "ruido-tovar",
+      "artist": "Mexican Institute of Sound",
+      "email": "mexicaninstituteofsound@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-05-28T00:00:00Z",
+      "gmail_draft_id": "r1377795477908069771",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "traumprinz-life",
+      "artist": "Traumprinz",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-05-28T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "6lack-love-is-the-new-gangsta",
+      "artist": "6LACK",
+      "email": "domof@lvrn.com",
+      "contact_type": "management_lvrn",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r-5857390782402710349",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "aja-monet-color-of-rain",
+      "artist": "Aja Monet",
+      "email": "info@drinksumwtr.com",
+      "contact_type": "label_drink_sum_wtr",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r-233767054267777712",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "balming-tiger-gongbu",
+      "artist": "Balming Tiger",
+      "email": "mgmt@balmingtiger.com",
+      "contact_type": "management_direct",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r1040521899691216058",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "boards-of-canada-inferno",
+      "artist": "Boards of Canada",
+      "email": "editor@warprecords.com",
+      "contact_type": "label_warp_press",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r-5741549192505647997",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "ed-obrien-blue-morpho",
+      "artist": "Ed O'Brien",
+      "email": "international@transgressive.co.uk",
+      "contact_type": "label_transgressive_press",
+      "drafted_at": "2026-06-06T00:00:00Z",
+      "gmail_draft_id": "r4938862354011839529",
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-14"
+    },
+    {
+      "slug": "future-islands-from-a-hole-in-the-floor",
+      "artist": "Future Islands",
+      "email": "mediaenquiries@4ad.com",
+      "contact_type": "label_4ad_media_enquiries",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r5576446822189950609",
+      "status": "drafted"
+    },
+    {
+      "slug": "kurt-vile-philadelphias-been-good-to-me",
+      "artist": "Kurt Vile",
+      "email": "info@anothermgmtco.com",
+      "contact_type": "management_another_management_company",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-2754991000569296163",
+      "status": "drafted"
+    },
+    {
+      "slug": "lowertown-ugly-duckling-union",
+      "artist": "Lowertown",
+      "email": "resnik.jackie@gmail.com",
+      "contact_type": "management_jackie_resnik",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-6880020365084578962",
+      "status": "drafted"
+    },
+    {
+      "slug": "vince-staples-cry-baby",
+      "artist": "Vince Staples",
+      "email": "carla@lomavistarecordings.com",
+      "contact_type": "label_loma_vista_press",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r7492716559331230289",
+      "status": "drafted"
+    },
+    {
+      "slug": "jalen-ngonda-doctrine-of-love",
+      "artist": "Jalen Ngonda",
+      "email": "info@daptonerecords.com",
+      "contact_type": "label_daptone_records",
+      "drafted_at": "2026-06-10T00:00:00Z",
+      "gmail_draft_id": "r-544253373339923642",
+      "status": "drafted"
+    },
+    {
+      "slug": "death-cab-for-cutie-i-built-you-a-tower",
+      "artist": "Death Cab for Cutie",
+      "email": "publicity@anti.com",
+      "contact_type": "label_anti_press",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r6350348406294257644",
+      "status": "drafted"
+    },
+    {
+      "slug": "iceage-for-love-of-grace-and-the-hereafter",
+      "artist": "Iceage",
+      "email": "info@mexicansummer.com",
+      "contact_type": "label_mexican_summer",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r785543830671001474",
+      "status": "drafted"
+    },
+    {
+      "slug": "bedouine-neon-summer-skin",
+      "artist": "Bedouine",
+      "email": "karl@arrivalartists.com",
+      "contact_type": "booking_arrival_artists",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r4757527090424140430",
+      "status": "drafted"
+    },
+    {
+      "slug": "navy-blue-sir-render",
+      "artist": "Navy Blue",
+      "email": "cv@somethingincommon.com",
+      "contact_type": "management_something_in_common",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r-4160789804627161922",
+      "status": "drafted"
+    },
+    {
+      "slug": "feeble-little-horse-bitknot",
+      "artist": "feeble little horse",
+      "email": "eloyl@grandstandhq.com",
+      "contact_type": "press_grandstand_hq",
+      "drafted_at": "2026-06-12T00:00:00Z",
+      "gmail_draft_id": "r7776147318405707727",
+      "status": "drafted"
+    },
+    {
+      "slug": "kelsey-lu-so-help-me-god",
+      "artist": "Kelsey Lu",
+      "email": "press@dirtyhit.com",
+      "contact_type": "label_dirty_hit_press",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "press@dirtyhit.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "waxahatchee",
+      "artist": "Waxahatchee",
+      "email": "publicity@anti.com",
+      "contact_type": "label_anti_press",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "publicity@anti.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ear-rumspringa",
+      "artist": "ear",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "anderson-paak-kpops",
+      "artist": "Anderson .Paak",
+      "email": "info@fullstopmanagement.com",
+      "contact_type": "management_full_stop",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "info@fullstopmanagement.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wet-leg",
+      "artist": "Wet Leg",
+      "email": "press@dominorecordco.com",
+      "contact_type": "label_domino_press",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "press@dominorecordco.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tems-love-is-a-kingdom",
+      "artist": "Tems",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "salamanda-dreams-as-reality",
+      "artist": "Salamanda",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "urtrax-immersive-music-for-the-mind",
+      "artist": "u.r.trax",
+      "email": "richard@paramountartists.com",
+      "contact_type": "booking_paramount_artists",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "richard@paramountartists.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "smiff-pressure-core-bass",
+      "artist": "SMIFF",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "vagabon-again-album",
+      "artist": "Vagabon",
+      "email": "contact@grandstandhq.com",
+      "contact_type": "press_grandstand_hq",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "contact@grandstandhq.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wishgxd-toronto-cinematic-rb",
+      "artist": "WishGxd",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "serpentwithfeet-deacon-gospel",
+      "artist": "Serpentwithfeet",
+      "email": "mfogg@secretlygroup.com",
+      "contact_type": "label_secretly_canadian_press",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "mfogg@secretlygroup.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "samara-cyn-detour-as-destination",
+      "artist": "Samara Cyn",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sega-bodega-harold",
+      "artist": "Sega Bodega",
+      "email": "segabodega@supernature.co",
+      "contact_type": "management_supernature",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "segabodega@supernature.co"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tirzah-minimal-as-heartbeat",
+      "artist": "Tirzah",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "yaeji-dancing-in-both-languages",
+      "artist": "Yaeji",
+      "email": "nikkibennett@xlrecordings.com",
+      "contact_type": "label_xl_recordings_press",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "nikkibennett@xlrecordings.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "soul-wun-blue-light-emotional-electronic",
+      "artist": "Soul Wun",
+      "email": "hello.soulwun@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "hello.soulwun@gmail.com",
+        "angus@galleryrecordings.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sudan-archives-natural-brown-prom-queen",
+      "artist": "Sudan Archives",
+      "email": "losangeles@stonesthrow.com",
+      "contact_type": "label_stones_throw",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "losangeles@stonesthrow.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "vegyn-the-producer-who-stayed",
+      "artist": "Vegyn",
+      "email": "mgmt@plzmakeitruins.com",
+      "contact_type": "management_plz_make_it_ruins",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "mgmt@plzmakeitruins.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sega-bodega-harold-2022",
+      "artist": "Sega Bodega",
+      "email": "segabodega@supernature.co",
+      "contact_type": "management_supernature",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "contacted_via_other_post",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sailorr-rawness-as-craft",
+      "artist": "SAILORR",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "verraco-basic-maneuvers",
+      "artist": "Verraco",
+      "email": "carin@outer-agency.com",
+      "contact_type": "booking_outer_agency",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "carin@outer-agency.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tiwayo-outsider",
+      "artist": "Tiwayo",
+      "email": "contact@tiwayo.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "contact@tiwayo.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "turnstile-coachella-2026",
+      "artist": "Turnstile",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sung-holly-simple",
+      "artist": "Sung Holly",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wesley-joseph-forever-ends-someday",
+      "artist": "Wesley Joseph",
+      "email": "mfogg@secretlygroup.com",
+      "contact_type": "label_secretly_canadian_press",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "mfogg@secretlygroup.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sorisa-toronto-hyperpop",
+      "artist": "Sorisa",
+      "email": "info@feldman-agency.com",
+      "contact_type": "booking_feldman_agency",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "info@feldman-agency.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sophia-stel-a24-solitaire",
+      "artist": "Sophia Stel",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "witch-prophet-words-are-spells",
+      "artist": "Witch Prophet",
+      "email": "witchprophet@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "witchprophet@gmail.com",
+        "heartlakerecords@gmail.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sasha-keable-act-ii",
+      "artist": "Sasha Keable",
+      "email": "rachel@wired-pr.co.uk",
+      "contact_type": "press_wired_pr",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "rachel@wired-pr.co.uk",
+        "info@jadeandjustin.co.uk"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ye-sofi-bully-2026",
+      "artist": "Ye",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "yame-ebem-2025",
+      "artist": "Yam\u00ea",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "samara-cyn-backroads-2025",
+      "artist": "Samara Cyn",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tove-lo-criminally-underrated-heat-2024",
+      "artist": "Tove Lo",
+      "email": "laura@littlelionmgmt.com",
+      "contact_type": "management_little_lion",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "laura@littlelionmgmt.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tokyo-underground-electronic-2026",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_no_artist",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_editorial",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "women-reshaping-rap-2026",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_no_artist",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_editorial",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "streaming-killed-the-album-or-did-it",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_no_artist",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_editorial",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tame-impala-deadbeat",
+      "artist": "Tame Impala",
+      "email": "contact@grandstandhq.com",
+      "contact_type": "press_grandstand_hq",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "contact@grandstandhq.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sprints-2025",
+      "artist": "Sprints",
+      "email": "press@subpop.com",
+      "contact_type": "label_sub_pop_press",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "press@subpop.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sza-sos-lana",
+      "artist": "SZA",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "seun-kuti-2024",
+      "artist": "Seun Kuti",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tyler-chromakopia-2024",
+      "artist": "Tyler the Creator",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "toro-y-moi-hole-erth",
+      "artist": "Toro y Moi",
+      "email": "press@deadoceans.com",
+      "contact_type": "label_dead_oceans_press",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "drafted",
+      "emails_sent": [
+        "press@deadoceans.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sadeyes-2024",
+      "artist": "sadEyes",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-15T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    }
+  ]
+}

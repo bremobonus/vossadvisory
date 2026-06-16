@@ -1,0 +1,133 @@
+#!/bin/bash
+# ArtOnly Radar Cache Refresh
+# Generated: 2026-06-16
+# Purpose: Write 15 trending artists to radar-cache.json for the /radar page
+# Run via GitHub Actions (deploy-artonly.yml) or:
+# sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-16-radar.sh
+
+set -e
+echo "=== ArtOnly Radar Cache Refresh: 2026-06-16 ==="
+echo "$(date)"
+
+python3 << 'PYEOF'
+import json
+
+RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
+
+artists = [
+    {
+        "name": "Bad Bunny",
+        "genre": "Music",
+        "why": "DeBÍ TiRAR MáS FOToS won Album of the Year at the 2026 Grammy Awards, the first Spanish-language album to receive the honour, and he leads all artists globally with 11.5 billion streams in 2026 per Luminate data",
+        "signal": "2026 Grammy Album of the Year / 11.5B global streams"
+    },
+    {
+        "name": "Shakira",
+        "genre": "Music",
+        "why": "Co-performed the official 2026 FIFA World Cup anthem Dai Dai with Burna Boy at the Estadio Azteca opening ceremony on June 11 before 80,000 fans, and will headline the first-ever World Cup final halftime show at MetLife Stadium on July 19",
+        "signal": "FIFA World Cup 2026 opening ceremony"
+    },
+    {
+        "name": "Burna Boy",
+        "genre": "Music",
+        "why": "Co-wrote and performed Dai Dai, the official 2026 FIFA World Cup anthem, with Shakira. The track debuted live at the Estadio Azteca opening ceremony on June 11, 2026, broadcast to a global audience",
+        "signal": "FIFA World Cup 2026 anthem"
+    },
+    {
+        "name": "F3miii",
+        "genre": "Music",
+        "why": "Single Noble, released December 2025, went viral on TikTok and entered the UK Singles Top 10 in early June 2026, the highest chart position to date for the Nigerian-Irish singer-songwriter",
+        "signal": "UK Singles Top 10 June 2026 / TikTok viral"
+    },
+    {
+        "name": "Don Toliver",
+        "genre": "Music",
+        "why": "Album OCTANE debuted No. 1 on Spotify and Apple Music globally in 2026 with 18 tracks; single E85 peaked at No. 15 on the Billboard Hot 100 and No. 3 on Hot R&B/Hip-Hop Songs, and he is currently on a sold-out 30-city North American OCTANE Tour",
+        "signal": "Billboard Hot 100 / Global No. 1 album / OCTANE Tour 2026"
+    },
+    {
+        "name": "Chappell Roan",
+        "genre": "Music",
+        "why": "Joined Charli XCX onstage at Primavera Sound on June 5, 2026 for a viral Apple dance moment that spread across social media, then headlined the festival on June 7 and presented at the 2026 Grammy Awards in February",
+        "signal": "Primavera Sound June 2026 / 2026 Grammy presenter"
+    },
+    {
+        "name": "Myles Smith",
+        "genre": "Music",
+        "why": "Debut studio album My Mess, My Heart, My Life released June 19, 2026, following a breakout 2025 that included Hold Me In The Dark reaching No. 15 on the UK Singles Chart and sustained streaming growth",
+        "signal": "Debut Album June 19 2026 / UK Singles Chart"
+    },
+    {
+        "name": "The Strokes",
+        "genre": "Music",
+        "why": "Reality Awaits, their first studio album since The New Abnormal in 2020, is due June 26, 2026, ending a six-year gap between records and marking one of the most anticipated rock releases of the year",
+        "signal": "New Album June 26 2026 / First in 6 Years"
+    },
+    {
+        "name": "LISA",
+        "genre": "Music",
+        "why": "Performed at the 2026 FIFA World Cup USA opening ceremony at Los Angeles Stadium on June 12, 2026, alongside Katy Perry and Anitta, consolidating her solo global reach after the crossover success of Rockstar",
+        "signal": "FIFA World Cup 2026 USA opening ceremony"
+    },
+    {
+        "name": "Anne Imhof",
+        "genre": "Art",
+        "why": "Solo exhibition at Spruth Magers London opened June 5, 2026 and runs through August 1, placing the German performance artist and painter at the centre of London Gallery Weekend and the summer exhibition season",
+        "signal": "Spruth Magers London solo show June 5 to August 1 2026"
+    },
+    {
+        "name": "Michaela Yearwood-Dan",
+        "genre": "Art",
+        "why": "First institutional museum exhibition in the UK opened at The Whitworth in Manchester in April 2026 and runs through October, presenting 14 new paintings and 6 ceramic vessels exploring Blackness, femininity and community",
+        "signal": "The Whitworth solo exhibition April to October 2026"
+    },
+    {
+        "name": "Huang Yuxing",
+        "genre": "Art",
+        "why": "Named by Artsy collectors as an artist to watch in 2026 for large-scale figurative canvases drawing attention from international galleries across Asia and Europe, with his critical profile rising steadily this season",
+        "signal": "Artsy 12 Collectors to Watch 2026"
+    },
+    {
+        "name": "Zendaya",
+        "genre": "Culture",
+        "why": "Four major studio films scheduled for 2026 include Christopher Nolan's The Odyssey, Dune 3, Spider-Man: Brand New Day, and Shrek 5, making her the most in-demand film actress in the world this year",
+        "signal": "Four major 2026 studio releases"
+    },
+    {
+        "name": "Kai Cenat",
+        "genre": "Culture",
+        "why": "One of the biggest live streaming presences globally with over 60 million YouTube subscribers, his potential cameo in Scary Movie 6 became a trending topic in June 2026 following a viral teaser that fuelled widespread fan speculation",
+        "signal": "Scary Movie 6 cameo viral June 2026 / 60M YouTube subscribers"
+    },
+    {
+        "name": "Timothee Chalamet",
+        "genre": "Culture",
+        "why": "A screenshot from his 2026 Critics Choice Award speech became a widely shared meme template across TikTok and X, making him one of the most referenced cultural figures in the first half of 2026",
+        "signal": "Critics Choice speech viral meme 2026 / TikTok and X"
+    }
+]
+
+with open(RADAR, "w") as f:
+    json.dump(artists, f, indent=2, ensure_ascii=False)
+
+data = json.load(open(RADAR))
+print(f"Wrote {len(data)} artists to radar-cache.json")
+for a in data:
+    print(f"  [{a['genre']:8s}]  {a['name']}")
+
+print()
+print("Verifying: no em-dashes or en-dashes in text...")
+issues = []
+for a in data:
+    for field in ("why", "signal", "name"):
+        if "—" in a.get(field, "") or "–" in a.get(field, ""):
+            issues.append(f"  DASH FOUND in {a['name']} ({field})")
+if issues:
+    for i in issues:
+        print(i)
+else:
+    print("  OK: no em-dashes or en-dashes found")
+
+PYEOF
+
+echo "=== Radar cache update complete ==="

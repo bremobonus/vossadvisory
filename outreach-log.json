@@ -137,7 +137,9 @@
       "contact_type": "label_4ad_media_enquiries",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r5576446822189950609",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-17"
     },
     {
       "slug": "kurt-vile-philadelphias-been-good-to-me",
@@ -146,7 +148,9 @@
       "contact_type": "management_another_management_company",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-2754991000569296163",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-17"
     },
     {
       "slug": "lowertown-ugly-duckling-union",
@@ -155,7 +159,9 @@
       "contact_type": "management_jackie_resnik",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-6880020365084578962",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-17"
     },
     {
       "slug": "vince-staples-cry-baby",
@@ -164,7 +170,9 @@
       "contact_type": "label_loma_vista_press",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r7492716559331230289",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-17"
     },
     {
       "slug": "jalen-ngonda-doctrine-of-love",
@@ -173,7 +181,9 @@
       "contact_type": "label_daptone_records",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-544253373339923642",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-17"
     },
     {
       "slug": "death-cab-for-cutie-i-built-you-a-tower",
@@ -225,7 +235,9 @@
       "artist": "Tupac Shakur",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@tasf.org"],
+      "management_emails_sent": [
+        "info@tasf.org"
+      ],
       "contact_type": "estate_foundation",
       "status": "sent",
       "follow_up_sent": false
@@ -235,7 +247,9 @@
       "artist": "Burna Boy",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["contact@atlanticrecords.com"],
+      "management_emails_sent": [
+        "contact@atlanticrecords.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -245,7 +259,9 @@
       "artist": "Ice Cube",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["jeff@thefirm.com"],
+      "management_emails_sent": [
+        "jeff@thefirm.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -255,7 +271,9 @@
       "artist": "James Blake",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@itsgoodboy.com"],
+      "management_emails_sent": [
+        "info@itsgoodboy.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -265,7 +283,9 @@
       "artist": "Jorja Smith",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@famm.uk"],
+      "management_emails_sent": [
+        "info@famm.uk"
+      ],
       "contact_type": "label_management",
       "status": "sent",
       "follow_up_sent": false
@@ -275,7 +295,9 @@
       "artist": "Leon Thomas III",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["motown@motownrecords.com"],
+      "management_emails_sent": [
+        "motown@motownrecords.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -285,7 +307,9 @@
       "artist": "Lola Young",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@cherrycreate.com"],
+      "management_emails_sent": [
+        "info@cherrycreate.com"
+      ],
       "contact_type": "management_pr",
       "status": "sent",
       "follow_up_sent": false
@@ -295,7 +319,9 @@
       "artist": "Tyla",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@africacreativeagency.com"],
+      "management_emails_sent": [
+        "info@africacreativeagency.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -305,7 +331,9 @@
       "artist": "Boy George",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@primarywave.com"],
+      "management_emails_sent": [
+        "info@primarywave.com"
+      ],
       "contact_type": "management_publishing",
       "status": "sent",
       "follow_up_sent": false
@@ -315,7 +343,9 @@
       "artist": "Bruno Mars",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["cara.donatto@atlanticrecords.com"],
+      "management_emails_sent": [
+        "cara.donatto@atlanticrecords.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -325,7 +355,9 @@
       "artist": "Central Cee",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["sarah.mary.cunningham@sonymusic.com"],
+      "management_emails_sent": [
+        "sarah.mary.cunningham@sonymusic.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -335,7 +367,9 @@
       "artist": "Kelsey Lu",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@dirtyhit.co.uk"],
+      "management_emails_sent": [
+        "info@dirtyhit.co.uk"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -345,7 +379,9 @@
       "artist": "Megan Thee Stallion",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["jf@rocnation.com"],
+      "management_emails_sent": [
+        "jf@rocnation.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -355,7 +391,9 @@
       "artist": "PinkPantheress",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["Hannah.Karp@wmg.com"],
+      "management_emails_sent": [
+        "Hannah.Karp@wmg.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -364,7 +402,9 @@
       "slug": "wiki-ancient-history",
       "artist": "Wiki",
       "date_contacted": "2026-06-16",
-      "emails_sent": ["wiksetenterprise@gmail.com"],
+      "emails_sent": [
+        "wiksetenterprise@gmail.com"
+      ],
       "management_emails_sent": [],
       "contact_type": "artist_direct",
       "status": "sent",
@@ -375,7 +415,9 @@
       "artist": "Doechii",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["moosa@txdxe.com"],
+      "management_emails_sent": [
+        "moosa@txdxe.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -385,7 +427,9 @@
       "artist": "Olivia Rodrigo",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["zack@lighthousemm.com"],
+      "management_emails_sent": [
+        "zack@lighthousemm.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -395,7 +439,9 @@
       "artist": "Rivers Cuomo (Weezer)",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["dustin@crushmm.com"],
+      "management_emails_sent": [
+        "dustin@crushmm.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -405,7 +451,9 @@
       "artist": "Sabrina Carpenter",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@volaramgmt.com"],
+      "management_emails_sent": [
+        "info@volaramgmt.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -415,7 +463,9 @@
       "artist": "Tyler, the Creator",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["jenny@4strikes.com"],
+      "management_emails_sent": [
+        "jenny@4strikes.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -425,7 +475,9 @@
       "artist": "Ariana Grande",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@goodworldco.com"],
+      "management_emails_sent": [
+        "info@goodworldco.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -435,7 +487,9 @@
       "artist": "DJ Seinfeld",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["press@ninjatune.net"],
+      "management_emails_sent": [
+        "press@ninjatune.net"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -445,7 +499,9 @@
       "artist": "Laura Misch",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["press@olirecords.com"],
+      "management_emails_sent": [
+        "press@olirecords.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -454,7 +510,9 @@
       "slug": "nick-leon",
       "artist": "Nick Leon",
       "date_contacted": "2026-06-16",
-      "emails_sent": ["nickleon954@gmail.com"],
+      "emails_sent": [
+        "nickleon954@gmail.com"
+      ],
       "management_emails_sent": [],
       "contact_type": "artist_direct",
       "status": "sent",
@@ -465,7 +523,9 @@
       "artist": "Olivia Dean",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@cherrycreate.com"],
+      "management_emails_sent": [
+        "info@cherrycreate.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -475,7 +535,9 @@
       "artist": "Robyn",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["hello@y-o-u-n-g.com"],
+      "management_emails_sent": [
+        "hello@y-o-u-n-g.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -485,7 +547,9 @@
       "artist": "Cate Le Bon",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["brid@pitchperfectpr.com"],
+      "management_emails_sent": [
+        "brid@pitchperfectpr.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -495,7 +559,9 @@
       "artist": "Grouper (Liz Harris)",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["brianjfoote@me.com"],
+      "management_emails_sent": [
+        "brianjfoote@me.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -505,7 +571,9 @@
       "artist": "Julia Holter",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["Robin@sealevelmgmt.com"],
+      "management_emails_sent": [
+        "Robin@sealevelmgmt.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -515,7 +583,9 @@
       "artist": "Florist (Emily Sprague)",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["hello@dbldblwhmmy.com"],
+      "management_emails_sent": [
+        "hello@dbldblwhmmy.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -525,7 +595,9 @@
       "artist": "Jamila Woods",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["press@jagjaguwar.com"],
+      "management_emails_sent": [
+        "press@jagjaguwar.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -535,7 +607,9 @@
       "artist": "Perfume Genius",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@matadorrecords.com"],
+      "management_emails_sent": [
+        "info@matadorrecords.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -545,7 +619,9 @@
       "artist": "Angel Olsen",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["press@jagjaguwar.com"],
+      "management_emails_sent": [
+        "press@jagjaguwar.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -555,7 +631,9 @@
       "artist": "Burial (William Bevan)",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["info@hyperdub.net"],
+      "management_emails_sent": [
+        "info@hyperdub.net"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -565,7 +643,10 @@
       "artist": "Weyes Blood (Natalie Mering)",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["meghanh@grandstandhq.com", "weyesblood@blueraincoatmusic.com"],
+      "management_emails_sent": [
+        "meghanh@grandstandhq.com",
+        "weyesblood@blueraincoatmusic.com"
+      ],
       "contact_type": "label_press_and_management",
       "status": "sent",
       "follow_up_sent": false
@@ -575,7 +656,9 @@
       "artist": "Aldous Harding",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["mediaenquiries@4ad.com"],
+      "management_emails_sent": [
+        "mediaenquiries@4ad.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -584,8 +667,12 @@
       "slug": "lankum",
       "artist": "Lankum",
       "date_contacted": "2026-06-16",
-      "emails_sent": ["lankumdublin@gmail.com"],
-      "management_emails_sent": ["taliamiller@roughtraderecords.com"],
+      "emails_sent": [
+        "lankumdublin@gmail.com"
+      ],
+      "management_emails_sent": [
+        "taliamiller@roughtraderecords.com"
+      ],
       "contact_type": "artist_and_label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -595,7 +682,10 @@
       "artist": "Sudan Archives (Brittney Parks)",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["ben@constantartists.com", "losangeles@stonesthrow.com"],
+      "management_emails_sent": [
+        "ben@constantartists.com",
+        "losangeles@stonesthrow.com"
+      ],
       "contact_type": "management_and_label",
       "status": "sent",
       "follow_up_sent": false
@@ -605,7 +695,9 @@
       "artist": "Ada Lea",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["dawood@bloody-knuckles.com"],
+      "management_emails_sent": [
+        "dawood@bloody-knuckles.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -615,7 +707,9 @@
       "artist": "Amyl and the Sniffers",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["parisi.andrew@gmail.com"],
+      "management_emails_sent": [
+        "parisi.andrew@gmail.com"
+      ],
       "contact_type": "management",
       "status": "sent",
       "follow_up_sent": false
@@ -624,7 +718,9 @@
       "slug": "cassandra-jenkins",
       "artist": "Cassandra Jenkins",
       "date_contacted": "2026-06-16",
-      "emails_sent": ["cassandracomplexrecs@gmail.com"],
+      "emails_sent": [
+        "cassandracomplexrecs@gmail.com"
+      ],
       "management_emails_sent": [],
       "contact_type": "artist_direct",
       "status": "sent",
@@ -635,7 +731,10 @@
       "artist": "Helena Deland",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["catherine@motormouthmedia.com", "nycholasfortin@chivichivi.com"],
+      "management_emails_sent": [
+        "catherine@motormouthmedia.com",
+        "nycholasfortin@chivichivi.com"
+      ],
       "contact_type": "label_press_and_management",
       "status": "sent",
       "follow_up_sent": false
@@ -645,7 +744,9 @@
       "artist": "Special Interest",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["taliamiller@roughtraderecords.com"],
+      "management_emails_sent": [
+        "taliamiller@roughtraderecords.com"
+      ],
       "contact_type": "label_press",
       "status": "sent",
       "follow_up_sent": false
@@ -655,7 +756,10 @@
       "artist": "Waxahatchee (Katie Crutchfield)",
       "date_contacted": "2026-06-16",
       "emails_sent": [],
-      "management_emails_sent": ["eloyl@grandstandhq.com", "rennie@anothermgmtco.com"],
+      "management_emails_sent": [
+        "eloyl@grandstandhq.com",
+        "rennie@anothermgmtco.com"
+      ],
       "contact_type": "label_press_and_management",
       "status": "sent",
       "follow_up_sent": false

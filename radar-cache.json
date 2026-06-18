@@ -1,92 +1,92 @@
 [
   {
-    "name": "Drake",
+    "name": "Taylor Swift",
     "genre": "Music",
-    "why": "ICEMAN held No. 1 on the Billboard 200 for four consecutive weeks in May and June 2026, debuting with 463,000 equivalent units and pushing Drake ahead of Jay-Z for the most No. 1 albums by a solo male artist",
-    "signal": "Billboard 200 No. 1 for 4 weeks / 463,000 units debut"
+    "why": "I Knew It I Knew You from the Toy Story 5 soundtrack debuted at No. 1 on the Billboard Hot 100 for the week of June 20 2026, her 15th chart-topper and a new record for the most No. 1 singles in the 21st century",
+    "signal": "Billboard Hot 100 No. 1, week of June 20 2026"
   },
   {
-    "name": "Ella Langley",
+    "name": "Kelsey Lu",
     "genre": "Music",
-    "why": "Debut album Dandelion opened at No. 1 on the Billboard 200, marking the largest streaming debut week for a female country primary artist on record, executive produced with Miranda Lambert",
-    "signal": "Billboard 200 No. 1 debut / Largest female country streaming debut"
+    "why": "So Help Me God released June 12 2026 via Dirty Hit, their first album in 7 years, co-produced with Jack Antonoff and Yves Rothman, and scored 82 on the Pitchfork critic aggregate",
+    "signal": "New album June 12 2026, Pitchfork score 82"
   },
   {
-    "name": "aespa",
+    "name": "Niall Horan",
     "genre": "Music",
-    "why": "LEMONADE debuted at No. 9 on the Billboard 200 in May 2026, the K-pop group's third Billboard 200 Top 10 entry, with a 2026 to 2027 world tour announced to follow",
-    "signal": "Billboard 200 Top 10 / World tour 2026 to 2027"
+    "why": "Dinner Party, his fourth studio album, released June 5 2026 via Capitol Records and debuted at No. 1 in six countries including the UK, Ireland, and Australia",
+    "signal": "New album June 5 2026, No. 1 in 6 countries"
   },
   {
-    "name": "Isaiah Rashad",
+    "name": "Lola Young",
     "genre": "Music",
-    "why": "It's Been Awful released May 1 2026 on TDE and Warner Records, debuting at No. 17 on the Billboard 200, his first studio album in five years, featuring SZA and Dominic Fike",
-    "signal": "Billboard 200 No. 17 debut / First album in 5 years"
+    "why": "Headlined Rolling Stone's Future of Music Showcase at SXSW 2026 on March 12, UK pop breakout known for Messy and named to Rolling Stone's Future 25 class for 2026",
+    "signal": "Rolling Stone Future of Music Showcase SXSW 2026"
   },
   {
-    "name": "Ruel",
+    "name": "Fuerza Regida",
     "genre": "Music",
-    "why": "Kicking My Feet and Screaming released June 12 2026, featuring 10 new tracks co-produced with Julian Bunetta and Kenny Beats, backed by a European Kicking and Screaming Tour running through October",
-    "signal": "New album June 12 2026 / European tour through October 2026"
+    "why": "Headlined Rolling Stone's Future of Music Showcase at SXSW 2026 on March 13, arena-rocking Mexican American group from San Bernardino, California, leading Street Mob Records",
+    "signal": "Rolling Stone Future of Music Showcase SXSW 2026"
   },
   {
-    "name": "KATSEYE",
+    "name": "BigXthaPlug",
     "genre": "Music",
-    "why": "Single Pinky Up is seeing significant chart movement on both US and UK trending charts in June 2026, building on the group's momentum since their 2025 debut",
-    "signal": "US and UK trending charts June 2026"
+    "why": "Headlined Rolling Stone's Future of Music Showcase at SXSW 2026 on March 14, Texas rapper featured in Rolling Stone's Future 25 list for 2026 with breakthrough single Texas",
+    "signal": "Rolling Stone Future of Music Showcase SXSW 2026, Future 25"
   },
   {
-    "name": "Death Cab for Cutie",
+    "name": "Morgan Wallen",
     "genre": "Music",
-    "why": "Single Riptides jumped four spots on the UK Official Trending Chart in the first week of June 2026, generating the most chart activity the Seattle indie rock band has seen in years",
+    "why": "I Can't Love You Anymore with Ella Langley entered the Hot 100 top 10 for the week of June 20 2026, his third separate top 10 entry on the chart this year",
+    "signal": "Billboard Hot 100 top 10, week of June 20 2026"
+  },
+  {
+    "name": "SAILORR",
+    "genre": "Music",
+    "why": "Debut album From Florida's Finest drove a sold-out Doja Cat tour in 2025 and the artist was featured in Rolling Stone's Future of Music 2026 class with new music arriving this year",
+    "signal": "Rolling Stone Future of Music 2026 class"
+  },
+  {
+    "name": "F3miii",
+    "genre": "Music",
+    "why": "Appearing on the UK Official Trending Chart in June 2026 alongside Ariana Grande and PinkPantheress, with streaming numbers accelerating across platforms this month",
     "signal": "UK Official Trending Chart June 2026"
   },
   {
-    "name": "PinkPantheress",
-    "genre": "Music",
-    "why": "Appearing on the UK Official Trending Chart in early June 2026 alongside Ariana Grande and F3miii, sustaining the streaming presence she built across 2024 and 2025",
-    "signal": "UK Official Trending Chart June 2026"
-  },
-  {
-    "name": "EsDeeKid",
-    "genre": "Music",
-    "why": "Reached 18 million monthly Spotify listeners in 2026 following a viral crossover moment with Timothee Chalamet, with tracks 4 Raws and Phantom leading a well-documented US tour underway this summer",
-    "signal": "18M Spotify monthly listeners / US tour 2026"
-  },
-  {
-    "name": "Avery Singer",
+    "name": "Diambe",
     "genre": "Art",
-    "why": "Exhibiting AI-integrated digitally mediated paintings during Zurich Gallery Weekend in June 2026, placing her at the centre of current debates around technology and painting in contemporary art",
-    "signal": "Zurich Gallery Weekend June 2026"
+    "why": "Presenting their largest solo institutional exhibition at Kunsthalle Basel in 2026, a Brazilian nonbinary artist developing a language across sculpture, painting, and film using egg tempera, beeswax, bronze, and other organic materials",
+    "signal": "Kunsthalle Basel solo exhibition 2026"
   },
   {
-    "name": "Shuang Li",
+    "name": "Birke Gorm",
     "genre": "Art",
-    "why": "Solo exhibition at Kunsthalle Basel in June 2026, her first major Swiss institutional presentation, consolidating her growing international profile as a leading contemporary voice",
-    "signal": "Kunsthalle Basel solo show June 2026"
+    "why": "Selected to represent Austria at the 16th Gwangju Biennale 2026 in South Korea, running September through November, transforming the pavilion with discarded materials collected in Vienna and on site in Gwangju",
+    "signal": "Austrian Pavilion, 16th Gwangju Biennale 2026"
   },
   {
-    "name": "Judith Murray",
+    "name": "Tracey Emin",
     "genre": "Art",
-    "why": "Pure Pleasure exhibition at Sundaram Tagore Gallery in New York ran from May 28 through June 27 2026, spotlighting the American abstract painter whose work has gained renewed critical attention this season",
-    "signal": "Sundaram Tagore Gallery NY May 28 to June 27 2026"
+    "why": "Her largest survey exhibition opened at Tate Modern in London in 2026, closely curated with the artist herself, a defining retrospective for one of Britain's most celebrated and polarizing contemporary voices",
+    "signal": "Tate Modern retrospective 2026"
   },
   {
-    "name": "Katy Perry",
+    "name": "LISA",
     "genre": "Culture",
-    "why": "Performed at the 2026 FIFA World Cup USA opening ceremony at Los Angeles Stadium on June 12 before a global broadcast audience, sharing the stage with LISA and Anitta in one of the summer's most-watched live events",
-    "signal": "FIFA World Cup 2026 USA opening ceremony June 12"
+    "why": "K-pop solo star performed at the FIFA World Cup 2026 opening ceremony at Los Angeles Stadium on June 12, sharing the stage with Katy Perry and Anitta before one of the year's largest global broadcast audiences",
+    "signal": "FIFA World Cup 2026 opening ceremony June 12"
   },
   {
-    "name": "Anitta",
+    "name": "Ming Wong",
     "genre": "Culture",
-    "why": "Performed at the 2026 FIFA World Cup USA opening ceremony at Los Angeles Stadium on June 12 alongside Katy Perry and LISA, amplifying her reach as one of the most globally followed Brazilian artists",
-    "signal": "FIFA World Cup 2026 USA opening ceremony June 12"
+    "why": "A forthcoming solo exhibition at London's National Gallery marks the museum's first solo show by a Southeast Asian artist, bringing his cinema re-enactment practice to the widest institutional stage of his career",
+    "signal": "National Gallery London, first solo show by a Southeast Asian artist"
   },
   {
-    "name": "Quinta Brunson",
+    "name": "Saskia Colwell",
     "genre": "Culture",
-    "why": "Creator and lead star of Abbott Elementary, which earned multiple Emmy Awards and entered its fifth season in 2026, making Brunson one of the most influential comedy writers and performers working in American television",
-    "signal": "Abbott Elementary Season 5 / Multiple Emmy wins"
+    "why": "Her 2026 solo show with Victoria Miro Gallery in London is generating significant collector attention, with chalk and charcoal work that challenges the view that drawing is merely preparatory rather than finished",
+    "signal": "Victoria Miro Gallery solo show 2026"
   }
 ]

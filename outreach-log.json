@@ -229,6 +229,52 @@
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r7776147318405707727",
       "status": "drafted"
+    },
+    {
+      "slug": "future-islands-from-a-hole-in-the-floor",
+      "artist": "Future Islands",
+      "email": "info@atcmanagement.com",
+      "contact_type": "management_atc",
+      "drafted_at": "2026-06-09T00:00:00Z",
+      "gmail_draft_id": "r5473165748083291698",
+      "status": "drafted"
+    },
+    {
+      "slug": "kurt-vile-philadelphias-been-good-to-me",
+      "artist": "Kurt Vile",
+      "email": "carla@sacksco.com",
+      "contact_type": "pr_sacks_and_co",
+      "drafted_at": "2026-06-09T00:00:00Z",
+      "gmail_draft_id": "r4236340929247664207",
+      "status": "drafted"
+    },
+    {
+      "slug": "lowertown-ugly-duckling-union",
+      "artist": "Lowertown",
+      "email": "resnik.jackie@gmail.com",
+      "contact_type": "management_direct",
+      "drafted_at": "2026-06-09T00:00:00Z",
+      "gmail_draft_id": "r-2960755602329975509",
+      "status": "drafted"
+    },
+    {
+      "slug": "tirzah",
+      "artist": "Tirzah",
+      "email": "sam@nativemgmt.co.uk",
+      "contact_type": "management_native",
+      "drafted_at": "2026-06-09T00:00:00Z",
+      "gmail_draft_id": "r732595365079738936",
+      "status": "drafted_duplicate",
+      "note": "duplicate of 2026-05-26 entry, local clone was stale due to SSH blockage in cloud environment"
+    },
+    {
+      "slug": "kelly-lee-owens-bio",
+      "artist": "Kelly Lee Owens",
+      "email": "management@kellyleeowens.com",
+      "contact_type": "management_direct",
+      "drafted_at": "2026-06-09T00:00:00Z",
+      "gmail_draft_id": "r8896359212928316373",
+      "status": "drafted"
     }
   ]
 }

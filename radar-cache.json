@@ -1,92 +1,92 @@
 [
   {
-    "name": "Taylor Swift",
+    "name": "Drake",
     "genre": "Music",
-    "why": "I Knew It I Knew You from the Toy Story 5 soundtrack debuted at No. 1 on the Billboard Hot 100 for the week of June 20 2026, her 15th chart-topper and a new record for the most No. 1 singles in the 21st century",
-    "signal": "Billboard Hot 100 No. 1, week of June 20 2026"
+    "why": "ICEMAN holds No. 1 on the Billboard 200 for a fourth consecutive week as of June 20, and Drake simultaneously debuted HABIBTI and MAID OF HONOUR at Nos. 2 and 3, the first time any artist has occupied all three top spots at once",
+    "signal": "Billboard 200 No. 1 four straight weeks, triple top 3 sweep, June 2026"
   },
   {
-    "name": "Kelsey Lu",
+    "name": "Ella Langley",
     "genre": "Music",
-    "why": "So Help Me God released June 12 2026 via Dirty Hit, their first album in 7 years, co-produced with Jack Antonoff and Yves Rothman, and scored 82 on the Pitchfork critic aggregate",
-    "signal": "New album June 12 2026, Pitchfork score 82"
+    "why": "Holds both No. 1 and No. 2 on the Billboard Hot 100 simultaneously with Choosin Texas and Be Her as of June 20 2026, an unprecedented solo chart feat",
+    "signal": "Billboard Hot 100 No. 1 and No. 2 simultaneously, June 20 2026"
   },
   {
-    "name": "Niall Horan",
+    "name": "JENNIE",
     "genre": "Music",
-    "why": "Dinner Party, his fourth studio album, released June 5 2026 via Capitol Records and debuted at No. 1 in six countries including the UK, Ireland, and Australia",
-    "signal": "New album June 5 2026, No. 1 in 6 countries"
+    "why": "Dracula remix with Tame Impala reached No. 10 on the Billboard Hot 100 in June 2026, her first US top 10 as a solo BLACKPINK artist",
+    "signal": "Billboard Hot 100 No. 10, June 2026"
   },
   {
-    "name": "Lola Young",
+    "name": "Tame Impala",
     "genre": "Music",
-    "why": "Headlined Rolling Stone's Future of Music Showcase at SXSW 2026 on March 12, UK pop breakout known for Messy and named to Rolling Stone's Future 25 class for 2026",
-    "signal": "Rolling Stone Future of Music Showcase SXSW 2026"
+    "why": "Dracula with JENNIE debuted at No. 10 on the Billboard Hot 100 in June 2026, the psychedelic rock project's first-ever Hot 100 top 10",
+    "signal": "Billboard Hot 100 No. 10, first ever top 10 hit, June 2026"
   },
   {
-    "name": "Fuerza Regida",
+    "name": "Isaiah Rashad",
     "genre": "Music",
-    "why": "Headlined Rolling Stone's Future of Music Showcase at SXSW 2026 on March 13, arena-rocking Mexican American group from San Bernardino, California, leading Street Mob Records",
-    "signal": "Rolling Stone Future of Music Showcase SXSW 2026"
+    "why": "It's Been Awful released May 1 2026 on TDE and Warner Records debuted at No. 17 on the Billboard 200, his first album in four years featuring SZA and Dominic Fike",
+    "signal": "Billboard 200 No. 17 debut, new album May 2026"
   },
   {
-    "name": "BigXthaPlug",
+    "name": "Tyla",
     "genre": "Music",
-    "why": "Headlined Rolling Stone's Future of Music Showcase at SXSW 2026 on March 14, Texas rapper featured in Rolling Stone's Future 25 list for 2026 with breakthrough single Texas",
-    "signal": "Rolling Stone Future of Music Showcase SXSW 2026, Future 25"
+    "why": "Game Time is the official FIFA World Cup 2026 anthem co-written with Future, and she performed it at the opening ceremony at LA Stadium on June 12 before a global broadcast audience",
+    "signal": "FIFA World Cup 2026 official anthem, opening ceremony June 12 LA"
   },
   {
-    "name": "Morgan Wallen",
+    "name": "Future",
     "genre": "Music",
-    "why": "I Can't Love You Anymore with Ella Langley entered the Hot 100 top 10 for the week of June 20 2026, his third separate top 10 entry on the chart this year",
-    "signal": "Billboard Hot 100 top 10, week of June 20 2026"
+    "why": "Co-wrote and headlined the FIFA World Cup 2026 opening ceremony at LA Stadium on June 12 performing the official anthem Game Time with Tyla",
+    "signal": "FIFA World Cup 2026 official anthem, opening ceremony June 12 LA"
   },
   {
-    "name": "SAILORR",
+    "name": "Rema",
     "genre": "Music",
-    "why": "Debut album From Florida's Finest drove a sold-out Doja Cat tour in 2025 and the artist was featured in Rolling Stone's Future of Music 2026 class with new music arriving this year",
-    "signal": "Rolling Stone Future of Music 2026 class"
+    "why": "Goals FIFA World Cup song with LISA and Anitta charted in 15 countries and the trio performed it live at LA Stadium on June 12 at the World Cup opening ceremony",
+    "signal": "FIFA World Cup 2026 opening ceremony performer, Goals global chart hit"
   },
   {
-    "name": "F3miii",
+    "name": "Katy Perry",
     "genre": "Music",
-    "why": "Appearing on the UK Official Trending Chart in June 2026 alongside Ariana Grande and PinkPantheress, with streaming numbers accelerating across platforms this month",
-    "signal": "UK Official Trending Chart June 2026"
+    "why": "Headlined the FIFA World Cup 2026 USA opening ceremony at LA Stadium in Inglewood on June 12, the year's highest-profile live event, alongside partner Justin Trudeau in attendance",
+    "signal": "FIFA World Cup 2026 USA opening ceremony headline performer, June 12"
   },
   {
-    "name": "Diambe",
+    "name": "Mohammed Z. Rahman",
     "genre": "Art",
-    "why": "Presenting their largest solo institutional exhibition at Kunsthalle Basel in 2026, a Brazilian nonbinary artist developing a language across sculpture, painting, and film using egg tempera, beeswax, bronze, and other organic materials",
-    "signal": "Kunsthalle Basel solo exhibition 2026"
+    "why": "Never the Same solo show at Tate Britain opens June 5 and runs to November 8 2026, presented inside two timber pavilions inspired by Bengali wedding canopies with new paintings exploring home and love",
+    "signal": "Tate Britain solo show, June 5 to November 8 2026"
   },
   {
-    "name": "Birke Gorm",
+    "name": "Mulgil Kim",
     "genre": "Art",
-    "why": "Selected to represent Austria at the 16th Gwangju Biennale 2026 in South Korea, running September through November, transforming the pavilion with discarded materials collected in Vienna and on site in Gwangju",
-    "signal": "Austrian Pavilion, 16th Gwangju Biennale 2026"
+    "why": "Debut solo institutional exhibition at Maddox Gallery London summer 2026, named among five contemporary artists to watch in 2026 by the gallery for depth and clear authorship",
+    "signal": "Maddox Gallery debut solo show, summer 2026"
   },
   {
-    "name": "Tracey Emin",
+    "name": "Carol Bove",
     "genre": "Art",
-    "why": "Her largest survey exhibition opened at Tate Modern in London in 2026, closely curated with the artist herself, a defining retrospective for one of Britain's most celebrated and polarizing contemporary voices",
-    "signal": "Tate Modern retrospective 2026"
+    "why": "First museum survey and largest career presentation to date opens at the Solomon R. Guggenheim Museum in 2026, marking a defining retrospective for one of contemporary sculpture's most rigorous voices",
+    "signal": "Guggenheim Museum first career survey, 2026"
   },
   {
-    "name": "LISA",
+    "name": "Anitta",
     "genre": "Culture",
-    "why": "K-pop solo star performed at the FIFA World Cup 2026 opening ceremony at Los Angeles Stadium on June 12, sharing the stage with Katy Perry and Anitta before one of the year's largest global broadcast audiences",
-    "signal": "FIFA World Cup 2026 opening ceremony June 12"
+    "why": "Performed Goals with LISA and Rema at the FIFA World Cup 2026 opening ceremony at LA Stadium on June 12, the song charted in 15 countries and served as one of two official World Cup anthems",
+    "signal": "FIFA World Cup 2026 opening ceremony, Goals charted 15 countries"
   },
   {
-    "name": "Ming Wong",
+    "name": "Dan + Shay",
     "genre": "Culture",
-    "why": "A forthcoming solo exhibition at London's National Gallery marks the museum's first solo show by a Southeast Asian artist, bringing his cinema re-enactment practice to the widest institutional stage of his career",
-    "signal": "National Gallery London, first solo show by a Southeast Asian artist"
+    "why": "Nashville country duo performed at the FIFA World Cup 2026 opening ceremonies in Toronto on June 13 before the Canada match, their first major stadium show of 2026 on a global stage",
+    "signal": "FIFA World Cup 2026 opening ceremonies, Toronto June 13 2026"
   },
   {
-    "name": "Saskia Colwell",
+    "name": "Lanza Atelier",
     "genre": "Culture",
-    "why": "Her 2026 solo show with Victoria Miro Gallery in London is generating significant collector attention, with chalk and charcoal work that challenges the view that drawing is merely preparatory rather than finished",
-    "signal": "Victoria Miro Gallery solo show 2026"
+    "why": "Mexico City architecture collective unveiled the 2026 Serpentine Pavilion in London in June 2026, their first major UK institutional commission and one of the most discussed structures of the summer",
+    "signal": "2026 Serpentine Pavilion, London June 2026"
   }
 ]

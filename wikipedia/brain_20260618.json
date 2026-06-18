@@ -1,0 +1,165 @@
+{
+  "version": "1.4",
+  "created": "2026-05-16",
+  "last_session": "2026-06-18",
+  "bot_credentials": {
+    "username": "Neverendersinc@neverending",
+    "password": "kgpheb2utlllohripi9f2sdg1hbam5me",
+    "account": "Neverendersinc",
+    "status": "BLOCKED",
+    "block_id": 25412872,
+    "blocked_by": "Asilvering",
+    "block_reason": "LLMs, botting, COI, etc",
+    "block_timestamp": "2026-05-19T09:46:39Z",
+    "block_expiry": "infinity",
+    "block_confirmed_active": "2026-06-18",
+    "note": "Account permanently blocked. Do not attempt any Wikipedia edits via this account. Block confirmed still active 2026-06-18 via API."
+  },
+  "articles": {
+    "Draft:Amos Le Blanc": {
+      "status": "blocked_account",
+      "pageid": 83027568,
+      "submitted": "2026-05-01",
+      "last_updated": "2026-06-18",
+      "last_revid": 1355058179,
+      "last_revid_by": "Bearcat",
+      "last_revid_timestamp": "2026-05-19T18:26:24Z",
+      "new_activity_since_block": false,
+      "decline_history": [
+        {
+          "date": "2026-04-26",
+          "decliner": "ChrysGalley",
+          "reason": "AI-generated content"
+        },
+        {
+          "date": "2026-05-19",
+          "decliner": "Theroadislong",
+          "reason": "Bio sourcing: YouTube and Vimeo not reliable sources (WP:REFB)"
+        }
+      ],
+      "reviewer_history": [
+        {
+          "reviewer": "Paul W",
+          "date": "2026-05-03",
+          "note": "IMDb is not a reliable source (WP:IMDB)"
+        },
+        {
+          "reviewer": "ChrysGalley",
+          "date": "2026-04-26",
+          "result": "declined",
+          "reason": "AI-generated content"
+        },
+        {
+          "reviewer": "Theroadislong",
+          "date": "2026-05-17",
+          "note": "please read WP:REFB; YouTube and Vimeo are not considered reliable sources"
+        },
+        {
+          "reviewer": "Theroadislong",
+          "date": "2026-05-18",
+          "action": "added Autobiography tag"
+        },
+        {
+          "reviewer": "Theroadislong",
+          "date": "2026-05-19",
+          "result": "declined",
+          "reason": "bio sourcing"
+        },
+        {
+          "reviewer": "Bearcat",
+          "date": "2026-05-19",
+          "note": "Need media coverage about him in newspapers, magazines, or books. YouTube, Vimeo, self-published sites, and Wikipedia articles are not GNG-building references."
+        }
+      ],
+      "account_blocked": "2026-05-19",
+      "clean_draft_ready": true,
+      "clean_draft_path": "wikipedia/draft_amos_le_blanc_clean_2026-06-13.txt",
+      "clean_draft_note": "Prepared 2026-06-13. All YouTube, Vimeo, IMVDb, self-published sources removed. 21 reliable sources remain. Cannot be pushed to Wikipedia due to account block.",
+      "next_action": "requires_human_editor_no_COI",
+      "sources_in_clean_draft": [
+        "Stereogum 2011",
+        "EARMILK 2013",
+        "Ad Age 2013",
+        "Saatchi and Saatchi 2013",
+        "VideoStatic 2013",
+        "EDM Canada 2014",
+        "Young Director Award 2015",
+        "OnepointFour 2015",
+        "shots.net 2016",
+        "LBBOnline 2016",
+        "adobo Magazine 2016",
+        "The One Club 2019",
+        "SHOOTonline 2019",
+        "LBBOnline 2019",
+        "shots 2021",
+        "LBBOnline 2021",
+        "Campaign US 2021",
+        "adobo Magazine 2021",
+        "adobo Magazine 2022",
+        "Exclaim! 2010",
+        "Dine Alone Records"
+      ]
+    }
+  },
+  "targets": [
+    {
+      "title": "artonly.io",
+      "status": "blocked",
+      "reason": "Site too new. Requires independent coverage first. Neverendersinc account is also blocked, preventing any Wikipedia edits.",
+      "check_after": "2026-08-01"
+    },
+    {
+      "title": "Amos Le Blanc (film director)",
+      "status": "draft_declined_account_blocked",
+      "notes": "Draft at Draft:Amos Le Blanc. Twice declined. Account blocked May 19, 2026. Clean draft ready in vossadvisory repo."
+    }
+  ],
+  "new_candidate_scan_2026-06-18": {
+    "conclusion": "artonly.io reviewed. New posts June 17-18: Big Brave (Grief or in Hope), Chappell Roan, Kendrick Lamar, La Securite (Bingo), Paul McCartney birthday, SZA, Arooj Aftab, Hayley Kiyoko, KAWS. All have existing Wikipedia articles. New candidate identified to monitor: Nick Leon (Miami producer, debut album A Tropical Entropy, TraTraTrax, June 2025; artonly post published June 12, 2026; no Wikipedia article exists). Nick Leon is early-stage for WP:GNG but worth tracking as coverage grows. All Wikipedia editing remains halted due to account block.",
+    "todays_posts_assessed": [
+      {"post": "big-brave-in-grief-or-in-hope", "date": "2026-06-18", "wikipedia_status": "exists (Big Brave)", "action": "none"},
+      {"post": "chappell-roan-midwest-princess", "date": "2026-06-18", "wikipedia_status": "exists (Chappell Roan)", "action": "none"},
+      {"post": "kendrick-lamar-2026", "date": "2026-06-18", "wikipedia_status": "exists (Kendrick Lamar)", "action": "none"},
+      {"post": "la-securite-bingo", "date": "2026-06-18", "wikipedia_status": "exists (La Securite)", "action": "none"},
+      {"post": "paul-mccartney-birthday-2026", "date": "2026-06-18", "wikipedia_status": "exists (Paul McCartney)", "action": "none"},
+      {"post": "sza", "date": "2026-06-18", "wikipedia_status": "exists (SZA)", "action": "none"},
+      {"post": "who-is-arooj-aftab-everything-you-need-to-know", "date": "2026-06-18", "wikipedia_status": "exists (Arooj Aftab)", "action": "none"},
+      {"post": "hayley-kiyoko-girls-like-girls", "date": "2026-06-17", "wikipedia_status": "exists (Hayley Kiyoko)", "action": "none"},
+      {"post": "kaws", "date": "2026-06-17", "wikipedia_status": "exists (KAWS)", "action": "none"},
+      {"post": "nick-leon", "date": "2026-06-12", "wikipedia_status": "no article", "action": "added to watch list"}
+    ],
+    "new_watch_candidates": [
+      {
+        "artist": "Nick Leon",
+        "also_known_as": "Nick Leone",
+        "artonly_post": "https://artonly.io/post/nick-leon",
+        "artonly_post_date": "2026-06-12",
+        "label": "TraTraTrax",
+        "debut_album": "A Tropical Entropy Is the Sound Miami Was Always Building Toward",
+        "album_date": "2025",
+        "wikipedia_status": "no article",
+        "notability_assessment": "Early stage. Debut album on TraTraTrax, Miami electronic scene. Needs significant coverage in Pitchfork, Resident Advisor, FACT, or similar to meet WP:GNG. Monitor for major reviews.",
+        "check_after": "2026-09-01"
+      }
+    ]
+  },
+  "edit_history": [
+    {
+      "date": "2026-06-18",
+      "action": "SESSION: status check, candidate scan, brain update",
+      "page": null,
+      "revid": null,
+      "summary": "Block confirmed active (block_id 25412872, Asilvering, infinity). Draft:Amos Le Blanc unchanged since 2026-05-19 (last revid 1355058179 by Bearcat). New posts June 17-18 (Big Brave, Chappell Roan, Kendrick Lamar, La Securite, Paul McCartney, SZA, Arooj Aftab, Hayley Kiyoko, KAWS) all have Wikipedia articles. New watch candidate added: Nick Leon (Miami electronic, TraTraTrax, no Wikipedia article, artonly post June 12). Brain updated to v1.4."
+    }
+  ],
+  "strategy": {
+    "current_status": "HALTED: Neverendersinc account permanently blocked since 2026-05-19",
+    "path_forward": "A human Wikipedia editor with no COI connection to artonly.io or Amos Le Blanc would need to review the clean draft (vossadvisory repo: wikipedia/draft_amos_le_blanc_clean_2026-06-13.txt) and submit it from their own account. The artonly.io team could seek a neutral editor via WP:VOLUN. Do not create new accounts to evade the block.",
+    "what_reviewers_want": "Independent newspaper or magazine coverage about the director as a person. LBBOnline, shots.net, SHOOTonline, and Campaign US trade publications are acceptable. The 2016 Sweet Shop signing coverage and 2019 Young Guns 17 LBBOnline dedicated article are the strongest GNG evidence.",
+    "source_quality": "LBBOnline, shots.net, SHOOTonline, Campaign US = strong. VideoStatic, EARMILK, EDM Canada, Ad Age, adobo Magazine = acceptable. YouTube, Vimeo, IMVDb, iSpot, Newswire.ca, self-published = never."
+  },
+  "cited_on": {
+    "note": "External links added to Tove Lo, Little Simz, and Tems Wikipedia articles in May 2026 were removed by other editors by May 25, 2026. No artonly.io links currently appear on Wikipedia.",
+    "articles": []
+  }
+}

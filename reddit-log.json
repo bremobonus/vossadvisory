@@ -123,5 +123,49 @@
       "r/listentothis": "available but not applicable (requires direct music links only, not editorial article links)"
     },
     "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Reddit.com unreachable from cloud environment so subreddit rules verified from training knowledge only. r/hiphopheads accepts editorial link posts about hip hop artists. r/indieheads accepts editorial features and birthday posts specifically. r/listentothis requires direct music links only, not article links. 7 articles published June 13, all music genre. Max 2 posts per day cap applied. Doechii queued for r/hiphopheads today. Rivers Cuomo deferred to r/indieheads June 14. Email sent to amosleblanc@gmail.com with full queue."
+  },
+  {
+    "date": "2026-06-18",
+    "session": "distribution-agent",
+    "ssh_status": "unavailable (connection timeout from cloud environment)",
+    "reddit_api_creds_checked": false,
+    "posts_drafted": 2,
+    "posts_attempted": 0,
+    "subreddit_48hr_status": {
+      "r/indieheads": "clear (last used 2026-06-13, 48h window expired 2026-06-15)",
+      "r/rnb": "clear (last used 2026-05-31)",
+      "r/hiphopheads": "clear (last used 2026-06-13)",
+      "r/electronicmusic": "clear (last used 2026-05-31)"
+    },
+    "queue": [
+      {
+        "slug": "big-brave-in-grief-or-in-hope",
+        "title": "BIG BRAVE Removed the Drums and Found Out What the Voice Had Been Carrying All Along",
+        "subreddit": "r/indieheads",
+        "url": "https://artonly.io/post/big-brave-in-grief-or-in-hope",
+        "date": "2026-06-18",
+        "status": "queued_manual"
+      },
+      {
+        "slug": "kehlani",
+        "title": "Kehlani and the Decade That Made Its Own Case",
+        "subreddit": "r/rnb",
+        "url": "https://artonly.io/post/kehlani",
+        "date": "2026-06-18",
+        "status": "queued_manual"
+      }
+    ],
+    "today_posts_available": [
+      "big-brave-in-grief-or-in-hope",
+      "chappell-roan-midwest-princess",
+      "kehlani",
+      "kendrick-lamar-2026",
+      "la-securite-bingo",
+      "paul-mccartney-birthday-2026",
+      "sza",
+      "who-is-arooj-aftab-everything-you-need-to-know"
+    ],
+    "selection_reason": "big-brave-in-grief-or-in-hope chosen for r/indieheads: experimental Montreal duo, three Polaris nominations, specific angle of a drummer departure reshaping the album's emotional center toward voice and melody. kehlani chosen for r/rnb: double Grammy winner 2026, Billboard 200 top 5 debut on her 31st birthday, strong editorial angle on a decade of collaborations positioning her in R&B's lineage. Kendrick and Chappell Roan held as strong candidates for future sessions. SZA held for r/rnb next available slot.",
+    "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Reddit.com blocked by egress policy in cloud environment. Posts drafted for manual submission. Queue and log updated on GitHub. Email draft created to amosleblanc@gmail.com."
   }
 ]

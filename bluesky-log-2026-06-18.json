@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-18",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy. Ports 22, 8022, 2222, 22000 all timed out. Port 443 (HTTPS) is accessible. Bluesky API is reachable over HTTPS but app password is only stored on DreamHost server at ~/artonly.io/agent/bluesky-creds.json.",
+  "account": "artonly.bsky.social",
+  "account_status": "active (DID: did:plc:4666lyeouf2kdo3s6bvkhtmn, 1 existing post from July 2025, 0 posts this week)",
+  "articles_today": [
+    {"title": "BIG BRAVE Removed the Drums and Found Out What the Voice Had Been Carrying All Along", "url": "https://artonly.io/post/big-brave-in-grief-or-in-hope", "category": "music"},
+    {"title": "Chappell Roan: Pop on Her Own Terms", "url": "https://artonly.io/post/chappell-roan-midwest-princess", "category": "music"},
+    {"title": "Kehlani and the Decade That Made Its Own Case", "url": "https://artonly.io/post/kehlani", "category": "music"},
+    {"title": "Kendrick Lamar: From Compton to the Pulitzer", "url": "https://artonly.io/post/kendrick-lamar-2026", "category": "music"},
+    {"title": "La Securite Made the Sophomore Record That Goes Faster Than You Can Follow", "url": "https://artonly.io/post/la-securite-bingo", "category": "music"},
+    {"title": "Paul McCartney: Celebrating 84 Years of a Life in Music", "url": "https://artonly.io/post/paul-mccartney-birthday-2026", "category": "music", "note": "Today is his 84th birthday"},
+    {"title": "SZA and the Weight of an Album That Would Not Stop", "url": "https://artonly.io/post/sza", "category": "music"}
+  ],
+  "priority_posts": [
+    {
+      "title": "Chappell Roan: Pop on Her Own Terms",
+      "url": "https://artonly.io/post/chappell-roan-midwest-princess",
+      "text": "Chappell Roan: Pop on Her Own Terms #NewMusic #IndieMusic",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "Paul McCartney: Celebrating 84 Years of a Life in Music",
+      "url": "https://artonly.io/post/paul-mccartney-birthday-2026",
+      "text": "Paul McCartney: Celebrating 84 Years of a Life in Music #NewMusic #IndieMusic",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 2,
+      "note": "His 84th birthday is today June 18"
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Gmail draft created to amosleblanc@gmail.com with fix instructions. Log committed to vossadvisory repo.",
+  "resolution_needed": "Add BLUESKY_HANDLE and BLUESKY_APP_PASSWORD as environment variables in the Claude Code routine settings. Routine can then post via Bluesky HTTPS API with no SSH required. Bluesky App Password: Settings > Privacy and Security > App Passwords at bsky.app.",
+  "history": "BLOCKED: June 12, June 14, June 16 (digest), June 17 (digest), June 18"
+}

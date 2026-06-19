@@ -16,94 +16,94 @@ RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
 
 artists = [
     {
-        "name": "Taylor Swift",
+        "name": "Chris Brown",
         "genre": "Music",
-        "why": '"I Knew It, I Knew You" from the Toy Story 5 soundtrack debuted at No. 1 on the Billboard Hot 100 dated June 20 2026, her 15th Hot 100 chart-topper and the biggest country single of 2026 on Apple Music, written and produced with Jack Antonoff.',
-        "signal": "Billboard Hot 100 No. 1 / Global 200 No. 1 / Toy Story 5 June 2026"
+        "why": "Brown The Chocolate Edition drops June 19 2026, one of the biggest release-day events of the summer. Chris Brown carries 60.2 million Spotify monthly listeners into the project.",
+        "signal": "New album June 19 2026, 60.2M Spotify monthly listeners"
     },
     {
-        "name": "Shakira",
+        "name": "Key Glock",
         "genre": "Music",
-        "why": 'Performed "Dai Dai," the official 2026 FIFA World Cup anthem, at the June 11 opening ceremony in Mexico alongside Burna Boy. Co-written with Jon Bellion and Ed Sheeran in five languages, the song reached the top 10 on the UK Official Trending Chart.',
-        "signal": "FIFA World Cup 2026 official anthem / Opening ceremony June 11"
+        "why": "Project X drops June 19 2026, the Memphis Paper Route Empire rapper's first solo studio album in three years, arriving with 10.2 million Spotify monthly listeners and high anticipation from his fanbase.",
+        "signal": "New album June 19 2026, Paper Route Empire"
     },
     {
-        "name": "Burna Boy",
+        "name": "YG",
         "genre": "Music",
-        "why": 'Co-created and performed "Dai Dai," the official 2026 FIFA World Cup anthem, at the June 11 opening ceremony in Mexico. Billboard ranked the song the third-best World Cup anthem of 2026.',
-        "signal": "FIFA World Cup 2026 official anthem / Opening ceremony June 11"
+        "why": "The Gentlemen's Club drops June 19 2026, a long-awaited comeback from the Compton rapper with 10.9 million Spotify monthly listeners. His first studio album since I Got Issues in 2022.",
+        "signal": "New album June 19 2026, first release since 2022"
+    },
+    {
+        "name": "The Kid LAROI",
+        "genre": "Music",
+        "why": "Girls featuring Kehlani drops June 19 2026, the Australian-American pop rap artist's most high-profile single of the year. The track comes with a music video and marks his return to the mainstream spotlight.",
+        "signal": "New single June 19 2026, featuring Kehlani"
+    },
+    {
+        "name": "Ne-Yo",
+        "genre": "Music",
+        "why": "Thinking What I'm Thinking drops June 19 2026, the Grammy-winning R and B songwriter's first major solo single of the year and a reminder of why his pen remains one of the sharpest in the genre.",
+        "signal": "New single June 19 2026"
     },
     {
         "name": "Kelsey Lu",
         "genre": "Music",
-        "why": '"So Help Me God" released June 12 via Dirty Hit, earning a Pitchfork score of 82. Their first album in seven years, co-produced with Jack Antonoff, featuring Sampha, Kamasi Washington, and Kim Gordon.',
-        "signal": "New album June 12 2026 / Pitchfork score 82"
+        "why": "So Help Me God released June 12 2026 on Dirty Hit, co-produced with Jack Antonoff and Yves Rothman, earning a Pitchfork score of 82. Their first album in seven years.",
+        "signal": "New album June 12 2026, Pitchfork score 82, Dirty Hit"
     },
     {
-        "name": "Bad Bunny",
+        "name": "Taylor Swift",
         "genre": "Music",
-        "why": '"DtMF" topped the Billboard Hot 100 and Global 200 in February 2026 after his Super Bowl LX halftime show performance. He became the first artist to hold the entire top 25 simultaneously on the Hot Latin Songs chart.',
-        "signal": "Billboard Hot 100 No. 1 / Super Bowl LX / First artist with entire Hot Latin Songs top 25"
+        "why": "I Knew It I Knew You from the Toy Story 5 soundtrack debuted at No. 1 on the Billboard Hot 100 this week, her 15th career chart-topper and a new record for the most No. 1 singles in the 21st century.",
+        "signal": "Billboard Hot 100 No. 1, Toy Story 5 soundtrack, June 2026"
     },
     {
-        "name": "Don Toliver",
+        "name": "RIIZE",
         "genre": "Music",
-        "why": '"Octane" debuted at No. 1 on the Billboard 200 in February 2026 with 162,000 equivalent album units, his first chart-topping album. All 18 of its tracks simultaneously charted on the Hot 100.',
-        "signal": "Billboard 200 No. 1 debut / All 18 tracks on Hot 100"
+        "why": "II, The 2nd Mini Album, drops June 19 2026, SM Entertainment's rising K-pop group returning with their most anticipated project since their 2023 debut and pushing into new sonic territory.",
+        "signal": "New mini album June 19 2026, SM Entertainment"
     },
     {
-        "name": "JayDon",
+        "name": "Chloe",
         "genre": "Music",
-        "why": '"Lullaby" entered the Top 10 on Billboard Hot R&B/Hip-Hop Airplay in 2026, his first charting single from the EP "Me My Songs and I," executive produced by Usher and L.A. Reid.',
-        "signal": "Billboard Hot R&B/Hip-Hop Airplay Top 10 / 2026 debut"
+        "why": "Resurrection with producer Timbaland drops June 19 2026, Beyonce's protege's long-awaited debut full-length and her boldest step yet toward defining her sound outside of the duo format.",
+        "signal": "New album June 19 2026, produced by Timbaland"
     },
     {
-        "name": "LE SSERAFIM",
-        "genre": "Music",
-        "why": "Appeared on the UK Official Trending Chart for the week of June 16 2026 alongside Shakira and Olivia Rodrigo, extending the K-pop group's sustained crossover presence on mainstream global charts.",
-        "signal": "UK Official Trending Chart June 16 2026"
-    },
-    {
-        "name": "Janine Berdin",
-        "genre": "Music",
-        "why": 'Filipino singer\'s live performance of "What If I Miss You For The Rest Of My Life" went viral in 2026 with 11 million Instagram views, drawing personal praise from Demi Lovato and Jessie Reyez.',
-        "signal": "11M Instagram views / Praised by Demi Lovato and Jessie Reyez"
-    },
-    {
-        "name": "KAWS",
+        "name": "Avery Singer",
         "genre": "Art",
-        "why": '"Art and Comix" exhibition opened at Vienna\'s ALBERTINA MODERN on April 3 2026 and runs through September 27, presenting major KAWS sculptures alongside works by Jean-Michel Basquiat and Keith Haring.',
-        "signal": "ALBERTINA MODERN Vienna / April to September 2026"
+        "why": "War overlays opened June 12 at Hauser and Wirth in Zurich and runs through September 5 2026. One of the New York painter's most significant European institutional showings to date.",
+        "signal": "Hauser and Wirth Zurich, June 12 to September 5 2026"
     },
     {
-        "name": "Marin Majic",
+        "name": "Wolfgang Tillmans",
         "genre": "Art",
-        "why": '"discodisco" solo exhibition at Nino Mier Gallery in New York ran May 15 to June 13 2026, featuring atmospheric paintings layered with marble dust and wax. Featured on Artsy\'s June 2026 artists-on-radar list.',
-        "signal": "Nino Mier Gallery NYC / Artsy June 2026 radar"
+        "why": "Delivered a landmark public lecture on rethinking museum object labels at Beaux-Arts de Paris on June 16 2026, sparking debate across the international photography and contemporary art communities.",
+        "signal": "Beaux-Arts de Paris public lecture, June 16 2026"
     },
     {
-        "name": "Elif Saydam",
+        "name": "Hiba Schahbaz",
         "genre": "Art",
-        "why": '"Glory" exhibition at Galerie Rudiger Schottle in Munich is running through June 2026, presenting paintings and collages on nontraditional materials including antique bathroom stall doors and kitchen sponges. Featured on Artsy\'s June 2026 radar.',
-        "signal": "Galerie Rudiger Schottle Munich / Artsy June 2026 radar"
+        "why": "Included in a major group exhibition at FLAG Art Foundation New York in 2026, the Pakistani American miniature painter is one of the most closely watched artists in the current South Asian representation moment in Western institutions.",
+        "signal": "FLAG Art Foundation New York group show 2026"
     },
     {
-        "name": "J Balvin",
+        "name": "PinkPantheress",
         "genre": "Culture",
-        "why": "Performed at the FIFA World Cup 2026 opening ceremony in Mexico on June 11 alongside Shakira and Burna Boy, reaching one of the largest simultaneous global broadcast audiences of the year.",
-        "signal": "FIFA World Cup 2026 opening ceremony June 11"
+        "why": "Trending on the UK Official Charts in June 2026 alongside Ariana Grande and F3miii as she prepares new material. The London electronic pop artist continues to build one of the most distinctive catalogs in contemporary British pop.",
+        "signal": "UK Official Charts trending June 2026"
     },
     {
-        "name": "LISA",
+        "name": "Harry Styles",
         "genre": "Culture",
-        "why": "Performed at the 2026 FIFA World Cup opening ceremony alongside Katy Perry and Anitta in June 2026, one of the most-watched live events of the summer, building on her momentum as a global solo artist post-BLACKPINK.",
-        "signal": "FIFA World Cup 2026 opening ceremony / June 2026"
+        "why": "Aperture reached No. 1 on the Billboard Hot 100 for the week of February 7 2026, and his summer tour dates extending into 2026 keep him among the most prominent pop culture figures of the year.",
+        "signal": "Billboard Hot 100 No. 1, February 7 2026"
     },
     {
-        "name": "Jane Yang D'Haene",
+        "name": "Wizkid",
         "genre": "Culture",
-        "why": "Announced as a Loewe Foundation Craft Prize finalist in February 2026, with ceramic works acquired by Harvard Art Museums and the Brooklyn Museum. Her fusion of tradition and invention has positioned her at the intersection of craft and contemporary fashion culture.",
-        "signal": "Loewe Foundation Craft Prize finalist 2026 / Harvard Art Museums and Brooklyn Museum acquisitions"
+        "why": "Featured on Chris Brown's lead single Man on a Mission releasing June 19 2026, the Lagos-born Afrobeats global crossover star maintains one of the most devoted worldwide fanbases in contemporary African pop.",
+        "signal": "Featured on Chris Brown Man on a Mission, June 19 2026"
     }
 ]
 

@@ -137,9 +137,7 @@
       "contact_type": "label_4ad_media_enquiries",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r5576446822189950609",
-      "status": "drafted",
-      "follow_up_sent": true,
-      "follow_up_date": "2026-06-18"
+      "status": "drafted"
     },
     {
       "slug": "kurt-vile-philadelphias-been-good-to-me",
@@ -148,9 +146,7 @@
       "contact_type": "management_another_management_company",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-2754991000569296163",
-      "status": "drafted",
-      "follow_up_sent": true,
-      "follow_up_date": "2026-06-18"
+      "status": "drafted"
     },
     {
       "slug": "lowertown-ugly-duckling-union",
@@ -159,9 +155,7 @@
       "contact_type": "management_jackie_resnik",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-6880020365084578962",
-      "status": "drafted",
-      "follow_up_sent": true,
-      "follow_up_date": "2026-06-18"
+      "status": "drafted"
     },
     {
       "slug": "vince-staples-cry-baby",
@@ -170,9 +164,7 @@
       "contact_type": "label_loma_vista_press",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r7492716559331230289",
-      "status": "drafted",
-      "follow_up_sent": true,
-      "follow_up_date": "2026-06-18"
+      "status": "drafted"
     },
     {
       "slug": "jalen-ngonda-doctrine-of-love",
@@ -181,9 +173,7 @@
       "contact_type": "label_daptone_records",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-544253373339923642",
-      "status": "drafted",
-      "follow_up_sent": true,
-      "follow_up_date": "2026-06-18"
+      "status": "drafted"
     },
     {
       "slug": "death-cab-for-cutie-i-built-you-a-tower",
@@ -229,6 +219,446 @@
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r7776147318405707727",
       "status": "drafted"
+    },
+    {
+      "slug": "big-brave-in-grief-or-in-hope",
+      "artist": "Big Brave",
+      "email": "bigbravemusic@gmail.com",
+      "contact_type": "artist_direct",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["bigbravemusic@gmail.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "la-securite-bingo",
+      "artist": "La Securite",
+      "email": "marilyne@mothland.com",
+      "contact_type": "label_mothland",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["marilyne@mothland.com", "codedesecurite666@gmail.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "kehlani",
+      "artist": "Kehlani",
+      "email": "Paige.Rosoff@atlanticrecords.com",
+      "contact_type": "label_atlantic_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["Paige.Rosoff@atlanticrecords.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "kelsey-lu-so-help-me-god",
+      "artist": "Kelsey Lu",
+      "email": "info@dirtyhit.co.uk",
+      "contact_type": "label_dirty_hit_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["info@dirtyhit.co.uk"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sudan-archives",
+      "artist": "Sudan Archives",
+      "email": "ben@constantartists.com",
+      "contact_type": "management_constant_artists",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["ben@constantartists.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "waxahatchee",
+      "artist": "Waxahatchee",
+      "email": "christina@mergerecords.com",
+      "contact_type": "label_merge_records_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["christina@mergerecords.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "florist",
+      "artist": "Florist",
+      "email": "eloyl@grandstandhq.com",
+      "contact_type": "press_grandstand_hq",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["eloyl@grandstandhq.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "special-interest",
+      "artist": "Special Interest",
+      "email": "taliamiller@roughtraderecords.com",
+      "contact_type": "label_rough_trade_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["taliamiller@roughtraderecords.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "lankum",
+      "artist": "Lankum",
+      "email": "benayres@roughtraderecords.com",
+      "contact_type": "label_rough_trade_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["benayres@roughtraderecords.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "burial",
+      "artist": "Burial",
+      "email": "info@hyperdub.net",
+      "contact_type": "label_hyperdub",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["info@hyperdub.net"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "yeule",
+      "artist": "Yeule",
+      "email": "emily@orienteer.us",
+      "contact_type": "management_orienteer",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["emily@orienteer.us"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "weyes-blood",
+      "artist": "Weyes Blood",
+      "email": "press@subpop.com",
+      "contact_type": "label_sub_pop_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@subpop.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ethel-cain",
+      "artist": "Ethel Cain",
+      "email": "reid@sacksco.com",
+      "contact_type": "press_sacks_co",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["reid@sacksco.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "helena-deland",
+      "artist": "Helena Deland",
+      "email": "nycholasfortin@chivichivi.com",
+      "contact_type": "management_chivi_chivi",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["nycholasfortin@chivichivi.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "horsegirl",
+      "artist": "Horsegirl",
+      "email": "noam@matadorrecords.com",
+      "contact_type": "label_matador_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["noam@matadorrecords.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "perfume-genius",
+      "artist": "Perfume Genius",
+      "email": "meghanh@grandstandhq.com",
+      "contact_type": "press_grandstand_hq",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["meghanh@grandstandhq.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ada-lea",
+      "artist": "Ada Lea",
+      "email": "info@saddlecreek.com",
+      "contact_type": "label_saddle_creek",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["info@saddlecreek.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "angel-olsen",
+      "artist": "Angel Olsen",
+      "email": "info@jagjaguwar.com",
+      "contact_type": "label_jagjaguwar",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["info@jagjaguwar.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "jamila-woods",
+      "artist": "Jamila Woods",
+      "email": "press@jagjaguwar.com",
+      "contact_type": "label_jagjaguwar_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@jagjaguwar.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "cassandra-jenkins",
+      "artist": "Cassandra Jenkins",
+      "email": "info@deadoceans.com",
+      "contact_type": "label_dead_oceans",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["info@deadoceans.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "japanese-breakfast",
+      "artist": "Japanese Breakfast",
+      "email": "info@deadoceans.com",
+      "contact_type": "label_dead_oceans",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["info@deadoceans.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "julia-holter",
+      "artist": "Julia Holter",
+      "email": "press@dominorecordco.com",
+      "contact_type": "label_domino_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@dominorecordco.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "cate-le-bon",
+      "artist": "Cate Le Bon",
+      "email": "info@mexicansummer.com",
+      "contact_type": "label_mexican_summer",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["info@mexicansummer.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "aldous-harding",
+      "artist": "Aldous Harding",
+      "email": "mediaenquiries@4ad.com",
+      "contact_type": "label_4ad_media_enquiries",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["mediaenquiries@4ad.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "grouper",
+      "artist": "Grouper",
+      "email": "krankyinfo@gmail.com",
+      "contact_type": "label_kranky",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["krankyinfo@gmail.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amyl-and-the-sniffers",
+      "artist": "Amyl and the Sniffers",
+      "email": "info@atorecords.com",
+      "contact_type": "label_ato_records",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["info@atorecords.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wet-leg",
+      "artist": "Wet Leg",
+      "email": "press@dominorecordco.com",
+      "contact_type": "label_domino_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@dominorecordco.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "jorja-smith",
+      "artist": "Jorja Smith",
+      "email": "press@famm.uk",
+      "contact_type": "management_famm_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@famm.uk"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "leon-thomas",
+      "artist": "Leon Thomas",
+      "email": "press@motown.com",
+      "contact_type": "label_motown_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@motown.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "lola-young",
+      "artist": "Lola Young",
+      "email": "press@islandrecords.co.uk",
+      "contact_type": "label_island_records_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@islandrecords.co.uk"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tyla",
+      "artist": "Tyla",
+      "email": "press@epicrecords.com",
+      "contact_type": "label_epic_records_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@epicrecords.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "pinkpantheress",
+      "artist": "PinkPantheress",
+      "email": "press@parlophone.co.uk",
+      "contact_type": "label_parlophone_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@parlophone.co.uk"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "oklou",
+      "artist": "oklou",
+      "email": "press@becausemusic.com",
+      "contact_type": "label_because_music_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@becausemusic.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "dj-seinfeld-if-this-is-it",
+      "artist": "DJ Seinfeld",
+      "email": "press@ninjatune.net",
+      "contact_type": "label_ninja_tune_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@ninjatune.net"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "laura-misch-lithic",
+      "artist": "Laura Misch",
+      "email": "press@onelittleindependent.co.uk",
+      "contact_type": "label_one_little_independent_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@onelittleindependent.co.uk"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "james-blake-hollow-ground",
+      "artist": "James Blake",
+      "email": "press@republicrecords.com",
+      "contact_type": "label_republic_records_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@republicrecords.com"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "olivia-dean",
+      "artist": "Olivia Dean",
+      "email": "press@islandrecords.co.uk",
+      "contact_type": "label_island_records_press",
+      "date_contacted": "2026-06-19",
+      "emails_sent": ["press@islandrecords.co.uk"],
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "chappell-roan-midwest-princess",
+      "artist": "Chappell Roan",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-19",
+      "emails_sent": [],
+      "status": "skipped_no_contact",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sza",
+      "artist": "SZA",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-19",
+      "emails_sent": [],
+      "status": "skipped_no_contact",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "hayley-kiyoko-girls-like-girls",
+      "artist": "Hayley Kiyoko",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-19",
+      "emails_sent": [],
+      "status": "skipped_no_contact",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "olivia-rodrigo-you-seem-pretty-sad",
+      "artist": "Olivia Rodrigo",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-19",
+      "emails_sent": [],
+      "status": "skipped_no_contact",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "central-cee",
+      "artist": "Central Cee",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-19",
+      "emails_sent": [],
+      "status": "skipped_no_contact",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "doechii",
+      "artist": "Doechii",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-19",
+      "emails_sent": [],
+      "status": "skipped_no_contact",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sabrina-carpenter",
+      "artist": "Sabrina Carpenter",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-19",
+      "emails_sent": [],
+      "status": "skipped_no_contact",
+      "follow_up_sent": false
     }
   ]
 }

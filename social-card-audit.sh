@@ -4,7 +4,7 @@
 # fixes Rule 5 (hero image repeated in body) and wrong-format download tags.
 # Usage: bash -s < social-card-audit.sh
 # Or via GitHub Actions workflow (deploy-artonly.yml), input: social-card-audit.sh
-# Last triggered: 2026-05-31
+# Last triggered: 2026-06-19
 
 set -e
 echo "=== ArtOnly Social Card Audit ==="
@@ -36,11 +36,11 @@ for p in sorted(glob.glob(f'{POSTS_DIR}/*.json')):
             print(f'SKIP (parse error): {p}: {e}')
             continue
 
-    slug = d.get('slug', os.path.basename(p).replace('.json', ''))
-    title = d.get('title', '')
-    category = d.get('category', '')
-    hero = d.get('image', '')
-    body = d.get('body', '')
+    slug = str(d.get('slug') or os.path.basename(p).replace('.json', ''))
+    title = str(d.get('title') or '')
+    category = str(d.get('category') or '')
+    hero = str(d.get('image') or '')
+    body = str(d.get('body') or '')
     changed = False
 
     print(f'--- {slug} ---')
@@ -130,7 +130,7 @@ for p in sorted(glob.glob(f'{POSTS_DIR}/*.json')):
                 shutil.copy(src_path, hero_path)
                 print(f'  Copied hero: {src_path}')
             else:
-                print(f'  SKIP: no hero image for {slug}')
+                print(f'  SKIP: no hero image for {slug}'
                 skipped_no_image.append(slug)
                 continue
 

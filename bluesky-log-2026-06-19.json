@@ -1,0 +1,74 @@
+{
+  "date": "2026-06-19",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout). Same recurring issue as June 12 and June 14.",
+  "account": "artonly.bsky.social",
+  "account_status": "active (verified handle resolves to did:plc:4666lyeouf2kdo3s6bvkhtmn)",
+  "articles_identified": [
+    {
+      "title": "Dave and the Weight of Three Number Ones",
+      "url": "https://artonly.io/post/dave-british-rap-2026",
+      "category": "music",
+      "placement": "hero/featured",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "FKA twigs: The Body Is the Score",
+      "url": "https://artonly.io/post/fka-twigs",
+      "category": "art",
+      "placement": "grid",
+      "hashtags": ["#Art", "#ContemporaryArt"],
+      "priority": 2
+    }
+  ],
+  "all_articles_today": [
+    {
+      "title": "Dave and the Weight of Three Number Ones",
+      "url": "https://artonly.io/post/dave-british-rap-2026",
+      "category": "music",
+      "author": "Allastair Voss",
+      "placement": "hero"
+    },
+    {
+      "title": "Drake's Three Kingdoms: How Iceman Rewrote the Record Books",
+      "url": "https://artonly.io/post/drake-iceman",
+      "category": "music",
+      "author": "Allastair Voss"
+    },
+    {
+      "title": "FKA twigs: The Body Is the Score",
+      "url": "https://artonly.io/post/fka-twigs",
+      "category": "art",
+      "author": "Monica Cosby"
+    },
+    {
+      "title": "Jon Batiste Plays Mozart on Juneteenth and Rewrites the Terms of Who the Music Belongs To",
+      "url": "https://artonly.io/post/jon-batiste-black-mozart",
+      "category": "music",
+      "author": "Allastair Voss"
+    },
+    {
+      "title": "Taylor Swift: What The Tortured Poets Department Actually Built in 2024",
+      "url": "https://artonly.io/post/taylor-swift",
+      "category": "music",
+      "author": "Allastair Voss"
+    },
+    {
+      "title": "Tierra Whack Steps Into Her Own Museum and Shows You Exactly What She Is Made Of",
+      "url": "https://artonly.io/post/tierra-whack-whacks-museum",
+      "category": "music",
+      "author": "Leelou Blanc"
+    },
+    {
+      "title": "Who Is Charlotte Day Wilson: The Toronto Soul Singer Who Made the World Listen",
+      "url": "https://artonly.io/post/who-is-charlotte-day-wilson",
+      "category": "music",
+      "author": "Allastair Voss"
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Log committed to vossadvisory repo. Draft email created to amosleblanc@gmail.com. Push notification sent.",
+  "resolution_needed": "Provide Bluesky app password so posts can be published from cloud environment. SSH port 22 is blocked by network policy and cannot be used. Save credentials as ~/artonly.io/agent/bluesky-creds.json on the server, OR provide the app_password directly so it can be stored in the vossadvisory repo or a secrets manager accessible from this environment."
+}

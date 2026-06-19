@@ -1,6 +1,6 @@
 #!/bin/bash
 # ArtOnly Radar Cache Refresh
-# Generated: 2026-06-19
+# Generated: 2026-06-19 (retry 2)
 # Purpose: Write 15 trending artists to radar-cache.json for the /radar page
 # Run via GitHub Actions (deploy-artonly.yml) or:
 # sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-19-radar.sh

@@ -137,7 +137,9 @@
       "contact_type": "label_4ad_media_enquiries",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r5576446822189950609",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "kurt-vile-philadelphias-been-good-to-me",
@@ -146,7 +148,9 @@
       "contact_type": "management_another_management_company",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-2754991000569296163",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "lowertown-ugly-duckling-union",
@@ -155,7 +159,9 @@
       "contact_type": "management_jackie_resnik",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-6880020365084578962",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "vince-staples-cry-baby",
@@ -164,7 +170,9 @@
       "contact_type": "label_loma_vista_press",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r7492716559331230289",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "jalen-ngonda-doctrine-of-love",
@@ -173,7 +181,9 @@
       "contact_type": "label_daptone_records",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-544253373339923642",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "death-cab-for-cutie-i-built-you-a-tower",
@@ -182,7 +192,9 @@
       "contact_type": "label_anti_press",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r6350348406294257644",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "iceage-for-love-of-grace-and-the-hereafter",
@@ -191,7 +203,9 @@
       "contact_type": "label_mexican_summer",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r785543830671001474",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "bedouine-neon-summer-skin",
@@ -200,7 +214,9 @@
       "contact_type": "booking_arrival_artists",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r4757527090424140430",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "navy-blue-sir-render",
@@ -209,7 +225,9 @@
       "contact_type": "management_something_in_common",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r-4160789804627161922",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "feeble-little-horse-bitknot",
@@ -218,7 +236,9 @@
       "contact_type": "press_grandstand_hq",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r7776147318405707727",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-19"
     },
     {
       "slug": "big-brave-in-grief-or-in-hope",
@@ -226,7 +246,9 @@
       "email": "bigbravemusic@gmail.com",
       "contact_type": "artist_direct",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["bigbravemusic@gmail.com"],
+      "emails_sent": [
+        "bigbravemusic@gmail.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -236,7 +258,10 @@
       "email": "marilyne@mothland.com",
       "contact_type": "label_mothland",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["marilyne@mothland.com", "codedesecurite666@gmail.com"],
+      "emails_sent": [
+        "marilyne@mothland.com",
+        "codedesecurite666@gmail.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -246,7 +271,9 @@
       "email": "Paige.Rosoff@atlanticrecords.com",
       "contact_type": "label_atlantic_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["Paige.Rosoff@atlanticrecords.com"],
+      "emails_sent": [
+        "Paige.Rosoff@atlanticrecords.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -256,7 +283,9 @@
       "email": "info@dirtyhit.co.uk",
       "contact_type": "label_dirty_hit_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["info@dirtyhit.co.uk"],
+      "emails_sent": [
+        "info@dirtyhit.co.uk"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -266,7 +295,9 @@
       "email": "ben@constantartists.com",
       "contact_type": "management_constant_artists",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["ben@constantartists.com"],
+      "emails_sent": [
+        "ben@constantartists.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -276,7 +307,9 @@
       "email": "christina@mergerecords.com",
       "contact_type": "label_merge_records_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["christina@mergerecords.com"],
+      "emails_sent": [
+        "christina@mergerecords.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -286,7 +319,9 @@
       "email": "eloyl@grandstandhq.com",
       "contact_type": "press_grandstand_hq",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["eloyl@grandstandhq.com"],
+      "emails_sent": [
+        "eloyl@grandstandhq.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -296,7 +331,9 @@
       "email": "taliamiller@roughtraderecords.com",
       "contact_type": "label_rough_trade_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["taliamiller@roughtraderecords.com"],
+      "emails_sent": [
+        "taliamiller@roughtraderecords.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -306,7 +343,9 @@
       "email": "benayres@roughtraderecords.com",
       "contact_type": "label_rough_trade_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["benayres@roughtraderecords.com"],
+      "emails_sent": [
+        "benayres@roughtraderecords.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -316,7 +355,9 @@
       "email": "info@hyperdub.net",
       "contact_type": "label_hyperdub",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["info@hyperdub.net"],
+      "emails_sent": [
+        "info@hyperdub.net"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -326,7 +367,9 @@
       "email": "emily@orienteer.us",
       "contact_type": "management_orienteer",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["emily@orienteer.us"],
+      "emails_sent": [
+        "emily@orienteer.us"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -336,7 +379,9 @@
       "email": "press@subpop.com",
       "contact_type": "label_sub_pop_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@subpop.com"],
+      "emails_sent": [
+        "press@subpop.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -346,7 +391,9 @@
       "email": "reid@sacksco.com",
       "contact_type": "press_sacks_co",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["reid@sacksco.com"],
+      "emails_sent": [
+        "reid@sacksco.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -356,7 +403,9 @@
       "email": "nycholasfortin@chivichivi.com",
       "contact_type": "management_chivi_chivi",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["nycholasfortin@chivichivi.com"],
+      "emails_sent": [
+        "nycholasfortin@chivichivi.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -366,7 +415,9 @@
       "email": "noam@matadorrecords.com",
       "contact_type": "label_matador_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["noam@matadorrecords.com"],
+      "emails_sent": [
+        "noam@matadorrecords.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -376,7 +427,9 @@
       "email": "meghanh@grandstandhq.com",
       "contact_type": "press_grandstand_hq",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["meghanh@grandstandhq.com"],
+      "emails_sent": [
+        "meghanh@grandstandhq.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -386,7 +439,9 @@
       "email": "info@saddlecreek.com",
       "contact_type": "label_saddle_creek",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["info@saddlecreek.com"],
+      "emails_sent": [
+        "info@saddlecreek.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -396,7 +451,9 @@
       "email": "info@jagjaguwar.com",
       "contact_type": "label_jagjaguwar",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["info@jagjaguwar.com"],
+      "emails_sent": [
+        "info@jagjaguwar.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -406,7 +463,9 @@
       "email": "press@jagjaguwar.com",
       "contact_type": "label_jagjaguwar_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@jagjaguwar.com"],
+      "emails_sent": [
+        "press@jagjaguwar.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -416,7 +475,9 @@
       "email": "info@deadoceans.com",
       "contact_type": "label_dead_oceans",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["info@deadoceans.com"],
+      "emails_sent": [
+        "info@deadoceans.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -426,7 +487,9 @@
       "email": "info@deadoceans.com",
       "contact_type": "label_dead_oceans",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["info@deadoceans.com"],
+      "emails_sent": [
+        "info@deadoceans.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -436,7 +499,9 @@
       "email": "press@dominorecordco.com",
       "contact_type": "label_domino_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@dominorecordco.com"],
+      "emails_sent": [
+        "press@dominorecordco.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -446,7 +511,9 @@
       "email": "info@mexicansummer.com",
       "contact_type": "label_mexican_summer",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["info@mexicansummer.com"],
+      "emails_sent": [
+        "info@mexicansummer.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -456,7 +523,9 @@
       "email": "mediaenquiries@4ad.com",
       "contact_type": "label_4ad_media_enquiries",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["mediaenquiries@4ad.com"],
+      "emails_sent": [
+        "mediaenquiries@4ad.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -466,7 +535,9 @@
       "email": "krankyinfo@gmail.com",
       "contact_type": "label_kranky",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["krankyinfo@gmail.com"],
+      "emails_sent": [
+        "krankyinfo@gmail.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -476,7 +547,9 @@
       "email": "info@atorecords.com",
       "contact_type": "label_ato_records",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["info@atorecords.com"],
+      "emails_sent": [
+        "info@atorecords.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -486,7 +559,9 @@
       "email": "press@dominorecordco.com",
       "contact_type": "label_domino_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@dominorecordco.com"],
+      "emails_sent": [
+        "press@dominorecordco.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -496,7 +571,9 @@
       "email": "press@famm.uk",
       "contact_type": "management_famm_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@famm.uk"],
+      "emails_sent": [
+        "press@famm.uk"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -506,7 +583,9 @@
       "email": "press@motown.com",
       "contact_type": "label_motown_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@motown.com"],
+      "emails_sent": [
+        "press@motown.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -516,7 +595,9 @@
       "email": "press@islandrecords.co.uk",
       "contact_type": "label_island_records_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@islandrecords.co.uk"],
+      "emails_sent": [
+        "press@islandrecords.co.uk"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -526,7 +607,9 @@
       "email": "press@epicrecords.com",
       "contact_type": "label_epic_records_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@epicrecords.com"],
+      "emails_sent": [
+        "press@epicrecords.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -536,7 +619,9 @@
       "email": "press@parlophone.co.uk",
       "contact_type": "label_parlophone_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@parlophone.co.uk"],
+      "emails_sent": [
+        "press@parlophone.co.uk"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -546,7 +631,9 @@
       "email": "press@becausemusic.com",
       "contact_type": "label_because_music_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@becausemusic.com"],
+      "emails_sent": [
+        "press@becausemusic.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -556,7 +643,9 @@
       "email": "press@ninjatune.net",
       "contact_type": "label_ninja_tune_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@ninjatune.net"],
+      "emails_sent": [
+        "press@ninjatune.net"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -566,7 +655,9 @@
       "email": "press@onelittleindependent.co.uk",
       "contact_type": "label_one_little_independent_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@onelittleindependent.co.uk"],
+      "emails_sent": [
+        "press@onelittleindependent.co.uk"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -576,7 +667,9 @@
       "email": "press@republicrecords.com",
       "contact_type": "label_republic_records_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@republicrecords.com"],
+      "emails_sent": [
+        "press@republicrecords.com"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },
@@ -586,7 +679,9 @@
       "email": "press@islandrecords.co.uk",
       "contact_type": "label_island_records_press",
       "date_contacted": "2026-06-19",
-      "emails_sent": ["press@islandrecords.co.uk"],
+      "emails_sent": [
+        "press@islandrecords.co.uk"
+      ],
       "status": "sent",
       "follow_up_sent": false
     },

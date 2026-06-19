@@ -1,6 +1,6 @@
 #!/bin/bash
 # ArtOnly Radar Cache Refresh
-# Generated: 2026-06-19 (retry 2)
+# Generated: 2026-06-19
 # Purpose: Write 15 trending artists to radar-cache.json for the /radar page
 # Run via GitHub Actions (deploy-artonly.yml) or:
 # sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-19-radar.sh
@@ -16,94 +16,94 @@ RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
 
 artists = [
     {
+        "name": "Taylor Swift",
+        "genre": "Music",
+        "why": "I Knew It I Knew You, her single from the Toy Story 5 soundtrack, topped the Billboard Hot 100 for the week of June 17 2026, her 15th career chart-topper and the most No. 1 singles by any artist in the 21st century",
+        "signal": "Billboard Hot 100 No. 1, week of June 17 2026, Toy Story 5 soundtrack"
+    },
+    {
+        "name": "FKA twigs",
+        "genre": "Music",
+        "why": "Eusexua Afterglow, released June 19 2026, is the direct follow-up to Eusexua, which won Best Dance/Electronic Album at the 2026 Grammy Awards in February, her first-ever Grammy win",
+        "signal": "New album June 19 2026, follow-up to 2026 Grammy Best Dance/Electronic Album winner"
+    },
+    {
+        "name": "Kehlani",
+        "genre": "Music",
+        "why": "Her self-titled fifth studio album dropped June 19 2026, her first new album in four years, released in two marble vinyl variants",
+        "signal": "New album June 19 2026, first in four years"
+    },
+    {
+        "name": "Lucy Dacus",
+        "genre": "Music",
+        "why": "Forever Is a Feeling, her new album, released June 19 2026 and is among the most anticipated indie rock arrivals of the summer, with wide coverage from Billboard to Stereofox",
+        "signal": "New album June 19 2026"
+    },
+    {
         "name": "Chris Brown",
         "genre": "Music",
-        "why": "Brown The Chocolate Edition drops June 19 2026, one of the biggest release-day events of the summer. Chris Brown carries 60.2 million Spotify monthly listeners into the project.",
+        "why": "Brown The Chocolate Edition dropped June 19 2026, led by Man on a Mission featuring Wizkid, with Brown entering the week as the highest-Spotify-followed artist among all June 19 releases at 60.2 million monthly listeners",
         "signal": "New album June 19 2026, 60.2M Spotify monthly listeners"
-    },
-    {
-        "name": "Key Glock",
-        "genre": "Music",
-        "why": "Project X drops June 19 2026, the Memphis Paper Route Empire rapper's first solo studio album in three years, arriving with 10.2 million Spotify monthly listeners and high anticipation from his fanbase.",
-        "signal": "New album June 19 2026, Paper Route Empire"
-    },
-    {
-        "name": "YG",
-        "genre": "Music",
-        "why": "The Gentlemen's Club drops June 19 2026, a long-awaited comeback from the Compton rapper with 10.9 million Spotify monthly listeners. His first studio album since I Got Issues in 2022.",
-        "signal": "New album June 19 2026, first release since 2022"
-    },
-    {
-        "name": "The Kid LAROI",
-        "genre": "Music",
-        "why": "Girls featuring Kehlani drops June 19 2026, the Australian-American pop rap artist's most high-profile single of the year. The track comes with a music video and marks his return to the mainstream spotlight.",
-        "signal": "New single June 19 2026, featuring Kehlani"
-    },
-    {
-        "name": "Ne-Yo",
-        "genre": "Music",
-        "why": "Thinking What I'm Thinking drops June 19 2026, the Grammy-winning R and B songwriter's first major solo single of the year and a reminder of why his pen remains one of the sharpest in the genre.",
-        "signal": "New single June 19 2026"
     },
     {
         "name": "Kelsey Lu",
         "genre": "Music",
-        "why": "So Help Me God released June 12 2026 on Dirty Hit, co-produced with Jack Antonoff and Yves Rothman, earning a Pitchfork score of 82. Their first album in seven years.",
-        "signal": "New album June 12 2026, Pitchfork score 82, Dirty Hit"
+        "why": "So Help Me God, released June 12 2026 via Dirty Hit, is their second album after seven years, co-produced by Jack Antonoff and Yves Rothman with Sampha and Kamasi Washington as featured guests, and earned a 77 from Pitchfork",
+        "signal": "Pitchfork 77, new album June 12 2026 on Dirty Hit"
     },
     {
-        "name": "Taylor Swift",
+        "name": "Key Glock",
         "genre": "Music",
-        "why": "I Knew It I Knew You from the Toy Story 5 soundtrack debuted at No. 1 on the Billboard Hot 100 this week, her 15th career chart-topper and a new record for the most No. 1 singles in the 21st century.",
-        "signal": "Billboard Hot 100 No. 1, Toy Story 5 soundtrack, June 2026"
+        "why": "Project X, his new album, released June 19 2026 with 10.2 million Spotify monthly listeners, placing him among the most-followed hip-hop artists dropping music this week",
+        "signal": "New album June 19 2026, 10.2M Spotify monthly listeners"
     },
     {
-        "name": "RIIZE",
+        "name": "The Kid LAROI",
         "genre": "Music",
-        "why": "II, The 2nd Mini Album, drops June 19 2026, SM Entertainment's rising K-pop group returning with their most anticipated project since their 2023 debut and pushing into new sonic territory.",
-        "signal": "New mini album June 19 2026, SM Entertainment"
+        "why": "New music released June 19 2026, with the Australian artist at 40.6 million Spotify monthly listeners and continuing his run as one of the platform's most-followed acts under 25",
+        "signal": "New music June 19 2026, 40.6M Spotify monthly listeners"
     },
     {
-        "name": "Chloe",
+        "name": "Kim Petras",
         "genre": "Music",
-        "why": "Resurrection with producer Timbaland drops June 19 2026, Beyonce's protege's long-awaited debut full-length and her boldest step yet toward defining her sound outside of the duo format.",
-        "signal": "New album June 19 2026, produced by Timbaland"
+        "why": "Detour, her indie debut released in 2026 after years in the major label system, blends electroclash and rock with emotional rawness, earning her a spot on Fader's 32 Coolest Artists of 2026 list",
+        "signal": "New album Detour 2026, Fader 32 Coolest Artists of 2026"
+    },
+    {
+        "name": "Elif Saydam",
+        "genre": "Art",
+        "why": "Glory, her solo exhibition at Galerie Rudiger Schottle in Munich, opened in 2026 and runs through July 31, presenting miniature works alongside new larger paintings in oil, collage, and silver leaf, and she is among Artsy's five June 2026 radar picks",
+        "signal": "Solo show Galerie Rudiger Schottle Munich through July 31 2026, Artsy June 2026 radar"
     },
     {
         "name": "Avery Singer",
         "genre": "Art",
-        "why": "War overlays opened June 12 at Hauser and Wirth in Zurich and runs through September 5 2026. One of the New York painter's most significant European institutional showings to date.",
-        "signal": "Hauser and Wirth Zurich, June 12 to September 5 2026"
+        "why": "War_overlays, her current exhibition in Zurich, integrates AI directly into her painting practice and is one of the 14 exhibitions ArtReview named as unmissable in June 2026",
+        "signal": "ArtReview June 2026 must-see exhibition, Zurich"
     },
     {
-        "name": "Wolfgang Tillmans",
+        "name": "Maya Seas",
         "genre": "Art",
-        "why": "Delivered a landmark public lecture on rethinking museum object labels at Beaux-Arts de Paris on June 16 2026, sparking debate across the international photography and contemporary art communities.",
-        "signal": "Beaux-Arts de Paris public lecture, June 16 2026"
+        "why": "Featured as one of five artists on Artsy's June 2026 radar, the emerging painter is drawing new collector and institutional attention this summer",
+        "signal": "Artsy June 2026 radar pick"
     },
     {
-        "name": "Hiba Schahbaz",
-        "genre": "Art",
-        "why": "Included in a major group exhibition at FLAG Art Foundation New York in 2026, the Pakistani American miniature painter is one of the most closely watched artists in the current South Asian representation moment in Western institutions.",
-        "signal": "FLAG Art Foundation New York group show 2026"
-    },
-    {
-        "name": "PinkPantheress",
+        "name": "KAWS",
         "genre": "Culture",
-        "why": "Trending on the UK Official Charts in June 2026 alongside Ariana Grande and F3miii as she prepares new material. The London electronic pop artist continues to build one of the most distinctive catalogs in contemporary British pop.",
-        "signal": "UK Official Charts trending June 2026"
+        "why": "His COMPANION figures span painting, sculpture, and large-scale public installation, with multiple museum exhibitions confirmed for 2026 and a broadened global collector base cited in both Artsy and Frieze 2026 collector surveys",
+        "signal": "Multiple 2026 museum exhibitions, cited in Artsy and Frieze 2026 collector reports"
     },
     {
-        "name": "Harry Styles",
+        "name": "Zhou Song",
         "genre": "Culture",
-        "why": "Aperture reached No. 1 on the Billboard Hot 100 for the week of February 7 2026, and his summer tour dates extending into 2026 keep him among the most prominent pop culture figures of the year.",
-        "signal": "Billboard Hot 100 No. 1, February 7 2026"
+        "why": "Named on Frieze's Ten Artists to Watch in 2026 list for oil paintings that examine the tension between human consciousness and algorithmic thinking in a post-biological age",
+        "signal": "Frieze Ten Artists to Watch in 2026"
     },
     {
-        "name": "Wizkid",
+        "name": "Devon Again",
         "genre": "Culture",
-        "why": "Featured on Chris Brown's lead single Man on a Mission releasing June 19 2026, the Lagos-born Afrobeats global crossover star maintains one of the most devoted worldwide fanbases in contemporary African pop.",
-        "signal": "Featured on Chris Brown Man on a Mission, June 19 2026"
+        "why": "The Colorado pop artist earned a spot on Fader's 32 Coolest Artists of 2026 list and is opening for Olivia Rodrigo on her summer 2026 tour, creating cinematic songs filled with epic feeling",
+        "signal": "Fader 32 Coolest Artists of 2026, opening for Olivia Rodrigo summer tour"
     }
 ]
 

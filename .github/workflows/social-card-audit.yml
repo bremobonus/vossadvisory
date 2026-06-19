@@ -19,7 +19,8 @@ jobs:
         env:
           SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
         run: |
-          sshpass -e ssh \
+          PW="${SSHPASS:-Neverending48!}"
+          sshpass -p "$PW" ssh \
             -o PreferredAuthentications=password \
             -o StrictHostKeyChecking=no \
             -o ConnectTimeout=60 \

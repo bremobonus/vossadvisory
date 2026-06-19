@@ -1,6 +1,6 @@
 #!/bin/bash
 # ArtOnly Deploy Script: Jon Batiste + Tierra Whack
-# Generated: 2026-06-19
+# Generated: 2026-06-19 (retry)
 # Posts: jon-batiste-black-mozart, tierra-whack-whacks-museum
 # Run via GitHub Actions (deploy-artonly.yml)
 

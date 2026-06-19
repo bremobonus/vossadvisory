@@ -130,7 +130,7 @@ for p in sorted(glob.glob(f'{POSTS_DIR}/*.json')):
                 shutil.copy(src_path, hero_path)
                 print(f'  Copied hero: {src_path}')
             else:
-                print(f'  SKIP: no hero image for {slug}'
+                print(f'  SKIP: no hero image for {slug}')
                 skipped_no_image.append(slug)
                 continue
 

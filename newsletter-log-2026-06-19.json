@@ -1,0 +1,15 @@
+{
+  "date": "2026-06-19",
+  "subject": "ArtOnly Weekly: June 19, 2026",
+  "articles_count": 6,
+  "sent_to_count": 0,
+  "articles": [
+    {"slug": "kelsey-lu-so-help-me-god", "date": "2026-06-14"},
+    {"slug": "wiki-ancient-history", "date": "2026-06-14"},
+    {"slug": "navy-blue-sir-render", "date": "2026-06-11"},
+    {"slug": "bedouine-neon-summer-skin", "date": "2026-06-11"},
+    {"slug": "death-cab-for-cutie-i-built-you-a-tower", "date": "2026-06-06"},
+    {"slug": "vince-staples-cry-baby", "date": "2026-06-06"}
+  ],
+  "note": "SSH to DreamHost blocked by network egress policy. artonly.io API also blocked (Host not in allowlist). Newsletter draft created in Gmail (draft id: r-8434501875736385147) addressed to amosleblanc@gmail.com. Subscribers file could not be read. To fix: add artonly.io to network egress allowlist in Claude Code remote session settings."
+}

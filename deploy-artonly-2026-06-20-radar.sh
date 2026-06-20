@@ -2,8 +2,7 @@
 # ArtOnly Radar Cache Refresh
 # Generated: 2026-06-20
 # Purpose: Write 15 trending artists to radar-cache.json for the /radar page
-# Run via GitHub Actions (deploy-artonly.yml) or:
-# sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-20-radar.sh
+# Triggered automatically by GitHub Actions on push to main
 
 set -e
 echo "=== ArtOnly Radar Cache Refresh: 2026-06-20 ==="
@@ -16,94 +15,94 @@ RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
 
 artists = [
     {
-        "name": "Morgan Wallen",
+        "name": "Taylor Swift",
         "genre": "Music",
-        "why": "I Can't Love You Anymore, his duet with Ella Langley, debuted in the top 10 of the Billboard Hot 100 in June 2026, breaking the record as the highest-charting debut by a country collaboration in the chart's history, surpassing Kenny Rogers and Dolly Parton's Islands in the Stream",
-        "signal": "Billboard Hot 100 top 10, highest-charting country collaboration debut in chart history"
+        "why": "I Knew It, I Knew You from Toy Story 5 debuted at No. 1 on the Billboard Hot 100 on June 20 2026, giving Swift her record 15th career chart-topper and her ninth No. 1 Hot 100 debut, breaking her tie with Ariana Grande for the most chart-topping debuts by a female artist",
+        "signal": "Billboard Hot 100 No. 1 / June 20 2026 / Toy Story 5 soundtrack"
     },
     {
-        "name": "LISA",
+        "name": "Drake",
         "genre": "Music",
-        "why": "Performed Goals alongside Rema and Anitta at the FIFA World Cup 2026 USA opening ceremony at LA Stadium on June 12 before a global broadcast audience, with the song charting in 15 countries simultaneously",
-        "signal": "FIFA World Cup 2026 USA opening ceremony performer June 12, Goals charted 15 countries"
+        "why": "ICEMAN held No. 1 on the Billboard 200 for four consecutive weeks through June 2026, debuting with 463,000 equivalent units, and Drake became the first artist ever to debut three albums in the top three spots simultaneously with ICEMAN, HABIBTI and MAID OF HONOUR",
+        "signal": "Billboard 200 No. 1 for 4 weeks / Historic triple album debut"
     },
     {
-        "name": "SZA",
+        "name": "Myles Smith",
         "genre": "Music",
-        "why": "Made a surprise appearance at Justin Bieber's headlining Coachella 2026 set in April, which accumulated 140 million online views globally, and enters summer 2026 as one of the most-streamed artists in the world",
-        "signal": "Coachella 2026 surprise appearance, 140 million online views"
+        "why": "Debut album My Mess, My Heart, My Life released June 19 2026 on Sony UK after two breakout EPs, backed by a major English and Irish arena tour announced for November 2026, marking a significant breakthrough for the British singer-songwriter",
+        "signal": "Debut album June 19 2026 / Arena tour announced November 2026"
     },
     {
-        "name": "Barry Manilow",
+        "name": "Death Cab for Cutie",
         "genre": "Music",
-        "why": "Released What a Time on June 5 2026, a studio album of all-original songs marking his first new material in years, generating renewed streaming activity and chart attention across the US and UK",
-        "signal": "New album What a Time released June 5 2026"
+        "why": "Eleventh studio album I Built You a Tower released June 5 2026 on Anti- Records, produced by John Congleton, with lead single Riptides jumping four spots to the top of the alternative chart in its first week, their strongest chart activity in years",
+        "signal": "New album June 5 2026 / Riptides reaches No. 1 alternative chart"
     },
     {
-        "name": "J. Cole",
+        "name": "Don Toliver",
         "genre": "Music",
-        "why": "His catalog and new releases drove chart dominance in February 2026 alongside Bad Bunny, per NPR reporting, logging one of the biggest streaming runs of his career in the first quarter of 2026",
-        "signal": "NPR: ruled pop charts February 2026"
+        "why": "Single E85 generated significant traction across Billboard hip-hop and rap charts in June 2026, with Toliver charting four songs simultaneously making him one of the most-streamed rap artists of the summer season",
+        "signal": "Four songs on Billboard rap charts simultaneously / June 2026"
     },
     {
-        "name": "Travis Scott",
+        "name": "Kim Petras",
         "genre": "Music",
-        "why": "Co-produced the standout track Rosary on Don Toliver's OCTANE, the Billboard 200 No. 1 album of January 2026 with 162,000 first-week units, while leading Cactus Jack as one of the most influential creative ecosystems in hip-hop",
-        "signal": "Co-produced OCTANE, Billboard 200 No. 1 album January 2026, 162,000 units"
+        "why": "Debut indie album Detour co-created with Margo XS, Frost Children, Porches and nightfeelings was named by The Fader as one of the standout musical moments of 2026, marking a sharp departure from her earlier major-label pop sound",
+        "signal": "The Fader coolest artists of 2026 / Indie debut album Detour"
     },
     {
-        "name": "Kendrick Lamar",
+        "name": "skaiwater",
         "genre": "Music",
-        "why": "GNX, released November 2024, remained among the most-streamed hip-hop albums globally heading into summer 2026, with Not Like Us continuing to rank among the top hip-hop streams worldwide as anticipation builds for his next move",
-        "signal": "GNX global streaming dominance through mid-2026, Not Like Us sustained chart presence"
+        "why": "Named The Fader 2026 cover star, the London rapper breaks new ground with genre-fluid rap that moves between rage distortion and ethereal sampling, sustaining critical momentum and growing streaming numbers throughout the year",
+        "signal": "The Fader 2026 cover star / Growing Spotify streaming"
     },
     {
-        "name": "Madonna",
+        "name": "Ella Langley",
         "genre": "Music",
-        "why": "Listed on the Official UK Charts 2026 release calendar for a new studio album, placing her among the most anticipated major returns of the year as renewed interest in her catalog builds following the record-breaking 2023 to 2024 Celebration Tour",
-        "signal": "Official UK Charts 2026 confirmed new album release"
+        "why": "Debut album Dandelion opened at No. 1 on the Billboard 200, marking the largest streaming debut week for a female country primary artist on record, executive produced alongside Miranda Lambert",
+        "signal": "Billboard 200 No. 1 debut / Record female country streaming week"
     },
     {
-        "name": "Niall Horan",
+        "name": "PinkPantheress",
         "genre": "Music",
-        "why": "Featured on Drive Safe, a track on Myles Smith's debut album My Mess, My Heart, My Life released June 19 2026, while his own new studio album is confirmed on the Official UK Charts 2026 release calendar",
-        "signal": "Featured on Myles Smith debut album June 19 2026, own album confirmed for 2026"
+        "why": "Stateside featuring Zara Larsson from her album Fancy That won at the 2026 American Music Awards while the track maintained strong positioning on UK and US trending charts through June 2026",
+        "signal": "2026 American Music Awards winner / UK and US trending charts June 2026"
     },
     {
-        "name": "Lubaina Himid",
+        "name": "Yinka Ilori",
         "genre": "Art",
-        "why": "Represents Great Britain at the Venice Biennale 2026 British Pavilion with a solo exhibition titled Predicting History: Testing Translation, running through November 22, while simultaneously presenting the Zanzibar immersive installation at Lisson Gallery London from June 4 through the summer",
-        "signal": "Venice Biennale 2026 British Pavilion solo, Lisson Gallery Zanzibar June to summer 2026"
+        "why": "Solo debut London exhibition Joy Through Resistance at Cristea Roberts Gallery runs June 5 to July 11 2026, spanning new paintings, prints, sculpture and an immersive sound installation rooted in his British-Nigerian heritage",
+        "signal": "Cristea Roberts Gallery London / June 5 to July 11 2026"
     },
     {
-        "name": "Delaine Le Bas",
+        "name": "Daniel Arsham",
         "genre": "Art",
-        "why": "Her solo exhibition at Maureen Paley Gallery in London is among the standout shows of the June 2026 gallery season, spotlighting her interdisciplinary practice across sculpture, textiles, installation, costume and live performance",
-        "signal": "Maureen Paley Gallery London solo exhibition June 2026"
+        "why": "Time Fold at Perrotin London opened during London Gallery Weekend in June 2026 and runs through August 8, showcasing his signature eroded object sculptures alongside new photography and design collaborations",
+        "signal": "Perrotin London / London Gallery Weekend / Through August 8 2026"
     },
     {
-        "name": "Barbara Hepworth",
+        "name": "Marin Majic",
         "genre": "Art",
-        "why": "A major retrospective focused on her colour works from the 1940s to 1960s opened at the Courtauld Gallery London on June 12 2026 and runs to September 6, the first institutional survey dedicated to this dimension of her practice and one of the most discussed shows of the London summer season",
-        "signal": "Courtauld Gallery London retrospective, June 12 to September 6 2026"
+        "why": "Solo show discodisco at Nino Mier Gallery New York ran through June 13 2026, bringing the Frankfurt-born Croatian painter significant critical attention and new international gallery presence this season",
+        "signal": "Nino Mier Gallery New York / Solo show June 2026"
     },
     {
-        "name": "Michael Jackson",
+        "name": "Katy Perry",
         "genre": "Culture",
-        "why": "The biopic Michael has surpassed 900 million dollars globally to become the highest-grossing music biopic of all time in June 2026, with his streaming catalog doubling overnight and Billie Jean re-entering the Billboard Hot 100 top 20",
-        "signal": "Michael biopic, highest-grossing music biopic of all time, streaming catalog doubled June 2026"
+        "why": "Headlined the FIFA World Cup 2026 USA opening ceremony at Los Angeles Stadium on June 12 before a global broadcast audience of hundreds of millions, sharing the stage with LISA and Anitta in one of the summer's largest live events",
+        "signal": "FIFA World Cup 2026 USA opening ceremony / June 12 Los Angeles"
     },
     {
-        "name": "Jaafar Jackson",
+        "name": "Anitta",
         "genre": "Culture",
-        "why": "Made his feature film debut playing his uncle Michael Jackson in the biopic Michael, which became the highest-grossing music biopic in cinema history in 2026 and is projecting to cross one billion dollars worldwide, making him one of the most-searched new faces in Hollywood",
-        "signal": "Feature film debut in Michael biopic, highest-grossing music biopic ever 2026"
+        "why": "Co-headlined the FIFA World Cup 2026 USA opening ceremony in Los Angeles on June 12 alongside Katy Perry and LISA, reaching a global audience and cementing her position as the most globally followed Brazilian artist in music",
+        "signal": "FIFA World Cup 2026 USA opening ceremony / June 12 Los Angeles"
     },
     {
-        "name": "Antoine Fuqua",
+        "name": "Quinta Brunson",
         "genre": "Culture",
-        "why": "Directed Michael, the Michael Jackson biopic that surpassed Bohemian Rhapsody to become the highest-grossing music biopic in cinema history, projecting to cross one billion dollars worldwide and cementing his reputation as the most bankable director of music-centred epic films",
-        "signal": "Directed Michael, highest-grossing music biopic ever, projecting one billion worldwide"
+        "why": "Abbott Elementary entered its fifth season in 2026 after multiple Emmy Award wins, with Brunson recognized as one of the most influential comedy writers and performers working in American television today",
+        "signal": "Abbott Elementary Season 5 2026 / Multiple Emmy Awards"
     }
 ]
 

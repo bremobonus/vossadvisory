@@ -114,7 +114,7 @@
       "email": "editor@warprecords.com",
       "contact_type": "label_warp_press",
       "drafted_at": "2026-06-06T00:00:00Z",
-      "gmail_draft_id": "-5741549192505647997",
+      "gmail_draft_id": "r-5741549192505647997",
       "status": "drafted",
       "follow_up_sent": true,
       "follow_up_date": "2026-06-15"
@@ -221,49 +221,437 @@
       "status": "drafted"
     },
     {
-      "slug": "anderson-paak-kpops",
-      "artist": "Anderson .Paak",
-      "email": "info@fullstopmgmt.com",
-      "contact_type": "management_full_stop",
-      "drafted_at": "2026-06-19T00:00:00Z",
-      "gmail_draft_id": "r5482945242940045509",
-      "status": "drafted"
+      "slug": "lionel-richie-birthday-2026",
+      "artist": "Lionel Richie",
+      "email": "info@2pmsharp.com",
+      "contact_type": "management_pr_2pmsharp",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
     },
     {
-      "slug": "ear-rumspringa",
-      "artist": "ear",
-      "email": "press@a24films.com",
-      "contact_type": "label_a24_music_press",
-      "drafted_at": "2026-06-19T00:00:00Z",
-      "gmail_draft_id": "r1332804798384540708",
-      "status": "drafted"
+      "slug": "who-is-charlotte-day-wilson",
+      "artist": "Charlotte Day Wilson",
+      "email": "contact@charlottedaywilson.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "who-is-charlotte-day-wilson",
+      "artist": "Charlotte Day Wilson",
+      "email": "mgmt@charlottedaywilson.com",
+      "contact_type": "management_direct",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "big-brave-in-grief-or-in-hope",
+      "artist": "BIG BRAVE",
+      "email": "bigbravemusic@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "big-brave-in-grief-or-in-hope",
+      "artist": "BIG BRAVE",
+      "email": "mike@thrilljockey.com",
+      "contact_type": "label_press_thrill_jockey",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "la-securite-bingo",
+      "artist": "La Securite",
+      "email": "marilyne@mothland.com",
+      "contact_type": "management_mothland",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "who-is-arooj-aftab-everything-you-need-to-know",
+      "artist": "Arooj Aftab",
+      "email": "erik@friendsatwork.com",
+      "contact_type": "management_friends_at_work",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "who-is-arooj-aftab-everything-you-need-to-know",
+      "artist": "Arooj Aftab",
+      "email": "carlos.vega@umusic.com",
+      "contact_type": "label_press_universal_music_na",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
     },
     {
       "slug": "kelsey-lu-so-help-me-god",
       "artist": "Kelsey Lu",
-      "email": "info@atcmanagement.com",
-      "contact_type": "management_atc",
-      "drafted_at": "2026-06-19T00:00:00Z",
-      "gmail_draft_id": "r-6163424783620668945",
-      "status": "drafted"
+      "email": "info@dirtyhit.co.uk",
+      "contact_type": "label_dirty_hit",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
     },
     {
-      "slug": "wet-leg",
-      "artist": "Wet Leg",
-      "email": "enquiries@dominorecordco.com",
-      "contact_type": "label_domino_records",
-      "drafted_at": "2026-06-19T00:00:00Z",
-      "gmail_draft_id": "r-7910178864671370422",
-      "status": "drafted"
+      "slug": "wiki-ancient-history",
+      "artist": "Wiki",
+      "email": "wiksetenterprise@gmail.com",
+      "contact_type": "artist_self_label",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
     },
     {
-      "slug": "waxahatchee",
-      "artist": "Waxahatchee",
-      "email": "publicity@anti.com",
-      "contact_type": "label_anti_records_press",
-      "drafted_at": "2026-06-19T00:00:00Z",
-      "gmail_draft_id": "r3955014372919423086",
-      "status": "drafted"
+      "slug": "dave-british-rap-2026",
+      "artist": "Dave",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "drake-iceman",
+      "artist": "Drake",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "fka-twigs",
+      "artist": "FKA twigs",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "jon-batiste-black-mozart",
+      "artist": "Jon Batiste",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "taylor-swift",
+      "artist": "Taylor Swift",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "tierra-whack-whacks-museum",
+      "artist": "Tierra Whack",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "weeknd-hurry-up-tomorrow",
+      "artist": "Abel Tesfaye (The Weeknd)",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "bruno-mars",
+      "artist": "Bruno Mars",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "central-cee",
+      "artist": "Central Cee",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "chappell-roan",
+      "artist": "Chappell Roan",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "doechii",
+      "artist": "Doechii",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "kehlani",
+      "artist": "Kehlani",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "olivia-rodrigo",
+      "artist": "Olivia Rodrigo",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "sza",
+      "artist": "SZA",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "tyler-the-creator",
+      "artist": "Tyler, The Creator",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "hayley-kiyoko-girls-like-girls",
+      "artist": "Hayley Kiyoko",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "kaws",
+      "artist": "KAWS",
+      "email": null,
+      "contact_type": "none_found_contact_form_only",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "lagos-music-scene-artists-2024",
+      "artist": null,
+      "email": null,
+      "contact_type": "skipped_compilation",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_compilation"
+    },
+    {
+      "slug": "olivia-rodrigo-you-seem-pretty-sad",
+      "artist": "Olivia Rodrigo",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "best-albums-2000-to-2005",
+      "artist": null,
+      "email": null,
+      "contact_type": "skipped_compilation",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_compilation"
+    },
+    {
+      "slug": "hayley-kiyoko-girls-like-girls-the-album",
+      "artist": "Hayley Kiyoko",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "katseye",
+      "artist": "KATSEYE",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "ruel-kicking-my-feet-screaming",
+      "artist": "Ruel",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "burna-boy-sovereign",
+      "artist": "Burna Boy",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "james-blake-hollow-ground",
+      "artist": "James Blake",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "leon-thomas",
+      "artist": "Leon Thomas",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "lola-young",
+      "artist": "Lola Young",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "the-10-best-albums-of-the-2000s",
+      "artist": null,
+      "email": null,
+      "contact_type": "skipped_compilation",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_compilation"
+    },
+    {
+      "slug": "megan-thee-stallion",
+      "artist": "Megan Thee Stallion",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "pinkpantheress",
+      "artist": "PinkPantheress",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "why-charli-xcx-changed-pop-music-forever",
+      "artist": "Charli XCX",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "the-10-best-albums-of-the-1990s",
+      "artist": null,
+      "email": null,
+      "contact_type": "skipped_compilation",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_compilation"
+    },
+    {
+      "slug": "afrobeats-artists-you-should-know-right-now",
+      "artist": null,
+      "email": null,
+      "contact_type": "skipped_compilation",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_compilation"
+    },
+    {
+      "slug": "ariana-grande",
+      "artist": "Ariana Grande",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "dj-seinfeld-if-this-is-it",
+      "artist": "DJ Seinfeld",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "laura-misch-lithic",
+      "artist": "Laura Misch",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "nick-leon",
+      "artist": "Nick León",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
     }
   ]
 }

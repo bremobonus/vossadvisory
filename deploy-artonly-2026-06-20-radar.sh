@@ -1,0 +1,133 @@
+#!/bin/bash
+# ArtOnly Radar Cache Refresh
+# Generated: 2026-06-20
+# Purpose: Write 15 trending artists to radar-cache.json for the /radar page
+# Run via GitHub Actions (deploy-artonly.yml) or:
+# sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-20-radar.sh
+
+set -e
+echo "=== ArtOnly Radar Cache Refresh: 2026-06-20 ==="
+echo "$(date)"
+
+python3 << 'PYEOF'
+import json
+
+RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
+
+artists = [
+    {
+        "name": "Morgan Wallen",
+        "genre": "Music",
+        "why": "I Can't Love You Anymore, his duet with Ella Langley, debuted in the top 10 of the Billboard Hot 100 in June 2026, breaking the record as the highest-charting debut by a country collaboration in the chart's history, surpassing Kenny Rogers and Dolly Parton's Islands in the Stream",
+        "signal": "Billboard Hot 100 top 10, highest-charting country collaboration debut in chart history"
+    },
+    {
+        "name": "LISA",
+        "genre": "Music",
+        "why": "Performed Goals alongside Rema and Anitta at the FIFA World Cup 2026 USA opening ceremony at LA Stadium on June 12 before a global broadcast audience, with the song charting in 15 countries simultaneously",
+        "signal": "FIFA World Cup 2026 USA opening ceremony performer June 12, Goals charted 15 countries"
+    },
+    {
+        "name": "SZA",
+        "genre": "Music",
+        "why": "Made a surprise appearance at Justin Bieber's headlining Coachella 2026 set in April, which accumulated 140 million online views globally, and enters summer 2026 as one of the most-streamed artists in the world",
+        "signal": "Coachella 2026 surprise appearance, 140 million online views"
+    },
+    {
+        "name": "Barry Manilow",
+        "genre": "Music",
+        "why": "Released What a Time on June 5 2026, a studio album of all-original songs marking his first new material in years, generating renewed streaming activity and chart attention across the US and UK",
+        "signal": "New album What a Time released June 5 2026"
+    },
+    {
+        "name": "J. Cole",
+        "genre": "Music",
+        "why": "His catalog and new releases drove chart dominance in February 2026 alongside Bad Bunny, per NPR reporting, logging one of the biggest streaming runs of his career in the first quarter of 2026",
+        "signal": "NPR: ruled pop charts February 2026"
+    },
+    {
+        "name": "Travis Scott",
+        "genre": "Music",
+        "why": "Co-produced the standout track Rosary on Don Toliver's OCTANE, the Billboard 200 No. 1 album of January 2026 with 162,000 first-week units, while leading Cactus Jack as one of the most influential creative ecosystems in hip-hop",
+        "signal": "Co-produced OCTANE, Billboard 200 No. 1 album January 2026, 162,000 units"
+    },
+    {
+        "name": "Kendrick Lamar",
+        "genre": "Music",
+        "why": "GNX, released November 2024, remained among the most-streamed hip-hop albums globally heading into summer 2026, with Not Like Us continuing to rank among the top hip-hop streams worldwide as anticipation builds for his next move",
+        "signal": "GNX global streaming dominance through mid-2026, Not Like Us sustained chart presence"
+    },
+    {
+        "name": "Madonna",
+        "genre": "Music",
+        "why": "Listed on the Official UK Charts 2026 release calendar for a new studio album, placing her among the most anticipated major returns of the year as renewed interest in her catalog builds following the record-breaking 2023 to 2024 Celebration Tour",
+        "signal": "Official UK Charts 2026 confirmed new album release"
+    },
+    {
+        "name": "Niall Horan",
+        "genre": "Music",
+        "why": "Featured on Drive Safe, a track on Myles Smith's debut album My Mess, My Heart, My Life released June 19 2026, while his own new studio album is confirmed on the Official UK Charts 2026 release calendar",
+        "signal": "Featured on Myles Smith debut album June 19 2026, own album confirmed for 2026"
+    },
+    {
+        "name": "Lubaina Himid",
+        "genre": "Art",
+        "why": "Represents Great Britain at the Venice Biennale 2026 British Pavilion with a solo exhibition titled Predicting History: Testing Translation, running through November 22, while simultaneously presenting the Zanzibar immersive installation at Lisson Gallery London from June 4 through the summer",
+        "signal": "Venice Biennale 2026 British Pavilion solo, Lisson Gallery Zanzibar June to summer 2026"
+    },
+    {
+        "name": "Delaine Le Bas",
+        "genre": "Art",
+        "why": "Her solo exhibition at Maureen Paley Gallery in London is among the standout shows of the June 2026 gallery season, spotlighting her interdisciplinary practice across sculpture, textiles, installation, costume and live performance",
+        "signal": "Maureen Paley Gallery London solo exhibition June 2026"
+    },
+    {
+        "name": "Barbara Hepworth",
+        "genre": "Art",
+        "why": "A major retrospective focused on her colour works from the 1940s to 1960s opened at the Courtauld Gallery London on June 12 2026 and runs to September 6, the first institutional survey dedicated to this dimension of her practice and one of the most discussed shows of the London summer season",
+        "signal": "Courtauld Gallery London retrospective, June 12 to September 6 2026"
+    },
+    {
+        "name": "Michael Jackson",
+        "genre": "Culture",
+        "why": "The biopic Michael has surpassed 900 million dollars globally to become the highest-grossing music biopic of all time in June 2026, with his streaming catalog doubling overnight and Billie Jean re-entering the Billboard Hot 100 top 20",
+        "signal": "Michael biopic, highest-grossing music biopic of all time, streaming catalog doubled June 2026"
+    },
+    {
+        "name": "Jaafar Jackson",
+        "genre": "Culture",
+        "why": "Made his feature film debut playing his uncle Michael Jackson in the biopic Michael, which became the highest-grossing music biopic in cinema history in 2026 and is projecting to cross one billion dollars worldwide, making him one of the most-searched new faces in Hollywood",
+        "signal": "Feature film debut in Michael biopic, highest-grossing music biopic ever 2026"
+    },
+    {
+        "name": "Antoine Fuqua",
+        "genre": "Culture",
+        "why": "Directed Michael, the Michael Jackson biopic that surpassed Bohemian Rhapsody to become the highest-grossing music biopic in cinema history, projecting to cross one billion dollars worldwide and cementing his reputation as the most bankable director of music-centred epic films",
+        "signal": "Directed Michael, highest-grossing music biopic ever, projecting one billion worldwide"
+    }
+]
+
+with open(RADAR, "w") as f:
+    json.dump(artists, f, indent=2, ensure_ascii=False)
+
+data = json.load(open(RADAR))
+print(f"Wrote {len(data)} artists to radar-cache.json")
+for a in data:
+    print(f"  [{a['genre']:8s}]  {a['name']}")
+
+print()
+print("Verifying: no em-dashes or en-dashes in text...")
+issues = []
+for a in data:
+    for field in ("why", "signal", "name"):
+        if "—" in a.get(field, "") or "–" in a.get(field, ""):
+            issues.append(f"  DASH FOUND in {a['name']} ({field})")
+if issues:
+    for i in issues:
+        print(i)
+else:
+    print("  OK: no em-dashes or en-dashes found")
+
+PYEOF
+
+echo "=== Radar cache update complete ==="

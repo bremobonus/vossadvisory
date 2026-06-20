@@ -1,0 +1,133 @@
+#!/bin/bash
+# ArtOnly Radar Cache Refresh
+# Generated: 2026-06-20
+# Purpose: Write 15 trending artists to radar-cache.json for the /radar page
+# Run via GitHub Actions (deploy-artonly.yml) or:
+# sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-20e.sh
+
+set -e
+echo "=== ArtOnly Radar Cache Refresh: 2026-06-20 (v2) ==="
+echo "$(date)"
+
+python3 << 'PYEOF'
+import json
+
+RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
+
+artists = [
+    {
+        "name": "Vince Staples",
+        "genre": "Music",
+        "why": "Cry Baby, released June 5 2026, received a critical score of 82 from 14 reviews and was praised by NME as an authentic punk outpouring set against gripping rock-rap sonics, marking his most radical sonic departure yet",
+        "signal": "Cry Baby album June 5 2026, critical score 82, NME four stars, Consequence review"
+    },
+    {
+        "name": "The Strokes",
+        "genre": "Music",
+        "why": "Reality Awaits, their first studio album since 2020, is scheduled for release June 26 2026, making them one of the most anticipated rock returns on the entire 2026 release calendar",
+        "signal": "Reality Awaits album June 26 2026"
+    },
+    {
+        "name": "Myles Smith",
+        "genre": "Music",
+        "why": "Debut studio album My Mess, My Heart, My Life released June 19 2026 via Virgin Music, featuring the singles Stargazing and Drive Safe with Niall Horan, supported by a full English and Irish arena tour announced for November 2026",
+        "signal": "Debut album June 19 2026, arena tour November 2026, ABC News review"
+    },
+    {
+        "name": "Lola Young",
+        "genre": "Music",
+        "why": "Headlined the first night of Rolling Stone's SXSW Future of Music showcase at ACL Live in Austin on March 12 2026, selected as one of the breakout voices of 2026 after her single Messy accumulated tens of millions of streams globally",
+        "signal": "Rolling Stone SXSW Future of Music headliner March 12 2026, Billboard feature"
+    },
+    {
+        "name": "BigXthaPlug",
+        "genre": "Music",
+        "why": "Headlined the final night of Rolling Stone's SXSW Future of Music showcase at ACL Live on March 14 2026, recognised by Rolling Stone as one of the Texas-size ambitions shaping hip-hop in 2026",
+        "signal": "Rolling Stone SXSW Future of Music headliner March 14 2026, Rolling Stone cover feature"
+    },
+    {
+        "name": "Fuerza Regida",
+        "genre": "Music",
+        "why": "Headlined Rolling Stone's SXSW Future of Music showcase on March 13 2026, bringing stadium-scale energy to Austin and cementing their position as the leading Musica Mexicana act crossing into the US mainstream",
+        "signal": "Rolling Stone SXSW Future of Music headliner March 13 2026, LaMezcla Power Statement feature"
+    },
+    {
+        "name": "Ella Langley",
+        "genre": "Music",
+        "why": "Choosin' Texas debuted at No. 2 on the Billboard Hot 100 in June 2026, while her duet I Can't Love You Anymore with Morgan Wallen broke the record as the highest-charting country collaboration debut in Hot 100 chart history",
+        "signal": "Choosin' Texas No. 2 Billboard Hot 100 June 2026, record-breaking country duet"
+    },
+    {
+        "name": "Morgan Wallen",
+        "genre": "Music",
+        "why": "His duet I Can't Love You Anymore with Ella Langley debuted in the top 10 of the Billboard Hot 100 in June 2026, breaking the record as the highest-charting debut by a country collaboration in chart history, surpassing Kenny Rogers and Dolly Parton",
+        "signal": "Billboard Hot 100 top 10 June 2026, highest-charting country collaboration debut in chart history"
+    },
+    {
+        "name": "Kelsey Lu",
+        "genre": "Music",
+        "why": "New album So Help Me God earned a Pitchfork score of 82 in June 2026, placing it among the most critically acclaimed releases of the month and establishing her as a singular voice at the intersection of avant-soul and experimental orchestration",
+        "signal": "So Help Me God Pitchfork score 82 June 2026"
+    },
+    {
+        "name": "Lubaina Himid",
+        "genre": "Art",
+        "why": "Represents Great Britain at the Venice Biennale 2026 British Pavilion with solo exhibition Predicting History Testing Translation running through November 22, while concurrently presenting the Zanzibar installation at Lisson Gallery London from June 4 through the summer",
+        "signal": "Venice Biennale 2026 British Pavilion solo, Lisson Gallery Zanzibar June 2026"
+    },
+    {
+        "name": "Barbara Hepworth",
+        "genre": "Art",
+        "why": "A major retrospective dedicated to her colour works from the 1940s to 1960s opened at the Courtauld Gallery London on June 12 2026 and runs to September 6, the first institutional survey of this dimension of her practice and one of the most discussed shows of the London summer",
+        "signal": "Courtauld Gallery London retrospective June 12 to September 6 2026"
+    },
+    {
+        "name": "Delaine Le Bas",
+        "genre": "Art",
+        "why": "Her solo exhibition at Maureen Paley Gallery in London is among the standout shows of the June 2026 gallery season, presenting her interdisciplinary practice spanning sculpture, textiles, installation, costume and live performance",
+        "signal": "Maureen Paley Gallery London solo exhibition June 2026"
+    },
+    {
+        "name": "Michael Jackson",
+        "genre": "Culture",
+        "why": "The biopic Michael surpassed 900 million dollars globally in June 2026 to become the highest-grossing music biopic in cinema history, with his streaming catalog doubling overnight and Billie Jean re-entering the Billboard Hot 100 top 20",
+        "signal": "Michael biopic surpasses 900 million globally, highest-grossing music biopic ever, streaming catalog doubled"
+    },
+    {
+        "name": "Jaafar Jackson",
+        "genre": "Culture",
+        "why": "Made his feature film debut playing his uncle Michael Jackson in the biopic Michael, which became the highest-grossing music biopic in cinema history in 2026 and is projecting to cross one billion dollars worldwide, making him one of the most-searched new faces in Hollywood",
+        "signal": "Feature film debut in Michael biopic, projecting one billion worldwide, most-searched new face in Hollywood"
+    },
+    {
+        "name": "Antoine Fuqua",
+        "genre": "Culture",
+        "why": "Directed Michael, the Michael Jackson biopic that surpassed Bohemian Rhapsody to become the highest-grossing music biopic in cinema history in 2026, with the film projecting to cross one billion dollars worldwide and cementing him as the leading director of music-centred epic films",
+        "signal": "Directed Michael, highest-grossing music biopic ever 2026, projecting one billion worldwide"
+    }
+]
+
+with open(RADAR, "w") as f:
+    json.dump(artists, f, indent=2, ensure_ascii=False)
+
+data = json.load(open(RADAR))
+print(f"Wrote {len(data)} artists to radar-cache.json")
+for a in data:
+    print(f"  [{a['genre']:8s}]  {a['name']}")
+
+print()
+print("Verifying: no em-dashes or en-dashes in text...")
+issues = []
+for a in data:
+    for field in ("why", "signal", "name"):
+        if "—" in a.get(field, "") or "–" in a.get(field, ""):
+            issues.append(f"  DASH FOUND in {a['name']} ({field})")
+if issues:
+    for i in issues:
+        print(i)
+else:
+    print("  OK: no em-dashes or en-dashes found")
+
+PYEOF
+
+echo "=== Radar cache update complete ==="

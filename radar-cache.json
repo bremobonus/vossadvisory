@@ -1,92 +1,92 @@
 [
   {
+    "name": "Vince Staples",
+    "genre": "Music",
+    "why": "Cry Baby, released June 5 2026, received a critical score of 82 from 14 reviews and was praised by NME as an authentic punk outpouring set against gripping rock-rap sonics, marking his most radical sonic departure yet",
+    "signal": "Cry Baby album June 5 2026, critical score 82, NME four stars, Consequence review"
+  },
+  {
+    "name": "The Strokes",
+    "genre": "Music",
+    "why": "Reality Awaits, their first studio album since 2020, is scheduled for release June 26 2026, making them one of the most anticipated rock returns on the entire 2026 release calendar",
+    "signal": "Reality Awaits album June 26 2026"
+  },
+  {
+    "name": "Myles Smith",
+    "genre": "Music",
+    "why": "Debut studio album My Mess, My Heart, My Life released June 19 2026 via Virgin Music, featuring the singles Stargazing and Drive Safe with Niall Horan, supported by a full English and Irish arena tour announced for November 2026",
+    "signal": "Debut album June 19 2026, arena tour November 2026, ABC News review"
+  },
+  {
+    "name": "Lola Young",
+    "genre": "Music",
+    "why": "Headlined the first night of Rolling Stone's SXSW Future of Music showcase at ACL Live in Austin on March 12 2026, selected as one of the breakout voices of 2026 after her single Messy accumulated tens of millions of streams globally",
+    "signal": "Rolling Stone SXSW Future of Music headliner March 12 2026, Billboard feature"
+  },
+  {
+    "name": "BigXthaPlug",
+    "genre": "Music",
+    "why": "Headlined the final night of Rolling Stone's SXSW Future of Music showcase at ACL Live on March 14 2026, recognised by Rolling Stone as one of the Texas-size ambitions shaping hip-hop in 2026",
+    "signal": "Rolling Stone SXSW Future of Music headliner March 14 2026, Rolling Stone cover feature"
+  },
+  {
+    "name": "Fuerza Regida",
+    "genre": "Music",
+    "why": "Headlined Rolling Stone's SXSW Future of Music showcase on March 13 2026, bringing stadium-scale energy to Austin and cementing their position as the leading Musica Mexicana act crossing into the US mainstream",
+    "signal": "Rolling Stone SXSW Future of Music headliner March 13 2026, LaMezcla Power Statement feature"
+  },
+  {
+    "name": "Ella Langley",
+    "genre": "Music",
+    "why": "Choosin' Texas debuted at No. 2 on the Billboard Hot 100 in June 2026, while her duet I Can't Love You Anymore with Morgan Wallen broke the record as the highest-charting country collaboration debut in Hot 100 chart history",
+    "signal": "Choosin' Texas No. 2 Billboard Hot 100 June 2026, record-breaking country duet"
+  },
+  {
     "name": "Morgan Wallen",
     "genre": "Music",
-    "why": "I Can't Love You Anymore, his duet with Ella Langley, debuted in the top 10 of the Billboard Hot 100 in June 2026, breaking the record as the highest-charting debut by a country collaboration in the chart's history, surpassing Kenny Rogers and Dolly Parton's Islands in the Stream",
-    "signal": "Billboard Hot 100 top 10, highest-charting country collaboration debut in chart history"
+    "why": "His duet I Can't Love You Anymore with Ella Langley debuted in the top 10 of the Billboard Hot 100 in June 2026, breaking the record as the highest-charting debut by a country collaboration in chart history, surpassing Kenny Rogers and Dolly Parton",
+    "signal": "Billboard Hot 100 top 10 June 2026, highest-charting country collaboration debut in chart history"
   },
   {
-    "name": "LISA",
+    "name": "Kelsey Lu",
     "genre": "Music",
-    "why": "Performed Goals alongside Rema and Anitta at the FIFA World Cup 2026 USA opening ceremony at LA Stadium on June 12 before a global broadcast audience, with the song charting in 15 countries simultaneously",
-    "signal": "FIFA World Cup 2026 USA opening ceremony performer June 12, Goals charted 15 countries"
-  },
-  {
-    "name": "SZA",
-    "genre": "Music",
-    "why": "Made a surprise appearance at Justin Bieber's headlining Coachella 2026 set in April, which accumulated 140 million online views globally, and enters summer 2026 as one of the most-streamed artists in the world",
-    "signal": "Coachella 2026 surprise appearance, 140 million online views"
-  },
-  {
-    "name": "Barry Manilow",
-    "genre": "Music",
-    "why": "Released What a Time on June 5 2026, a studio album of all-original songs marking his first new material in years, generating renewed streaming activity and chart attention across the US and UK",
-    "signal": "New album What a Time released June 5 2026"
-  },
-  {
-    "name": "J. Cole",
-    "genre": "Music",
-    "why": "His catalog and new releases drove chart dominance in February 2026 alongside Bad Bunny, per NPR reporting, logging one of the biggest streaming runs of his career in the first quarter of 2026",
-    "signal": "NPR: ruled pop charts February 2026"
-  },
-  {
-    "name": "Travis Scott",
-    "genre": "Music",
-    "why": "Co-produced the standout track Rosary on Don Toliver's OCTANE, the Billboard 200 No. 1 album of January 2026 with 162,000 first-week units, while leading Cactus Jack as one of the most influential creative ecosystems in hip-hop",
-    "signal": "Co-produced OCTANE, Billboard 200 No. 1 album January 2026, 162,000 units"
-  },
-  {
-    "name": "Kendrick Lamar",
-    "genre": "Music",
-    "why": "GNX, released November 2024, remained among the most-streamed hip-hop albums globally heading into summer 2026, with Not Like Us continuing to rank among the top hip-hop streams worldwide as anticipation builds for his next move",
-    "signal": "GNX global streaming dominance through mid-2026, Not Like Us sustained chart presence"
-  },
-  {
-    "name": "Madonna",
-    "genre": "Music",
-    "why": "Listed on the Official UK Charts 2026 release calendar for a new studio album, placing her among the most anticipated major returns of the year as renewed interest in her catalog builds following the record-breaking 2023 to 2024 Celebration Tour",
-    "signal": "Official UK Charts 2026 confirmed new album release"
-  },
-  {
-    "name": "Niall Horan",
-    "genre": "Music",
-    "why": "Featured on Drive Safe, a track on Myles Smith's debut album My Mess, My Heart, My Life released June 19 2026, while his own new studio album is confirmed on the Official UK Charts 2026 release calendar",
-    "signal": "Featured on Myles Smith debut album June 19 2026, own album confirmed for 2026"
+    "why": "New album So Help Me God earned a Pitchfork score of 82 in June 2026, placing it among the most critically acclaimed releases of the month and establishing her as a singular voice at the intersection of avant-soul and experimental orchestration",
+    "signal": "So Help Me God Pitchfork score 82 June 2026"
   },
   {
     "name": "Lubaina Himid",
     "genre": "Art",
-    "why": "Represents Great Britain at the Venice Biennale 2026 British Pavilion with a solo exhibition titled Predicting History: Testing Translation, running through November 22, while simultaneously presenting the Zanzibar immersive installation at Lisson Gallery London from June 4 through the summer",
-    "signal": "Venice Biennale 2026 British Pavilion solo, Lisson Gallery Zanzibar June to summer 2026"
-  },
-  {
-    "name": "Delaine Le Bas",
-    "genre": "Art",
-    "why": "Her solo exhibition at Maureen Paley Gallery in London is among the standout shows of the June 2026 gallery season, spotlighting her interdisciplinary practice across sculpture, textiles, installation, costume and live performance",
-    "signal": "Maureen Paley Gallery London solo exhibition June 2026"
+    "why": "Represents Great Britain at the Venice Biennale 2026 British Pavilion with solo exhibition Predicting History Testing Translation running through November 22, while concurrently presenting the Zanzibar installation at Lisson Gallery London from June 4 through the summer",
+    "signal": "Venice Biennale 2026 British Pavilion solo, Lisson Gallery Zanzibar June 2026"
   },
   {
     "name": "Barbara Hepworth",
     "genre": "Art",
-    "why": "A major retrospective focused on her colour works from the 1940s to 1960s opened at the Courtauld Gallery London on June 12 2026 and runs to September 6, the first institutional survey dedicated to this dimension of her practice and one of the most discussed shows of the London summer season",
-    "signal": "Courtauld Gallery London retrospective, June 12 to September 6 2026"
+    "why": "A major retrospective dedicated to her colour works from the 1940s to 1960s opened at the Courtauld Gallery London on June 12 2026 and runs to September 6, the first institutional survey of this dimension of her practice and one of the most discussed shows of the London summer",
+    "signal": "Courtauld Gallery London retrospective June 12 to September 6 2026"
+  },
+  {
+    "name": "Delaine Le Bas",
+    "genre": "Art",
+    "why": "Her solo exhibition at Maureen Paley Gallery in London is among the standout shows of the June 2026 gallery season, presenting her interdisciplinary practice spanning sculpture, textiles, installation, costume and live performance",
+    "signal": "Maureen Paley Gallery London solo exhibition June 2026"
   },
   {
     "name": "Michael Jackson",
     "genre": "Culture",
-    "why": "The biopic Michael has surpassed 900 million dollars globally to become the highest-grossing music biopic of all time in June 2026, with his streaming catalog doubling overnight and Billie Jean re-entering the Billboard Hot 100 top 20",
-    "signal": "Michael biopic, highest-grossing music biopic of all time, streaming catalog doubled June 2026"
+    "why": "The biopic Michael surpassed 900 million dollars globally in June 2026 to become the highest-grossing music biopic in cinema history, with his streaming catalog doubling overnight and Billie Jean re-entering the Billboard Hot 100 top 20",
+    "signal": "Michael biopic surpasses 900 million globally, highest-grossing music biopic ever, streaming catalog doubled"
   },
   {
     "name": "Jaafar Jackson",
     "genre": "Culture",
     "why": "Made his feature film debut playing his uncle Michael Jackson in the biopic Michael, which became the highest-grossing music biopic in cinema history in 2026 and is projecting to cross one billion dollars worldwide, making him one of the most-searched new faces in Hollywood",
-    "signal": "Feature film debut in Michael biopic, highest-grossing music biopic ever 2026"
+    "signal": "Feature film debut in Michael biopic, projecting one billion worldwide, most-searched new face in Hollywood"
   },
   {
     "name": "Antoine Fuqua",
     "genre": "Culture",
-    "why": "Directed Michael, the Michael Jackson biopic that surpassed Bohemian Rhapsody to become the highest-grossing music biopic in cinema history, projecting to cross one billion dollars worldwide and cementing his reputation as the most bankable director of music-centred epic films",
-    "signal": "Directed Michael, highest-grossing music biopic ever, projecting one billion worldwide"
+    "why": "Directed Michael, the Michael Jackson biopic that surpassed Bohemian Rhapsody to become the highest-grossing music biopic in cinema history in 2026, with the film projecting to cross one billion dollars worldwide and cementing him as the leading director of music-centred epic films",
+    "signal": "Directed Michael, highest-grossing music biopic ever 2026, projecting one billion worldwide"
   }
 ]

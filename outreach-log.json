@@ -137,7 +137,9 @@
       "contact_type": "label_4ad_media_enquiries",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r5576446822189950609",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "kurt-vile-philadelphias-been-good-to-me",
@@ -146,7 +148,9 @@
       "contact_type": "management_another_management_company",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-2754991000569296163",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "lowertown-ugly-duckling-union",
@@ -155,7 +159,9 @@
       "contact_type": "management_jackie_resnik",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-6880020365084578962",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "vince-staples-cry-baby",
@@ -164,7 +170,9 @@
       "contact_type": "label_loma_vista_press",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r7492716559331230289",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "jalen-ngonda-doctrine-of-love",
@@ -173,7 +181,9 @@
       "contact_type": "label_daptone_records",
       "drafted_at": "2026-06-10T00:00:00Z",
       "gmail_draft_id": "r-544253373339923642",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "death-cab-for-cutie-i-built-you-a-tower",
@@ -182,7 +192,9 @@
       "contact_type": "label_anti_press",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r6350348406294257644",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "iceage-for-love-of-grace-and-the-hereafter",
@@ -191,7 +203,9 @@
       "contact_type": "label_mexican_summer",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r785543830671001474",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "bedouine-neon-summer-skin",
@@ -200,7 +214,9 @@
       "contact_type": "booking_arrival_artists",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r4757527090424140430",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "navy-blue-sir-render",
@@ -209,7 +225,9 @@
       "contact_type": "management_something_in_common",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r-4160789804627161922",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "feeble-little-horse-bitknot",
@@ -218,7 +236,9 @@
       "contact_type": "press_grandstand_hq",
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r7776147318405707727",
-      "status": "drafted"
+      "status": "drafted",
+      "follow_up_sent": true,
+      "follow_up_date": "2026-06-20"
     },
     {
       "slug": "lionel-richie-birthday-2026",
@@ -646,7 +666,7 @@
     },
     {
       "slug": "nick-leon",
-      "artist": "Nick León",
+      "artist": "Nick Le\u00f3n",
       "email": null,
       "contact_type": "none_found",
       "drafted_at": "2026-06-20T00:00:00Z",

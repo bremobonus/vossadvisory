@@ -1,0 +1,133 @@
+#!/bin/bash
+# ArtOnly Radar Cache Refresh
+# Generated: 2026-06-20
+# Purpose: Write 15 trending artists to radar-cache.json for the /radar page
+# Run via GitHub Actions (deploy-artonly.yml) or:
+# sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-20e.sh
+
+set -e
+echo "=== ArtOnly Radar Cache Refresh: 2026-06-20 (v2) ==="
+echo "$(date)"
+
+python3 << 'PYEOF'
+import json
+
+RADAR = "/home/dh_yadmw3/artonly.io/data/radar-cache.json"
+
+artists = [
+    {
+        "name": "Kim Petras",
+        "genre": "Music",
+        "why": "Debut indie album Detour released May 29 via Amigo and BunHead Records earned a Pitchfork score of 76 and a Rolling Stone score of 70, her first release since departing Republic Records and a shift into alt-pop and electroclash territory with collaborators Margo XS, Frost Children, and Porches",
+        "signal": "Detour released May 29 2026, Pitchfork 76, Rolling Stone 70"
+    },
+    {
+        "name": "bleood",
+        "genre": "Music",
+        "why": "Surprise mixtape PROTAGONIST made him the central figure of the underground rage rap renaissance in 2026 and landed him on The FADER's list of the 32 Coolest Artists of 2026",
+        "signal": "PROTAGONIST mixtape, FADER 32 Coolest Artists of 2026"
+    },
+    {
+        "name": "Devon Again",
+        "genre": "Music",
+        "why": "Named on The FADER's 32 Coolest Artists of 2026 and announced as opening act for Olivia Rodrigo's The Unraveled Tour, placing her alongside one of pop's biggest names this summer",
+        "signal": "Olivia Rodrigo Unraveled Tour opening act, FADER 32 Coolest Artists of 2026"
+    },
+    {
+        "name": "Slayyyter",
+        "genre": "Music",
+        "why": "Third studio album Worst Girl in America released March 27 via Columbia Records, followed by a world tour with North American dates in September and October 2026 and Canadian shows in Vancouver, Montreal, and Toronto",
+        "signal": "Worst Girl in America, Columbia Records, released March 27 2026, world tour fall 2026"
+    },
+    {
+        "name": "Don Toliver",
+        "genre": "Music",
+        "why": "His album OCTANE debuted at No. 1 on the Billboard 200 in January 2026 with 162,000 first-week units and cemented his position as one of hip-hop's most dominant creative forces in the first half of 2026",
+        "signal": "OCTANE Billboard 200 No. 1, 162,000 first-week units, January 2026"
+    },
+    {
+        "name": "Myles Smith",
+        "genre": "Music",
+        "why": "Debut album My Mess, My Heart, My Life released June 19 2026 with the standout track Drive Safe featuring Niall Horan, generating immediate streaming momentum in its opening days and marking one of the freshest arrivals of the summer",
+        "signal": "Debut album My Mess, My Heart, My Life released June 19 2026"
+    },
+    {
+        "name": "Rema",
+        "genre": "Music",
+        "why": "Co-performed Goals alongside LISA and Anitta at the FIFA World Cup 2026 USA opening ceremony at LA Stadium on June 12 before a global broadcast audience, with the track charting in 15 countries simultaneously",
+        "signal": "FIFA World Cup 2026 USA opening ceremony performer June 12, Goals charted 15 countries"
+    },
+    {
+        "name": "Anitta",
+        "genre": "Music",
+        "why": "Co-performed Goals alongside LISA and Rema at the FIFA World Cup 2026 USA opening ceremony on June 12, marking her most-watched international performance and driving the song into charts across 15 countries at once",
+        "signal": "FIFA World Cup 2026 USA opening ceremony performer June 12, Goals charted 15 countries"
+    },
+    {
+        "name": "ninajirachi",
+        "genre": "Music",
+        "why": "Australian electronic producer named among The FADER's 32 Coolest Artists of 2026, building a following at the intersection of hyperpop, club music, and experimental pop in a year when her output has accelerated dramatically",
+        "signal": "FADER 32 Coolest Artists of 2026"
+    },
+    {
+        "name": "Daniel Arsham",
+        "genre": "Art",
+        "why": "Time Fold opened at Perrotin Gallery during London Gallery Weekend June 5 to 7 2026, one of the most-attended events on the London art calendar with over 120 galleries participating, consolidating his position as one of the most commercially powerful contemporary artists in the world",
+        "signal": "Time Fold at Perrotin Gallery, London Gallery Weekend June 5 to 7 2026"
+    },
+    {
+        "name": "Avery Singer",
+        "genre": "Art",
+        "why": "War_overlays is the standout show of Zurich Gallery Weekend 2026, integrating AI-assisted tools into her digitally mediated painting process and drawing sustained international critical attention to her expanding practice",
+        "signal": "War_overlays at Zurich Gallery Weekend 2026"
+    },
+    {
+        "name": "Shuang Li",
+        "genre": "Art",
+        "why": "Solo exhibition at Kunsthalle Basel in June 2026 is one of the most prominent institutional bookings for a Chinese artist at a major European kunsthalle this year, bringing her conceptual practice to a broader international audience",
+        "signal": "Kunsthalle Basel solo show June 2026"
+    },
+    {
+        "name": "Anne Hathaway",
+        "genre": "Culture",
+        "why": "Starring in The Devil Wears Prada 2, which opened May 1 2026 alongside Meryl Streep, Emily Blunt, and new cast members including Simone Ashley and Lucy Liu, the film has become one of the top-grossing sequels of the year and is reshaping professional wardrobe trends across fashion media globally",
+        "signal": "The Devil Wears Prada 2 released May 1 2026, one of the top-grossing sequels of the year"
+    },
+    {
+        "name": "Simone Ashley",
+        "genre": "Culture",
+        "why": "Her high-fashion presence in The Devil Wears Prada 2, which opened May 1 2026 alongside Anne Hathaway and Meryl Streep, has driven major editorial coverage and search interest across fashion and entertainment media in June 2026",
+        "signal": "The Devil Wears Prada 2 released May 1 2026"
+    },
+    {
+        "name": "Jaden Smith",
+        "genre": "Culture",
+        "why": "Conceived the Christian Louboutin Autumn Winter 2026 campaign as creative director, expanding his profile into luxury fashion brand collaboration and drawing renewed attention to his multidisciplinary creative practice",
+        "signal": "Christian Louboutin Autumn Winter 2026 campaign creative director"
+    }
+]
+
+with open(RADAR, "w") as f:
+    json.dump(artists, f, indent=2, ensure_ascii=False)
+
+data = json.load(open(RADAR))
+print(f"Wrote {len(data)} artists to radar-cache.json")
+for a in data:
+    print(f"  [{a['genre']:8s}]  {a['name']}")
+
+print()
+print("Verifying: no em-dashes or en-dashes in text...")
+issues = []
+for a in data:
+    for field in ("why", "signal", "name"):
+        if "—" in a.get(field, "") or "–" in a.get(field, ""):
+            issues.append(f"  DASH FOUND in {a['name']} ({field})")
+if issues:
+    for i in issues:
+        print(i)
+else:
+    print("  OK: no em-dashes or en-dashes found")
+
+PYEOF
+
+echo "=== Radar cache update complete ==="

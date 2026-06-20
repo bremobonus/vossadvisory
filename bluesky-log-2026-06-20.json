@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-20",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout). Same block as June 12 and June 14. artonly.io is returning 200 OK today.",
+  "account": "artonly.bsky.social",
+  "account_status": "active (credentials on server, inaccessible)",
+  "articles_identified": [
+    {
+      "title": "Alex Zhang Hungtai's Double Album Orion and Mother Is the Year's Most Searching Work",
+      "url": "https://artonly.io/post/alex-zhang-hungtai-orion-mother",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "og_image": "https://artonly.io/assets/images/artists/alex-zhang-hungtai-orion-mother.jpg",
+      "post_text": "Alex Zhang Hungtai's Double Album Orion and Mother Is the Year's Most Searching Work #NewMusic #IndieMusic",
+      "priority": 1
+    },
+    {
+      "title": "Future: The Record That Broke Spotify and the Mixtape That Ignored Everything",
+      "url": "https://artonly.io/post/future",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "og_image": "https://artonly.io/assets/images/artists/future.jpg",
+      "post_text": "Future: The Record That Broke Spotify and the Mixtape That Ignored Everything #NewMusic #IndieMusic",
+      "priority": 2
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Email drafted to amosleblanc@gmail.com with post drafts. Log committed to vossadvisory repo.",
+  "resolution_needed": "SSH access is permanently blocked in this cloud environment. To fix: (1) provide bluesky-creds.json app_password via a different channel, OR (2) configure a webhook/API endpoint on artonly.io server that this environment can reach via HTTPS to trigger posting."
+}

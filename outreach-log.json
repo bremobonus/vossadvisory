@@ -666,12 +666,57 @@
     },
     {
       "slug": "nick-leon",
-      "artist": "Nick Le\u00f3n",
+      "artist": "Nick León",
       "email": null,
       "contact_type": "none_found",
       "drafted_at": "2026-06-20T00:00:00Z",
       "gmail_draft_id": null,
       "status": "skipped_no_contact"
+    },
+    {
+      "slug": "anderson-paak-kpops",
+      "artist": "Anderson .Paak",
+      "email": "info@fullstopmanagement.com",
+      "contact_type": "management_full_stop",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": "r-5029773779317043915",
+      "status": "drafted"
+    },
+    {
+      "slug": "kelsey-lu-so-help-me-god",
+      "artist": "Kelsey Lu",
+      "email": "info@dirtyhit.co.uk",
+      "contact_type": "label_dirty_hit_outreach_batch",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": "r-8150024456438420378",
+      "status": "drafted"
+    },
+    {
+      "slug": "ear-rumspringa",
+      "artist": "ear",
+      "email": "press@a24films.com",
+      "contact_type": "label_a24_music",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": "r1818047218016765071",
+      "status": "drafted"
+    },
+    {
+      "slug": "waxahatchee",
+      "artist": "Waxahatchee",
+      "email": "rennie@anothermgmtco.com",
+      "contact_type": "management_another_management_company",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": "r-804951612165201542",
+      "status": "drafted"
+    },
+    {
+      "slug": "wet-leg",
+      "artist": "Wet Leg",
+      "email": "aoife@dominorecordco.com",
+      "contact_type": "label_domino_press",
+      "drafted_at": "2026-06-20T00:00:00Z",
+      "gmail_draft_id": "r-1057469429021123721",
+      "status": "drafted"
     }
   ]
 }

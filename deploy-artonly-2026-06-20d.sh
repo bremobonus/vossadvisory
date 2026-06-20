@@ -1,5 +1,5 @@
 #!/bin/bash
-# ArtOnly Fix D: author field, instagram_handle, featured, youtube embed
+# ArtOnly Fix D: author, instagram, featured, youtube embed
 # Generated: 2026-06-20
 # Run via GitHub Actions (deploy-artonly.yml) or:
 # sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-20d.sh
@@ -7,7 +7,7 @@
 set -e
 cd /home/dh_yadmw3
 echo "=== ArtOnly: Future fix D: $(date) ==="
-echo "--- Re-publishing Future with author, instagram_handle, featured, youtube embed ---"
+echo "--- Re-publishing Future with author, instagram, featured, youtube embed ---"
 
 python3 << 'PYEOF'
 import urllib.request, json, sys, re
@@ -85,7 +85,7 @@ POST = {
         "date": "2026-06-20",
         "category": "music",
         "author": "Allastair Voss",
-        "instagram_handle": "@future",
+        "instagram": "@future",
         "featured": False,
         "image": "/assets/images/artists/future.jpg",
         "image_alt": "Future press photo",

@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-21",
+  "run_time": "10:30 ET",
+  "status": "NOT_CONFIGURED",
+  "reason": "bluesky-creds.json missing from DreamHost at ~/artonly.io/agent/bluesky-creds.json. Account artonly.bsky.social exists (DID: did:plc:4666lyeouf2kdo3s6bvkhtmn) but no app_password on file.",
+  "account": "artonly.bsky.social",
+  "account_status": "active, no app password configured",
+  "ssh_status": "working via GitHub Actions (port 22 blocked from cloud env)",
+  "articles_identified": [
+    {
+      "title": "The Mountain Is the Gorillaz Album That Finally Earns Its Ambition",
+      "url": "https://artonly.io/post/gorillaz-the-mountain",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "Lana Del Rey: Celebrating 41 Years of Cinematic Pop",
+      "url": "https://artonly.io/post/lana-del-rey-birthday-2026",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 2
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Draft email created to amosleblanc@gmail.com. bluesky-poster script deployed to main branch (deploy-artonly-bluesky-2026-06-21.sh). GitHub Actions confirmed SSH works but creds missing.",
+  "resolution_needed": "Create ~/artonly.io/agent/bluesky-creds.json on DreamHost with handle and app_password from bsky.app Settings > Privacy > App Passwords.",
+  "previous_blocks": ["2026-06-12", "2026-06-14"]
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-21",
+  "agent_run": "2026-06-21T00:00:00Z",
+  "ssh_status": "unavailable (sshpass not installed in cloud environment, ssh binary also missing)",
+  "reddit_api_creds_checked": false,
+  "posts_drafted": 1,
+  "posts_attempted": 0,
+  "queue": [
+    {
+      "slug": "gorillaz-the-mountain",
+      "title": "Albarn and Hewlett both lost their fathers in 2024. The Mountain has posthumous recordings from Mark E. Smith and Tony Allen.",
+      "subreddit": "r/indieheads",
+      "url": "https://artonly.io/post/gorillaz-the-mountain",
+      "date": "2026-06-21",
+      "status": "queued_manual",
+      "post_title": "Albarn and Hewlett both lost their fathers in 2024. The Mountain has posthumous recordings from Mark E. Smith and Tony Allen.",
+      "post_body": "The Mountain features posthumous recordings from both Mark E. Smith and Tony Allen. That choice alone signals what kind of record this is. Two of the most singular figures in post-punk and Afrobeat, both gone, and Albarn had worked with both of them. This was not a guest list assembled for prestige.\n\nDamon Albarn and Jamie Hewlett both lost their fathers in 2024. The album was recorded across ten cities in five languages in the year that followed. The scale could read as the band's usual sprawl, but there is a framework for it: the Gorillaz fiction, the animated band that keeps the real people at a remove, gave them enough distance to process something they could not have approached directly.\n\nThere is a piece on ArtOnly that works through this properly and makes the case that grief is structural here, not decorative, and that the commercial success and the formal ambition are not in conflict the way they usually are.\n\nhttps://artonly.io/post/gorillaz-the-mountain"
+    }
+  ],
+  "today_articles": [
+    "gorillaz-the-mountain",
+    "billie-eilish-hit-me-hard-and-soft",
+    "lana-del-rey-birthday-2026",
+    "micah-thomas-lucid",
+    "popcaan-unruly-boss",
+    "why-solange-changed-rnb-forever"
+  ],
+  "notes": "SSH and Reddit API unavailable from cloud environment. Post drafted for manual submission to r/indieheads. Gorillaz chosen for strongest editorial narrative (grief, posthumous recordings, global production). Five other articles available today not posted."
+}

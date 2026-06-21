@@ -1,0 +1,52 @@
+[
+  {
+    "platform": "feedly",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "empty_response - feed not yet indexed in Feedly Cloud API"
+  },
+  {
+    "platform": "google_sitemap_main",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "HTTP 404 - Google deprecated /ping sitemap endpoint; use Search Console"
+  },
+  {
+    "platform": "google_sitemap_news",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "HTTP 404 - Google deprecated /ping sitemap endpoint"
+  },
+  {
+    "platform": "bing_sitemap",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "HTTP 410 - Bing deprecated sitemap ping; covered by IndexNow"
+  },
+  {
+    "platform": "yandex_sitemap",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "HTTP 200 - success"
+  },
+  {
+    "platform": "indexnow",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "HTTP 200 - 10 URLs submitted: lana-del-rey, micah-thomas, popcaan, solange, alex-zhang-hungtai, ari-lennox, bad-bunny, best-albums-2010-2015, future, lady-gaga"
+  },
+  {
+    "platform": "flipboard",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "no_organic_results - zero artonly.io pages indexed on Flipboard; draft email created"
+  },
+  {
+    "platform": "alltop",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "not_listed - artonly.io absent from alltop.com; submission draft created"
+  },
+  {
+    "platform": "newsnow",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "pending - submission drafted"
+  },
+  {
+    "platform": "ssh_log_sync",
+    "submitted_at": "2026-06-21T11:04:52.751142+00:00",
+    "result": "failed - SSH/sshpass unavailable in remote execution environment; log saved locally only"
+  }
+]

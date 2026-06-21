@@ -1,0 +1,72 @@
+{
+  "version": "1.6",
+  "created": "2026-05-16",
+  "last_session": "2026-06-21",
+  "bot_credentials": {
+    "username": "Neverendersinc@neverending",
+    "password": "kgpheb2utlllohripi9f2sdg1hbam5me",
+    "account": "Neverendersinc",
+    "status": "BLOCKED",
+    "block_id": 25412872,
+    "blocked_by": "Asilvering",
+    "block_reason": "LLMs, botting, COI, etc",
+    "block_timestamp": "2026-05-19T09:46:39Z",
+    "block_expiry": "infinity",
+    "block_confirmed_active": "2026-06-21",
+    "note": "Account permanently blocked. Do not attempt any Wikipedia edits via this account. Block confirmed still active 2026-06-21 via API."
+  },
+  "articles": {
+    "Draft:Amos Le Blanc": {
+      "status": "blocked_account",
+      "pageid": 83027568,
+      "submitted": "2026-05-01",
+      "last_updated": "2026-06-21",
+      "last_revid": 1355058179,
+      "last_revid_by": "Bearcat",
+      "last_revid_timestamp": "2026-05-19T18:26:24Z",
+      "new_activity_since_block": false,
+      "decline_history": [
+        {
+          "date": "2026-04-26",
+          "decliner": "ChrysGalley",
+          "reason": "AI-generated content"
+        },
+        {
+          "date": "2026-05-19",
+          "decliner": "Theroadislong",
+          "reason": "Bio sourcing: YouTube and Vimeo not reliable sources (WP:REFB)"
+        }
+      ],
+      "account_blocked": "2026-05-19",
+      "clean_draft_ready": true,
+      "clean_draft_path": "wikipedia/draft_amos_le_blanc_clean_2026-06-13.txt",
+      "clean_draft_note": "Prepared 2026-06-13. All YouTube, Vimeo, IMVDb, self-published sources removed. 21 reliable sources remain. Cannot be pushed to Wikipedia due to account block.",
+      "next_action": "requires_human_editor_no_COI"
+    }
+  },
+  "monitored_candidates": [
+    {
+      "artist": "Sha Ray",
+      "first_flagged": "2026-06-20",
+      "last_checked": "2026-06-21",
+      "wikipedia_status": "no article",
+      "priority": "low"
+    },
+    {
+      "artist": "Micah Thomas",
+      "artonly_post": "micah-thomas-lucid",
+      "first_flagged": "2026-06-21",
+      "last_checked": "2026-06-21",
+      "wikipedia_status": "no article",
+      "notability_assessment": "STRONG CANDIDATE. Jazz pianist born 1997 in Columbus, Ohio. Juilliard MFA 2020 (Jerome L. Greene Fellowship). DownBeat named him one of 25 for the Future in 2024. NYC Jazz Records: Up-and-Comer of the Year 2024 and Best International Artist of the Year. Jazz Gallery Commission Residency 2022-2023. Roulette Commission 2023-2024. Long tenure with Immanuel Wilkins Quartet (Wilkins has a Wikipedia article). Five albums as a leader; sixth album Lucid released June 19, 2026. DownBeat is a reliable Wikipedia source. Account block prevents action.",
+      "priority": "high",
+      "recommended_action": "Human editor with no COI should draft article once additional mainstream press coverage is confirmed. DownBeat recognition alone may be sufficient given WP:MUSIC criteria for jazz."
+    }
+  ],
+  "session_summary_2026-06-21": {
+    "block_status": "confirmed active (block_id 25412872, expiry infinity)",
+    "draft_amos_le_blanc": "no new activity since 2026-05-19",
+    "posts_scanned": ["gorillaz-the-mountain", "lana-del-rey-birthday-2026", "micah-thomas-lucid", "popcaan-unruly-boss", "why-solange-changed-rnb-forever", "ari-lennox"],
+    "new_finding": "Micah Thomas has no Wikipedia article. Strong notability case. Flagged high-priority."
+  }
+}

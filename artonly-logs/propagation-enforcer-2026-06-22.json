@@ -1,0 +1,63 @@
+{
+  "run_date": "2026-06-22",
+  "run_time_utc": "2026-06-22T00:00:00Z",
+  "status": "PARTIAL_FAILURE",
+  "failure_reason": "SSH port 22 blocked from remote execution environment",
+  "ssh_host": "pdx1-shared-a2-06.dreamhost.com",
+  "steps_attempted": [
+    {
+      "step": 1,
+      "name": "propagation-enforcer.py",
+      "status": "SKIPPED",
+      "reason": "SSH blocked (port 22 timeout)"
+    },
+    {
+      "step": 2,
+      "name": "domain-expiry-check",
+      "status": "SKIPPED",
+      "reason": "SSH blocked"
+    },
+    {
+      "step": 3,
+      "name": "todays-posts-check",
+      "status": "SKIPPED",
+      "reason": "SSH blocked"
+    },
+    {
+      "step": 4,
+      "name": "sitemap-and-feed-check",
+      "status": "OK",
+      "detail": {
+        "homepage": 200,
+        "sitemap_xml": 200,
+        "news_sitemap_xml": 200,
+        "rss_feed": 200,
+        "dns_resolves": true,
+        "dns_ip": "205.196.209.182",
+        "most_recent_post_date": "2026-06-21",
+        "posts_today_in_feed": 0
+      }
+    },
+    {
+      "step": 5,
+      "name": "update-distribution-brain",
+      "status": "SKIPPED",
+      "reason": "SSH blocked"
+    }
+  ],
+  "site_health": "UP",
+  "alerts_sent": [
+    {
+      "method": "gmail_draft",
+      "to": "amosleblanc@gmail.com",
+      "subject": "ACTION REQUIRED: ArtOnly Propagation Enforcer - SSH Blocked (2026-06-22)",
+      "note": "Draft created but NOT auto-sent - no Gmail send tool available in this session"
+    }
+  ],
+  "action_required": true,
+  "action_items": [
+    "SSH manually to run propagation-enforcer.py",
+    "Check domain expiry from distribution-brain.json",
+    "Ensure propagation enforcer environment has SSH access (port 22 must not be blocked)"
+  ]
+}

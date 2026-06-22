@@ -93,7 +93,7 @@
     "Arooj Aftab",
     "Mdou Moctar",
     "Tamino",
-    "Nick León",
+    "Nick Le\u00f3n",
     "Divide and Dissolve",
     "Lana Del Rey",
     "Charli XCX",
@@ -137,62 +137,493 @@
     "Why Charli XCX Changed Pop Music Forever"
   ],
   "contacts_log": [
-    {"artist": "Chrome Sparks", "slug": "chrome-sparks", "contact_email": "", "instagram": "@chromesparks", "sent": false, "date": "2026-05-04 04:00:35"},
-    {"artist": "Sombr", "slug": "sombr", "contact_email": "", "instagram": "", "sent": false, "date": "2026-05-04 05:13:06"},
-    {"artist": "Sombr", "slug": "sombr", "email": "", "instagram": "@sombrmusic", "sent": false, "date": "2026-05-04 05:28"},
-    {"artist": "Saint JHN", "slug": "saint-jhn", "email": "", "instagram": "@saintjhn", "sent": false, "date": "2026-05-04 05:29"},
-    {"artist": "Les Sins", "slug": "les-sins", "email": "", "instagram": "@toloytoi", "sent": false, "date": "2026-05-04 05:30"},
-    {"artist": "MSTRKRFT", "slug": "mstrkrft", "email": "", "instagram": "@mstrkrft", "sent": false, "date": "2026-05-04 05:31"},
-    {"artist": "Sampha", "slug": "sampha", "email": "", "instagram": "@samaborson", "sent": false, "date": "2026-05-07 08:35"},
-    {"artist": "Solange", "slug": "solange", "email": "", "instagram": "@sfrfrfr", "sent": false, "date": "2026-05-07 08:37"},
-    {"artist": "BadBadNotGood", "slug": "badbadnotgood", "email": "", "instagram": "@badbadnotgood", "sent": false, "date": "2026-05-07 08:39"},
-    {"artist": "Charlotte Day Wilson", "slug": "charlotte-day-wilson", "email": "", "instagram": "@charlottedaywilson", "sent": false, "date": "2026-05-07 08:39"},
-    {"artist": "Daniel Caesar", "slug": "daniel-caesar", "email": "", "instagram": "@danielcaesar", "sent": false, "date": "2026-05-08 01:01"},
-    {"artist": "Snoh Aalegra", "slug": "snoh-aalegra-cinematic-soul", "email": "", "instagram": "@snohaalegra", "sent": false, "date": "2026-05-10"},
-    {"artist": "Alewya", "slug": "alewya-architecture-of-zero", "date": "2026-05-10", "contact_attempted": "BrandPartnerships@teamwass.com", "status": "sent", "article_url": "https://artonly.io/post/alewya-architecture-of-zero"},
-    {"date": "2026-05-10", "entity": "New Museum / OMA", "contact": "press@newmuseum.org", "context": "Culture article: The Building That Changes What a Museum Can Be", "slug": "new-museum-oma", "status": "outreach_sent"},
-    {"artist": "Tschabalala Self", "slug": "tschabalala-self-body-as-monument", "email": "info@pilarcorrias.com", "instagram": "@tschabalalaself", "sent": true, "date": "2026-05-10", "sent_date": "2026-05-10"},
-    {"artist": "Masego", "slug": "masego-trap-house-jazz", "email": "masegomgmt@gmail.com", "instagram": "@masego", "sent": true, "date": "2026-05-15", "article_url": "https://artonly.io/post/masego-trap-house-jazz"},
-    {"artist": "Unknown Mortal Orchestra", "slug": "unknown-mortal-orchestra-no-setlist", "email": "tom@friendlyannouncer.com", "instagram": "@unknownmortalorchestra", "sent": true, "date": "2026-05-15", "article_url": "https://artonly.io/post/unknown-mortal-orchestra-no-setlist"},
-    {"artist": "Amy Sherald", "slug": "amy-sherald-american-sublime", "email": "requestspublishers@hauserwirth.com", "instagram": "@asherald", "sent": true, "date": "2026-05-15", "article_url": "https://artonly.io/post/amy-sherald-american-sublime"},
-    {"artist": "Ballroom Culture / Dashaun Wesley", "slug": "ballroom-culture-2026", "email": "bookings@dashaunwesley.com", "instagram": "@dashaunwesley", "sent": true, "date": "2026-05-15", "article_url": "https://artonly.io/post/ballroom-culture-2026"},
-    {"artist": "Deki Alem", "slug": "deki-alem-forget-in-mass", "email": "jo@powerline-agency.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "kwn", "slug": "kwn-east-london-rb-voice", "email": "info@wired-pr.co.uk", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Pimmie", "slug": "pimmie-dont-come-home", "email": "artist@starstruckmgmt.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Pepe", "slug": "pepe-valencian-electronic-reclaim", "email": "press@lapsus.cat", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Odeal", "slug": "odeal-nomadic-rb-lustropolis", "email": "BrandPartnerships@teamwass.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Ouri", "slug": "ouri-cathedral-cello-code", "email": "michael@lighterair.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Naomi Sharon", "slug": "naomi-sharon-ovo-sound-intimacy", "email": "info@mn2s.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Mabe Fratti", "slug": "mabe-fratti-cello-chaos", "email": "twalker@outermostagency.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Eartheater", "slug": "eartheater-architecture-of-after", "email": "info@p-a-n.org", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "KMRU", "slug": "kmru-sound-held-in-the-body", "email": "carin@outer-agency.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Crystallmess", "slug": "crystallmess-genre-is-a-leash", "email": "clementine.bunel@teamwass.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Vegyn", "slug": "vegyn-the-producer-who-stayed", "email": "mgmt@plzmakeitruins.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Erika de Casier", "slug": "erika-de-casier-still-minimalism", "email": "kettil@whynot.dk", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Lava La Rue", "slug": "lava-la-rue-starface-2024", "email": "info@dirtyhit.co.uk", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Amaarae", "slug": "amaarae-black-star-2025", "email": "info@biz3.net", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Sudan Archives", "slug": "sudan-archives-natural-brown-prom-queen", "email": "ben@constantartists.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Arooj Aftab", "slug": "arooj-aftab-ancient-frequency", "email": "erik@friendsatwork.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Jamila Woods", "slug": "jamila-woods-poet-who-sings", "email": "jamilawoodsmgmt@gmail.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Tirzah", "slug": "tirzah-minimal-as-heartbeat", "email": "sam@nativemgmt.co.uk", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Yaeji", "slug": "yaeji-dancing-in-both-languages", "email": "info@yaeji.nyc", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Bar Italia", "slug": "bar-italia-three-way-mirror", "email": "publicity@matadorrecords.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "LRain", "slug": "lrain-cathedrals-from-memory", "email": "sam@highroadtouring.com", "sent": true, "source": "hello-campaign", "date": "2026-04-01", "sent_via": "allastairvoss@gmail.com", "resent_date": "2026-05-15"},
-    {"artist": "Cassandra Jenkins", "slug": "cassandra-jenkins-light-doesnt-stop", "email": "ari@friendlyannouncer.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Iglooghost", "slug": "iglooghost-worlds-multiply", "email": "lucy.atkinson@roamartists.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "NZIRIA", "slug": "nziria-hard-neomelodico", "email": "info@nziria.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Diambe", "slug": "diambe-bees-and-the-language-of-wax", "email": "info@kaufmannrepetto.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Klara Hosnedlova", "slug": "klara-hosnedlova-embrace-as-architecture", "email": "office@k-t-z.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "urtrax", "slug": "urtrax-immersive-music-for-the-mind", "email": "richard@paramountartists.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Matilda Finn", "slug": "matilda-finn-strange-realities", "email": "london@stink.co", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Loraine James", "slug": "loraine-james-restless-center", "email": "info@hyperdub.net", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Andrew Thomas Huang", "slug": "andrew-thomas-huang-visual-mythologist", "email": "hello@objectanimal.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Salamanda", "slug": "salamanda-dreams-as-reality", "email": "brandon@humanpitch.fm", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Aisha Devi", "slug": "aisha-devi-frequency-as-devotion", "email": "brandon@lb-agency.net", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "DRIIA", "slug": "driia-jungle-architect", "email": "charlie@chosenmusic.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"},
-    {"artist": "Lexa Gates", "slug": "lexa-gates-specific-gravity", "email": "orders@lexagates.com", "sent": false, "source": "hello-campaign", "date": "2026-04-01"}
+    {
+      "artist": "Chrome Sparks",
+      "slug": "chrome-sparks",
+      "contact_email": "",
+      "instagram": "@chromesparks",
+      "sent": false,
+      "date": "2026-05-04 04:00:35"
+    },
+    {
+      "artist": "Sombr",
+      "slug": "sombr",
+      "contact_email": "",
+      "instagram": "",
+      "sent": false,
+      "date": "2026-05-04 05:13:06"
+    },
+    {
+      "artist": "Sombr",
+      "slug": "sombr",
+      "email": "",
+      "instagram": "@sombrmusic",
+      "sent": false,
+      "date": "2026-05-04 05:28"
+    },
+    {
+      "artist": "Saint JHN",
+      "slug": "saint-jhn",
+      "email": "",
+      "instagram": "@saintjhn",
+      "sent": false,
+      "date": "2026-05-04 05:29"
+    },
+    {
+      "artist": "Les Sins",
+      "slug": "les-sins",
+      "email": "",
+      "instagram": "@toloytoi",
+      "sent": false,
+      "date": "2026-05-04 05:30"
+    },
+    {
+      "artist": "MSTRKRFT",
+      "slug": "mstrkrft",
+      "email": "",
+      "instagram": "@mstrkrft",
+      "sent": false,
+      "date": "2026-05-04 05:31"
+    },
+    {
+      "artist": "Sampha",
+      "slug": "sampha",
+      "email": "",
+      "instagram": "@samaborson",
+      "sent": false,
+      "date": "2026-05-07 08:35"
+    },
+    {
+      "artist": "Solange",
+      "slug": "solange",
+      "email": "",
+      "instagram": "@sfrfrfr",
+      "sent": false,
+      "date": "2026-05-07 08:37"
+    },
+    {
+      "artist": "BadBadNotGood",
+      "slug": "badbadnotgood",
+      "email": "",
+      "instagram": "@badbadnotgood",
+      "sent": false,
+      "date": "2026-05-07 08:39"
+    },
+    {
+      "artist": "Charlotte Day Wilson",
+      "slug": "charlotte-day-wilson",
+      "email": "",
+      "instagram": "@charlottedaywilson",
+      "sent": false,
+      "date": "2026-05-07 08:39"
+    },
+    {
+      "artist": "Daniel Caesar",
+      "slug": "daniel-caesar",
+      "email": "",
+      "instagram": "@danielcaesar",
+      "sent": false,
+      "date": "2026-05-08 01:01"
+    },
+    {
+      "artist": "Snoh Aalegra",
+      "slug": "snoh-aalegra-cinematic-soul",
+      "email": "",
+      "instagram": "@snohaalegra",
+      "sent": false,
+      "date": "2026-05-10"
+    },
+    {
+      "artist": "Alewya",
+      "slug": "alewya-architecture-of-zero",
+      "date": "2026-05-10",
+      "contact_attempted": "BrandPartnerships@teamwass.com",
+      "status": "sent",
+      "article_url": "https://artonly.io/post/alewya-architecture-of-zero"
+    },
+    {
+      "date": "2026-05-10",
+      "entity": "New Museum / OMA",
+      "contact": "press@newmuseum.org",
+      "context": "Culture article: The Building That Changes What a Museum Can Be",
+      "slug": "new-museum-oma",
+      "status": "outreach_sent"
+    },
+    {
+      "artist": "Tschabalala Self",
+      "slug": "tschabalala-self-body-as-monument",
+      "email": "info@pilarcorrias.com",
+      "instagram": "@tschabalalaself",
+      "sent": true,
+      "date": "2026-05-10",
+      "sent_date": "2026-05-10"
+    },
+    {
+      "artist": "Masego",
+      "slug": "masego-trap-house-jazz",
+      "email": "masegomgmt@gmail.com",
+      "instagram": "@masego",
+      "sent": true,
+      "date": "2026-05-15",
+      "article_url": "https://artonly.io/post/masego-trap-house-jazz"
+    },
+    {
+      "artist": "Unknown Mortal Orchestra",
+      "slug": "unknown-mortal-orchestra-no-setlist",
+      "email": "tom@friendlyannouncer.com",
+      "instagram": "@unknownmortalorchestra",
+      "sent": true,
+      "date": "2026-05-15",
+      "article_url": "https://artonly.io/post/unknown-mortal-orchestra-no-setlist"
+    },
+    {
+      "artist": "Amy Sherald",
+      "slug": "amy-sherald-american-sublime",
+      "email": "requestspublishers@hauserwirth.com",
+      "instagram": "@asherald",
+      "sent": true,
+      "date": "2026-05-15",
+      "article_url": "https://artonly.io/post/amy-sherald-american-sublime"
+    },
+    {
+      "artist": "Ballroom Culture / Dashaun Wesley",
+      "slug": "ballroom-culture-2026",
+      "email": "bookings@dashaunwesley.com",
+      "instagram": "@dashaunwesley",
+      "sent": true,
+      "date": "2026-05-15",
+      "article_url": "https://artonly.io/post/ballroom-culture-2026"
+    },
+    {
+      "artist": "Deki Alem",
+      "slug": "deki-alem-forget-in-mass",
+      "email": "jo@powerline-agency.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "kwn",
+      "slug": "kwn-east-london-rb-voice",
+      "email": "info@wired-pr.co.uk",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Pimmie",
+      "slug": "pimmie-dont-come-home",
+      "email": "artist@starstruckmgmt.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Pepe",
+      "slug": "pepe-valencian-electronic-reclaim",
+      "email": "press@lapsus.cat",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Odeal",
+      "slug": "odeal-nomadic-rb-lustropolis",
+      "email": "BrandPartnerships@teamwass.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Ouri",
+      "slug": "ouri-cathedral-cello-code",
+      "email": "michael@lighterair.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Naomi Sharon",
+      "slug": "naomi-sharon-ovo-sound-intimacy",
+      "email": "info@mn2s.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Mabe Fratti",
+      "slug": "mabe-fratti-cello-chaos",
+      "email": "twalker@outermostagency.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Eartheater",
+      "slug": "eartheater-architecture-of-after",
+      "email": "info@p-a-n.org",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "KMRU",
+      "slug": "kmru-sound-held-in-the-body",
+      "email": "carin@outer-agency.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Crystallmess",
+      "slug": "crystallmess-genre-is-a-leash",
+      "email": "clementine.bunel@teamwass.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Vegyn",
+      "slug": "vegyn-the-producer-who-stayed",
+      "email": "mgmt@plzmakeitruins.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Erika de Casier",
+      "slug": "erika-de-casier-still-minimalism",
+      "email": "kettil@whynot.dk",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Lava La Rue",
+      "slug": "lava-la-rue-starface-2024",
+      "email": "info@dirtyhit.co.uk",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Amaarae",
+      "slug": "amaarae-black-star-2025",
+      "email": "info@biz3.net",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Sudan Archives",
+      "slug": "sudan-archives-natural-brown-prom-queen",
+      "email": "ben@constantartists.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Arooj Aftab",
+      "slug": "arooj-aftab-ancient-frequency",
+      "email": "erik@friendsatwork.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Jamila Woods",
+      "slug": "jamila-woods-poet-who-sings",
+      "email": "jamilawoodsmgmt@gmail.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Tirzah",
+      "slug": "tirzah-minimal-as-heartbeat",
+      "email": "sam@nativemgmt.co.uk",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Yaeji",
+      "slug": "yaeji-dancing-in-both-languages",
+      "email": "info@yaeji.nyc",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Bar Italia",
+      "slug": "bar-italia-three-way-mirror",
+      "email": "publicity@matadorrecords.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "LRain",
+      "slug": "lrain-cathedrals-from-memory",
+      "email": "sam@highroadtouring.com",
+      "sent": true,
+      "source": "hello-campaign",
+      "date": "2026-04-01",
+      "sent_via": "allastairvoss@gmail.com",
+      "resent_date": "2026-05-15"
+    },
+    {
+      "artist": "Cassandra Jenkins",
+      "slug": "cassandra-jenkins-light-doesnt-stop",
+      "email": "ari@friendlyannouncer.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Iglooghost",
+      "slug": "iglooghost-worlds-multiply",
+      "email": "lucy.atkinson@roamartists.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "NZIRIA",
+      "slug": "nziria-hard-neomelodico",
+      "email": "info@nziria.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Diambe",
+      "slug": "diambe-bees-and-the-language-of-wax",
+      "email": "info@kaufmannrepetto.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Klara Hosnedlova",
+      "slug": "klara-hosnedlova-embrace-as-architecture",
+      "email": "office@k-t-z.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "urtrax",
+      "slug": "urtrax-immersive-music-for-the-mind",
+      "email": "richard@paramountartists.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Matilda Finn",
+      "slug": "matilda-finn-strange-realities",
+      "email": "london@stink.co",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Loraine James",
+      "slug": "loraine-james-restless-center",
+      "email": "info@hyperdub.net",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Andrew Thomas Huang",
+      "slug": "andrew-thomas-huang-visual-mythologist",
+      "email": "hello@objectanimal.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Salamanda",
+      "slug": "salamanda-dreams-as-reality",
+      "email": "brandon@humanpitch.fm",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Aisha Devi",
+      "slug": "aisha-devi-frequency-as-devotion",
+      "email": "brandon@lb-agency.net",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "DRIIA",
+      "slug": "driia-jungle-architect",
+      "email": "charlie@chosenmusic.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    },
+    {
+      "artist": "Lexa Gates",
+      "slug": "lexa-gates-specific-gravity",
+      "email": "orders@lexagates.com",
+      "sent": false,
+      "source": "hello-campaign",
+      "date": "2026-04-01"
+    }
   ],
   "queue": [
+    "Don Toliver",
+    "Zara Larsson",
+    "Effie",
+    "Tatyana Jane",
     "Taylor Swift",
     "Drake",
     "The Weeknd",
@@ -205,18 +636,19 @@
     "Chappell Roan",
     "Tyla",
     "FKA twigs",
-    "Lola Young",
     "Kehlani",
-    "Leon Thomas",
     "PinkPantheress",
     "Megan Thee Stallion",
     "Central Cee",
     "Jorja Smith",
-    "Skepta",
     "Dave",
     "Ari Lennox",
-    "Popcaan",
     "Little Simz",
+    "Ella Langley",
+    "Lola Young",
+    "Leon Thomas",
+    "Skepta",
+    "Popcaan",
     "Koffee",
     "Cleo Sol",
     "Headie One",
@@ -226,13 +658,12 @@
     "slowthai",
     "JPEGMAFIA",
     "Greentea Peng",
-    "Ella Langley",
-    "Sasha Keable",
-    "Moliy",
     "Ghetts",
     "NAO",
     "SAULT",
     "Genesis Owusu",
+    "Sasha Keable",
+    "Moliy",
     "Sampa the Great",
     "Kelsey Lu",
     "Ama Lou",
@@ -324,7 +755,11 @@
     "body_template": "Hi [NAME],\n\nI am Allastair Voss, a writer at ArtOnly. We just published a piece about [ARTIST] and it went live today at [URL]. We wanted you to see it first.\n\nWe would love to go deeper with a proper interview for the magazine. [SPECIFIC_REASON]. No pressure at all, we just think there is a real conversation worth having.\n\nLet us know if you are open to it. You can reach us here at hello@artonly.io.\n\nAllastair Voss\nArtOnly"
   },
   "queue_next": [],
-  "blocklist": ["Common Good Collective"],
+  "blocklist": [
+    "Common Good Collective"
+  ],
   "alert_no_posts": "2026-06-08",
-  "last_updated": "2026-06-18"
+  "last_updated": "2026-06-22",
+  "queue_last_updated": "2026-06-22",
+  "queue_update_reason": "Trending injection + tier sort: 4 trending artists injected at front (Don Toliver, Zara Larsson, Effie, Tatyana Jane); Tier A/B re-sorted within first 40; total queue 111"
 }

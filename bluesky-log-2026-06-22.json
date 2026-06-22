@@ -1,10 +1,11 @@
 {
   "date": "2026-06-22",
   "run_time": "10:30 ET",
-  "status": "DISPATCHED",
-  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout). GitHub Actions workflow triggered instead — GH runners can reach DreamHost.",
+  "status": "BLOCKED",
+  "reason": "bluesky-creds.json missing on DreamHost server. GitHub Actions SSH succeeded (port 22 reachable from GH runners) but /home/dh_yadmw3/artonly.io/agent/bluesky-creds.json does not exist.",
   "account": "artonly.bsky.social",
-  "account_status": "active (DID: did:plc:4666lyeouf2kdo3s6bvkhtmn)",
+  "account_status": "active (DID: did:plc:4666lyeouf2kdo3s6bvkhtmn, handle resolves)",
+  "github_actions_run": "https://github.com/bremobonus/vossadvisory/actions/runs/27960697961",
   "articles_identified": [
     {
       "title": "Graham Coxon Finds a Lost Record and It Was Worth the Wait",
@@ -21,7 +22,8 @@
       "priority": 2
     }
   ],
-  "action_taken": "Created deploy-artonly-bluesky-2026-06-22.sh and pushed to main branch. GitHub Actions (deploy-artonly.yml) will SSH to DreamHost and execute the posting script.",
-  "workflow": ".github/workflows/deploy-artonly.yml",
-  "note": "SSH blocked in cloud env since June 12. GH Actions workaround confirmed viable from workflow config."
+  "posts_published": 0,
+  "action_taken": "Gmail draft created (ID: r-4720298389573392232) to amosleblanc@gmail.com with instructions to generate Bluesky App Password and save credentials file. Log committed to vossadvisory repo.",
+  "resolution_needed": "Log into bsky.app as artonly.bsky.social, generate App Password at Settings > Privacy > App Passwords, then SSH to server and create: ~/artonly.io/agent/bluesky-creds.json with {\"handle\": \"artonly.bsky.social\", \"app_password\": \"xxxx-xxxx-xxxx-xxxx\"}",
+  "note": "Cloud environment cannot reach DreamHost port 22. GitHub Actions CAN reach it (confirmed today). Future runs should continue using the GH Actions dispatch pattern."
 }

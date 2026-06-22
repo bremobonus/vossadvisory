@@ -219,6 +219,432 @@
       "drafted_at": "2026-06-12T00:00:00Z",
       "gmail_draft_id": "r7776147318405707727",
       "status": "drafted"
+    },
+    {
+      "slug": "cassandra-jenkins-light-doesnt-stop",
+      "artist": "Cassandra Jenkins",
+      "email": "ari@friendlyannouncer.com",
+      "contact_type": "management_friendly_announcer",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "iglooghost-worlds-multiply",
+      "artist": "Iglooghost",
+      "email": "lucy.atkinson@roamartists.com",
+      "contact_type": "booking_roam_artists",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nziria-hard-neomelodico",
+      "artist": "NZIRIA",
+      "email": "info@nziria.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "diambe-bees-and-the-language-of-wax",
+      "artist": "Diambe da Silva",
+      "email": "info@kaufmannrepetto.com",
+      "contact_type": "gallery_kaufmann_repetto",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "klara-hosnedlova-embrace-as-architecture",
+      "artist": "Klara Hosnedlova",
+      "email": "office@k-t-z.com",
+      "contact_type": "management_studio",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "urtrax-immersive-music-for-the-mind",
+      "artist": "u.r.trax",
+      "email": "richard@paramountartists.com",
+      "contact_type": "management_paramount_artists",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "matilda-finn-strange-realities",
+      "artist": "Matilda Finn",
+      "email": "london@stink.co",
+      "contact_type": "studio_stink",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "loraine-james-restless-center",
+      "artist": "Loraine James",
+      "email": "info@hyperdub.net",
+      "contact_type": "label_hyperdub",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "andrew-thomas-huang-visual-mythologist",
+      "artist": "Andrew Thomas Huang",
+      "email": "hello@objectanimal.com",
+      "contact_type": "studio_object_animal",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "salamanda-dreams-as-reality",
+      "artist": "Salamanda",
+      "email": "brandon@humanpitch.fm",
+      "contact_type": "label_human_pitch",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "aisha-devi-frequency-as-devotion",
+      "artist": "Aisha Devi",
+      "email": "brandon@lb-agency.net",
+      "contact_type": "booking_lb_agency",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "hannah-frances-keeper-shepherd",
+      "artist": "Hannah Frances",
+      "email": "bekahzietzflynn@gmail.com",
+      "contact_type": "management_bekah_z_flynn",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "saya-gray-saya-debut",
+      "artist": "Saya Gray",
+      "email": "info@dirtyhit.co.uk",
+      "contact_type": "label_dirty_hit",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tau-lewis-stitched-monumental-2026",
+      "artist": "Tau Lewis",
+      "email": "info@sadiecoles.com",
+      "contact_type": "gallery_sadie_coles",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "maruja-pain-to-power-2026",
+      "artist": "Maruja",
+      "email": "contact@kmmltd.com",
+      "contact_type": "management_key_music",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "mei-semones-animaru-bilingual-jazz",
+      "artist": "Mei Semones",
+      "email": "meisemones21@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ml-buch-suntub-quiet-revolution",
+      "artist": "ML Buch",
+      "email": "agnete@qujunktions.com",
+      "contact_type": "management_qujunktions",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nia-archives",
+      "artist": "Nia Archives",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "niontay-dontays-inferno-florida-rap",
+      "artist": "Niontay",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "shygirl",
+      "artist": "Shygirl",
+      "email": "sarah@muisemgmt.com",
+      "contact_type": "management_muise",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "slayyyter",
+      "artist": "Slayyyter",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "wisp-pandora-shoegaze-revival",
+      "artist": "Wisp",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "hiatus-kaiyote-mood-valiant",
+      "artist": "Hiatus Kaiyote",
+      "email": "press_row@ninjatune.net",
+      "contact_type": "label_press_brainfeeder_ninja_tune",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "kendrick-lamar-gnx-hip-hop-culture-2025",
+      "artist": "Kendrick Lamar",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "kerry-james-marshall-mastry",
+      "artist": "Kerry James Marshall",
+      "email": "info@jackshainman.com",
+      "contact_type": "gallery_jack_shainman",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "lockerz-jazz-piano-garage",
+      "artist": "Lockerz",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "megan-wroe-lovestep-bolton-garage",
+      "artist": "Megan Wroe",
+      "email": "alexa@lockedonrecordings.co.uk",
+      "contact_type": "management_locked_on",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "moses-sumney-grae",
+      "artist": "Moses Sumney",
+      "email": "nick@orienteer.us",
+      "contact_type": "press_orienteer",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "serpentwithfeet-deacon-gospel",
+      "artist": "serpentwithfeet",
+      "email": "info@secretlydistribution.com",
+      "contact_type": "label_secretly_canadian",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "smiff-pressure-core-bass",
+      "artist": "SMIFF",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "azu-tiwaline-saharan-frequencies",
+      "artist": "Azu Tiwaline",
+      "email": "mark@disconnect.li",
+      "contact_type": "booking_disconnect",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "feng-weekend-rockstar-croydon",
+      "artist": "Feng",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "mysie-breakbeats-as-emotional-language",
+      "artist": "Mysie",
+      "email": "isaac@anthem.london",
+      "contact_type": "management_anthem",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "avara-classical-soul-collision",
+      "artist": "Avara",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "curtisy-irish-hiphop-necessary",
+      "artist": "Curtisy",
+      "email": "Curtisymanagement@gmail.com",
+      "contact_type": "management_direct",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "dijon-baby-rb-romantic",
+      "artist": "Dijon",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "soul-wun-blue-light-emotional-electronic",
+      "artist": "Soul Wun",
+      "email": "angus@galleryrecordings.com",
+      "contact_type": "management_gallery_recordings",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "2hollis-internet-pop-star",
+      "artist": "2hollis",
+      "email": "info@2hollis.com",
+      "contact_type": "management_hallwood",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "destin-conrad-love-on-digital-rb",
+      "artist": "Destin Conrad",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "devault-cinematic-electronic-dark",
+      "artist": "DEVAULT",
+      "email": "DUNCAN@PROJECT91NYC.COM",
+      "contact_type": "management_project91",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "duendita-existential-thottie",
+      "artist": "Duendita",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "snoh-aalegra-cinematic-soul",
+      "artist": "Snoh Aalegra",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
+    },
+    {
+      "slug": "lynette-yiadom-boakye-fictional-portraits",
+      "artist": "Lynette Yiadom-Boakye",
+      "email": "info@jackshainman.com",
+      "contact_type": "gallery_jack_shainman",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "sent",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "mkgee-the-collaborator-2025",
+      "artist": "Mk.gee",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-22T00:00:00Z",
+      "gmail_draft_id": null,
+      "status": "skipped_no_contact"
     }
   ]
 }

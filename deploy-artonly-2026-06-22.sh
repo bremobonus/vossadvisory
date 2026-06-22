@@ -209,7 +209,7 @@ POST = {
     "post": {
         "title": "hemlocke springs: Four Years of Building What the Moment Could Not Give Her",
         "date": "2026-06-22",
-        "category": 3,
+        "category": "culture",
         "pen": "Abel Blackburn",
         "instagram_handle": "@hemlockesprings",
         "featured": False,

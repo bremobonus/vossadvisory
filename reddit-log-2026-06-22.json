@@ -1,0 +1,41 @@
+{
+  "date": "2026-06-22",
+  "agent_run": "2026-06-22T00:00:00Z",
+  "ssh_status": "unavailable (port 22 connection timeout from cloud environment)",
+  "reddit_api_creds_checked": false,
+  "posts_drafted": 2,
+  "posts_attempted": 0,
+  "queue": [
+    {
+      "slug": "graham-coxon-castle-park",
+      "title": "Graham Coxon Finds a Lost Record and It Was Worth the Wait",
+      "subreddit": "r/indieheads",
+      "url": "https://artonly.io/post/graham-coxon-castle-park",
+      "date": "2026-06-22",
+      "status": "queued_manual",
+      "post_body": "Castle Park was recorded in 2011 and sat unreleased for fifteen years before Transgressive Records put it out on June 19, 2026. The album takes its name from a park in Colchester, Essex where Coxon grew up, and producer Ben Hillier gave it a warmth that makes the fifteen year wait feel like accumulated clarity rather than loss.\n\nhttps://artonly.io/post/graham-coxon-castle-park"
+    },
+    {
+      "slug": "moses-sumney",
+      "title": "Moses Sumney Is Not Trying to Be Understood",
+      "subreddit": "r/rnb",
+      "url": "https://artonly.io/post/moses-sumney",
+      "date": "2026-06-22",
+      "status": "queued_manual",
+      "post_body": "Sumney's work runs from Aromanticism in 2017 through Grae in 2020, the film Blackalachia in 2021, and an acting role in The Idol in 2023, and the piece argues the thread connecting all of it is a deliberate refusal to optimize his art for commercial legibility. The collaborations with Oneohtrix Point Never and his own visual projects are not experiments in style but a consistent philosophy about what difficulty can do.\n\nhttps://artonly.io/post/moses-sumney"
+    }
+  ],
+  "today_articles": [
+    "graham-coxon-castle-park",
+    "hemlocke-springs",
+    "moses-sumney",
+    "pond-terrestrials",
+    "the-week-in-music-june-22-2026"
+  ],
+  "subreddit_48h_check": {
+    "r/indieheads": "last queued 2026-06-21 (Gorillaz, 0 posts attempted by bot). No actual post was submitted. Available. Graham Coxon selected.",
+    "r/rnb": "last queued 2026-05-31. Available. Moses Sumney selected."
+  },
+  "selection_reason": "Graham Coxon chosen for the fifteen year vault story, ideal fit for r/indieheads readers who follow Blur and British indie. Moses Sumney chosen for r/rnb as his work across Aromanticism, Grae, Blackalachia, and The Idol represents the most specific career narrative available today. Pond skipped (strong r/indieheads fit but same subreddit as Coxon today). hemlocke springs and the week in music roundup skipped (weaker subreddit targeting and roundup format not ideal for Reddit).",
+  "notes": "SSH and Reddit API unavailable from cloud environment. 2 posts drafted for manual submission. Email sent to amosleblanc@gmail.com."
+}

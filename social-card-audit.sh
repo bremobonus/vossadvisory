@@ -4,7 +4,7 @@
 # fixes Rule 5 (hero image repeated in body) and wrong-format download tags.
 # Usage: bash -s < social-card-audit.sh
 # Or via GitHub Actions workflow (deploy-artonly.yml), input: social-card-audit.sh
-# Last triggered: 2026-06-21
+# Last triggered: 2026-06-22
 
 set -e
 echo "=== ArtOnly Social Card Audit ==="

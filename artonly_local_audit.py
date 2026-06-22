@@ -18,6 +18,7 @@ ARTISTS_PATH_FRAGMENT = "/assets/images/artists/"
 NON_POST_FILES = {
     "wikipedia_brain", "reddit-log", "reddit-queue", "press-log",
     "newsletter-log", "outreach-log", "push_brain", "reddit-log-2026-06-05",
+    "radar-cache", "bluesky-log", "brain_updated", "wiki-ancient-history",
 }
 
 def is_post_file(path):
@@ -77,6 +78,10 @@ def audit_posts():
                 post = json.load(f)
         except Exception as e:
             summary["parse_errors"].append(f"{name}: {e}")
+            continue
+
+        if not isinstance(post, dict):
+            summary["parse_errors"].append(f"{name}: not a JSON object (skipping)")
             continue
 
         hero = post.get("image", "")

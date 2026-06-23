@@ -140,6 +140,18 @@ except Exception as e:
     sys.exit(1)
 PYEOF
 
+echo "--- Patching instagram_handle for PJ Morton (publish.php does not save this field) ---"
+python3 -c "
+import json
+path = 'artonly.io/posts/pj-morton-saturday-night-sunday-morning.json'
+with open(path, 'r') as f:
+    post = json.load(f)
+post['instagram_handle'] = '@pjmorton'
+with open(path, 'w') as f:
+    json.dump(post, f, indent=2)
+print('Patched instagram_handle: @pjmorton')
+"
+
 echo "--- Generating PJ Morton social card ---"
 python3 artonly.io/agent/make-social-card.py pj-morton-saturday-night-sunday-morning \
   "PJ Morton Refuses the Division and Makes the Album His Whole Life Prepared Him For" music
@@ -297,6 +309,18 @@ except Exception as e:
     print(f"ERROR publishing: {e}", file=sys.stderr)
     sys.exit(1)
 PYEOF
+
+echo "--- Patching instagram_handle for War and Treaty (publish.php does not save this field) ---"
+python3 -c "
+import json
+path = 'artonly.io/posts/war-and-treaty-story-of-michael-and-tanya.json'
+with open(path, 'r') as f:
+    post = json.load(f)
+post['instagram_handle'] = '@thewarandtreaty'
+with open(path, 'w') as f:
+    json.dump(post, f, indent=2)
+print('Patched instagram_handle: @thewarandtreaty')
+"
 
 echo "--- Generating The War and Treaty social card ---"
 python3 artonly.io/agent/make-social-card.py war-and-treaty-story-of-michael-and-tanya \

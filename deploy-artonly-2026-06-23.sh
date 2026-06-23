@@ -54,6 +54,8 @@ import urllib.request, json, sys, re
 
 BODY = """[spotify:artist/2FMOHE79X98yptp4RpPrt7]
 
+[youtube:Vcxp-MypjFk]
+
 PJ Morton grew up knowing that the two sides of his life were supposed to be separate. His father, Bishop Paul S. Morton, is the pastor of Greater St. Stephen Full Gospel Baptist Church in New Orleans, one of the largest and most prominent Baptist congregations in the South. Sunday morning meant church. The week's secular pleasures, the music that moved through the city's bars and clubs and second-line parades, belonged to another register entirely. For the preacher's child, this division was not a doctrine so much as an ambient pressure, the cultural and theological assumption that a person had to choose which of those two worlds they were fully committed to.
 
 Morton spent two decades refusing that choice. He joined Maroon 5 as a keyboardist in 2010, became an official member in 2012, and toured the world playing pop music in arenas while simultaneously building a solo career rooted in New Orleans soul and R&B. He founded Morton Records in 2016 with the explicit ambition of creating the New Orleans Motown, an independent label rooted in the culture of his home city. Six Grammy wins accumulated across that same period. Each of them came for work that drew freely from the sacred and the secular without treating the crossing as a transgression. Saturday Night / Sunday Morning, released on Juneteenth 2026, is the formal announcement of what that career has always been preparing to say.
@@ -107,7 +109,15 @@ POST = {
         "image": "/assets/images/artists/pj-morton-saturday-night-sunday-morning.jpg",
         "image_alt": "PJ Morton press photo",
         "image_position": "center 20%",
-        "body": BODY
+        "body": BODY,
+        "crew": [
+            {
+                "name": "Keyon Harrold",
+                "role": "Trumpet",
+                "url": "https://open.spotify.com/artist/4JG781pl96pL2h0AoERgOA",
+                "handle": "@keyonharrold"
+            }
+        ]
     }
 }
 
@@ -194,6 +204,8 @@ import urllib.request, json, sys, re
 
 BODY = """[spotify:artist/6HhV0jtMMK5HYnYgG0xgtz]
 
+[youtube:bYrx6UwtdpU]
+
 Michael Trotter Jr. taught himself piano in the basement of a palace that did not belong to him, in a country he had no particular reason to be in, surrounded by the evidence of a war that history would spend decades contesting. He was a private first class in the United States Army, deployed to Iraq with the 1st Battalion, 6th Infantry Regiment, 1st Armored Division, when his unit occupied a residence that had belonged to Saddam Hussein. His company commander, who knew that Trotter had a passion for singing, encouraged him to sit down at the instrument and start. What began there became everything that followed. What followed led, eventually, to Tanya.
 
 Tanya Blount-Trotter came into the story after Michael returned home. The relationship that formed between them produced a marriage and a band. The War and Treaty, named with the gravity that their biography demands, made its first album in 2018. Their music has always lived in the space where gospel and Americana and soul overlap, refusing the genre categories that the industry uses to sort artists into separate markets with separate audiences. In 2023 they became the first Black duo to be nominated for the Country Music Association Award for Duo of the Year, and the first Black duo to be nominated for the Academy of Country Music Award for Duo of the Year. The significance of those firsts was not lost on anyone who understood what country music owes to Black artists and how systematically it has avoided acknowledging that debt.
@@ -249,7 +261,21 @@ POST = {
         "image": "/assets/images/artists/war-and-treaty-story-of-michael-and-tanya.jpg",
         "image_alt": "The War and Treaty press photo",
         "image_position": "center 20%",
-        "body": BODY
+        "body": BODY,
+        "crew": [
+            {
+                "name": "Wynonna Judd",
+                "role": "Featured Artist",
+                "url": "https://open.spotify.com/artist/4yiXkMbxDIZ3jgEG89NSC1",
+                "handle": "@wynonnajudd"
+            },
+            {
+                "name": "Valerie June",
+                "role": "Featured Artist",
+                "url": "https://open.spotify.com/artist/4QZdOCb3UacKbQ1ybDFAKM",
+                "handle": "@valeriejune"
+            }
+        ]
     }
 }
 

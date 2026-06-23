@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-23",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout). bluesky-creds.json on DreamHost server is unreachable.",
+  "account": "artonly.bsky.social",
+  "account_status": "active",
+  "artonly_site_status": "healthy",
+  "articles_identified": [
+    {
+      "title": "Hemlocke Springs: Four Years of Building What the Moment Could Not Give Her",
+      "url": "https://artonly.io/post/hemlocke-springs",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "June McDoom: The Folk Singer Who Never Saw Herself in the Genre She Loves",
+      "url": "https://artonly.io/post/june-mcdoom",
+      "category": "culture",
+      "hashtags": ["#Culture", "#Music"],
+      "priority": 2
+    },
+    {
+      "title": "Original Koffee: How Jamaica's Youngest Grammy Winner Built the Album That Followed",
+      "url": "https://artonly.io/post/original-koffee",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 3
+    },
+    {
+      "title": "PJ Morton Refuses the Division and Makes the Album His Whole Life Prepared Him For",
+      "url": "https://artonly.io/post/pj-morton-saturday-night-sunday-morning",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 4
+    },
+    {
+      "title": "The War and Treaty Name the Love Story Directly and Dare You to Look Away",
+      "url": "https://artonly.io/post/war-and-treaty-story-of-michael-and-tanya",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 5
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Gmail draft created for amosleblanc@gmail.com (draft ID: r1203817542538210339). Log committed to vossadvisory repo. Third consecutive notice.",
+  "resolution_needed": "Add BLUESKY_HANDLE and BLUESKY_APP_PASSWORD as GitHub secrets in vossadvisory repo, OR save bluesky-creds.json to the repo root, OR reply to email with app password. SSH from cloud to DreamHost port 22 is persistently blocked."
+}

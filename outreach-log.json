@@ -645,6 +645,56 @@
       "drafted_at": "2026-06-22T00:00:00Z",
       "gmail_draft_id": null,
       "status": "skipped_no_contact"
+    },
+    {
+      "slug": "tierra-whack-whacks-museum",
+      "artist": "Tierra Whack",
+      "email": "press@interscope.com",
+      "contact_type": "label_interscope_press",
+      "drafted_at": "2026-06-23T00:00:00Z",
+      "gmail_draft_id": "r-5072311942415326850",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "micah-thomas-lucid",
+      "artist": "Micah Thomas",
+      "email": "don@dlmediamusic.com",
+      "contact_type": "press_dl_media",
+      "drafted_at": "2026-06-23T00:00:00Z",
+      "gmail_draft_id": "r-5969586847420807881",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "kelsey-lu-so-help-me-god",
+      "artist": "Kelsey Lu",
+      "email": "press@dirtyhit.com",
+      "contact_type": "label_dirty_hit_press",
+      "drafted_at": "2026-06-23T00:00:00Z",
+      "gmail_draft_id": "r234993946894748480",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ear-rumspringa",
+      "artist": "ear",
+      "email": "music@a24films.com",
+      "contact_type": "label_a24_music",
+      "drafted_at": "2026-06-23T00:00:00Z",
+      "gmail_draft_id": "r-501399837621102540",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "anderson-paak-kpops",
+      "artist": "Anderson .Paak",
+      "email": "info@fullstopmgmt.com",
+      "contact_type": "management_full_stop",
+      "drafted_at": "2026-06-23T00:00:00Z",
+      "gmail_draft_id": "r2937515709385292507",
+      "status": "drafted",
+      "follow_up_sent": false
     }
   ]
 }

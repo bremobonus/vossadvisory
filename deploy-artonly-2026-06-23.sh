@@ -104,7 +104,7 @@ POST = {
         "date": "2026-06-23",
         "category": "music",
         "author": "Leelou Blanc",
-        "instagram_handle": "@pjmorton",
+        "instagram": "@pjmorton",
         "featured": False,
         "image": "/assets/images/artists/pj-morton-saturday-night-sunday-morning.jpg",
         "image_alt": "PJ Morton press photo",
@@ -144,17 +144,205 @@ echo "--- Generating PJ Morton social card ---"
 python3 artonly.io/agent/make-social-card.py pj-morton-saturday-night-sunday-morning \
   "PJ Morton Refuses the Division and Makes the Album His Whole Life Prepared Him For" music
 
-echo "--- DEBUG: validator instagram check source ---"
-grep -n 'instagram' artonly.io/agent/post-validator.py || echo '(no instagram lines found)'
-
-echo "--- DEBUG: Full PJ Morton JSON on disk ---"
-python3 -c "import json; print(json.dumps(json.load(open('artonly.io/posts/pj-morton-saturday-night-sunday-morning.json')), indent=2))"
-
 echo "--- Validating PJ Morton post ---"
-python3 artonly.io/agent/post-validator.py pj-morton-saturday-night-sunday-morning || true
+python3 artonly.io/agent/post-validator.py pj-morton-saturday-night-sunday-morning
 
 echo "--- IndexNow: PJ Morton ---"
 curl -s "https://api.indexnow.org/indexnow?url=https://artonly.io/post/pj-morton-saturday-night-sunday-morning&key=5a4a5c1b5f124ccc9e6c4e5c5a4a5c1b"
 echo ""
 
-echo "=== PJ Morton debug complete. ==="
+echo "--- Outreach: PJ Morton ---"
+curl -s -X POST https://artonly.io/api/send-mail.php \
+  -d "to=info@shorefire.com" \
+  -d "subject=PJ Morton is on ArtOnly" \
+  -d "body=Hi, I wanted to let you know we published a piece on PJ Morton and Saturday Night / Sunday Morning at artonly.io/post/pj-morton-saturday-night-sunday-morning. No ask, just thought you should see it. Best, Leelou Blanc, ArtOnly" \
+  -d "bcc=amosleblanc@gmail.com"
+echo ""
+
+echo "=== PJ Morton post complete. Live at: https://artonly.io/post/pj-morton-saturday-night-sunday-morning ==="
+
+# =====================================================================
+# POST 2: The War and Treaty - The Story of Michael and Tanya
+# =====================================================================
+
+echo ""
+echo "--- [2/2] Downloading The War and Treaty hero image ---"
+WAT_IMG="artonly.io/assets/images/artists/war-and-treaty-story-of-michael-and-tanya.jpg"
+WAT_DOWNLOADED=0
+
+for WAT_URL in \
+  "https://commons.wikimedia.org/wiki/Special:FilePath/TheWarAndTreaty_20210812.jpg" \
+  "https://upload.wikimedia.org/wikipedia/commons/e/e1/TheWarAndTreaty_20210812.jpg" \
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/TheWarAndTreaty_20210812.jpg/800px-TheWarAndTreaty_20210812.jpg"
+do
+  curl -s -L -A "$UA" --max-time 30 -o "$WAT_IMG" "$WAT_URL" || true
+  SZ=$(wc -c < "$WAT_IMG" 2>/dev/null || echo 0)
+  if [ "$SZ" -gt 10000 ]; then
+    echo "Downloaded The War and Treaty image from $WAT_URL ($SZ bytes)"
+    WAT_DOWNLOADED=1
+    break
+  fi
+done
+
+if [ "$WAT_DOWNLOADED" -eq 0 ]; then
+  echo "ERROR: Could not download a valid The War and Treaty hero image"
+  exit 1
+fi
+
+echo "--- Upscaling The War and Treaty hero image ---"
+OMP_NUM_THREADS=1 convert "$WAT_IMG" \
+  -resize 150% \
+  -unsharp 0x0.75+0.75+0.008 \
+  -quality 92 \
+  artonly.io/assets/images/artists/war-and-treaty-story-of-michael-and-tanya-up.jpg \
+  && mv artonly.io/assets/images/artists/war-and-treaty-story-of-michael-and-tanya-up.jpg \
+        "$WAT_IMG"
+
+echo "--- Publishing The War and Treaty post ---"
+python3 << 'PYEOF'
+import urllib.request, json, sys, re
+
+BODY = """[spotify:artist/6HhV0jtMMK5HYnYgG0xgtz]
+
+[youtube:bYrx6UwtdpU]
+
+Michael Trotter Jr. taught himself piano in the basement of a palace that did not belong to him, in a country he had no particular reason to be in, surrounded by the evidence of a war that history would spend decades contesting. He was a private first class in the United States Army, deployed to Iraq with the 1st Battalion, 6th Infantry Regiment, 1st Armored Division, when his unit occupied a residence that had belonged to Saddam Hussein. His company commander, who knew that Trotter had a passion for singing, encouraged him to sit down at the instrument and start. What began there became everything that followed. What followed led, eventually, to Tanya.
+
+Tanya Blount-Trotter came into the story after Michael returned home. The relationship that formed between them produced a marriage and a band. The War and Treaty, named with the gravity that their biography demands, made its first album in 2018. Their music has always lived in the space where gospel and Americana and soul overlap, refusing the genre categories that the industry uses to sort artists into separate markets with separate audiences. In 2023 they became the first Black duo to be nominated for the Country Music Association Award for Duo of the Year, and the first Black duo to be nominated for the Academy of Country Music Award for Duo of the Year. The significance of those firsts was not lost on anyone who understood what country music owes to Black artists and how systematically it has avoided acknowledging that debt.
+
+The Story of Michael and Tanya, their sixth studio album, released on Juneteenth 2026, is their most directly personal record. The title is not a metaphor.
+
+## What It Means to Name It Directly
+
+There is a tradition in Black American music of naming the thing without flinching, of centering the specific over the universal, of trusting that particularity is how universality becomes accessible rather than an obstacle to it. The Story of Michael and Tanya is an album about two specific people and the specific fifteen years they have spent building a life and a creative practice together. It is not about love in the abstract. It is about this love, in these two people, shaped by the particular facts of their history.
+
+Michael's origin is part of what makes that specificity meaningful. The Army veteran who found music in the basement of a dictator's palace, who came home carrying that discovery, who built it into something that would eventually share stages with country music royalty and earn Grammy nominations alongside the most established names in American roots music: that trajectory is singular. Tanya met that person and chose to build something with him. The album is an accounting of what they built.
+
+The ten tracks here do not trace a clean emotional arc from difficulty to resolution. Marriages do not work that way, and an album that pretended otherwise would be dishonest about its subject. What the record offers instead is a portrait, the kind that shows you multiple angles and lets the contradictions stand without forcing them toward a tidy conclusion. This is harder to do than it sounds, and the Trotters do it with a directness that keeps the emotional register of the album consistently high without ever tipping into melodrama.
+
+## The Guests and Why They Matter
+
+Two featured guests appear on The Story of Michael and Tanya, and neither one is decorative. Wynonna Judd and Valerie June both appear on Reclaim All of Your Time, a track whose title is a direct statement about what the song is doing. Wynonna brings to it the full weight of her biography: the decades in country music alongside Naomi, the survival of her own marriage and its dissolution, the late-career authority that comes from having outlasted the industry's interest in you and then returned entirely on your own terms. Valerie June, whose own work has always lived in the place where folk and soul and the spiritual tradition converge, brings a different kind of authority, the clarity of an artist who has spent her career defining a territory that no existing genre category fully captures.
+
+A track that puts Wynonna, Valerie June, and the Trotters in the same room is a convergence of four distinct voices from four distinct chapters of American music history. That it works, that it sounds like it was always supposed to exist this way, is evidence of the compositional intelligence that made it possible and of the trust that the Trotters earned through years of exactly this kind of genuine engagement with the artists around them.
+
+The rest of the album proceeds with the full live ensemble that the Trotters have always favored, arrangements that lean into the warmth and weight of acoustic instruments rather than the precision of studio production, a sound that places the voices at the center and builds everything else to support what they carry.
+
+## Juneteenth and What Endures
+
+The War and Treaty have always been specific about their position in American cultural history. The fact of being the first Black duo nominated for both the CMA and ACM duo awards in the same year is not a detail they have minimized or treated as background context. It is a specific fact about a specific moment in the music industry's long and complicated relationship with the artists who made country music possible and then spent decades being excluded from it.
+
+Releasing their most personal record on Juneteenth is consistent with everything they have always stood for. The holiday marks a liberation delayed, joy arriving after it was expected, a culture that survived what was designed to end it. The Story of Michael and Tanya is a love story. It is also a record about the kind of love that does not arrive easily or maintain itself without work, about two people who found each other in the aftermath of things that could have prevented either of them from being in a position to find anything.
+
+Michael Trotter learned piano in the basement of a palace in a foreign war. He brought that music home. Tanya heard it and recognized something. Fifteen years later, they made an album about what they have been to each other since. It is a record that earns everything it claims, and it claims quite a lot.
+
+[download:/assets/images/artists/war-and-treaty-story-of-michael-and-tanya-social-9x16.jpg|Download Social Card]"""
+
+clean = re.sub(r'\[(?:spotify|img|download):[^\]]+\]', '', BODY)
+word_count = len(clean.split())
+print(f"War and Treaty body word count: {word_count}", flush=True)
+if word_count < 888:
+    print(f"ERROR: body only {word_count} words, need 888+", file=sys.stderr)
+    sys.exit(1)
+
+POST = {
+    "action": "publish",
+    "token": "ao-pub-Neverending48-2026",
+    "slug": "war-and-treaty-story-of-michael-and-tanya",
+    "artist": "The War and Treaty",
+    "image_url": "https://artonly.io/assets/images/artists/war-and-treaty-story-of-michael-and-tanya.jpg",
+    "post": {
+        "title": "The War and Treaty Name the Love Story Directly and Dare You to Look Away",
+        "date": "2026-06-23",
+        "category": "music",
+        "author": "Allastair Voss",
+        "instagram": "@thewarandtreaty",
+        "featured": False,
+        "image": "/assets/images/artists/war-and-treaty-story-of-michael-and-tanya.jpg",
+        "image_alt": "The War and Treaty press photo",
+        "image_position": "center 20%",
+        "body": BODY,
+        "crew": [
+            {
+                "name": "Wynonna Judd",
+                "role": "Featured Artist",
+                "url": "https://open.spotify.com/artist/4yiXkMbxDIZ3jgEG89NSC1",
+                "handle": "@wynonnajudd"
+            },
+            {
+                "name": "Valerie June",
+                "role": "Featured Artist",
+                "url": "https://open.spotify.com/artist/4QZdOCb3UacKbQ1ybDFAKM",
+                "handle": "@valeriejune"
+            }
+        ]
+    }
+}
+
+data = json.dumps(POST).encode('utf-8')
+req = urllib.request.Request(
+    'https://artonly.io/api/publish.php',
+    data=data,
+    headers={'Content-Type': 'application/json'}
+)
+try:
+    with urllib.request.urlopen(req, timeout=60) as r:
+        resp = r.read().decode('utf-8')
+        print(f"Publish response: {resp}", flush=True)
+        parsed = json.loads(resp)
+        if not parsed.get('ok'):
+            print(f"ERROR: publish failed: {resp}", file=sys.stderr)
+            sys.exit(1)
+except Exception as e:
+    print(f"ERROR publishing: {e}", file=sys.stderr)
+    sys.exit(1)
+PYEOF
+
+echo "--- Generating The War and Treaty social card ---"
+python3 artonly.io/agent/make-social-card.py war-and-treaty-story-of-michael-and-tanya \
+  "The War and Treaty Name the Love Story Directly and Dare You to Look Away" music
+
+echo "--- Validating The War and Treaty post ---"
+python3 artonly.io/agent/post-validator.py war-and-treaty-story-of-michael-and-tanya
+
+echo "--- IndexNow: The War and Treaty ---"
+curl -s "https://api.indexnow.org/indexnow?url=https://artonly.io/post/war-and-treaty-story-of-michael-and-tanya&key=5a4a5c1b5f124ccc9e6c4e5c5a4a5c1b"
+echo ""
+
+echo "--- Outreach: The War and Treaty ---"
+curl -s -X POST https://artonly.io/api/send-mail.php \
+  -d "to=press@mercurynashville.com" \
+  -d "subject=The War and Treaty is on ArtOnly" \
+  -d "body=Hi, I wanted to let you know we published a piece on The War and Treaty and The Story of Michael and Tanya at artonly.io/post/war-and-treaty-story-of-michael-and-tanya. No ask, just thought you should see it. Best, Allastair Voss, ArtOnly" \
+  -d "bcc=amosleblanc@gmail.com"
+echo ""
+
+echo "=== War and Treaty post complete. Live at: https://artonly.io/post/war-and-treaty-story-of-michael-and-tanya ==="
+
+# =====================================================================
+# Summary email
+# =====================================================================
+
+echo ""
+echo "--- Sending summary email ---"
+python3 artonly.io/api/gmail-send.py "amosleblanc@gmail.com" \
+  "ArtOnly Album Monitor: 2026-06-23" \
+  "Published today:
+
+1. PJ Morton, Saturday Night / Sunday Morning
+   https://artonly.io/post/pj-morton-saturday-night-sunday-morning
+   By Leelou Blanc | Released June 19, 2026
+
+2. The War and Treaty, The Story of Michael and Tanya
+   https://artonly.io/post/war-and-treaty-story-of-michael-and-tanya
+   By Allastair Voss | Released June 19, 2026
+
+Outreach:
+- PJ Morton: info@shorefire.com (BCC: amosleblanc@gmail.com)
+- The War and Treaty: press@mercurynashville.com (BCC: amosleblanc@gmail.com)"
+
+echo ""
+echo "=== Album Monitor deploy complete: $(date) ==="
+echo "Posts live:"
+echo "  https://artonly.io/post/pj-morton-saturday-night-sunday-morning"
+echo "  https://artonly.io/post/war-and-treaty-story-of-michael-and-tanya"

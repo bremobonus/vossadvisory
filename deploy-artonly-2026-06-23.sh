@@ -144,17 +144,36 @@ echo "--- Generating PJ Morton social card ---"
 python3 artonly.io/agent/make-social-card.py pj-morton-saturday-night-sunday-morning \
   "PJ Morton Refuses the Division and Makes the Album His Whole Life Prepared Him For" music
 
-echo "--- Patching instagram_handle for PJ Morton (must run after social card which rewrites JSON) ---"
-python3 -c "
-import json
+echo "--- Patching instagram_handle for PJ Morton ---"
+sleep 5
+python3 << 'PYEOF'
+import json, os, sys
+
 path = 'artonly.io/posts/pj-morton-saturday-night-sunday-morning.json'
 with open(path, 'r') as f:
-    post = json.load(f)
-post['instagram_handle'] = '@pjmorton'
+    data = json.load(f)
+
+print(f"JSON top-level keys: {sorted(data.keys())}")
+print(f"instagram_handle BEFORE patch: {data.get('instagram_handle', 'NOT SET')}")
+
+data['instagram_handle'] = '@pjmorton'
+if isinstance(data.get('post'), dict):
+    data['post']['instagram_handle'] = '@pjmorton'
+    print("Also patched inside data[post] sub-key")
+
 with open(path, 'w') as f:
-    json.dump(post, f, indent=2)
-print('Patched instagram_handle: @pjmorton')
-"
+    json.dump(data, f, indent=2)
+    f.flush()
+    os.fsync(f.fileno())
+
+with open(path, 'r') as f:
+    verify = json.load(f)
+ig = verify.get('instagram_handle')
+print(f"instagram_handle AFTER patch: {ig}")
+if not ig:
+    print("ERROR: instagram_handle missing after write - aborting", file=sys.stderr)
+    sys.exit(1)
+PYEOF
 
 echo "--- Validating PJ Morton post ---"
 python3 artonly.io/agent/post-validator.py pj-morton-saturday-night-sunday-morning
@@ -314,17 +333,36 @@ echo "--- Generating The War and Treaty social card ---"
 python3 artonly.io/agent/make-social-card.py war-and-treaty-story-of-michael-and-tanya \
   "The War and Treaty Name the Love Story Directly and Dare You to Look Away" music
 
-echo "--- Patching instagram_handle for War and Treaty (must run after social card which rewrites JSON) ---"
-python3 -c "
-import json
+echo "--- Patching instagram_handle for War and Treaty ---"
+sleep 5
+python3 << 'PYEOF'
+import json, os, sys
+
 path = 'artonly.io/posts/war-and-treaty-story-of-michael-and-tanya.json'
 with open(path, 'r') as f:
-    post = json.load(f)
-post['instagram_handle'] = '@thewarandtreaty'
+    data = json.load(f)
+
+print(f"JSON top-level keys: {sorted(data.keys())}")
+print(f"instagram_handle BEFORE patch: {data.get('instagram_handle', 'NOT SET')}")
+
+data['instagram_handle'] = '@thewarandtreaty'
+if isinstance(data.get('post'), dict):
+    data['post']['instagram_handle'] = '@thewarandtreaty'
+    print("Also patched inside data[post] sub-key")
+
 with open(path, 'w') as f:
-    json.dump(post, f, indent=2)
-print('Patched instagram_handle: @thewarandtreaty')
-"
+    json.dump(data, f, indent=2)
+    f.flush()
+    os.fsync(f.fileno())
+
+with open(path, 'r') as f:
+    verify = json.load(f)
+ig = verify.get('instagram_handle')
+print(f"instagram_handle AFTER patch: {ig}")
+if not ig:
+    print("ERROR: instagram_handle missing after write - aborting", file=sys.stderr)
+    sys.exit(1)
+PYEOF
 
 echo "--- Validating The War and Treaty post ---"
 python3 artonly.io/agent/post-validator.py war-and-treaty-story-of-michael-and-tanya

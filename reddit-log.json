@@ -86,12 +86,12 @@
       "megan-thee-stallion",
       "wiki-ancient-history"
     ],
-    "selection_reason": "kelsey-lu chosen for the seven-year gap and album freshness (released June 12). Sampha, Kamasi Washington, Kim Gordon collaborators give specific hooks. r/indieheads is the right home for Dirty Hit artist features. pinkpantheress and charli-xcx skipped as strong candidates for another day. central-cee skipped, could go r/hiphopheads.",
+    "selection_reason": "kelsey-lu chosen for the seven year gap and album freshness (released June 12). Sampha, Kamasi Washington, Kim Gordon collaborators give specific hooks. r/indieheads is the right home for Dirty Hit artist features. pinkpantheress and charli-xcx skipped as strong candidates for another day. central-cee skipped, could go r/hiphopheads.",
     "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Post drafted for manual submission at reddit.com/r/indieheads. Today's posts sourced via sitemap.xml lastmod dates and confirmed via individual post JSON fetches."
   },
   {
     "date": "2026-06-21",
-    "agent_run": "2026-06-21T00:00:00Z",
+    "session": "distribution-agent",
     "ssh_status": "unavailable (sshpass not installed in cloud environment, ssh binary also missing)",
     "reddit_api_creds_checked": false,
     "posts_drafted": 1,
@@ -103,8 +103,7 @@
         "subreddit": "r/indieheads",
         "url": "https://artonly.io/post/gorillaz-the-mountain",
         "date": "2026-06-21",
-        "status": "queued_manual",
-        "post_body": "The Mountain features posthumous recordings from both Mark E. Smith and Tony Allen. That choice alone signals what kind of record this is. Two of the most singular figures in post-punk and Afrobeat, both gone, and Albarn had worked with both of them. This was not a guest list assembled for prestige.\n\nDamon Albarn and Jamie Hewlett both lost their fathers in 2024. The album was recorded across ten cities in five languages in the year that followed. The scale could read as the band's usual sprawl, but there is a framework for it: the Gorillaz fiction, the animated band that keeps the real people at a remove, gave them enough distance to process something they could not have approached directly.\n\nThere is a piece on ArtOnly that works through this properly and makes the case that grief is structural here, not decorative, and that the commercial success and the formal ambition are not in conflict the way they usually are.\n\nhttps://artonly.io/post/gorillaz-the-mountain"
+        "status": "queued_manual"
       }
     ],
     "today_articles": [
@@ -118,44 +117,33 @@
     "notes": "SSH and Reddit API unavailable from cloud environment. Post drafted for manual submission to r/indieheads. Gorillaz chosen for strongest editorial narrative (grief, posthumous recordings, global production). Five other articles available today not posted."
   },
   {
-    "date": "2026-06-22",
+    "date": "2026-06-23",
     "session": "distribution-agent",
-    "ssh_status": "unavailable (port 22 connection timeout from cloud environment)",
+    "ssh_status": "unavailable (sshpass not installed, SSH port 22 blocked in cloud environment)",
     "reddit_api_creds_checked": false,
     "posts_drafted": 2,
     "posts_attempted": 0,
-    "posts_queued": [
+    "queue": [
       {
-        "slug": "graham-coxon-castle-park",
-        "title": "Graham Coxon Finds a Lost Record and It Was Worth the Wait",
+        "slug": "hemlocke-springs",
         "subreddit": "r/indieheads",
-        "url": "https://artonly.io/post/graham-coxon-castle-park",
-        "date": "2026-06-22",
-        "status": "queued_manual",
-        "post_body": "Castle Park was recorded in 2011 and sat unreleased for fifteen years before Transgressive Records put it out on June 19, 2026. The album takes its name from a park in Colchester, Essex where Coxon grew up, and producer Ben Hillier gave it a warmth that makes the fifteen year wait feel like accumulated clarity rather than loss.\n\nhttps://artonly.io/post/graham-coxon-castle-park"
+        "status": "queued_manual"
       },
       {
-        "slug": "moses-sumney",
-        "title": "Moses Sumney Is Not Trying to Be Understood",
-        "subreddit": "r/rnb",
-        "url": "https://artonly.io/post/moses-sumney",
-        "date": "2026-06-22",
-        "status": "queued_manual",
-        "post_body": "Sumney's work runs from Aromanticism in 2017 through Grae in 2020, the film Blackalachia in 2021, and an acting role in The Idol in 2023, and the piece argues the thread connecting all of it is a deliberate refusal to optimize his art for commercial legibility. The collaborations with Oneohtrix Point Never and his own visual projects are not experiments in style but a consistent philosophy about what difficulty can do.\n\nhttps://artonly.io/post/moses-sumney"
+        "slug": "original-koffee",
+        "subreddit": "r/reggae",
+        "status": "queued_manual"
       }
     ],
     "today_articles_available": [
-      "graham-coxon-castle-park",
       "hemlocke-springs",
-      "moses-sumney",
-      "pond-terrestrials",
-      "the-week-in-music-june-22-2026"
+      "june-mcdoom",
+      "nao",
+      "original-koffee",
+      "pj-morton-saturday-night-sunday-morning",
+      "war-and-treaty-story-of-michael-and-tanya"
     ],
-    "subreddit_48h_check": {
-      "r/indieheads": "last queued 2026-06-21 (Gorillaz, 0 posts attempted by bot). No actual post was submitted. Available. Graham Coxon selected.",
-      "r/rnb": "last queued 2026-05-31. Available. Moses Sumney selected."
-    },
-    "selection_reason": "Graham Coxon chosen for the fifteen year vault story, ideal fit for r/indieheads readers who follow Blur and British indie. Moses Sumney chosen for r/rnb as his work across Aromanticism, Grae, Blackalachia, and The Idol represents the most specific career narrative available today. Pond skipped (strong r/indieheads fit but same subreddit as Coxon today). hemlocke springs and the week in music roundup skipped (weaker subreddit targeting).",
-    "notes": "SSH and Reddit API unavailable from cloud environment. 2 posts drafted for manual submission. Email sent to amosleblanc@gmail.com."
+    "selection_reason": "hemlocke-springs chosen for r/indieheads: TikTok viral origin story, debut album with Metacritic score, strong editorial arc from obscurity to Governors Ball. 48 hour rule: r/indieheads last used June 21, exactly 48 hours elapsed, cleared. original-koffee chosen for r/reggae: Jamaica's youngest Grammy winner, 100M streams, rebranded in 2025, clean editorial hook around what the follow-up album required. r/reggae not previously used.",
+    "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out on all ports (22, 2222, 3333). Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Posts drafted for manual submission. nao-intro slug skipped as placeholder title 'temp'."
   }
 ]

@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-23",
+  "agent_run": "2026-06-23T00:00:00Z",
+  "ssh_status": "unavailable (sshpass not installed, SSH port 22 blocked in cloud environment)",
+  "reddit_api_creds_checked": false,
+  "posts_drafted": 2,
+  "posts_attempted": 0,
+  "queue": [
+    {
+      "slug": "hemlocke-springs",
+      "title": "Hemlocke Springs: Four Years of Building What the Moment Could Not Give Her",
+      "subreddit": "r/indieheads",
+      "url": "https://artonly.io/post/hemlocke-springs",
+      "date": "2026-06-23",
+      "status": "queued_manual",
+      "post_title": "Hemlocke Springs: Four Years of Building What the Moment Could Not Give Her",
+      "post_body": "Isimeme Udu spent four years developing her sound in isolation before a TikTok she posted in October 2022 reached one million views in 24 hours and turned her debut single Girlfriend into a Spotify hit exceeding ten million streams. Her debut album the apple tree under the sea, produced with BURNS (Lady Gaga, Charli xcx), came out February 2026 and earned an 81 on Metacritic.\n\nhttps://artonly.io/post/hemlocke-springs"
+    },
+    {
+      "slug": "original-koffee",
+      "title": "Original Koffee: How Jamaica's Youngest Grammy Winner Built the Album That Followed",
+      "subreddit": "r/reggae",
+      "url": "https://artonly.io/post/original-koffee",
+      "date": "2026-06-23",
+      "status": "queued_manual",
+      "post_title": "Original Koffee: How Jamaica's Youngest Grammy Winner Built the Album That Followed",
+      "post_body": "Mikayla Simpson won the Grammy for Best Reggae Album at 19 with Rapture in 2019, becoming the youngest recipient in that category, and her breakout single Toast went platinum in the UK. Her 2022 debut album Gifted crossed 100 million Spotify streams and featured no guest collaborations, a deliberate statement of artistic independence from an artist who had already appeared on tracks with major figures across pop and reggae.\n\nhttps://artonly.io/post/original-koffee"
+    }
+  ],
+  "today_articles_available": [
+    "hemlocke-springs",
+    "june-mcdoom",
+    "nao",
+    "original-koffee",
+    "pj-morton-saturday-night-sunday-morning",
+    "war-and-treaty-story-of-michael-and-tanya"
+  ],
+  "selection_reason": "hemlocke-springs chosen for r/indieheads: TikTok viral origin story, debut album with Metacritic score, strong editorial arc from obscurity to Governors Ball. 48 hour rule: r/indieheads last used June 21, exactly 48 hours elapsed, cleared. original-koffee chosen for r/reggae: Jamaica's youngest Grammy winner, 100M streams, rebranded in 2025, clean editorial hook around what the follow-up album required. r/reggae not previously used. june-mcdoom (folk) skipped as culture category, strong candidate for r/folk on a future day. pj-morton and war-and-treaty skipped, limit of 2 per day reached.",
+  "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out on all ports (22, 2222, 3333). Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Posts drafted for manual submission. nao-intro slug skipped entirely as it had title 'temp' indicating unpublished placeholder."
+}

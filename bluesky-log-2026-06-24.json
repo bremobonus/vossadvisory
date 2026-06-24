@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-24",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout). This is the third consecutive blocked run (June 12, June 14, June 24).",
+  "account": "artonly.bsky.social",
+  "account_status": "active (DID: did:plc:4666lyeouf2kdo3s6bvkhtmn, but no recent posts due to repeated credential access failure)",
+  "articles_identified": [
+    {
+      "title": "Ama Dropped the Alias and Kept Everything That Mattered",
+      "url": "https://artonly.io/post/ama-ama",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "Toast Made Koffee Famous. Gifted Made the Argument She Actually Wanted.",
+      "url": "https://artonly.io/post/koffee",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 2
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Gmail draft created to amosleblanc@gmail.com (draft ID: r2128770969144826482). Log committed to vossadvisory repo. Push notification sent.",
+  "root_cause": "Cloud execution environment blocks outbound TCP port 22. bluesky-poster.py and bluesky-creds.json only accessible via SSH on DreamHost server. Previous draft emails (June 12, June 14) were never sent by Gmail MCP (create_draft only, no send capability).",
+  "resolution_needed": "One of: (A) Share Bluesky app password as env var BLUESKY_APP_PASSWORD in Claude Code session settings, (B) Store as GitHub secret in bremobonus/vossadvisory, (C) Post today's two articles manually at bsky.app"
+}

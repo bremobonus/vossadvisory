@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-24",
+  "agent_run": "2026-06-24T00:00:00Z",
+  "ssh_status": "unavailable (connection timeout from cloud environment)",
+  "reddit_api_creds_checked": false,
+  "reddit_reachable": false,
+  "posts_drafted": 2,
+  "posts_attempted": 0,
+  "queue": [
+    {
+      "slug": "pj-morton-saturday-night-sunday-morning",
+      "title": "PJ Morton Made Peace Between Saturday Night and Sunday Morning",
+      "subreddit": "r/rnb",
+      "url": "https://artonly.io/post/pj-morton-saturday-night-sunday-morning",
+      "date": "2026-06-24",
+      "status": "queued_manual",
+      "post_title": "PJ Morton Made Peace Between Saturday Night and Sunday Morning",
+      "post_body": "PJ Morton released Saturday Night, Sunday Morning on Juneteenth, a double LP with nine R&B tracks on one side and nine gospel tracks on the other. The son of Bishop Paul S. Morton Sr. and longtime keyboardist for Maroon 5, he made this his first album where he sings every song himself, forgoing his usual producer role to carry material rooted in a lifelong navigation between sacred and secular music.\n\nhttps://artonly.io/post/pj-morton-saturday-night-sunday-morning"
+    },
+    {
+      "slug": "ama-ama",
+      "title": "Ama Dropped the Alias and Kept Everything That Mattered",
+      "subreddit": "r/indieheads",
+      "url": "https://artonly.io/post/ama-ama",
+      "date": "2026-06-24",
+      "status": "queued_manual",
+      "post_title": "Ama Dropped the Alias and Kept Everything That Mattered",
+      "post_body": "Ama Louisa John released her self titled second album on ISO Supremacy, Brent Faiyaz's label, after leaving Interscope and spending two years reworking her artistic direction. She dropped the stage name Ama Lou she used on her 2022 debut and now performs under her birth name, a shift the piece traces through 13 tracks that treat healing as ongoing practice rather than resolved conclusion.\n\nhttps://artonly.io/post/ama-ama"
+    }
+  ],
+  "today_articles_available": [
+    "pj-morton-saturday-night-sunday-morning",
+    "ama-ama",
+    "koffee"
+  ],
+  "selection_reason": "pj-morton chosen for Juneteenth release date resonance and compelling sacred/secular double LP structure. Grammy credibility (6 wins, 22 nominations) without being generic. r/rnb is the correct home. ama-ama chosen for ISO Supremacy label connection and name reclamation narrative, which lands well in r/indieheads culture. koffee skipped: Jamaican reggae/dancehall has no clean match in approved subreddit list (not African so r/afrobeats is wrong; Grammy winner so r/listentothis is wrong).",
+  "48_hour_rule_check": {
+    "r/rnb": "last queued 2026-05-31, clear",
+    "r/indieheads": "last queued 2026-06-21, 3 days ago, clear"
+  },
+  "subreddit_rules_checked": false,
+  "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. reddit.com unreachable from cloud environment. Posts drafted for manual submission. Both subreddits accept editorial link posts about music from prior session knowledge."
+}

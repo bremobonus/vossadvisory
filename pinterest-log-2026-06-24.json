@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-24",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout after CONNECT). Cannot read ~/artonly.io/data/pinterest-token.txt or ~/artonly.io/data/pinterest-config.json.",
+  "posts_checked": 3,
+  "posts_would_pin": [
+    {
+      "slug": "ama-ama",
+      "title": "Ama Dropped the Alias and Kept Everything That Mattered",
+      "date": "2026-06-24",
+      "image": "https://artonly.io/assets/images/artists/ama-ama.jpg",
+      "link": "https://artonly.io/post/ama-ama"
+    },
+    {
+      "slug": "koffee",
+      "title": "Toast Made Koffee Famous. Gifted Made the Argument She Actually Wanted.",
+      "date": "2026-06-24",
+      "image": "https://artonly.io/assets/images/artists/koffee.jpg",
+      "link": "https://artonly.io/post/koffee"
+    },
+    {
+      "slug": "pj-morton-saturday-night-sunday-morning",
+      "title": "PJ Morton Made Peace Between Saturday Night and Sunday Morning",
+      "date": "2026-06-23",
+      "image": "https://artonly.io/assets/images/artists/pj-morton-saturday-night-sunday-morning.jpg",
+      "link": "https://artonly.io/post/pj-morton-saturday-night-sunday-morning"
+    }
+  ],
+  "pins_created": 0,
+  "resolution_needed": "Pinterest token and board_id must be accessible without SSH. Options: (1) Expose ~/artonly.io/data/pinterest-token.txt via a protected HTTPS endpoint on artonly.io/api/. (2) Store token + board_id as env vars in the Claude Code session settings. (3) Add pinterest-config.json to the vossadvisory GitHub repo. Same root cause as the blocked newsletter and Bluesky runs.",
+  "note": "Post JSON files at artonly.io/posts/*.json ARE accessible via HTTPS. Pinterest API calls (api.pinterest.com) ARE reachable through the cloud proxy. Only the token is missing."
+}

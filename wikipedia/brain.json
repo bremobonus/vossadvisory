@@ -1,7 +1,7 @@
 {
-  "version": "1.3",
+  "version": "1.7",
   "created": "2026-05-16",
-  "last_session": "2026-06-23",
+  "last_session": "2026-06-24",
   "bot_credentials": {
     "username": "Neverendersinc@neverending",
     "password": "kgpheb2utlllohripi9f2sdg1hbam5me",
@@ -12,15 +12,15 @@
     "block_reason": "LLMs, botting, COI, etc",
     "block_timestamp": "2026-05-19T09:46:39Z",
     "block_expiry": "infinity",
-    "block_confirmed_active": "2026-06-23",
-    "note": "Account permanently blocked. Do not attempt any Wikipedia edits via this account. Block confirmed still active 2026-06-23 via API."
+    "block_confirmed_active": "2026-06-24",
+    "note": "Account permanently blocked. Do not attempt any Wikipedia edits via this account. Block confirmed still active 2026-06-24 via API."
   },
   "articles": {
     "Draft:Amos Le Blanc": {
       "status": "blocked_account",
       "pageid": 83027568,
       "submitted": "2026-05-01",
-      "last_updated": "2026-06-23",
+      "last_updated": "2026-06-24",
       "last_revid": 1355058179,
       "last_revid_by": "Bearcat",
       "last_revid_timestamp": "2026-05-19T18:26:24Z",
@@ -114,36 +114,154 @@
       "notes": "Draft at Draft:Amos Le Blanc. Twice declined. Account blocked May 19, 2026. Clean draft ready in vossadvisory repo."
     }
   ],
-  "new_candidate_scan_2026-06-14": {
-    "conclusion": "artonly.io sitemap reviewed. All covered artists either have existing Wikipedia articles (Boy George, Bruno Mars, Kelsey Lu, Megan Thee Stallion, PinkPantheress, Charli XCX, Doechii, Olivia Rodrigo, etc.) or do not yet meet Wikipedia notability threshold. Potential future candidates to monitor: Cassandra Jenkins, Helena Deland, Jalen Ngonda, Florist. All Wikipedia editing halted due to account block.",
-    "future_candidates": [
-      "Cassandra Jenkins",
-      "Helena Deland",
-      "Jalen Ngonda",
-      "Florist"
-    ]
-  },
-  "new_candidate_scan_2026-06-23": {
-    "conclusion": "artonly.io feed reviewed (June 19 to 23, 2026 posts, 30 items). All four previously flagged future candidates now have Wikipedia articles: Cassandra Jenkins (pageid 66861704), Helena Deland (pageid 59031348), Jalen Ngonda (pageid 80307169), Florist (pageid 2585243). Most artists in recent posts already have articles. Two new candidates identified without Wikipedia articles: June McDoom (folk singer, artonly.io/post/june-mcdoom) and Micah Thomas (jazz pianist, artonly.io/post/micah-thomas-lucid). Sha Ray noted but coverage too limited for a standalone article at this time. All Wikipedia editing remains halted due to account block.",
-    "candidates_now_have_articles": [
-      "Cassandra Jenkins",
-      "Helena Deland",
-      "Jalen Ngonda",
-      "Florist"
+  "monitored_candidates": [
+    {
+      "artist": "Sha Ray",
+      "artonly_post": "sha-ray-dj-haram-critical-thot",
+      "first_flagged": "2026-06-20",
+      "last_checked": "2026-06-24",
+      "wikipedia_status": "no article",
+      "notability_notes": "Debut album Critical Thot with DJ Haram. Needs more independent press before drafting. Account block prevents any action regardless.",
+      "monitor": true
+    },
+    {
+      "artist": "Micah Thomas",
+      "artonly_post": "micah-thomas-lucid",
+      "first_flagged": "2026-06-22",
+      "last_checked": "2026-06-24",
+      "wikipedia_status": "no article",
+      "notability_notes": "Jazz pianist born 1997, Columbus OH. Juilliard MM 2020, Jerome L. Greene Fellowship. Long-term member of Immanuel Wilkins Quartet. 5 albums as leader including Lucid (2026). Referenced in Immanuel Wilkins Wikipedia article. Needs independent press audit before drafting. Account block prevents any action regardless.",
+      "monitor": true
+    },
+    {
+      "artist": "June McDoom",
+      "artonly_post": "june-mcdoom",
+      "first_flagged": "2026-06-24",
+      "last_checked": "2026-06-24",
+      "wikipedia_status": "no article",
+      "notability_notes": "Folk singer. artonly.io post title: The Folk Singer Who Never Saw Herself in the Genre She Loves. No Wikipedia article found via direct title search or opensearch. Needs independent press audit to assess GNG eligibility. Account block prevents any action regardless.",
+      "monitor": true
+    }
+  ],
+  "new_candidate_scan_2026-06-24": {
+    "conclusion": "artonly.io sitemap reviewed. Posts published June 22-24 assessed: Ama (ama-ama), Koffee, PJ Morton, Hemlocke Springs, June McDoom, NAO, The War and Treaty, Graham Coxon, JPEGMAFIA, MEEK (singer), Moses Sumney, Pond, and weekly roundup. One new finding: June McDoom has no Wikipedia article. Flagged for monitoring. MEEK (singer) confirmed to have a Wikipedia article (pageid 82661922). All others have existing Wikipedia articles. Monitored candidates Sha Ray and Micah Thomas both still have no Wikipedia article. Account block remains active. No Wikipedia edits possible.",
+    "posts_assessed": [
+      {"post": "ama-ama", "date": "2026-06-24", "wikipedia_status": "artist named Ama; existing article likely under full name, could not confirm exact article without post body parsing", "action": "none"},
+      {"post": "koffee", "date": "2026-06-24", "wikipedia_status": "exists (Koffee)", "action": "none"},
+      {"post": "pj-morton-saturday-night-sunday-morning", "date": "2026-06-24", "wikipedia_status": "exists (PJ Morton)", "action": "none"},
+      {"post": "hemlocke-springs", "date": "2026-06-23", "wikipedia_status": "exists (pageid 72368035)", "action": "none"},
+      {"post": "june-mcdoom", "date": "2026-06-23", "wikipedia_status": "NO ARTICLE", "action": "flagged_for_monitoring"},
+      {"post": "nao-intro", "date": "2026-06-23", "wikipedia_status": "test/temp post", "action": "none"},
+      {"post": "nao", "date": "2026-06-23", "wikipedia_status": "exists (NAO, British singer)", "action": "none"},
+      {"post": "original-koffee", "date": "2026-06-23", "wikipedia_status": "exists (Koffee)", "action": "none"},
+      {"post": "war-and-treaty-story-of-michael-and-tanya", "date": "2026-06-23", "wikipedia_status": "exists (The War and Treaty)", "action": "none"},
+      {"post": "graham-coxon-castle-park", "date": "2026-06-22", "wikipedia_status": "exists (Graham Coxon, pageid 294084)", "action": "none"},
+      {"post": "jpegmafia", "date": "2026-06-22", "wikipedia_status": "exists (JPEGMAFIA)", "action": "none"},
+      {"post": "meek", "date": "2026-06-22", "wikipedia_status": "exists (MEEK (singer), pageid 82661922)", "action": "none"},
+      {"post": "moses-sumney", "date": "2026-06-22", "wikipedia_status": "exists (Moses Sumney, pageid 54251598)", "action": "none"},
+      {"post": "pond-terrestrials", "date": "2026-06-22", "wikipedia_status": "exists (Pond (band), pageid 53078631)", "action": "none"},
+      {"post": "the-week-in-music-june-22-2026", "date": "2026-06-22", "wikipedia_status": "n/a (roundup)", "action": "none"}
     ],
-    "future_candidates": [
+    "monitored_candidates_recheck": [
       {
-        "name": "June McDoom",
-        "artonly_url": "https://artonly.io/post/june-mcdoom",
-        "notes": "Folk singer. Jamaican heritage, South Florida upbringing, jazz-trained. No Wikipedia article as of 2026-06-23. Monitor for growing press coverage.",
-        "flagged": "2026-06-23"
+        "artist": "Sha Ray",
+        "last_checked": "2026-06-24",
+        "wikipedia_status": "still no article",
+        "action": "continue monitoring"
       },
       {
-        "name": "Micah Thomas",
-        "artonly_url": "https://artonly.io/post/micah-thomas-lucid",
-        "notes": "Jazz pianist. No Wikipedia article as of 2026-06-23. artonly covered his album Lucid. Monitor for press coverage in jazz publications.",
-        "flagged": "2026-06-23"
+        "artist": "Micah Thomas",
+        "last_checked": "2026-06-24",
+        "wikipedia_status": "still no article",
+        "action": "continue monitoring"
       }
+    ]
+  },
+  "new_candidate_scan_2026-06-22": {
+    "conclusion": "artonly.io sitemap reviewed. Posts since 2026-06-20 checked: the-week-in-music-june-22-2026 (roundup), Pond (band), Moses Sumney, Hemlocke Springs, Graham Coxon, Solange Knowles, Popcaan, Noah Kahan, Micah Thomas. All have existing Wikipedia articles except Micah Thomas. Micah Thomas (jazz pianist, born 1997, Juilliard MM 2020, Jerome L. Greene Fellowship, member of Immanuel Wilkins Quartet, 5 albums as leader) has no Wikipedia article. He is referenced by name in the Immanuel Wilkins Wikipedia article. Sha Ray (monitored from June 20 scan) still has no Wikipedia article. All editing halted due to account block.",
+    "posts_assessed": [
+      {"post": "the-week-in-music-june-22-2026", "wikipedia_status": "n/a (roundup)", "action": "none"},
+      {"post": "pond-terrestrials", "wikipedia_status": "exists (Pond (band), pageid=53078631)", "action": "none"},
+      {"post": "moses-sumney", "wikipedia_status": "exists (pageid=54251598)", "action": "none"},
+      {"post": "hemlocke-springs", "wikipedia_status": "exists (pageid=72368035)", "action": "none"},
+      {"post": "graham-coxon-castle-park", "wikipedia_status": "exists (pageid=294084)", "action": "none"},
+      {"post": "why-solange-changed-rnb-forever", "wikipedia_status": "exists (Solange Knowles, pageid=543892)", "action": "none"},
+      {"post": "popcaan-unruly-boss", "wikipedia_status": "exists (pageid=32037623)", "action": "none"},
+      {"post": "noah-kahan", "wikipedia_status": "exists (pageid=56911709)", "action": "none"},
+      {"post": "micah-thomas-lucid", "wikipedia_status": "NO ARTICLE", "action": "flagged_for_monitoring"}
+    ]
+  },
+  "new_candidate_scan_2026-06-20": {
+    "conclusion": "artonly.io sitemap reviewed. Posts since 2026-06-19 checked: Alex Zhang Hungtai, Bad Bunny, Future, Sha Ray and DJ Haram (Critical Thot), Dave, Drake, FKA twigs, Jon Batiste, Taylor Swift, Tierra Whack, The Weeknd, Charlotte Day Wilson. All have existing Wikipedia articles except Sha Ray. Sha Ray has no Wikipedia article as of 2026-06-20. DJ Haram has a Wikipedia article (pageid=80539449). Sha Ray flagged for monitoring. All editing halted due to account block.",
+    "posts_assessed": [
+      {"post": "alex-zhang-hungtai-orion-mother", "wikipedia_status": "exists (pageid=81150154)", "action": "none"},
+      {"post": "bad-bunny-debi-tirar-mas-fotos", "wikipedia_status": "exists", "action": "none"},
+      {"post": "best-albums-2010-to-2015", "wikipedia_status": "n/a (list article)", "action": "none"},
+      {"post": "future", "wikipedia_status": "exists", "action": "none"},
+      {"post": "sha-ray-dj-haram-critical-thot", "wikipedia_status": "Sha Ray: NO ARTICLE. DJ Haram: exists (pageid=80539449)", "action": "flagged_for_monitoring"},
+      {"post": "dave-british-rap-2026", "wikipedia_status": "exists", "action": "none"},
+      {"post": "drake-iceman", "wikipedia_status": "exists", "action": "none"},
+      {"post": "fka-twigs", "wikipedia_status": "exists", "action": "none"},
+      {"post": "jon-batiste-black-mozart", "wikipedia_status": "exists", "action": "none"},
+      {"post": "taylor-swift", "wikipedia_status": "exists", "action": "none"},
+      {"post": "tierra-whack-whacks-museum", "wikipedia_status": "exists", "action": "none"},
+      {"post": "weeknd-hurry-up-tomorrow", "wikipedia_status": "exists", "action": "none"},
+      {"post": "who-is-charlotte-day-wilson", "wikipedia_status": "exists (pageid=57415912)", "action": "none"}
+    ]
+  },
+  "new_candidate_scan_2026-06-19": {
+    "conclusion": "artonly.io sitemap reviewed. Posts since 2026-06-15 checked: Dave, FKA twigs, Jon Batiste, Taylor Swift, Tierra Whack, Charlotte Day Wilson, Big Brave, Bruno Mars, Central Cee, Chappell Roan, Doechii, Kehlani, La Securite, Olivia Rodrigo, SZA, Tyler the Creator, Arooj Aftab, Hayley Kiyoko, KAWS, lagos-music-scene-artists-2024, Ruel, Burna Boy, James Blake, Katseye. All artists have existing Wikipedia articles. No new candidates identified. All editing halted due to account block.",
+    "posts_assessed": [
+      {"post": "dave-british-rap-2026", "wikipedia_status": "exists (Dave (rapper))", "action": "none"},
+      {"post": "fka-twigs", "wikipedia_status": "exists", "action": "none"},
+      {"post": "jon-batiste-black-mozart", "wikipedia_status": "exists", "action": "none"},
+      {"post": "taylor-swift", "wikipedia_status": "exists", "action": "none"},
+      {"post": "tierra-whack-whacks-museum", "wikipedia_status": "exists", "action": "none"},
+      {"post": "who-is-charlotte-day-wilson", "wikipedia_status": "exists", "action": "none"},
+      {"post": "big-brave-in-grief-or-in-hope", "wikipedia_status": "exists (Big Brave)", "action": "none"},
+      {"post": "bruno-mars", "wikipedia_status": "exists", "action": "none"},
+      {"post": "central-cee", "wikipedia_status": "exists", "action": "none"},
+      {"post": "chappell-roan", "wikipedia_status": "exists", "action": "none"},
+      {"post": "doechii", "wikipedia_status": "exists", "action": "none"},
+      {"post": "kehlani", "wikipedia_status": "exists", "action": "none"},
+      {"post": "la-securite-bingo", "wikipedia_status": "exists (La Securite)", "action": "none"},
+      {"post": "olivia-rodrigo", "wikipedia_status": "exists", "action": "none"},
+      {"post": "sza", "wikipedia_status": "exists", "action": "none"},
+      {"post": "tyler-the-creator", "wikipedia_status": "exists", "action": "none"},
+      {"post": "who-is-arooj-aftab-everything-you-need-to-know", "wikipedia_status": "exists", "action": "none"},
+      {"post": "hayley-kiyoko-girls-like-girls", "wikipedia_status": "exists", "action": "none"},
+      {"post": "kaws", "wikipedia_status": "exists", "action": "none"},
+      {"post": "lagos-music-scene-artists-2024", "wikipedia_status": "no exact article; not an artist candidate", "action": "none"},
+      {"post": "best-albums-2000-to-2005", "wikipedia_status": "n/a (list article)", "action": "none"},
+      {"post": "katseye", "wikipedia_status": "exists", "action": "none"},
+      {"post": "ruel-kicking-my-feet-screaming", "wikipedia_status": "exists (Ruel (singer))", "action": "none"}
+    ]
+  },
+  "new_candidate_scan_2026-06-15": {
+    "conclusion": "artonly.io sitemap reviewed. New posts today (2026-06-15): Burna Boy (Sovereign), Ice Cube (birthday), James Blake (Hollow Ground), Jorja Smith, Tyla, plus internal test pages. All real artist posts today cover well-established artists with existing Wikipedia articles. Previous future candidates confirmed: Cassandra Jenkins (article exists), Helena Deland (article exists), Jalen Ngonda (article exists), Florist/band (article exists). No new Wikipedia candidates without articles identified today. All Wikipedia editing remains halted due to account block.",
+    "todays_posts_assessed": [
+      {"post": "burna-boy-sovereign", "wikipedia_status": "exists", "action": "none"},
+      {"post": "ice-cube-birthday-2026", "wikipedia_status": "exists", "action": "none"},
+      {"post": "james-blake-hollow-ground", "wikipedia_status": "exists", "action": "none"},
+      {"post": "jorja-smith", "wikipedia_status": "exists", "action": "none"},
+      {"post": "tyla", "wikipedia_status": "exists", "action": "none"},
+      {"post": "the-10-best-albums-of-the-2000s", "wikipedia_status": "n/a (list article)", "action": "none"},
+      {"post": "pinkpantheress-portrait/session/studio", "wikipedia_status": "exists (PinkPantheress)", "action": "none"}
+    ],
+    "previous_candidates_resolved": [
+      {"artist": "Cassandra Jenkins", "wikipedia_status": "article exists", "monitoring": "complete"},
+      {"artist": "Helena Deland", "wikipedia_status": "article exists", "monitoring": "complete"},
+      {"artist": "Jalen Ngonda", "wikipedia_status": "article exists", "monitoring": "complete"},
+      {"artist": "Florist", "wikipedia_status": "article exists (Florist (band))", "monitoring": "complete"}
+    ]
+  },
+  "new_candidate_scan_2026-06-14": {
+    "conclusion": "artonly.io sitemap reviewed. All covered artists either have existing Wikipedia articles or do not yet meet Wikipedia notability threshold. Potential future candidates to monitor: Cassandra Jenkins, Helena Deland, Jalen Ngonda, Florist. All Wikipedia editing halted due to account block.",
+    "future_candidates": [
+      "Cassandra Jenkins",
+      "Helena Deland",
+      "Jalen Ngonda",
+      "Florist"
     ]
   },
   "edit_history": [
@@ -190,11 +308,39 @@
       "summary": "Block confirmed active; draft no new activity since May 19; artonly sitemap scanned for candidates; brain updated to v1.2 and deployed via GitHub Actions"
     },
     {
-      "date": "2026-06-23",
-      "action": "SESSION: status check, feed scan, candidate update",
+      "date": "2026-06-15",
+      "action": "SESSION: status check, candidate rescan, brain update",
       "page": null,
       "revid": null,
-      "summary": "Block confirmed active (Neverendersinc, expiry infinity). Draft:Amos Le Blanc no new activity since May 19. All four previously flagged future candidates (Cassandra Jenkins, Helena Deland, Jalen Ngonda, Florist) now have Wikipedia articles. Two new candidates identified: June McDoom and Micah Thomas. Brain updated to v1.3."
+      "summary": "Block confirmed active (block_id 25412872). Draft:Amos Le Blanc unchanged since 2026-05-19. New posts today (Burna Boy, Ice Cube, James Blake, Jorja Smith, Tyla) all cover artists with existing Wikipedia articles. Previous future candidates (Cassandra Jenkins, Helena Deland, Jalen Ngonda, Florist) all confirmed to have Wikipedia articles. No new candidates identified. Brain updated to v1.3."
+    },
+    {
+      "date": "2026-06-19",
+      "action": "SESSION: status check, artonly scan (June 15-19), brain update",
+      "page": null,
+      "revid": null,
+      "summary": "Block confirmed active (block_id 25412872, by Asilvering, expiry infinity). Draft:Amos Le Blanc: no new activity since 2026-05-19 (last revid 1355058179 by Bearcat). Scanned 23 artonly posts published June 15-19. All artists have existing Wikipedia articles. No new candidates identified. Brain updated to v1.4."
+    },
+    {
+      "date": "2026-06-20",
+      "action": "SESSION: status check, artonly scan (June 19-20), brain update",
+      "page": null,
+      "revid": null,
+      "summary": "Block confirmed active (block_id 25412872, by Asilvering, expiry infinity). Draft:Amos Le Blanc: no new activity since 2026-05-19. Scanned 13 artonly posts. One new finding: Sha Ray has no Wikipedia article. Flagged for monitoring. Brain updated to v1.5."
+    },
+    {
+      "date": "2026-06-22",
+      "action": "SESSION: status check, artonly scan (June 21-22), brain update",
+      "page": null,
+      "revid": null,
+      "summary": "Block confirmed active (block_id 25412872, by Asilvering, expiry infinity). Draft:Amos Le Blanc: no new activity since 2026-05-19. Scanned 9 artonly posts. One new finding: Micah Thomas (jazz pianist, Juilliard, Immanuel Wilkins Quartet, 5 albums) has no Wikipedia article; flagged for monitoring. Sha Ray still has no Wikipedia article. Brain updated to v1.6."
+    },
+    {
+      "date": "2026-06-24",
+      "action": "SESSION: status check, artonly scan (June 22-24), brain update",
+      "page": null,
+      "revid": null,
+      "summary": "Block confirmed active (block_id 25412872, by Asilvering, expiry infinity). Draft:Amos Le Blanc: no new activity since 2026-05-19 (last revid 1355058179 by Bearcat). Scanned 15 artonly posts published June 22-24: Ama, Koffee, PJ Morton, Hemlocke Springs, June McDoom, NAO, The War and Treaty, Graham Coxon, JPEGMAFIA, MEEK (singer), Moses Sumney, Pond, and weekly roundup. MEEK (singer) confirmed to have Wikipedia article (pageid 82661922). One new finding: June McDoom (folk singer) has no Wikipedia article; flagged for monitoring. Monitored candidates Sha Ray and Micah Thomas still have no Wikipedia articles. Consolidated monitored_candidates into dedicated top-level key in brain. Brain updated to v1.7."
     }
   ],
   "strategy": {

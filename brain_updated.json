@@ -620,13 +620,17 @@
     }
   ],
   "queue": [
+    "Taylor Swift",
+    "Ella Langley",
     "Josh Fawaz",
     "Saxboy Billy",
     "Nyck Caution",
+    "Coldplay",
+    "Effie",
+    "ADÉLA",
     "The Weeknd",
     "Justin Bieber",
     "Rihanna",
-    "Taylor Swift",
     "Drake",
     "Bad Bunny",
     "Lady Gaga",
@@ -639,7 +643,6 @@
     "Central Cee",
     "Dave",
     "Skepta",
-    "Ella Langley",
     "PinkPantheress",
     "Kehlani",
     "Jorja Smith",
@@ -759,7 +762,7 @@
     "Common Good Collective"
   ],
   "alert_no_posts": "2026-06-08",
-  "last_updated": "2026-06-19",
-  "queue_last_updated": "2026-06-20",
-  "queue_update_reason": "Trending injection + tier sort: 6 trending artists added (Josh Fawaz, Saxboy Billy, Nyck Caution, The Weeknd, Justin Bieber, Rihanna), queue re-sorted A/B/C by audience"
+  "last_updated": "2026-06-24",
+  "queue_last_updated": "2026-06-24",
+  "queue_update_reason": "Trending injection + tier sort: Taylor Swift (#1 Billboard this week, broke 21st century record) and Ella Langley (Choosin Texas Song of Summer 2026, 10 weeks at #1, 30M Spotify) promoted to front. 3 new injections: Coldplay (91.5M Spotify, not yet covered), Effie (NME 100 2026 Korean hyperpop), ADELA (NME 100 2026 pop provocateur). Tier A artists The Weeknd through Central Cee ordered by Spotify monthly listeners. Tier B artists Dave through Shygirl follow."
 }

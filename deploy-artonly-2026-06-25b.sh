@@ -53,7 +53,7 @@ OMP_NUM_THREADS=1 convert ~/artonly.io/assets/images/artists/headie-one-edna.jpg
      ~/artonly.io/assets/images/artists/headie-one-edna.jpg
 echo "Image upscaled: headie-one-edna.jpg"
 
-# Create section images
+# Create section images (derived from hero)
 OMP_NUM_THREADS=1 convert ~/artonly.io/assets/images/artists/headie-one-edna.jpg \
   -resize 1200x800^ -gravity center -extent 1200x800 -quality 88 \
   ~/artonly.io/assets/images/artists/headie-one-debut.jpg
@@ -148,6 +148,7 @@ data = {
     "image": "/assets/images/artists/headie-one-edna.jpg",
     "image_alt": "Headie One press photo",
     "image_position": "center 20%",
+    "instagram": "@headieone",
     "crew": [
         {"name": "Stormzy", "role": "Featured artist", "url": "https://instagram.com/stormzy", "handle": "@stormzy"},
         {"name": "Taz Tron Delix", "role": "Video director", "url": "https://instagram.com/taztrondelix", "handle": "@taztrondelix"}
@@ -165,6 +166,10 @@ PYEOF
 cd ~/artonly.io/agent
 python3 post-validator.py headie-one-edna || echo "Validator complete (check output above)"
 cd ~
+
+# Verify live
+STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://artonly.io/post/headie-one-edna)
+echo "HTTP status: $STATUS"
 
 # Ping IndexNow
 curl -s "https://api.indexnow.org/indexnow?url=https://artonly.io/post/headie-one-edna&key=5a4a5c1b5f124ccc9e6c4e5c5a4a5c1b"

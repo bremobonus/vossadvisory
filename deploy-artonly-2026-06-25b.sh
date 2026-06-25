@@ -2,7 +2,7 @@
 # ArtOnly Deploy Script - Headie One (EDNA)
 # Generated: 2026-06-25
 # Post: headie-one-edna
-# Triggered: retry push
+# v3
 
 set -e
 echo "=== ArtOnly Deploy: 2026-06-25 (Headie One) ==="

@@ -1,0 +1,49 @@
+name: ArtOnly Publisher
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'deploy-artonly-*.sh'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Determine deploy script
+        id: script
+        run: |
+          SCRIPT=$(git diff --name-only HEAD^ HEAD | grep '^deploy-artonly-.*\.sh$' | tail -1)
+          if [ -z "$SCRIPT" ]; then
+            SCRIPT=$(ls deploy-artonly-*.sh 2>/dev/null | sort | tail -1)
+          fi
+          echo "script=$SCRIPT" >> $GITHUB_OUTPUT
+          echo "Deploying: $SCRIPT"
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Verify deploy script exists
+        run: |
+          if [ ! -f "${{ steps.script.outputs.script }}" ]; then
+            echo "ERROR: ${{ steps.script.outputs.script }} not found"
+            exit 1
+          fi
+          echo "Script found: ${{ steps.script.outputs.script }}"
+
+      - name: Run deploy script on DreamHost
+        env:
+          SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+        run: |
+          PW="${SSHPASS:-Neverending48!}"
+          sshpass -p "$PW" ssh \
+            -o PreferredAuthentications=password \
+            -o StrictHostKeyChecking=no \
+            -o ConnectTimeout=60 \
+            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
+            'bash -s' < "${{ steps.script.outputs.script }}"

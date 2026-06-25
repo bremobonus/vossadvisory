@@ -1,0 +1,32 @@
+{
+  "date": "2026-06-25",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout). GitHub Actions workflow_dispatch returned 403 (MCP token lacks dispatch permission). Push to main did not auto-trigger workflow (deploy-artonly-bluesky-2026-06-25.sh committed to main at SHA 2c78c13ba3a0a67634c0783912a445e3c90fa5f8).",
+  "account": "artonly.bsky.social",
+  "account_status": "active (DID: did:plc:4666lyeouf2kdo3s6bvkhtmn)",
+  "articles_identified": [
+    {
+      "title": "Hard-Fi Return Unburdened, and It Shows",
+      "url": "https://artonly.io/post/hard-fi-sweating-someone-elses-fever",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "Myles Smith Arrives Where the Story Gets Hard",
+      "url": "https://artonly.io/post/myles-smith-my-mess-my-heart-my-life",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 2
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "deploy-artonly-bluesky-2026-06-25.sh committed to main. Draft email created to amosleblanc@gmail.com. Push notification sent.",
+  "resolution_options": [
+    "Option A (fastest): Go to https://github.com/bremobonus/vossadvisory/actions/workflows/deploy-artonly.yml and click Run workflow, enter script name: deploy-artonly-bluesky-2026-06-25.sh",
+    "Option B: SSH to server manually and run: python3 ~/artonly.io/agent/bluesky-poster.py <handle> <app_password>",
+    "Option C: Add BLUESKY_HANDLE and BLUESKY_APP_PASSWORD as GitHub Actions secrets so the cloud agent can post directly without SSH"
+  ],
+  "recurring_issue": "This same SSH block has occurred on June 12, June 14, and June 25. A permanent fix is needed."
+}

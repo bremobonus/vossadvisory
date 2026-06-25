@@ -2,7 +2,7 @@
 # ArtOnly Deploy Script - Headie One (EDNA)
 # Generated: 2026-06-25
 # Post: headie-one-edna
-# Run: sshpass -p 'Neverending48!' ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no dh_yadmw3@pdx1-shared-a2-06.dreamhost.com 'bash -s' < deploy-artonly-2026-06-25b.sh
+# Triggered: retry push
 
 set -e
 echo "=== ArtOnly Deploy: 2026-06-25 (Headie One) ==="

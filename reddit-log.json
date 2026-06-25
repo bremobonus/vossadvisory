@@ -88,5 +88,55 @@
     ],
     "selection_reason": "kelsey-lu chosen for the seven-year gap and album freshness (released June 12). Sampha, Kamasi Washington, Kim Gordon collaborators give specific hooks. r/indieheads is the right home for Dirty Hit artist features. pinkpantheress and charli-xcx skipped as strong candidates for another day. central-cee skipped, could go r/hiphopheads.",
     "notes": "SSH to pdx1-shared-a2-06.dreamhost.com timed out. Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Post drafted for manual submission at reddit.com/r/indieheads. Today's posts sourced via sitemap.xml lastmod dates and confirmed via individual post JSON fetches."
+  },
+  {
+    "date": "2026-06-25",
+    "session": "distribution-agent",
+    "ssh_status": "unavailable (port 22 blocked at network level from cloud container, confirmed via nc)",
+    "reddit_api_creds_checked": false,
+    "posts_drafted": 2,
+    "posts_attempted": 0,
+    "today_posts_available": [
+      "hard-fi-sweating-someone-elses-fever",
+      "myles-smith-my-mess-my-heart-my-life",
+      "ama-ama",
+      "cleo-sol"
+    ],
+    "queue": [
+      {
+        "slug": "hard-fi-sweating-someone-elses-fever",
+        "title": "Hard-Fi Return Unburdened, and It Shows",
+        "subreddit": "r/indieheads",
+        "url": "https://artonly.io/post/hard-fi-sweating-someone-elses-fever",
+        "date": "2026-06-25",
+        "status": "queued_manual",
+        "body": "Hard-Fi spent fifteen years away from music and came back with an album that sounds nothing like Stars of CCTV and makes no apology for it. Sweating Someone Else's Fever brings in Colombian rapper Mike Kalle over cumbia production, theatrical arrangements, and a candor rooted in the lived experience of four people from Surrey.\n\nhttps://artonly.io/post/hard-fi-sweating-someone-elses-fever"
+      },
+      {
+        "slug": "cleo-sol",
+        "title": "Cleo Sol: In Their Own Words",
+        "subreddit": "r/rnb",
+        "url": "https://artonly.io/post/cleo-sol",
+        "date": "2026-06-24",
+        "status": "queued_manual",
+        "body": "Cleo Sol has spent four years building a solo catalog that sits in the lineage of Minnie Riperton and Erykah Badu without announcing it. Rose in the Dark arrived in 2022 and Heaven followed in 2024, both produced by Inflo, both centered on the same premise: intimacy as architecture rather than atmosphere.\n\nhttps://artonly.io/post/cleo-sol"
+      }
+    ],
+    "skipped": [
+      {
+        "slug": "myles-smith-my-mess-my-heart-my-life",
+        "reason": "Max 2 posts per day reached. No strong subreddit match from approved list; contemporary pop does not map cleanly to r/indieheads, r/listentothis (too well-known with a billion stream hit), or any other approved sub. Strong candidate for a future session if r/indieheads window opens."
+      },
+      {
+        "slug": "ama-ama",
+        "reason": "Max 2 posts per day reached. Insufficient genre context retrieved to assign subreddit confidently."
+      }
+    ],
+    "subreddit_48h_check": {
+      "r/indieheads": "last used 2026-06-21, 4 days clear",
+      "r/rnb": "last used 2026-05-31, 25 days clear"
+    },
+    "selection_reason": "Hard-Fi chosen for r/indieheads: British indie rock with 15 year return narrative and specific production details (cumbia, Colombian rapper Mike Kalle). Cleo Sol chosen for r/rnb: producer Inflo, lineage of Minnie Riperton and Erykah Badu, two studio albums as specific anchors. Both are editorial content with genuine artistic context.",
+    "notes": "SSH to pdx1-shared-a2-06.dreamhost.com blocked (port 22 unreachable from cloud container). Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Reddit.com partially accessible via curl but not for API calls. Posts drafted for manual submission. Summary emailed to amosleblanc@gmail.com."
   }
 ]

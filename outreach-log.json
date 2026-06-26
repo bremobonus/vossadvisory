@@ -645,6 +645,56 @@
       "drafted_at": "2026-06-22T00:00:00Z",
       "gmail_draft_id": null,
       "status": "skipped_no_contact"
+    },
+    {
+      "slug": "anderson-paak-kpops",
+      "artist": "Anderson .Paak",
+      "email": "info@fullstopmanagement.com",
+      "contact_type": "management_full_stop",
+      "drafted_at": "2026-06-26T00:00:00Z",
+      "gmail_draft_id": "r-6826868311397619077",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "headie-one-in-their-own-words",
+      "artist": "Headie One",
+      "email": "bookingheadieone@gmail.com",
+      "contact_type": "booking_direct",
+      "drafted_at": "2026-06-26T00:00:00Z",
+      "gmail_draft_id": "r-4230507033806318999",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tierra-whack-whacks-museum",
+      "artist": "Tierra Whack",
+      "email": "info@whackentertainment.com",
+      "contact_type": "management_whack_entertainment",
+      "drafted_at": "2026-06-26T00:00:00Z",
+      "gmail_draft_id": "r2970181331570490536",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "pj-morton-saturday-night-sunday-morning",
+      "artist": "PJ Morton",
+      "email": "info@shorefire.com",
+      "contact_type": "press_shore_fire_media",
+      "drafted_at": "2026-06-26T00:00:00Z",
+      "gmail_draft_id": "r-5456130596717267856",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "pond-terrestrials",
+      "artist": "Pond",
+      "email": "info@villagesounds.com",
+      "contact_type": "booking_village_sounds",
+      "drafted_at": "2026-06-26T00:00:00Z",
+      "gmail_draft_id": "r-1405767743986320493",
+      "status": "drafted",
+      "follow_up_sent": false
     }
   ]
 }

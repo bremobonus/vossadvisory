@@ -18,5 +18,6 @@
       "handle": "@mjlenderman"
     }
   ],
-  "image": "/assets/images/artists/waxahatchee.jpg"
+  "image": "/assets/images/artists/waxahatchee.jpg",
+  "image_position": "center 20%"
 }

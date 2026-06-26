@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-26",
+  "run_time": "10:30 ET",
+  "status": "BLOCKED",
+  "reason": "SSH to pdx1-shared-a2-06.dreamhost.com blocked by cloud environment network policy (port 22 timeout). Bluesky API reachable via HTTPS but app_password not available locally.",
+  "account": "artonly.bsky.social",
+  "account_status": "active (did:plc:4666lyeouf2kdo3s6bvkhtmn)",
+  "site_status": "artonly.io returning HTTP 200 — site is healthy",
+  "articles_identified": [
+    {
+      "title": "Terrestrials Is the Record Pond Were Always Building Toward",
+      "url": "https://artonly.io/post/pond-terrestrials",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 1
+    },
+    {
+      "title": "PJ Morton Spent His Whole Life Auditioning for This Double Album",
+      "url": "https://artonly.io/post/pj-morton-saturday-night-sunday-morning",
+      "category": "music",
+      "hashtags": ["#NewMusic", "#IndieMusic"],
+      "priority": 2
+    }
+  ],
+  "posts_published": 0,
+  "action_taken": "Draft email created to amosleblanc@gmail.com. Log committed to vossadvisory repo.",
+  "resolution_needed": "Provide Bluesky app_password. Save it to ~/artonly.io/agent/bluesky-creds.json on the DreamHost server OR provide it as an environment variable BLUESKY_APP_PASSWORD in the Claude Code session. SSH from this cloud environment to DreamHost port 22 is consistently blocked by network policy."
+}

@@ -21,6 +21,20 @@
     "notes": "artonly.io API blocked by cloud env proxy (Host not in allowlist); Gmail draft created (id: r-1950593505159839542); subscribers file not found on server; SSH port 22 blocked from cloud env"
   },
   {
+    "date": "2026-06-26T20:00:00Z",
+    "subject": "ArtOnly Weekly: June 26, 2026",
+    "articles_count": 5,
+    "sent_to_count": 0,
+    "posts": [
+      "pj-morton-saturday-night-sunday-morning",
+      "headie-one-in-their-own-words",
+      "pond-terrestrials",
+      "micah-thomas-lucid",
+      "tierra-whack-whacks-museum"
+    ],
+    "notes": "artonly.io API blocked by cloud env proxy (Host not in allowlist); Gmail draft created (id: r-2800427369348041321); subscribers file not found on server; SSH port 22 blocked from cloud env"
+  },
+  {
     "date": "2026-06-14T00:00:00Z",
     "subject": "This week on artonly.",
     "articles_count": 7,

@@ -46,22 +46,38 @@ else:
 
 post['token'] = TOKEN
 
+import time
+
 data = json.dumps(post).encode('utf-8')
-req = urllib.request.Request(
-    'https://artonly.io/api/publish.php',
-    data=data,
-    headers={'Content-Type': 'application/json'}
-)
-try:
-    with urllib.request.urlopen(req, timeout=60) as r:
-        resp = r.read().decode('utf-8')
-        print(f"Publish response: {resp}", flush=True)
-        parsed = json.loads(resp)
-        if not parsed.get('ok'):
-            print(f"ERROR: publish failed: {resp}", file=sys.stderr)
-            sys.exit(1)
-except Exception as e:
-    print(f"ERROR publishing: {e}", file=sys.stderr)
+for attempt in range(5):
+    if attempt > 0:
+        wait = 30 * attempt
+        print(f"  Retry {attempt} in {wait}s...", flush=True)
+        time.sleep(wait)
+    req = urllib.request.Request(
+        'https://artonly.io/api/publish.php',
+        data=data,
+        headers={'Content-Type': 'application/json'}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            resp = r.read().decode('utf-8')
+            print(f"Publish response: {resp}", flush=True)
+            parsed = json.loads(resp)
+            if parsed.get('ok'):
+                break
+            print(f"  publish failed: {resp}", flush=True)
+    except urllib.error.HTTPError as e:
+        if e.code == 429:
+            print(f"  429 rate limit, will retry", flush=True)
+            continue
+        print(f"ERROR publishing: {e}", file=sys.stderr)
+        sys.exit(1)
+    except Exception as e:
+        print(f"ERROR publishing: {e}", file=sys.stderr)
+        sys.exit(1)
+else:
+    print("ERROR: publish failed after 5 attempts", file=sys.stderr)
     sys.exit(1)
 PYEOF
 

@@ -138,5 +138,51 @@
     },
     "selection_reason": "Hard-Fi chosen for r/indieheads: British indie rock with 15 year return narrative and specific production details (cumbia, Colombian rapper Mike Kalle). Cleo Sol chosen for r/rnb: producer Inflo, lineage of Minnie Riperton and Erykah Badu, two studio albums as specific anchors. Both are editorial content with genuine artistic context.",
     "notes": "SSH to pdx1-shared-a2-06.dreamhost.com blocked (port 22 unreachable from cloud container). Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Reddit.com partially accessible via curl but not for API calls. Posts drafted for manual submission. Summary emailed to amosleblanc@gmail.com."
+  },
+  {
+    "date": "2026-06-27",
+    "session": "distribution-agent",
+    "ssh_status": "unavailable (port 22 blocked at network level from cloud container)",
+    "reddit_api_creds_checked": false,
+    "posts_drafted": 2,
+    "posts_attempted": 0,
+    "today_posts_available": [
+      "pj-morton-saturday-night-sunday-morning",
+      "headie-one-in-their-own-words",
+      "pond-terrestrials"
+    ],
+    "queue": [
+      {
+        "slug": "headie-one-in-their-own-words",
+        "title": "Headie One: In Their Own Words",
+        "subreddit": "r/hiphopheads",
+        "url": "https://artonly.io/post/headie-one-in-their-own-words",
+        "date": "2026-06-27",
+        "status": "queued_manual",
+        "body": "Headie One released EDNA in 2020 to a Metacritic score of 87, one of the most critically acclaimed UK drill records ever made, then followed it with The Last One in 2024 and completed the decade long narrative he built around Broadwater Farm in Tottenham. This feature draws from collected interviews to map how geography becomes argument in his work, and why drill travels from North London to Seoul to Sao Paulo.\n\nhttps://artonly.io/post/headie-one-in-their-own-words"
+      },
+      {
+        "slug": "pond-terrestrials",
+        "title": "Terrestrials Is the Record Pond Were Always Building Toward",
+        "subreddit": "r/indieheads",
+        "url": "https://artonly.io/post/pond-terrestrials",
+        "date": "2026-06-27",
+        "status": "queued_manual",
+        "body": "Pond entered the studio for their eleventh album with three prohibitions: no fuzz pedal, no ballads, and no extended atmospheric passages, stripping away the maximalist accumulation that defined records like 9 and Man It Feels Like Space Again. Released June 19 on their own Mangovision imprint, Terrestrials draws on 1980s Australian rock filtered through goth and post-punk, and it is the most concentrated and directed record Nick Allbrook and the Perth band have made.\n\nhttps://artonly.io/post/pond-terrestrials"
+      }
+    ],
+    "skipped": [
+      {
+        "slug": "pj-morton-saturday-night-sunday-morning",
+        "reason": "Max 2 posts per day reached. r/rnb last used 2026-06-25, exactly 48h ago. Strong candidate for 2026-06-28 on r/rnb. Gospel soul double album with strong specificity and ArtOnly angle."
+      }
+    ],
+    "subreddit_48h_check": {
+      "r/hiphopheads": "never used, clear",
+      "r/indieheads": "last used 2026-06-25, 48h clear as of 2026-06-27",
+      "r/rnb": "last used 2026-06-25, 48h borderline, skipped today"
+    },
+    "selection_reason": "Headie One chosen for r/hiphopheads: UK drill with Metacritic 87 for EDNA, Broadwater Farm geography as central theme, specific career narrative ending with The Last One 2024. r/hiphopheads never previously used and is the best fit for UK drill. Pond chosen for r/indieheads: eleventh album, explicit studio constraints (no fuzz, no ballads), 1980s Australian goth and post-punk influence, released June 19 via Mangovision on Secretly Distribution. Both are editorial features with genuine artistic specificity.",
+    "notes": "SSH to pdx1-shared-a2-06.dreamhost.com blocked (port 22 unreachable from cloud container). Reddit API creds at ~/artonly.io/agent/reddit-creds.json inaccessible. Posts drafted for manual submission. Summary emailed to amosleblanc@gmail.com."
   }
 ]

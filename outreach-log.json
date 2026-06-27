@@ -1216,6 +1216,56 @@
       "status": "skipped_no_contact",
       "emails_sent": [],
       "follow_up_sent": false
+    },
+    {
+      "slug": "kelsey-lu-so-help-me-god",
+      "artist": "Kelsey Lu",
+      "email": "info@dirtyhit.co.uk",
+      "contact_type": "label_dirty_hit",
+      "drafted_at": "2026-06-27T14:30:00Z",
+      "gmail_draft_id": "r-1207237602591125907",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wiki-ancient-history",
+      "artist": "Wiki",
+      "email": "wiksetenterprise@gmail.com",
+      "contact_type": "artist_direct_wikset",
+      "drafted_at": "2026-06-27T14:30:00Z",
+      "gmail_draft_id": "r4154257541338883899",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tems-love-is-a-kingdom",
+      "artist": "Tems",
+      "email": "info@since93.com",
+      "contact_type": "mgmt_since93",
+      "drafted_at": "2026-06-27T14:30:00Z",
+      "gmail_draft_id": "r-8569089821916434144",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sampha-return-2023",
+      "artist": "Sampha",
+      "email": "info@y-o-u-n-g.com",
+      "contact_type": "label_young_turks",
+      "drafted_at": "2026-06-27T14:30:00Z",
+      "gmail_draft_id": "r4189803789707630327",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "waxahatchee",
+      "artist": "Waxahatchee",
+      "email": "publicity@anti.com",
+      "contact_type": "label_anti_press",
+      "drafted_at": "2026-06-27T14:30:00Z",
+      "gmail_draft_id": "r2203247268976786787",
+      "status": "drafted",
+      "follow_up_sent": false
     }
   ]
 }

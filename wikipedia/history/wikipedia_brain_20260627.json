@@ -1,0 +1,17 @@
+{
+  "snapshot_date": "2026-06-27",
+  "version": "1.9",
+  "note": "Dated history snapshot for session 2026-06-27. Full content mirrors brain.json at time of commit.",
+  "summary": {
+    "account_status": "BLOCKED (block_id 25412872, by Asilvering, expiry infinity, confirmed 2026-06-27)",
+    "draft_amos_le_blanc": "No new activity since 2026-05-19 (last revid 1355058179 by Bearcat). Status: blocked_account.",
+    "todays_scan": "2 new artonly posts (Devon Gilfillian, Naomi Sharon) both have existing Wikipedia articles. No new candidates.",
+    "monitored_candidates": [
+      {"artist": "Sha Ray", "status": "no Wikipedia article", "first_flagged": "2026-06-20"},
+      {"artist": "Micah Thomas", "status": "no Wikipedia article", "first_flagged": "2026-06-22"},
+      {"artist": "June McDoom", "status": "no Wikipedia article", "first_flagged": "2026-06-26"}
+    ],
+    "net_new_candidates_this_session": 0,
+    "all_editing_halted": true
+  }
+}

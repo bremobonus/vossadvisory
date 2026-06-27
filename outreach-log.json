@@ -695,6 +695,527 @@
       "gmail_draft_id": "r-1405767743986320493",
       "status": "drafted",
       "follow_up_sent": false
+    },
+    {
+      "slug": "burna-boy-african-giant",
+      "artist": "Burna Boy",
+      "email": "Booking@burnaboy.com",
+      "contact_type": "artist_booking",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "Booking@burnaboy.com",
+        "info@aristokratrecords.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "chloe-timbaland-resurrection",
+      "artist": "Chloe",
+      "email": "info@parkwoodent.com",
+      "contact_type": "mgmt_parkwood",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@parkwoodent.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "hard-fi-sweating-someone-elses-fever",
+      "artist": "Hard-Fi",
+      "email": "info@ignition.co.uk",
+      "contact_type": "mgmt_ignition",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@ignition.co.uk"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "headie-one-edna",
+      "artist": "Headie One",
+      "email": "brand@relentlessrecs.com",
+      "contact_type": "label_relentless",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "brand@relentlessrecs.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "myles-smith-my-mess-my-heart-my-life",
+      "artist": "Myles Smith",
+      "email": "enquiries@champions-speakers.co.uk",
+      "contact_type": "booking_champions",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "enquiries@champions-speakers.co.uk"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ama-ama",
+      "artist": "Ama",
+      "email": "info@pulsemusicgroup.com",
+      "contact_type": "label_pulse",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@pulsemusicgroup.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "koffee",
+      "artist": "Koffee",
+      "email": "hugo@talowa.com",
+      "contact_type": "mgmt_talowa",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "hugo@talowa.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sault",
+      "artist": "SAULT",
+      "email": "team@foreverlivingoriginals.com",
+      "contact_type": "label_flo",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "team@foreverlivingoriginals.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "slowthai",
+      "artist": "slowthai",
+      "email": "lewis@toyitoyi.co",
+      "contact_type": "mgmt_toyitoyi",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "lewis@toyitoyi.co"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "hemlocke-springs",
+      "artist": "Hemlocke Springs",
+      "email": "info@dreamshopmgmt.com",
+      "contact_type": "mgmt_dreamshop",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@dreamshopmgmt.com",
+        "cami.opere@awal.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "june-mcdoom",
+      "artist": "June McDoom",
+      "email": "kris@summerlawns.works",
+      "contact_type": "mgmt_summer_lawns",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "kris@summerlawns.works",
+        "annapaz@temporaryresidence.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nao",
+      "artist": "NAO",
+      "email": "hi@nativemgmt.co.uk",
+      "contact_type": "mgmt_native",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "hi@nativemgmt.co.uk",
+        "MALIK@IMRAN-MALIK.COM"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "war-and-treaty-story-of-michael-and-tanya",
+      "artist": "The War and Treaty",
+      "email": "ginamiller@strongworldmanagement.com",
+      "contact_type": "mgmt_strong_world",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "ginamiller@strongworldmanagement.com",
+        "aelbl@shorefire.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "graham-coxon-castle-park",
+      "artist": "Graham Coxon",
+      "email": "info@elevenmgmt.com",
+      "contact_type": "mgmt_eleven",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@elevenmgmt.com",
+        "international@transgressive.co.uk"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "jpegmafia",
+      "artist": "JPEGMAFIA",
+      "email": "info@wasserman.com",
+      "contact_type": "booking_wasserman",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@wasserman.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "meek",
+      "artist": "MEEK",
+      "email": "info@tileyardmusic.co.uk",
+      "contact_type": "mgmt_tileyard",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@tileyardmusic.co.uk"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "moses-sumney",
+      "artist": "Moses Sumney",
+      "email": "info@mosessumney.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@mosessumney.com",
+        "press@mosessumney.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "gorillaz-the-mountain",
+      "artist": "Gorillaz",
+      "email": "info@elevenmgmt.com",
+      "contact_type": "mgmt_eleven",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@elevenmgmt.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "lana-del-rey-birthday-2026",
+      "artist": "Lana Del Rey",
+      "email": "info@tapmgmt.com",
+      "contact_type": "mgmt_tap",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@tapmgmt.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "little-simz-in-their-own-words",
+      "artist": "Little Simz",
+      "email": "versetti@theirnewreligion.com",
+      "contact_type": "mgmt_their_new_religion",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "versetti@theirnewreligion.com",
+        "cyim@icmpartners.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "billie-eilish-hit-me-hard-and-soft",
+      "artist": "Billie Eilish",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "micah-thomas-lucid",
+      "artist": "Micah Thomas",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "noah-kahan",
+      "artist": "Noah Kahan",
+      "email": "drew@foundationsmusic.com",
+      "contact_type": "mgmt_foundations",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "drew@foundationsmusic.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "popcaan-unruly-boss",
+      "artist": "Popcaan",
+      "email": "bookings@unrulyent.com",
+      "contact_type": "mgmt_unruly",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "bookings@unrulyent.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "alex-zhang-hungtai-orion-mother",
+      "artist": "Alex Zhang Hungtai",
+      "email": "wrongkarweis@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "wrongkarweis@gmail.com",
+        "giorgio@swampbooking.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ari-lennox",
+      "artist": "Ari Lennox",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "bad-bunny-debi-tirar-mas-fotos",
+      "artist": "Bad Bunny",
+      "email": "info@rimasmusic.com",
+      "contact_type": "label_rimas",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@rimasmusic.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "future",
+      "artist": "Future",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "lady-gaga",
+      "artist": "Lady Gaga",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sha-ray-dj-haram-critical-thot",
+      "artist": "Sha Ray and DJ Haram",
+      "email": "Jordan@akissofdeath.com",
+      "contact_type": "booking_kiss_of_death",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "Jordan@akissofdeath.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "skepta",
+      "artist": "Skepta",
+      "email": "booking@hrbooking.com",
+      "contact_type": "booking_hr",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "booking@hrbooking.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "dave-british-rap-2026",
+      "artist": "Dave",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "drake-iceman",
+      "artist": "Drake",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "fka-twigs",
+      "artist": "FKA twigs",
+      "email": "ashley.kalmanowitz@atlanticrecords.com",
+      "contact_type": "label_pr_atlantic",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "ashley.kalmanowitz@atlanticrecords.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "jon-batiste-black-mozart",
+      "artist": "Jon Batiste",
+      "email": "info@cultureco.co",
+      "contact_type": "mgmt_culture_co",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@cultureco.co"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "taylor-swift",
+      "artist": "Taylor Swift",
+      "email": "info@13management.com",
+      "contact_type": "mgmt_13",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "info@13management.com",
+        "communications@umusic.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "weeknd-hurry-up-tomorrow",
+      "artist": "The Weeknd",
+      "email": "kathryn@biz3.net",
+      "contact_type": "pr_biz3",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "kathryn@biz3.net"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "big-brave-in-grief-or-in-hope",
+      "artist": "BIG BRAVE",
+      "email": "bigbravemusic@gmail.com",
+      "contact_type": "artist_direct",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "bigbravemusic@gmail.com",
+        "info@southernlord.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "bruno-mars",
+      "artist": "Bruno Mars",
+      "email": "cara.donatto@atlanticrecords.com",
+      "contact_type": "label_pr_atlantic",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "cara.donatto@atlanticrecords.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "central-cee",
+      "artist": "Central Cee",
+      "email": "WassermanMusicPR@shorefire.com",
+      "contact_type": "pr_shore_fire",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "WassermanMusicPR@shorefire.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "chappell-roan",
+      "artist": "Chappell Roan",
+      "email": "dana@biz3.net",
+      "contact_type": "pr_biz3",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "dana@biz3.net"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "doechii",
+      "artist": "Doechii",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "kehlani",
+      "artist": "Kehlani",
+      "email": "paige.rosoff@atlanticrecords.com",
+      "contact_type": "label_pr_atlantic",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "sent",
+      "emails_sent": [
+        "paige.rosoff@atlanticrecords.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "cleo-sol",
+      "artist": "Cleo Sol",
+      "email": null,
+      "contact_type": "none_found",
+      "drafted_at": "2026-06-27T00:00:00Z",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
     }
   ]
 }

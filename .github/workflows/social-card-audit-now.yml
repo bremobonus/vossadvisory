@@ -1,6 +1,9 @@
 name: Social Card Audit (Run Now)
 
 on:
+  push:
+    paths:
+      - 'social-card-audit.sh'
   workflow_dispatch:
 
 jobs:

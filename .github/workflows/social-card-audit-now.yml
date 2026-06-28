@@ -1,0 +1,25 @@
+name: Social Card Audit (Run Now)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Run social card audit on DreamHost
+        env:
+          SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+        run: |
+          PW="${SSHPASS:-Neverending48!}"
+          sshpass -p "$PW" ssh \
+            -o PreferredAuthentications=password \
+            -o StrictHostKeyChecking=no \
+            -o ConnectTimeout=60 \
+            dh_yadmw3@pdx1-shared-a2-06.dreamhost.com \
+            'bash -s' < social-card-audit.sh

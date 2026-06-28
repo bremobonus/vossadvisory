@@ -1691,6 +1691,56 @@
       "status": "sent",
       "artist": "Helena Deland",
       "contact_type": "management_chivi_chivi"
+    },
+    {
+      "slug": "tems-love-is-a-kingdom",
+      "artist": "Tems",
+      "email": "alex.john@rcarecords.com",
+      "contact_type": "label_rca_publicity",
+      "drafted_at": "2026-06-28T00:00:00Z",
+      "gmail_draft_id": "r63406833097260397",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "toro-y-moi-hole-erth",
+      "artist": "Toro y Moi",
+      "email": "info@brilliantcorners.com",
+      "contact_type": "management_brilliant_corners",
+      "drafted_at": "2026-06-28T00:00:00Z",
+      "gmail_draft_id": "r-7688698727969238806",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "waxahatchee",
+      "artist": "Waxahatchee",
+      "email": "rennie@anothermgmtco.com",
+      "contact_type": "management_another_management_company",
+      "drafted_at": "2026-06-28T00:00:00Z",
+      "gmail_draft_id": "r-3845862868862573379",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wet-leg",
+      "artist": "Wet Leg",
+      "email": "simon@blackartspr.com",
+      "contact_type": "pr_black_arts",
+      "drafted_at": "2026-06-28T00:00:00Z",
+      "gmail_draft_id": "r9146061037043547793",
+      "status": "drafted",
+      "follow_up_sent": false
+    },
+    {
+      "slug": "sprints-2025",
+      "artist": "Sprints",
+      "email": "constance@atcmanagement.com",
+      "contact_type": "management_atc",
+      "drafted_at": "2026-06-28T00:00:00Z",
+      "gmail_draft_id": "r6329437515885075263",
+      "status": "drafted",
+      "follow_up_sent": false
     }
   ]
 }

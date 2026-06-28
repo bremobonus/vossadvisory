@@ -1,0 +1,81 @@
+[
+  {
+    "date": "2026-05-29T20:08:00Z",
+    "subject": "ArtOnly Weekly: May 29, 2026",
+    "articles_count": 6,
+    "sent_to_count": 0,
+    "notes": "artonly.io API blocked by cloud env proxy; Gmail draft created (id: r6348807264726417662); subscribers file not found on server"
+  },
+  {
+    "date": "2026-06-05T20:00:00Z",
+    "subject": "ArtOnly Weekly: June 5, 2026",
+    "articles_count": 4,
+    "sent_to_count": 0,
+    "notes": "artonly.io API blocked by cloud env proxy (Host not in allowlist); Gmail draft created (id: r-2004721989709101138); subscribers file not found on server; SSH port 22 blocked from cloud env"
+  },
+  {
+    "date": "2026-06-12T20:00:00Z",
+    "subject": "ArtOnly Weekly: June 12, 2026",
+    "articles_count": 4,
+    "sent_to_count": 0,
+    "notes": "artonly.io API blocked by cloud env proxy (Host not in allowlist); Gmail draft created (id: r-1950593505159839542); subscribers file not found on server; SSH port 22 blocked from cloud env"
+  },
+  {
+    "date": "2026-06-14T00:00:00Z",
+    "subject": "This week on artonly.",
+    "articles_count": 7,
+    "sent_to_count": 2,
+    "subscribers": ["amosleblanc@gmail.com", "lahhofstee@gmail.com"],
+    "posts": [
+      "kelsey-lu-so-help-me-god",
+      "boy-george-birthday-2026",
+      "doechii",
+      "the-10-best-albums-of-the-1990s",
+      "dj-seinfeld-if-this-is-it",
+      "new-releases-june-12-2026",
+      "bedouine-neon-summer-skin"
+    ],
+    "notes": "Full send successful. SSH still blocked; subscribers.db fetched via HTTPS (publicly accessible). send-mail.php API working. Both sends confirmed success."
+  },
+  {
+    "date": "2026-06-26T20:00:00Z",
+    "subject": "ArtOnly Weekly: June 26, 2026",
+    "articles_count": 5,
+    "sent_to_count": 0,
+    "posts": [
+      "pj-morton-saturday-night-sunday-morning",
+      "headie-one-in-their-own-words",
+      "pond-terrestrials",
+      "micah-thomas-lucid",
+      "tierra-whack-whacks-museum"
+    ],
+    "notes": "artonly.io API blocked by cloud env proxy (Host not in allowlist); Gmail draft created (id: r-2800427369348041321); subscribers file not found on server; SSH port 22 blocked from cloud env"
+  },
+  {
+    "date": "2026-06-28T15:30:00Z",
+    "subject": "This week on artonly.",
+    "articles_count": 7,
+    "sent_to_count": 0,
+    "posts": [
+      "pa-salieu-second",
+      "tkay-maidza-signal-fire",
+      "devon-gilfillian-time-will-tell",
+      "naomi-sharon-no-sleep-in-paradise",
+      "burna-boy-african-giant",
+      "chloe-timbaland-resurrection",
+      "myles-smith-my-mess-my-heart-my-life"
+    ],
+    "subscribers_known": ["amosleblanc@gmail.com", "lahhofstee@gmail.com"],
+    "gmail_draft_ids": {
+      "amosleblanc@gmail.com": "r-3626020305489818697",
+      "lahhofstee@gmail.com": "r2351574504858120861"
+    },
+    "blockers": [
+      "send-mail.php: emails_disabled (artonly.io outbound email frozen for QC)",
+      "SSH port 22 blocked by cloud env proxy (raw TCP not forwarded despite CONNECT 200)",
+      "subscribers.db: 403 Forbidden (was public on June 14, now locked)",
+      "unsub tokens unavailable (DB inaccessible)"
+    ],
+    "notes": "22 posts found this week. Top 7 selected. Newsletter HTML built and saved as Gmail drafts for 2 known subscribers from June 14 send. Cannot send via send-mail.php (emails_disabled error). To fix: unfreeze outbound email in send-mail.php, and restore DB access or expose a subscriber API endpoint."
+  }
+]

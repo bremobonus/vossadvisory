@@ -1691,6 +1691,511 @@
       "status": "sent",
       "artist": "Helena Deland",
       "contact_type": "management_chivi_chivi"
+    },
+    {
+      "slug": "klein-thirteen-sense",
+      "artist": "Klein",
+      "email": "freakazoidsklein@gmail.com",
+      "contact_type": "artist_direct",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "freakazoidsklein@gmail.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wiki-ancient-history",
+      "artist": "Wiki",
+      "email": "wiksetenterprise@gmail.com",
+      "contact_type": "artist_direct",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "wiksetenterprise@gmail.com",
+        "team@clewisgroup.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "lyra-pramuk-hymnal",
+      "artist": "Lyra Pramuk",
+      "email": "shub@lyrapramuk.com",
+      "contact_type": "artist_direct",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "shub@lyrapramuk.com",
+        "brandon@lb-agency.net"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "shackleton-euphoria-bound",
+      "artist": "Shackleton",
+      "email": "samshackleton@hotmail.co.uk",
+      "contact_type": "artist_direct",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "samshackleton@hotmail.co.uk",
+        "info@ad93.ltd"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "divide-and-dissolve",
+      "artist": "Divide and Dissolve",
+      "email": "bellaunionmgmt@gmail.com",
+      "contact_type": "management_bella_union",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "bellaunionmgmt@gmail.com",
+        "lauren@rarelyunable.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "bar-italia",
+      "artist": "Bar Italia",
+      "email": "info@matadorrecords.com",
+      "contact_type": "label_matador",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "info@matadorrecords.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "mdou-moctar",
+      "artist": "Mdou Moctar",
+      "email": "aaron@matadorrecords.com",
+      "contact_type": "label_matador",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "aaron@matadorrecords.com",
+        "jim@groundcontroltouring.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nightly-1989",
+      "artist": "Nightly",
+      "email": "contact@neon-coast.com",
+      "contact_type": "management_neon_coast",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "contact@neon-coast.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tamino",
+      "artist": "Tamino",
+      "email": "taminomgmt@wearefoundations.com",
+      "contact_type": "management_foundations",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "taminomgmt@wearefoundations.com",
+        "Tamino@caa.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ethel-cain",
+      "artist": "Ethel Cain",
+      "email": "undertaker@reapermgmt.com",
+      "contact_type": "management_reaper",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "undertaker@reapermgmt.com",
+        "reid.kutrow@sacksco.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "horsegirl",
+      "artist": "Horsegirl",
+      "email": "rennie@anothermgmtco.com",
+      "contact_type": "management_another_mgmt",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "rennie@anothermgmtco.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "toyin-ojih-odutola",
+      "artist": "Toyin Ojih Odutola",
+      "email": "info@jackshainman.com",
+      "contact_type": "gallery_jack_shainman",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "info@jackshainman.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "japanese-breakfast",
+      "artist": "Japanese Breakfast",
+      "email": "Ryan@tenatoms.com",
+      "contact_type": "management_ten_atoms",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "Ryan@tenatoms.com",
+        "eloyl@grandstandhq.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "wet-leg",
+      "artist": "Wet Leg",
+      "email": "enquiries@dominorecordco.com",
+      "contact_type": "label_domino",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "enquiries@dominorecordco.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "ben-ufo-hessle-audio",
+      "artist": "Ben UFO",
+      "email": "marlena@liaisonartists.com",
+      "contact_type": "booking_liaison",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "marlena@liaisonartists.com",
+        "jim.oregan@teamwass.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "objekt-kapsela",
+      "artist": "Objekt",
+      "email": "chris@unfoldartists.com",
+      "contact_type": "booking_unfold",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "chris@unfoldartists.com",
+        "joe@surefireagency.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "yaeji-with-a-hammer",
+      "artist": "Yaeji",
+      "email": "amctaggart@tbaagency.com",
+      "contact_type": "booking_tba",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "amctaggart@tbaagency.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "tkay-maidza-signal-fire",
+      "artist": "Tkay Maidza",
+      "email": "info@hellotkay.com",
+      "contact_type": "artist_direct",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "info@hellotkay.com",
+        "david.exley@teamwass.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "special-interest",
+      "artist": "Special Interest",
+      "email": "michelle@panacherock.com",
+      "contact_type": "booking_panache",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "michelle@panacherock.com",
+        "nightschoolrecs@gmail.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "yeule",
+      "artist": "Yeule",
+      "email": "jeff@gallerie.us",
+      "contact_type": "management_gallerie",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "jeff@gallerie.us",
+        "parker.glenn@unitedtalent.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "oklou",
+      "artist": "oklou",
+      "email": "thomas@redmanagement.info",
+      "contact_type": "management_red",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "thomas@redmanagement.info",
+        "david.exley@the.team"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "call-super-a-rhythm-protects-one",
+      "artist": "Call Super",
+      "email": "nadja@ekipa.agency",
+      "contact_type": "booking_ekipa",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "nadja@ekipa.agency",
+        "editorial@dekmantel.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "doss-jumpin",
+      "artist": "Doss",
+      "email": "cdanis@tbaagency.com",
+      "contact_type": "booking_tba",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "cdanis@tbaagency.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nite-jewel",
+      "artist": "Nite Jewel",
+      "email": "elisa@folkwisdom.net",
+      "contact_type": "booking_folk_wisdom",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "elisa@folkwisdom.net"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "michaela-coel-i-may-destroy-you",
+      "artist": "Michaela Coel",
+      "email": "office@maisontwo.com",
+      "contact_type": "management_maison_two",
+      "date_contacted": "2026-06-29",
+      "status": "email_api_disabled",
+      "emails_sent": [
+        "office@maisontwo.com"
+      ],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "pa-salieu-second",
+      "artist": "Pa Salieu",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nephillm-ny2mia",
+      "artist": "Nephillm",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "erin-ford-byerinford-patterns",
+      "artist": "Erin Ford",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "jane-schoenbrun",
+      "artist": "Jane Schoenbrun",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "charli-xcx",
+      "artist": "Charli XCX",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_no_contact",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "mk-ultra-dream",
+      "artist": "MK Ultra Dream",
+      "email": null,
+      "contact_type": "none_found",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_historical_band",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "the-week-in-music-june-22-2026",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_roundup",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_editorial_roundup",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "best-albums-2010-to-2015",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_roundup",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_editorial_roundup",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "lagos-music-scene-artists-2024",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_roundup",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_editorial_roundup",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "best-albums-2000-to-2005",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_roundup",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_editorial_roundup",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "the-10-best-albums-of-the-2000s",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_roundup",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_editorial_roundup",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "the-10-best-albums-of-the-1990s",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_roundup",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_editorial_roundup",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "afrobeats-artists-you-should-know-right-now",
+      "artist": null,
+      "email": null,
+      "contact_type": "editorial_roundup",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_editorial_roundup",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "original-koffee",
+      "artist": "Koffee",
+      "email": null,
+      "contact_type": "handled_with_primary",
+      "date_contacted": "2026-06-29",
+      "status": "handled_with_primary",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nick-leon-tropical-entropy",
+      "artist": "Nick Le\u00f3n",
+      "email": null,
+      "contact_type": "handled_with_primary",
+      "date_contacted": "2026-06-29",
+      "status": "handled_with_primary",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "nick-leon-tropical",
+      "artist": "Nick Le\u00f3n",
+      "email": null,
+      "contact_type": "handled_with_primary",
+      "date_contacted": "2026-06-29",
+      "status": "handled_with_primary",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "lana-del-rey",
+      "artist": "Lana Del Rey",
+      "email": null,
+      "contact_type": "handled_with_primary",
+      "date_contacted": "2026-06-29",
+      "status": "handled_with_primary",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "arooj-aftab",
+      "artist": "Arooj Aftab",
+      "email": null,
+      "contact_type": "handled_with_primary",
+      "date_contacted": "2026-06-29",
+      "status": "handled_with_primary",
+      "emails_sent": [],
+      "follow_up_sent": false
+    },
+    {
+      "slug": "amos-leblanc-not-getting-better",
+      "artist": "Amos LeBlanc",
+      "email": null,
+      "contact_type": "internal_skip",
+      "date_contacted": "2026-06-29",
+      "status": "skipped_internal",
+      "emails_sent": [],
+      "follow_up_sent": false
     }
   ]
 }

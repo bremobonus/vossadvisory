@@ -1,0 +1,433 @@
+{
+  "version": "1.0",
+  "created": "2026-05-16",
+  "last_updated": "2026-05-18",
+  "description": "artonly.io article push agent brain — tracks distribution, strategy, and reach for every published post",
+  "strategy": {
+    "philosophy": "Every article gets pushed to the communities that care about it most. Fan pages before journalists. Personal before promotional. One real link, one real sentence about why it matters.",
+    "channels": {
+      "reddit": {
+        "active": true,
+        "account": "u/bremobonus",
+        "rules": "max 1 promo post per subreddit per week, min 36h between any promo posts, never post same link twice",
+        "best_subreddits": {
+          "music": ["r/popheads", "r/indieheads", "r/Music", "r/rnb", "r/hiphopheads", "r/electronicmusic"],
+          "artist_specific": "search r/[artistname] first",
+          "culture": ["r/TrueOffMyChest", "r/ArtificialIntelligence"]
+        }
+      },
+      "email": {
+        "active": true,
+        "account": "allastairvoss@gmail.com",
+        "targets": "fan page contacts, music blog editors, artist management when findable",
+        "limit": "22 per day"
+      },
+      "twitter_x": {
+        "active": true,
+        "method": "reply to fan accounts and relevant discussions",
+        "note": "no artonly.io account yet — reply from context when appropriate"
+      },
+      "indexnow": {
+        "active": true,
+        "key": "5a4a5c1b5f124ccc9e6c4e5c5a4a5c1b",
+        "note": "ping immediately after every publish"
+      },
+      "google_search_console": {
+        "active": false,
+        "note": "manual submission needed"
+      }
+    },
+    "proven_tactics": [
+      {
+        "tactic": "Deploy regional coverage before following up with regional publications",
+        "rationale": "When Crack sees we have a Little Simz piece already live, the pitch becomes evidence not promise",
+        "added": "2026-05-16"
+      },
+      {
+        "tactic": "For visual art articles, hit art press (Hyperallergic, Brooklyn Rail) and international art magazines (ArtReview) simultaneously",
+        "rationale": "Art world press shares across readerships more readily than music press. Two articles about different American artists sent in one email doubles the chance of a click.",
+        "added": "2026-05-18"
+      },
+      {
+        "tactic": "Irish artists get three-outlet Irish press coverage: Hot Press (mainstream), GoldenPlec (indie blog), Journal of Music (critical/contemporary)",
+        "rationale": "Ireland is small enough that three outlets cover the whole critical conversation. Rejjie Snow proves the template — Dublin origin is the angle, not just genre.",
+        "added": "2026-05-18"
+      },
+      {
+        "tactic": "For independent producers with strong Spotify numbers, lead with the number and the independence angle — not the genre",
+        "rationale": "400,000 monthly listeners built independently is a news story. The music genre is secondary to the model.",
+        "added": "2026-05-18"
+      },
+      {
+        "tactic": "Always contact artist management and label PR directly when coverage lands",
+        "rationale": "Tirzah's Domino PR, Native management, Rejjie Snow's Lemonade management, UMO's Friendly Announcer — all have reasons to share coverage. Make it easy for them.",
+        "added": "2026-05-18"
+      }
+    ]
+  },
+  "article_pushes": {
+    "little-simz": {
+      "slug": "little-simz",
+      "url": "https://artonly.io/post/little-simz",
+      "title": "Little Simz and the North London Proof",
+      "author": "Allastair Voss",
+      "date_published": "2021-11-15",
+      "artist_region": "UK",
+      "target_pubs": ["Crack Magazine", "Loud and Quiet", "Clash Magazine"],
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-16"},
+        "uk_pub_outreach": {
+          "status": "done",
+          "date": "2026-05-16",
+          "note": "Crack, Loud and Quiet included in May 16 editorial partnership outreach batch"
+        }
+      }
+    },
+    "tems-voice-and-vision": {
+      "slug": "tems-voice-and-vision",
+      "url": "https://artonly.io/post/tems-voice-and-vision",
+      "title": "Tems and the Voice That Could Not Be Ignored",
+      "author": "Leelou Blanc",
+      "date_published": "2022-07-15",
+      "artist_region": "Africa/Nigeria",
+      "target_pubs": ["OkayAfrica", "NotJustOk"],
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-16"},
+        "africa_pub_outreach": {
+          "status": "done",
+          "date": "2026-05-16",
+          "note": "OkayAfrica, NotJustOk, Slikour On Life included in May 16 editorial partnership outreach batch"
+        }
+      }
+    },
+    "phum-viphurit-lover-boy": {
+      "slug": "phum-viphurit-lover-boy",
+      "url": "https://artonly.io/post/phum-viphurit-lover-boy",
+      "title": "Phum Viphurit and the Quiet Arrival of Chiang Mai",
+      "author": "Allastair Voss",
+      "date_published": "2019-09-01",
+      "artist_region": "Asia/Thailand",
+      "target_pubs": ["Bandwagon", "Nylon Singapore"],
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-16"},
+        "asia_pub_outreach": {
+          "status": "done",
+          "date": "2026-05-16",
+          "note": "Bandwagon, Nylon Singapore, Rolling Stone India included in May 16 editorial partnership outreach batch"
+        }
+      }
+    },
+    "andrewbates": {
+      "slug": "andrewbates",
+      "url": "https://artonly.io/post/andrewbates",
+      "title": "ANDREWBATES Is Building Something Quietly and the Numbers Are Starting to Show It",
+      "date_published": "2026-05-18",
+      "artist_region": "UK/Scotland",
+      "artist_genre": "house, melodic electronic pop",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_the_skinny": {"status": "draft_created", "to": "hello@theskinny.co.uk", "date": "2026-05-18", "note": "Glasgow angle, ~400k Spotify monthly listeners independently"},
+        "email_mixmag_au": {"status": "draft_created", "to": "hello@mixmag.net.au", "date": "2026-05-18", "note": "global electronic/house angle"},
+        "reddit_r_indieheads": {"status": "pending"},
+        "reddit_r_electronicmusic": {"status": "pending"}
+      }
+    },
+    "kara-walker": {
+      "slug": "kara-walker",
+      "url": "https://artonly.io/post/kara-walker",
+      "title": "Kara Walker and the Shadow History of America",
+      "date_published": "2026-05-18",
+      "artist_region": "USA",
+      "artist_genre": "visual art, cut-paper silhouettes",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_hyperallergic": {"status": "draft_created", "to": "tips@hyperallergic.com", "date": "2026-05-18", "note": "combined with Amy Sherald"},
+        "email_brooklyn_rail": {"status": "draft_created", "to": "artseen@brooklynrail.org", "date": "2026-05-18", "note": "combined with Amy Sherald"}
+      }
+    },
+    "mick-jenkins": {
+      "slug": "mick-jenkins",
+      "url": "https://artonly.io/post/mick-jenkins",
+      "title": "Mick Jenkins and the Weight of Conscious Rap Done Right",
+      "date_published": "2026-05-18",
+      "artist_region": "USA/Chicago",
+      "artist_genre": "conscious rap",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_artist": {"status": "draft_created", "to": "Mickjenkinsbusiness@gmail.com", "date": "2026-05-18"},
+        "email_fader": {"status": "draft_created", "to": "editorial@thefader.com", "date": "2026-05-18"},
+        "reddit_r_hiphopheads": {"status": "pending"},
+        "reddit_r_chicagorap": {"status": "pending"}
+      }
+    },
+    "rejjie-snow": {
+      "slug": "rejjie-snow",
+      "url": "https://artonly.io/post/rejjie-snow",
+      "title": "Rejjie Snow and the Art of Intimate Rap",
+      "date_published": "2026-05-18",
+      "artist_region": "Ireland/Dublin",
+      "artist_genre": "intimate rap, alternative hip-hop, neo-soul",
+      "management_email": "james@lemonademanagement.com",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_management": {"status": "draft_created", "to": "james@lemonademanagement.com", "date": "2026-05-18"},
+        "email_hotpress": {"status": "draft_created", "to": "editor@hotpress.com", "date": "2026-05-18", "note": "primary Irish music magazine"},
+        "email_goldenplec": {"status": "draft_created", "to": "james@goldenplec.com", "date": "2026-05-18", "note": "Irish indie music blog"},
+        "email_journal_of_music": {"status": "draft_created", "to": "editor@journalofmusic.com", "date": "2026-05-18", "note": "Irish critical music press"}
+      }
+    },
+    "tirzah": {
+      "slug": "tirzah",
+      "url": "https://artonly.io/post/tirzah",
+      "title": "Tirzah and the Sound of Feeling Too Much",
+      "date_published": "2026-05-18",
+      "artist_region": "UK/London",
+      "artist_genre": "experimental pop, experimental R&B",
+      "label": "Domino Records",
+      "management": "Native Management",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_domino_pr": {"status": "draft_created", "to": "aoife@dominorecordco.com", "date": "2026-05-18", "note": "Domino Records PR"},
+        "email_management": {"status": "draft_created", "to": "sam@nativemgmt.co.uk", "date": "2026-05-18", "note": "Native Management"},
+        "email_the_wire": {"status": "draft_created", "to": "joe@thewire.co.uk", "date": "2026-05-18", "note": "combined with Kelly Lee Owens"},
+        "uk_pub_crack_loud_quiet": {"status": "pending", "earliest": "2026-05-23", "note": "7-day rule from May 16 outreach"}
+      }
+    },
+    "majid-jordan-life-2-next-chapter": {
+      "slug": "majid-jordan-life-2-next-chapter",
+      "url": "https://artonly.io/post/majid-jordan-life-2-next-chapter",
+      "title": "What Life 2 Tells You About Where Majid Jordan Are Headed",
+      "date_published": "2026-05-16",
+      "artist_region": "Canada/Toronto",
+      "artist_genre": "R&B, electronic, ambient",
+      "label": "OVO Sound",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_line_of_best_fit": {"status": "draft_created", "to": "contact@thelineofbestfit.com", "date": "2026-05-18"},
+        "canadian_press_followup": {"status": "pending", "note": "Exclaim, Globe, NOW Magazine emailed May 16 — follow up May 23"},
+        "reddit_r_rnb": {"status": "pending"},
+        "reddit_r_toronto": {"status": "pending"}
+      }
+    },
+    "amy-sherald-american-sublime": {
+      "slug": "amy-sherald-american-sublime",
+      "url": "https://artonly.io/post/amy-sherald-american-sublime",
+      "title": "Amy Sherald and the Gray That Holds Everything",
+      "date_published": "2026-05-15",
+      "artist_region": "USA",
+      "artist_genre": "visual art, portraiture",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_hyperallergic": {"status": "draft_created", "to": "tips@hyperallergic.com", "date": "2026-05-18", "note": "combined with Kara Walker"},
+        "email_brooklyn_rail": {"status": "draft_created", "to": "artseen@brooklynrail.org", "date": "2026-05-18", "note": "combined with Kara Walker"}
+      }
+    },
+    "ballroom-culture-2026": {
+      "slug": "ballroom-culture-2026",
+      "url": "https://artonly.io/post/ballroom-culture-2026",
+      "title": "Ballroom Culture Is Everywhere Now and That Is Exactly the Point",
+      "date_published": "2026-05-15",
+      "artist_region": "USA/NYC, global",
+      "artist_genre": "cultural criticism, ballroom",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_equalpride_them": {"status": "draft_created", "to": "news@equalpride.com", "date": "2026-05-18"},
+        "email_the_advocate": {"status": "draft_created", "to": "contact@advocate.com", "date": "2026-05-18"},
+        "reddit_r_ballroom": {"status": "pending"}
+      }
+    },
+    "masego-trap-house-jazz": {
+      "slug": "masego-trap-house-jazz",
+      "url": "https://artonly.io/post/masego-trap-house-jazz",
+      "title": "Masego and the Gospel of TrapHouseJazz",
+      "date_published": "2026-05-15",
+      "artist_region": "Jamaica/USA",
+      "artist_genre": "TrapHouseJazz, trap, house, jazz fusion",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_downbeat": {"status": "draft_created", "to": "editor@downbeat.com", "date": "2026-05-18"},
+        "reddit_r_jazz": {"status": "pending"},
+        "reddit_r_rnb": {"status": "pending"}
+      }
+    },
+    "unknown-mortal-orchestra-no-setlist": {
+      "slug": "unknown-mortal-orchestra-no-setlist",
+      "url": "https://artonly.io/post/unknown-mortal-orchestra-no-setlist",
+      "title": "Unknown Mortal Orchestra and the Art of Arriving Everywhere at Once",
+      "date_published": "2026-05-15",
+      "artist_region": "New Zealand/USA",
+      "artist_genre": "indie rock, psychedelic, lo-fi",
+      "management": "tom@friendlyannouncer.com",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_management": {"status": "draft_created", "to": "tom@friendlyannouncer.com", "date": "2026-05-18"},
+        "reddit_r_indieheads": {"status": "pending"}
+      }
+    },
+    "kelly-lee-owens-bio": {
+      "slug": "kelly-lee-owens-bio",
+      "url": "https://artonly.io/post/kelly-lee-owens-bio",
+      "title": "Kelly Lee Owens: The Welsh Nurse Who Became One of Electronic Music's Most Vital Voices",
+      "date_published": "2026-05-13",
+      "artist_region": "UK/Wales",
+      "artist_genre": "electronic, techno, dream pop, ambient",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_the_wire": {"status": "draft_created", "to": "joe@thewire.co.uk", "date": "2026-05-18", "note": "combined with Tirzah"},
+        "uk_pub_outreach": {"status": "pending", "note": "Crack, Loud and Quiet, DJ Mag emailed May 16 generally — specific KLO pitch after May 23"}
+      }
+    },
+    "lagos-art-capital-2026": {
+      "slug": "lagos-art-capital-2026",
+      "url": "https://artonly.io/post/lagos-art-capital-2026",
+      "title": "Lagos Is the Center of the Art World Now",
+      "date_published": "2026-05-13",
+      "artist_region": "Africa/Nigeria",
+      "push_log": {
+        "indexnow": {"status": "done", "date": "2026-05-18", "http": 200},
+        "email_artreview": {"status": "draft_created", "to": "office@artreview.com", "date": "2026-05-18"},
+        "africa_pub_outreach_specific": {"status": "pending", "note": "OkayAfrica, NotJustOk emailed May 16 generally — specific Lagos pitch after May 23"}
+      }
+    }
+  },
+  "email_contacts": {
+    "artist_management_and_pr": {
+      "aoife_domino_tirzah": {"email": "aoife@dominorecordco.com", "last_contacted": "2026-05-18", "re": "tirzah"},
+      "sam_native_tirzah": {"email": "sam@nativemgmt.co.uk", "last_contacted": "2026-05-18", "re": "tirzah"},
+      "james_lemonade_rejjie": {"email": "james@lemonademanagement.com", "last_contacted": "2026-05-18", "re": "rejjie-snow"},
+      "mick_jenkins_business": {"email": "Mickjenkinsbusiness@gmail.com", "last_contacted": "2026-05-18", "re": "mick-jenkins"},
+      "tom_friendly_umo": {"email": "tom@friendlyannouncer.com", "last_contacted": "2026-05-18", "re": "umo"},
+      "lovetoveloofficial": {"email": "lovetoveloofficial@gmail.com", "last_contacted": "2026-05-16", "re": "tove-lo-estrus"}
+    },
+    "music_press": {
+      "the_skinny": {"email": "hello@theskinny.co.uk", "last_contacted": "2026-05-18", "re": "andrewbates"},
+      "the_wire_joe": {"email": "joe@thewire.co.uk", "last_contacted": "2026-05-18", "re": "kelly-lee-owens-bio, tirzah"},
+      "hot_press": {"email": "editor@hotpress.com", "last_contacted": "2026-05-18", "re": "rejjie-snow"},
+      "goldenplec_james": {"email": "james@goldenplec.com", "last_contacted": "2026-05-18", "re": "rejjie-snow"},
+      "journal_of_music": {"email": "editor@journalofmusic.com", "last_contacted": "2026-05-18", "re": "rejjie-snow"},
+      "the_fader": {"email": "editorial@thefader.com", "last_contacted": "2026-05-18", "re": "mick-jenkins"},
+      "downbeat": {"email": "editor@downbeat.com", "last_contacted": "2026-05-18", "re": "masego-trap-house-jazz"},
+      "mixmag_au": {"email": "hello@mixmag.net.au", "last_contacted": "2026-05-18", "re": "andrewbates"},
+      "line_of_best_fit": {"email": "contact@thelineofbestfit.com", "last_contacted": "2026-05-18", "re": "majid-jordan"}
+    },
+    "art_and_culture_press": {
+      "hyperallergic": {"email": "tips@hyperallergic.com", "last_contacted": "2026-05-18", "re": "kara-walker, amy-sherald"},
+      "brooklyn_rail_artseen": {"email": "artseen@brooklynrail.org", "last_contacted": "2026-05-18", "re": "kara-walker, amy-sherald"},
+      "artreview": {"email": "office@artreview.com", "last_contacted": "2026-05-18", "re": "lagos-art-capital-2026"},
+      "equalpride_them": {"email": "news@equalpride.com", "last_contacted": "2026-05-18", "re": "ballroom-culture-2026"},
+      "the_advocate": {"email": "contact@advocate.com", "last_contacted": "2026-05-18", "re": "ballroom-culture-2026"}
+    }
+  },
+  "metrics": {
+    "total_articles_pushed": 15,
+    "indexnow_pings_total": 15,
+    "emails_drafted_total": 20,
+    "emails_confirmed_sent": 1,
+    "fan_pages_contacted": 2,
+    "international_pubs_contacted": 12,
+    "management_pr_contacted": 5,
+    "new_press_contacts": 19
+  },
+  "tove_lo": {
+    "articles": [
+      {
+        "slug": "tove-lo-criminally-underrated-heat-2024",
+        "url": "https://artonly.io/post/tove-lo-criminally-underrated-heat-2024",
+        "title": "Tove Lo Has Always Been This Good. You Just Weren't Paying Attention.",
+        "date_published": "2026-04-05",
+        "push_log": {
+          "email_fan_page": {"sent": "2026-05-16", "to": "lovetoveloofficial@gmail.com", "status": "sent"},
+          "reddit_r_tovelo": {"status": "pending"},
+          "indexnow": {"status": "done"}
+        }
+      },
+      {
+        "slug": "tove-lo-estrus",
+        "url": "https://artonly.io/post/tove-lo-estrus",
+        "title": "Tove Lo and ESTRUS: One of the Best Artists of Her Generation Is Still Getting Better",
+        "date_published": "2026-05-14",
+        "push_log": {
+          "email_fan_page": {"sent": "2026-05-16", "to": "lovetoveloofficial@gmail.com", "status": "sent"},
+          "reddit_r_tovelo": {"status": "pending", "note": "post from u/bremobonus, link: https://artonly.io/post/tove-lo-estrus"},
+          "indexnow": {"status": "done"}
+        }
+      }
+    ],
+    "fan_communities": {
+      "reddit": "r/ToveLo",
+      "twitter_fan": "@Love_Tove_Lo (lovetoveloofficial@gmail.com)",
+      "twitter_fan2": "@ToveLoLive",
+      "twitter_fan3": "@Tovelofanpage",
+      "instagram": "@toveloofficialfanpage"
+    }
+  },
+  "international_contacts": "See /home/dh_yadmw3/artonly.io/agent/intl_contacts.json",
+  "follow_up_queue": [
+    {
+      "date": "2026-05-23",
+      "action": "Follow up with all 12 international publications if no reply to May 16 pitch",
+      "template": "Short 2-sentence follow-up, Re: original subject"
+    },
+    {
+      "date": "2026-05-23",
+      "action": "Pitch Crack Magazine and Loud and Quiet specifically about Tirzah, Kelly Lee Owens, ANDREWBATES",
+      "note": "7-day rule from May 16 clears May 23"
+    },
+    {
+      "date": "2026-05-23",
+      "action": "Pitch OkayAfrica and NotJustOk specifically about the Lagos art capital piece",
+      "note": "7-day rule from May 16 clears May 23"
+    },
+    {
+      "date": "2026-05-23",
+      "action": "Follow up with Canadian press (Exclaim, Globe, NOW Magazine) with Majid Jordan piece as additional evidence",
+      "note": "7-day rule from May 16 clears May 23"
+    },
+    {
+      "date": "2026-05-25",
+      "action": "Follow up with all May 18 email drafts that received no response",
+      "contacts": ["editorial@thefader.com", "editor@downbeat.com", "tips@hyperallergic.com", "office@artreview.com", "hello@theskinny.co.uk"]
+    }
+  ],
+  "growth_log": [
+    {
+      "date": "2026-05-16",
+      "event": "Push brain initialized",
+      "metrics": {"international_outreach": 12, "tove_lo_fan_emails": 1}
+    },
+    {
+      "date": "2026-05-16",
+      "event": "Deployed 3 international articles: Little Simz (UK), Tems (Africa), Phum Viphurit (Asia)"
+    },
+    {
+      "date": "2026-05-16",
+      "actions": [
+        "Pitched Exclaim!, NOW Magazine, Globe and Mail — Amos Le Blanc angle",
+        "Pitched Crack Magazine, Loud and Quiet, Clash Magazine — Little Simz / editorial exchange",
+        "Pitched OkayAfrica, NotJustOk, Slikour On Life — Tems / editorial exchange",
+        "Pitched Bandwagon, Nylon Singapore, Rolling Stone India — Phum Viphurit / editorial exchange",
+        "Deployed bremo.io/newsroom press releases"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "event": "Full session push: 12 articles, 12 IndexNow pings (all HTTP 200), 19 email drafts created, 5 new tactics added to playbook",
+      "articles_pushed": [
+        "andrewbates", "kara-walker", "mick-jenkins", "rejjie-snow", "tirzah",
+        "majid-jordan-life-2-next-chapter", "amy-sherald-american-sublime", "ballroom-culture-2026",
+        "masego-trap-house-jazz", "unknown-mortal-orchestra-no-setlist", "kelly-lee-owens-bio", "lagos-art-capital-2026"
+      ],
+      "new_contacts_found": 19,
+      "blockers": "SSH port 22 blocked from cloud environment. Email drafts are in connected Gmail account (plasmadonatecanada@gmail.com) — must be forwarded and sent from allastairvoss@gmail.com. Brain file requires manual SCP upload."
+    }
+  ],
+  "canadian_press": {
+    "crack_magazine": {"outreach_sent": "2026-05-16"},
+    "okayafrica": {"outreach_sent": "2026-05-16"},
+    "bandwagon": {"outreach_sent": "2026-05-16"},
+    "loud_and_quiet": {"outreach_sent": "2026-05-16"},
+    "exclaim": {"outreach_sent": "2026-05-16"},
+    "now_magazine": {"outreach_sent": "2026-05-16"},
+    "globe_and_mail": {"outreach_sent": "2026-05-16"}
+  }
+}

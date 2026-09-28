@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - claude/manage-voss-advisory-6xIPn
     paths:
       - 'dreaminc/**'
       - '.github/workflows/deploy-dreaminc.yml'

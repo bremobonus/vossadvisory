@@ -13,9 +13,9 @@ Preview locally with `python3 -m http.server -d dreaminc 8000`, then open http:/
 
 ## Going live on dreaminc.io
 
-`.github/workflows/deploy-dreaminc.yml` publishes this folder to GitHub Pages on every push to `main` that touches `dreaminc/`.
+`.github/workflows/deploy-dreaminc.yml` publishes this folder to GitHub Pages on every push to `main` or to the current default branch (`claude/manage-voss-advisory-6xIPn`) that touches `dreaminc/`. It can also be run by hand from the Actions tab.
 
-1. Merge this branch into `main`.
+1. Merge this branch into the default branch.
 2. In the repo, go to **Settings → Pages** and set **Source** to **GitHub Actions**. GitHub Pages on a private repo needs a paid GitHub plan.
 3. At the registrar for dreaminc.io, add these DNS records:
    - `A` records for `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`

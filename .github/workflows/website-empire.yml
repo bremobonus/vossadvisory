@@ -1,0 +1,44 @@
+name: Website Empire dashboard
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - claude/multi-site-content-publish-xqly57
+    paths:
+      - 'empire/**'
+      - '.github/workflows/website-empire.yml'
+  schedule:
+    - cron: '17 */6 * * *'
+
+concurrency:
+  group: website-empire
+  cancel-in-progress: false
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    env:
+      SSHPASS: ${{ secrets.DREAMHOST_SSH_PASS }}
+      HOST: dh_yadmw3@pdx1-shared-a2-06.dreamhost.com
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+      - name: Check secret
+        run: |
+          if [ -z "$SSHPASS" ]; then echo "::error::Add the DREAMHOST_SSH_PASS repository secret"; exit 1; fi
+      - name: Upload files
+        run: |
+          SSH_OPTS="-o PreferredAuthentications=password -o StrictHostKeyChecking=no -o ConnectTimeout=60"
+          sshpass -e ssh $SSH_OPTS "$HOST" 'mkdir -p ~/websiteempire-upload'
+          sshpass -e scp $SSH_OPTS empire/collect.py empire/index.html "$HOST:websiteempire-upload/"
+      - name: Install, schedule and run collector
+        run: |
+          sshpass -e ssh -o PreferredAuthentications=password -o StrictHostKeyChecking=no -o ConnectTimeout=60 \
+            "$HOST" 'bash -s' < empire/install.sh
+      - name: Verify public page
+        run: |
+          curl -fsS -o /dev/null -w "index.html %{http_code}\n" https://bremo.io/websiteempire/
+          curl -fsS https://bremo.io/websiteempire/data.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d['sites']), 'sites, generated', d['generated'])"

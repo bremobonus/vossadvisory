@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Website Empire</title>
+<style>
+:root{--bg:#07080b;--panel:#0f1117;--panel2:#151821;--line:#222633;--text:#e8eaf0;--mute:#8a90a2;--dim:#5a6072;--accent:#7c5cff;--accent2:#22d3ee;--ok:#22c55e;--warn:#f59e0b;--bad:#ef4444}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Inter,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body{background:radial-gradient(1200px 600px at 10% -10%,rgba(124,92,255,.18),transparent 60%),radial-gradient(900px 500px at 100% 0,rgba(34,211,238,.10),transparent 60%),var(--bg);min-height:100vh}
+.wrap{max-width:1400px;margin:0 auto;padding:28px 16px 64px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px}
+h1{margin:0;font-size:32px;letter-spacing:-.02em;font-weight:750}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mute);margin-top:4px}
+.live{display:inline-flex;align-items:center;gap:8px;color:var(--mute);font-size:13px}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:p 2s infinite}
+.pulse.stale{background:var(--warn);animation:none}
+@keyframes p{70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:20px}
+.kpi{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px}
+.kpi .l{color:var(--mute);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.kpi .v{font-size:28px;font-weight:700;margin-top:6px;font-variant-numeric:tabular-nums}
+.kpi .d{font-size:12px;margin-top:2px;color:var(--mute)}
+.up{color:var(--ok)}.down{color:var(--bad)}.warn{color:var(--warn)}
+.grid2{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-bottom:20px}
+@media(max-width:900px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}
+.card h2{margin:0 0 12px;font-size:13px;color:var(--mute);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.bars{display:flex;flex-direction:column;gap:7px}
+.bar{display:grid;grid-template-columns:150px 1fr 70px;gap:10px;align-items:center;font-size:13px}
+.bar .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .t{height:8px;background:var(--panel2);border-radius:99px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px}
+.bar .c{text-align:right;color:var(--mute);font-variant-numeric:tabular-nums}
+.alerts{display:flex;flex-direction:column;gap:8px;max-height:280px;overflow:auto}
+.alert{display:flex;gap:10px;align-items:flex-start;padding:10px;border-radius:10px;background:var(--panel2);font-size:13px}
+.alert b{font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;flex:none;margin-top:6px}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+input,select{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 12px;font:inherit}
+input{flex:1;min-width:200px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+table{width:100%;border-collapse:collapse;min-width:980px}
+th,td{padding:11px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);cursor:pointer;user-select:none;position:sticky;top:0;background:var(--panel)}
+th.num,td.num{text-align:right;font-variant-numeric:tabular-nums}
+th:hover{color:var(--text)}
+tr.row{cursor:pointer}
+tr.row:hover td{background:rgba(124,92,255,.06)}
+td .dom{font-weight:600;color:var(--text);text-decoration:none}
+td .ttl{display:block;color:var(--dim);font-size:12px;max-width:260px;overflow:hidden;text-overflow:ellipsis}
+.pill{display:inline-block;padding:2px 8px;border-radius:99px;font-size:12px;background:var(--panel2);color:var(--mute)}
+.detail td{background:#0b0d12;white-space:normal}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding:6px 0}
+.dgrid h3{margin:0 0 6px;font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.08em}
+.dgrid ol{margin:0;padding-left:18px;color:var(--mute);font-size:13px}
+.dgrid li span{color:var(--text)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px}
+.kv div:nth-child(odd){color:var(--mute)}
+footer{margin-top:28px;color:var(--dim);font-size:12px;text-align:center}
+.empty{padding:60px 20px;text-align:center;color:var(--mute)}
+svg.spark{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Website <span>Empire</span></h1>
+      <div class="sub" id="sub">Loading portfolio&hellip;</div>
+    </div>
+    <div class="live"><i class="pulse" id="pulse"></i><span id="age">connecting</span></div>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+
+  <section class="grid2">
+    <div class="card"><h2>Pageviews, last 7 days</h2><div class="bars" id="leader"></div></div>
+    <div class="card"><h2>Needs attention</h2><div class="alerts" id="alerts"></div></div>
+  </section>
+
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Search domains, titles, stacks&hellip;" autocomplete="off">
+    <select id="filter">
+      <option value="all">All sites</option>
+      <option value="up">Online</option>
+      <option value="down">Offline / errors</option>
+      <option value="traffic">With traffic</option>
+      <option value="wp">WordPress</option>
+    </select>
+  </div>
+  <div class="tablewrap"><table>
+    <thead><tr>
+      <th data-k="status">Status</th>
+      <th data-k="domain">Site</th>
+      <th data-k="trend">14-day trend</th>
+      <th class="num" data-k="v24">24h views</th>
+      <th class="num" data-k="v7">7d views</th>
+      <th class="num" data-k="chg">vs prev 7d</th>
+      <th class="num" data-k="vis">7d visitors</th>
+      <th class="num" data-k="ms">Response</th>
+      <th class="num" data-k="sslDays">SSL</th>
+      <th class="num" data-k="regDays">Domain</th>
+      <th data-k="stack">Stack</th>
+      <th class="num" data-k="size">Size</th>
+      <th data-k="mod">Last update</th>
+    </tr></thead>
+    <tbody id="rows"><tr><td colspan="13" class="empty">Waiting for first data collection&hellip;</td></tr></tbody>
+  </table></div>
+  <footer id="foot"></footer>
+</div>
+<script>
+(function(){
+  var DATA=null, sortKey="v7", sortDir=-1, open={};
+  var $=function(id){return document.getElementById(id)};
+  var fmt=function(n){return n==null?"–":n>=1e6?(n/1e6).toFixed(1)+"M":n>=1e4?(n/1e3).toFixed(1)+"k":n.toLocaleString()};
+  var bytes=function(b){if(!b)return"0";var u=["B","KB","MB","GB","TB"],i=0;while(b>=1024&&i<4){b/=1024;i++}return b.toFixed(i?1:0)+" "+u[i]};
+  var esc=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
+  var daysUntil=function(iso){if(!iso)return null;return Math.floor((new Date(iso)-Date.now())/864e5)};
+  var ago=function(iso){if(!iso)return"–";var s=(Date.now()-new Date(iso))/1e3;if(s<90)return"just now";if(s<5400)return Math.round(s/60)+" min ago";if(s<172800)return Math.round(s/3600)+" h ago";return Math.round(s/86400)+" days ago"};
+
+  function spark(vals,w,h){
+    w=w||120;h=h||28;var max=Math.max.apply(null,vals.concat([1])),step=w/Math.max(vals.length-1,1);
+    var pts=vals.map(function(v,i){return(i*step).toFixed(1)+","+(h-2-(v/max)*(h-4)).toFixed(1)}).join(" ");
+    return '<svg class="spark" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><polyline fill="none" stroke="url(#g)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" points="'+pts+'"/></svg>';
+  }
+
+  function enrich(s){
+    var t=s.traffic,h=s.http;
+    s._status=h.up?"up":"down";
+    s.v24=t.views_24h;s.v7=t.views_7d;s.vis=t.visitors_7d;
+    s.chg=t.views_prev_7d?Math.round((t.views_7d-t.views_prev_7d)/t.views_prev_7d*100):(t.views_7d?100:0);
+    s.ms=h.ms;s.sslDays=s.ssl.valid?daysUntil(s.ssl.expires):null;
+    s.regDays=s.registration&&s.registration.expires?daysUntil(s.registration.expires):null;
+    s.stack=s.files.stack;s.size=s.files.bytes;s.mod=s.files.last_modified;s.trend=t.views_7d;
+    s.status=h.up?1:0;
+    return s;
+  }
+
+  function alerts(sites){
+    var a=[];
+    sites.forEach(function(s){
+      if(!s.http.up)a.push([3,"var(--bad)",s.domain,"is offline — "+(s.http.error||("HTTP "+s.http.code))]);
+      if(s.registration&&s.registration.registered===false)a.push([3,"var(--bad)",s.domain,"domain is not registered"]);
+      if(s.regDays!=null&&s.regDays<45)a.push([s.regDays<0?3:2,s.regDays<0?"var(--bad)":"var(--warn)",s.domain,s.regDays<0?"domain registration expired":"domain expires in "+s.regDays+" days"]);
+      if(!s.ssl.valid&&s.http.up)a.push([2,"var(--warn)",s.domain,"SSL certificate problem"]);
+      else if(s.sslDays!=null&&s.sslDays<14)a.push([2,"var(--warn)",s.domain,"SSL expires in "+s.sslDays+" days"]);
+      if(s.traffic.status["5xx"]>20)a.push([2,"var(--warn)",s.domain,s.traffic.status["5xx"]+" server errors in 14 days"]);
+      if(s.ms>3000&&s.http.up)a.push([1,"var(--warn)",s.domain,"slow response ("+(s.ms/1000).toFixed(1)+"s)"]);
+    });
+    a.sort(function(x,y){return y[0]-x[0]});
+    $("alerts").innerHTML=a.length?a.map(function(x){return'<div class="alert"><i class="dot" style="background:'+x[1]+'"></i><div><b>'+esc(x[2])+'</b> '+esc(x[3])+'</div></div>'}).join(""):'<div class="alert"><i class="dot" style="background:var(--ok)"></i><div>All sites healthy.</div></div>';
+  }
+
+  function render(){
+    if(!DATA)return;
+    var sites=DATA.sites;
+    var up=sites.filter(function(s){return s.http.up}).length;
+    var v24=0,v7=0,p7=0,vis=0,bw=0,size=0;
+    sites.forEach(function(s){v24+=s.v24;v7+=s.v7;p7+=s.traffic.views_prev_7d;vis+=s.vis;bw+=s.traffic.bandwidth_bytes;size+=s.size});
+    var chg=p7?Math.round((v7-p7)/p7*100):0;
+    var k=[["Sites",sites.length,up+" online"],["Online",up+"/"+sites.length,sites.length-up?(sites.length-up)+" need attention":"all healthy",sites.length-up?"down":"up"],["Pageviews 24h",fmt(v24),"humans only, bots filtered"],["Pageviews 7d",fmt(v7),(chg>=0?"▲ ":"▼ ")+Math.abs(chg)+"% vs prior week",chg>=0?"up":"down"],["Visitors 7d",fmt(vis),"unique per day, summed"],["Bandwidth 14d",bytes(bw),"disk "+bytes(size)]];
+    $("kpis").innerHTML=k.map(function(x){return'<div class="kpi"><div class="l">'+x[0]+'</div><div class="v">'+x[1]+'</div><div class="d '+(x[3]||"")+'">'+x[2]+'</div></div>'}).join("");
+
+    var top=sites.slice().sort(function(a,b){return b.v7-a.v7}).slice(0,10),mx=Math.max(1,top[0]?top[0].v7:1);
+    $("leader").innerHTML=top.map(function(s){return'<div class="bar"><div class="n">'+esc(s.domain)+'</div><div class="t"><i style="width:'+(s.v7/mx*100).toFixed(1)+'%"></i></div><div class="c">'+fmt(s.v7)+'</div></div>'}).join("");
+    alerts(sites);
+
+    var q=$("q").value.trim().toLowerCase(),f=$("filter").value;
+    var list=sites.filter(function(s){
+      if(q&&(s.domain+" "+(s.http.title||"")+" "+s.stack).toLowerCase().indexOf(q)<0)return false;
+      if(f==="up")return s.http.up;if(f==="down")return!s.http.up;if(f==="traffic")return s.v7>0;if(f==="wp")return s.stack==="WordPress";
+      return true;
+    });
+    list.sort(function(a,b){var x=a[sortKey],y=b[sortKey];if(x==null)x=-Infinity;if(y==null)y=-Infinity;return(x>y?1:x<y?-1:0)*sortDir});
+
+    var html=list.map(function(s){
+      var chgCls=s.chg>0?"up":s.chg<0?"down":"",sslCls=s.sslDays==null?"down":s.sslDays<14?"warn":"",regCls=s.regDays==null?"":s.regDays<45?"warn":"";
+      var row='<tr class="row" data-d="'+esc(s.domain)+'">'+
+        '<td><span class="pill" style="color:'+(s.http.up?"var(--ok)":"var(--bad)")+'">● '+(s.http.up?"online":(s.http.code||"offline"))+'</span></td>'+
+        '<td><a class="dom" href="https://'+esc(s.domain)+'" target="_blank" rel="noopener">'+esc(s.domain)+'</a><span class="ttl">'+esc(s.http.title||"")+'</span></td>'+
+        '<td>'+spark(s.traffic.views)+'</td>'+
+        '<td class="num">'+fmt(s.v24)+'</td><td class="num">'+fmt(s.v7)+'</td>'+
+        '<td class="num '+chgCls+'">'+(s.chg>0?"+":"")+s.chg+'%</td>'+
+        '<td class="num">'+fmt(s.vis)+'</td>'+
+        '<td class="num">'+(s.ms!=null?s.ms+" ms":"–")+'</td>'+
+        '<td class="num '+sslCls+'">'+(s.sslDays==null?"none":s.sslDays+"d")+'</td>'+
+        '<td class="num '+regCls+'">'+(s.registration&&s.registration.registered===false?'<span class="down">unregistered</span>':s.regDays==null?"–":s.regDays+"d")+'</td>'+
+        '<td><span class="pill">'+esc(s.stack)+'</span></td>'+
+        '<td class="num">'+bytes(s.size)+'</td>'+
+        '<td>'+ago(s.mod)+'</td></tr>';
+      if(open[s.domain]){
+        var t=s.traffic;
+        row+='<tr class="detail"><td colspan="13"><div class="dgrid">'+
+          '<div><h3>Daily pageviews</h3>'+spark(t.views,260,60)+'</div>'+
+          '<div><h3>Top pages (14d)</h3><ol>'+(t.top_pages.length?t.top_pages.map(function(p){return'<li><span>'+esc(p[0])+'</span> · '+fmt(p[1])+'</li>'}).join(""):"<li>No traffic yet</li>")+'</ol></div>'+
+          '<div><h3>Top referrers (14d)</h3><ol>'+(t.top_referrers.length?t.top_referrers.map(function(p){return'<li><span>'+esc(p[0])+'</span> · '+fmt(p[1])+'</li>'}).join(""):"<li>Direct / none</li>")+'</ol></div>'+
+          '<div><h3>Details</h3><div class="kv">'+
+            '<div>Responses</div><div>2xx '+fmt(t.status["2xx"])+' · 3xx '+fmt(t.status["3xx"])+' · 4xx '+fmt(t.status["4xx"])+' · 5xx '+fmt(t.status["5xx"])+'</div>'+
+            '<div>Bot hits</div><div>'+fmt(t.bot_hits)+'</div>'+
+            '<div>Files</div><div>'+fmt(s.files.files)+'</div>'+
+            '<div>SSL issuer</div><div>'+esc(s.ssl.issuer||s.ssl.error||"–")+'</div>'+
+            '<div>Registrar</div><div>'+esc((s.registration&&s.registration.registrar)||"–")+'</div>'+
+            '<div>Domain expires</div><div>'+esc(s.registration&&s.registration.expires?s.registration.expires.slice(0,10):"–")+'</div>'+
+            '<div>Resolves to</div><div>'+esc(s.http.final_url||s.http.error||"–")+'</div>'+
+          '</div></div></div></td></tr>';
+      }
+      return row;
+    }).join("");
+    $("rows").innerHTML=html||'<tr><td colspan="13" class="empty">No sites match.</td></tr>';
+    $("sub").textContent=sites.length+" domains on "+DATA.host+" · collected in "+DATA.duration_s+"s";
+    $("foot").textContent="Data refreshes on the server every 15 minutes · this page re-checks every 60 seconds · generated "+new Date(DATA.generated).toLocaleString();
+    tick();
+  }
+
+  function tick(){
+    if(!DATA)return;
+    var mins=(Date.now()-new Date(DATA.generated))/6e4;
+    $("age").textContent="Updated "+ago(DATA.generated);
+    $("pulse").className="pulse"+(mins>40?" stale":"");
+  }
+
+  function load(){
+    fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw r.status;return r.json()}).then(function(d){
+      d.sites.forEach(enrich);DATA=d;render();
+    }).catch(function(){ $("age").textContent="waiting for data"; $("pulse").className="pulse stale"; });
+  }
+
+  document.querySelectorAll("th[data-k]").forEach(function(th){th.addEventListener("click",function(){var k=th.getAttribute("data-k");if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=k==="domain"||k==="stack"?1:-1}render()})});
+  $("q").addEventListener("input",render);$("filter").addEventListener("change",render);
+  $("rows").addEventListener("click",function(e){if(e.target.closest("a"))return;var tr=e.target.closest("tr.row");if(!tr)return;var d=tr.getAttribute("data-d");open[d]=!open[d];render()});
+  load();setInterval(load,60000);setInterval(tick,15000);
+})();
+</script>
+</body>
+</html>

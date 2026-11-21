@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "purpose": "Persistent memory for the Rates Insurance / Aviva dispute. Read this first in any new session, then update it. Never delete facts; supersede them with a new entry that cites the old one.",
+    "created": "2026-11-21",
+    "last_updated": "2026-11-21",
+    "status_of_claims": "Facts marked source=email were read from the primary email. Facts marked source=user_statement come only from the user's own letters and still need the original."
+  },
+  "client": {
+    "name": "Amos Nicholas LeBlanc",
+    "gmail_connected": "amosleblanc@gmail.com",
+    "related_matters": [
+      "R v LeBlanc, Information 4411-998-26-44101707-00 (see ../../disclosure_demand_leblanc.html)",
+      "SC-26-00001061-0000 small claims matter with TD (see Gmail threads 1a01623724c356b2, 1a015fdaa4ecb74c, 1a0a63d98987197f)"
+    ]
+  },
+  "parties": {
+    "brokerage": {"name": "Rates Insurance Brokers Ltd. (formerly Scoop Insurance Brokers)", "address": "300 Lincoln St Unit 22, Welland, ON L3B 4N4", "customer_care": "416-585-2918"},
+    "people": [
+      {"name": "Harneet Kaur", "role": "Registered Insurance Broker", "phone": "437-253-7031"},
+      {"name": "Blanca Muniz Campos", "role": "Sales Team Lead, Harneet's manager", "phone": "647-695-9223"},
+      {"name": "Shaloo Kakkar", "role": "Personal Lines Client Service Specialist", "phone": "416-585-2918"},
+      {"name": "Monica Cosby", "role": "Principal driver on the policy; asked to be named insured (Oct 20)"}
+    ],
+    "insurer": {"name": "Aviva Insurance Company of Canada", "complaints": "plainte-complaint.ca@aviva.com", "responder": "pi.feedback.ca@aviva.com"}
+  },
+  "policy": {"number": "A97600689PLA", "type": "Ontario auto", "named_insured_on_policy": "Amos LeBlanc", "scheduled_cancel_per_aviva": "2026-12-21", "amounts_claimed": {"total": 969.28, "other_figure": 723.28, "nsf_fee": 50.0, "reinstatement_fee": 60.0, "debit_presented_2026-11-12": 859.28}},
+  "timeline": [
+    {"date": "2025-11-21", "event": "InsureSign document signed (Scoop), earlier policy period", "source": "email 19aa6d86a88e5a17"},
+    {"date": "2026-10-10", "event": "InsureSign signing completed for Scoop documents (likely Aviva application and PAD; READ THE PDF)", "source": "email 1a127d3f27f0a119"},
+    {"date": "2026-10-20", "event": "Amos asks for policy to be reissued with Monica Cosby as named insured and corrects licence-suspension answer to Yes. Harneet replies named insured follows registered owner.", "source": "email 1a159db916e2be20"},
+    {"date": "2026-11-02", "event": "Policy changed and premium raised without consent (his statement)", "source": "user_statement"},
+    {"date": "2026-11-05", "event": "Written cancellation sent about 4:10 PM (his statement). Original not yet reviewed.", "source": "user_statement"},
+    {"date": "2026-11-09", "event": "Privacy access request (his statement)", "source": "user_statement"},
+    {"date": "2026-11-12", "event": "$859.28 debit presented. Amos says withdrawn. Aviva (Nov 20) says returned NSF.", "source": "CONFLICT: check Scotiabank statement"},
+    {"date": "2026-11-13", "event": "Formal notice: policy cancelled, all consent revoked incl. phone/text/postal, 48h demand, preserve evidence", "source": "email 1a1d58f458824b8b"},
+    {"date": "2026-11-19", "event": "Rates sends cancellation-for-non-payment notice, two requests for a call, auto-reply refusing email cancellations; Amos refuses calls in writing (15:45Z)", "source": "emails 1a1f43f26c6569f9, 1a1f4789d253e0ed, 1a1d58f458824b8b"},
+    {"date": "2026-11-20", "event": "Aviva: debit returned NSF, no further withdrawals, cancellation needs signed form or verbal OK. Blanca phones Amos, then emails 'a brief phone conversation is required'.", "source": "emails 1a1d58f458824b8b, 1a1faaf77c8cff13"}
+  ],
+  "deadlines": [
+    {"date": "2026-12-09", "item": "30 days from Nov 9 privacy access request (verify)"},
+    {"date": "2026-12-11", "item": "Withdrawal Amos was told was scheduled. Aviva says none will occur."},
+    {"date": "2026-12-21", "item": "Aviva cancellation for non-payment unless a cancellation authorization is given"},
+    {"date": "2027-02-10", "item": "About 90 days from Nov 12: personal PAD claim window at the bank (verify)"}
+  ],
+  "open_questions": [
+    "Does the Scotiabank statement show the $859.28 leaving the account or being returned?",
+    "What exactly did the Oct 10 signed InsureSign PDF authorize (amount, dates, PAD)?",
+    "Times, numbers, durations and content of every phone call (only CL-001 is evidenced)",
+    "Did any call include a sales pitch (renewal, discount, reinstatement offer)?",
+    "Does the policy wording give the insured the right to cancel by written notice? Policy packages: emails 1a138dff70b80bc5, 1a1a01a5fc68ac41",
+    "Is another policy in place on the vehicle after Dec 21?",
+    "Original Nov 2, Nov 5, Nov 9 and Nov 13 emails and letter to be added to the file"
+  ],
+  "evidence_index": {
+    "contact_log": "call-log.jsonl (hash-chained), call-log.md (export)",
+    "analysis": "ANALYSIS.md",
+    "gmail_threads": ["1a1d58f458824b8b", "1a1faaf77c8cff13", "1a1f4789d253e0ed", "1a1f43f26c6569f9", "1a159db916e2be20", "1a127d3f27f0a119", "19aa6d86a88e5a17", "1a1e5da5d95dee13"]
+  }
+}

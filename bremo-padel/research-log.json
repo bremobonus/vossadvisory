@@ -1,0 +1,23 @@
+{
+  "project": "Bremo Padel / Bremo ONE",
+  "date": "2026-11-23",
+  "brief": "3D printed padel racket, one model, one price $99, benchmarked against NOX pro-player models and Pallap Elite line. Page published at bremo.io/padel.",
+  "design_v0_1": {
+    "dimensions_mm": {"length": 455, "width": 260, "thickness": 38, "handle": 125, "hole_diameter": 11, "holes": 72},
+    "target_mass_g": 360, "calculated_mass_g": 355, "balance_mm_calc": 265,
+    "architecture": ["0.5 mm carbon/glass face skins x2", "foam-in-place flexible PU core ~65 kg/m3, 3 zones", "printed PA12-CF head exo-frame", "printed throat/handle + twin 6x4 mm pultruded carbon spars, 300 mm", "TPU bumper + trim-weight pockets"],
+    "estimated_unit_cost_usd": 41.85,
+    "status": "concept only; nothing printed, weighed or tested; costs are planning estimates, not quotes"
+  },
+  "benchmarks_published_specs": [
+    {"model": "NOX AT10 Genius 18K Alum 2026 (Agustin Tapia)", "price": "EUR 390 MSRP, seen ~EUR 238 street", "weight_g": "360-375", "face": "aluminised 18K carbon, Dual Spin", "core": "MLD Black EVA", "notes": "swappable 2 g / 4 g weights", "source": "https://noxsport.com/en/products/pala-at10-genius-18k-alum-2026-by-agustin-tapia"},
+    {"model": "NOX AT10 Luxury Genius 12K LTD 2026", "price": "EUR 500 list, EUR 299.95 listed", "weight_g": "360-375", "source": "https://www.zonadepadel.com/nox/15945-nox-at10-luxury-genius-12k-ltd-2026.html"},
+    {"model": "Pallap Velocity Elite 2025", "price": "GBP 229.96 MSRP / EUR 269.95", "weight_g": "360-365", "face": "12K carbon", "frame": "carbon-Kevlar", "core": "EVA 30", "source": "https://www.padelshack.com/product/pallap-velocity-elite-padel-racket-silvercarbon-2025/"},
+    {"model": "Pallap Power Velocity Elite 01 2025", "price": "GBP 249.95 / USD 219.99", "weight_g": "355-360", "face": "12K basalt-carbon", "frame": "carbon-Kevlar", "core": "EVA 28", "source": "https://www.padelshack.com/product/pallap-power-velocity-elite-01-2025/"},
+    {"model": "Pallap Power Elite 2025", "price": "USD 311 list, USD 180 sale", "weight_g": "365 (one review 345-360)", "face": "24K carbon", "frame": "carbon-Kevlar", "source": "https://everythingpadel.co.uk/products/pallap-power-elite-padel-racket"},
+    {"model": "Pallap Evoforce Elite 2026", "price": "GBP 179-199 / ~EUR 239", "weight_g": "350-365", "face": "15K + 3K Dualforge carbon", "frame": "dual carbon", "source": "https://www.padelreference.com/en/padel-rackets/p/pallap-evoforce-elite-2026"}
+  ],
+  "rules_published_limits": {"length_mm": 455, "width_mm": 260, "thickness_mm": 38, "thickness_tolerance": "2.5%", "handle_max_mm": 200, "hole_diameter_mm": "9-13", "to_verify": "FIP Rules of Padel text in force 2026-01-01, incl. wrist cord clause", "source": "https://www.padelfip.com/governance/rules-of-padel/"},
+  "prior_art": ["https://www.printables.com/model/1033579-padel-racket-v1", "https://3dprint.com/285375/azul-3d-wilson-rethink-pickleball-paddle-design-with-3d-printed-lattice-cores/"],
+  "open_items": ["No NOX model literally named 'Elite Custom' was found; AT10 Tapia models used as the pro-player benchmark", "Buy and measure benchmark rackets", "Supplier quotes for filament, face plates, foam"]
+}

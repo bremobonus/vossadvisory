@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bremo Padel | One racket. $99.</title>
+<meta name="description" content="Bremo ONE: a 3D printed padel racket with a foam-in-place core, engineered to play against $500 pro models at one price, $99. Design, wireframe, mass budget and benchmark.">
+<meta property="og:title" content="Bremo Padel | One racket. $99.">
+<meta property="og:description" content="A printed exo-frame, carbon skins and a zoned foam core. Engineering concept v0.1.">
+<style>
+:root{
+  --ink:#0d1117; --paper:#f4f2ec; --card:#fbfaf6; --rule:#d8d4c7; --muted:#59616d;
+  --navy:#081320; --navy2:#0e2033; --line:#8fd8ff; --volt:#d4ff3a; --warn:#b4530a;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:"Helvetica Neue",Helvetica,Arial,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.mono{font-family:var(--mono)}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(30px,4.6vw,52px);font-weight:800;margin:10px 0 18px}
+h3{font-size:20px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+p{margin:0 0 14px;max-width:68ch}
+section{padding:76px 0;border-top:1px solid var(--rule)}
+
+/* hero */
+.hero{background:var(--navy);color:#eaf3fb;border:0;padding:0;overflow:hidden;position:relative}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(143,216,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(143,216,255,.07) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;position:relative}
+.logo{font-weight:900;font-size:22px;letter-spacing:.22em}
+.logo i{font-style:normal;color:var(--volt)}
+.nav a{font:600 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;opacity:.8;margin-left:18px}
+.nav a:hover{opacity:1}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center;position:relative;padding:20px 0 56px}
+.hero h1{font-size:clamp(46px,8.4vw,112px);font-weight:900;letter-spacing:-.04em;text-transform:uppercase}
+.hero h1 b{color:var(--volt)}
+.hero .eyebrow{color:var(--line)}
+.lede{font-size:19px;color:#c4d3e0;max-width:46ch;margin:20px 0 26px}
+.stats{display:grid;grid-template-columns:repeat(4,auto);gap:22px;justify-content:start;border-top:1px solid rgba(143,216,255,.25);padding-top:18px}
+.stats div{font:500 12px var(--mono);color:#9fb4c6;letter-spacing:.06em;text-transform:uppercase}
+.stats strong{display:block;font:800 26px var(--sans);color:#fff;letter-spacing:-.02em;text-transform:none}
+.stage{position:relative;aspect-ratio:4/5;min-height:420px}
+#wire{width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y}
+#wire:active{cursor:grabbing}
+.stage small{position:absolute;left:0;bottom:6px;font:500 11px var(--mono);letter-spacing:.08em;color:#7f97ab;text-transform:uppercase}
+.tag{position:absolute;right:0;top:8px;font:600 11px var(--mono);letter-spacing:.1em;color:var(--navy);background:var(--volt);padding:5px 8px;text-transform:uppercase}
+
+/* generic */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:28px}
+.cols>div{border-top:2px solid var(--ink);padding-top:14px}
+.cols p{font-size:16px;color:#2a313b}
+.num{font:700 12px var(--mono);color:var(--muted);letter-spacing:.1em}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.sheet{background:var(--navy);color:#dcebf7;padding:18px;position:relative}
+.sheet svg{width:100%;height:auto;display:block}
+.sheet .cap{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#8fa9bd;display:flex;justify-content:space-between;gap:10px;border-top:1px solid rgba(143,216,255,.25);padding-top:10px;margin-top:10px}
+ol.parts{list-style:none;padding:0;margin:0;counter-reset:p}
+ol.parts li{counter-increment:p;display:grid;grid-template-columns:34px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--rule)}
+ol.parts li:before{content:counter(p);font:700 13px var(--mono);width:26px;height:26px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;margin-top:2px}
+ol.parts p{font-size:15.5px;margin:4px 0 0;color:#2a313b}
+.tw{overflow-x:auto;margin-top:22px;border:1px solid var(--rule);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;line-height:1.4}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font:600 11px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);white-space:nowrap;background:#efece3}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.us td{background:var(--ink);color:#fff;border-bottom-color:var(--ink)}
+tr.us td:first-child{box-shadow:inset 4px 0 0 var(--volt)}
+tr.tot td{font-weight:700;border-top:2px solid var(--ink);border-bottom:0}
+.cmp{min-width:940px}
+.cmp td:first-child{font-weight:700;min-width:190px}
+.cmp small,.note{display:block;font-size:13px;color:var(--muted);font-weight:400}
+tr.us small{color:#aeb9c6}
+.note{margin-top:12px;max-width:80ch}
+.pick{display:inline-block;font:700 10px var(--mono);letter-spacing:.1em;background:var(--volt);color:var(--ink);padding:3px 6px;text-transform:uppercase;vertical-align:middle;margin-left:6px}
+.bar{height:8px;background:var(--rule);position:relative;min-width:90px}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--ink)}
+.risk{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px;margin-top:20px}
+.risk div{padding:16px 0;border-bottom:1px solid var(--rule)}
+.risk b{display:block}
+.risk span{font-size:15.5px;color:#2a313b}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:26px}
+.steps div{background:var(--card);border:1px solid var(--rule);padding:16px}
+.steps p{font-size:15px;margin:6px 0 0}
+.dark{background:var(--ink);color:#e9edf2;border:0}
+.dark .eyebrow{color:var(--volt)}
+.dark p{color:#b9c2cd}
+.big{font:900 clamp(60px,13vw,170px)/.9 var(--sans);letter-spacing:-.05em;color:var(--volt)}
+footer{padding:30px 0 50px;font-size:13px;color:var(--muted);border-top:1px solid var(--rule)}
+footer ol{padding-left:18px;columns:2;column-gap:40px}
+footer li{margin-bottom:6px;break-inside:avoid;overflow-wrap:anywhere}
+@media (max-width:860px){
+  .hero-grid,.split{grid-template-columns:1fr}
+  .cols,.steps{grid-template-columns:1fr}
+  .risk{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,auto)}
+  .stage{min-height:380px;aspect-ratio:1/1}
+  section{padding:54px 0}
+  .nav a{display:none}
+  footer ol{columns:1}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="nav">
+      <div class="logo">BREMO<i>.</i></div>
+      <nav><a href="#build">Build</a><a href="#wireframe">Wireframe</a><a href="#benchmark">Benchmark</a><a href="#cost">Cost</a><a href="#risk">Risks</a></nav>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Bremo ONE · engineering concept v0.1</div>
+        <h1>One racket.<br>One price.<br><b>$99.</b></h1>
+        <p class="lede">A padel racket that is printed, not moulded. A carbon-nylon exo-frame, carbon skins and a foam core poured straight into the shell, built to play against rackets that cost four to five times more.</p>
+        <div class="stats">
+          <div><strong>360 g</strong>target weight</div>
+          <div><strong>38 mm</strong>profile</div>
+          <div><strong>265 mm</strong>balance (calc.)</div>
+          <div><strong id="holeN">70</strong>holes, Ø11</div>
+        </div>
+      </div>
+      <div class="stage">
+        <span class="tag">Wireframe · drag to rotate</span>
+        <canvas id="wire" aria-label="Rotating 3D wireframe of the Bremo ONE racket"></canvas>
+        <small>455 × 260 × 38 mm · parametric model</small>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="bet">
+  <div class="wrap">
+    <div class="eyebrow">The bet</div>
+    <h2>A $500 racket is mostly not racket.</h2>
+    <p>Every premium padel racket is the same three things: a carbon tube frame, a die-cut EVA or foam core, and two thin composite faces, pressed in a steel mould. The materials are a small fraction of the shelf price. The rest is tooling, pro contracts, distributors, retail margin and a new paint job every season.</p>
+    <div class="cols">
+      <div><div class="num">01</div><h3>No moulds</h3><p>A printer does not care what shape it prints. No steel tooling to amortise, no minimum order, and a geometry change is a file update, not a new mould.</p></div>
+      <div><div class="num">02</div><h3>The shell is the mould</h3><p>The printed frame and bonded skins form a closed cavity. Foam is poured in and cures in place, bonding to everything it touches. One step replaces cutting, laying up and pressing.</p></div>
+      <div><div class="num">03</div><h3>One model, sold direct</h3><p>One racket, one price, no distributor and no retailer. Feel is tuned inside the racket (core zones, trim weights), so there is no ten-model range to stock.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="build">
+  <div class="wrap">
+    <div class="eyebrow">Architecture</div>
+    <h2>Six parts. One print farm.</h2>
+    <div class="split">
+      <div class="sheet">
+        <svg id="explode" viewBox="0 0 520 610" role="img" aria-label="Exploded view of the six racket parts"></svg>
+        <div class="cap"><span>Fig. 1 · exploded stack</span><span>not to scale in Z</span></div>
+      </div>
+      <ol class="parts">
+        <li><div><h3>Face skin A</h3><p>0.5 mm pre-cured carbon/glass plate, routed to shape. Carbon carries the in-plane load that printed plastic cannot; this is the one place we refuse to print.</p></div></li>
+        <li><div><h3>Zoned foam core</h3><p>Flexible polyurethane foam, about 65 kg/m³, metered into the closed shell. Thin printed baffles split the cavity into three zones so the sweet spot can be softer than the perimeter.</p></div></li>
+        <li><div><h3>Printed exo-frame</h3><p>PA12-CF head ring, 0.9 mm outer wall with internal ribs, printed flat so the fibre-filled roads run around the hoop. Fits a 300 mm-class bed.</p></div></li>
+        <li><div><h3>Throat, handle and twin spars</h3><p>Printed separately and joined to the head over two 6 × 4 mm pultruded carbon tubes that run 300 mm from the butt cap into the head. The spars carry the bending at the neck, the weakest point of any printed part.</p></div></li>
+        <li><div><h3>Face skin B</h3><p>Identical to A. Both skins are bonded to the frame before the pour, so the foam locks them from the inside.</p></div></li>
+        <li><div><h3>TPU bumper and trim pockets</h3><p>A printed TPU edge guard takes wall strikes. Two pockets (12 o'clock and butt cap) accept 2 to 5 g weights to trim balance at the factory or at home.</p></div></li>
+      </ol>
+    </div>
+
+    <h3 style="margin-top:52px">Mass budget</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Part</th><th>Material</th><th class="n">Mass</th><th style="width:26%">Share</th></tr></thead>
+        <tbody id="mass"></tbody>
+      </table>
+    </div>
+    <span class="note">Calculated from the parametric geometry and nominal material densities. Not yet weighed. The trim pockets bring a finished racket to 360 g ± 5.</span>
+
+    <h3 style="margin-top:52px">What goes in the middle</h3>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Core option</th><th>How</th><th>For</th><th>Against</th></tr></thead>
+        <tbody>
+          <tr><td><b>Die-cut EVA sheet</b></td><td>Buy 36 mm EVA, cut, glue in</td><td>Proven feel, the industry standard, cheapest to start</td><td>One density across the whole face. Adds a bonding step and an offcut stream</td></tr>
+          <tr><td><b>Foam-in-place PU</b><span class="pick">v1 pick</span></td><td>Meter two-part flexible foam into the closed shell, clamp, cure, drill</td><td>Self-bonding, zoned by baffles, density set per order, no adhesive film</td><td>Needs a clamp fixture and tight metering. Pour pressure can bow thin skins</td></tr>
+          <tr><td><b>Printed TPU lattice</b></td><td>Print a gyroid or foaming-TPU core with graded cell size</td><td>Continuous stiffness gradient, fully digital, the real long-term differentiator</td><td>Slow (10 h+ per core), heavy unless walls are very thin, unproven in fatigue</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <span class="note">Plan: ship on foam-in-place, keep EVA as the fallback if pour consistency is not there, and develop the lattice core as v2.</span>
+  </div>
+</section>
+
+<section id="wireframe">
+  <div class="wrap">
+    <div class="eyebrow">Wireframe</div>
+    <h2>The drawing.</h2>
+    <p>A hybrid teardrop: round enough to forgive, long enough to hit. Every dimension sits at or inside the published equipment limits.</p>
+    <div class="sheet" style="margin-top:26px">
+      <svg id="plan" viewBox="0 0 760 590" role="img" aria-label="Front and side elevation with dimensions"></svg>
+      <div class="cap"><span>Fig. 2 · front and side elevation</span><span>dimensions in mm</span></div>
+    </div>
+    <div class="tw">
+      <table>
+        <thead><tr><th>Rule (published limits)</th><th class="n">Limit</th><th class="n">Bremo ONE</th></tr></thead>
+        <tbody>
+          <tr><td>Overall length</td><td class="n">≤ 455 mm</td><td class="n">455</td></tr>
+          <tr><td>Head width</td><td class="n">≤ 260 mm</td><td class="n">260</td></tr>
+          <tr><td>Thickness (2.5% tolerance)</td><td class="n">≤ 38 mm</td><td class="n">38</td></tr>
+          <tr><td>Handle length</td><td class="n">≤ 200 mm</td><td class="n">125</td></tr>
+          <tr><td>Holes in the central area, cylindrical</td><td class="n">Ø 9 to 13 mm</td><td class="n">Ø 11</td></tr>
+          <tr><td>Wrist cord</td><td class="n">required</td><td class="n">fitted</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <span class="note">Limits as summarised by retailers and federation guides. Confirm against the FIP rules text in force from 1 January 2026 before applying for approval.</span>
+  </div>
+</section>
+
+<section id="benchmark">
+  <div class="wrap">
+    <div class="eyebrow">Benchmark</div>
+    <h2>Against NOX and Pallap.</h2>
+    <p>Published specifications for the pro-player NOX models and the Pallap Elite line, next to our design targets. Their rows are what the brands and retailers print. Ours are targets until we have rackets to measure.</p>
+    <div class="tw">
+      <table class="cmp">
+        <thead><tr><th>Racket</th><th class="n">Price</th><th>Shape</th><th class="n">Weight</th><th>Face</th><th>Frame</th><th>Core</th><th>Tuning</th></tr></thead>
+        <tbody>
+          <tr class="us"><td>Bremo ONE<small>design target</small></td><td class="n">$99</td><td>Hybrid teardrop</td><td class="n">355–365 g</td><td>0.5 mm carbon/glass skin</td><td>Printed PA12-CF, twin carbon spars</td><td>Foam-in-place PU, 3 zones</td><td>Trim pockets, core density per order</td></tr>
+          <tr><td>NOX AT10 Genius 18K Alum 2026<small>Agustín Tapia</small></td><td class="n">€390<small>MSRP</small></td><td>Round / teardrop</td><td class="n">360–375 g</td><td>Aluminised 18K carbon, Dual Spin</td><td>Carbon, 38 mm</td><td>MLD Black EVA, multilayer</td><td>Swappable 2 g and 4 g weights</td></tr>
+          <tr><td>NOX AT10 Luxury Genius 12K LTD 2026<small>Agustín Tapia, limited</small></td><td class="n">€500<small>list</small></td><td>Luxury mould</td><td class="n">360–375 g</td><td>12K carbon</td><td>Carbon</td><td>Not confirmed</td><td>Counterweights, Custom Grip</td></tr>
+          <tr><td>Pallap Velocity Elite<small>2025</small></td><td class="n">€270<small>list</small></td><td>Teardrop</td><td class="n">360–365 g</td><td>12K carbon</td><td>Carbon-Kevlar</td><td>EVA 30</td><td>None listed</td></tr>
+          <tr><td>Pallap Power Velocity Elite 01<small>2025</small></td><td class="n">£250<small>list</small></td><td>Diamond, head-heavy</td><td class="n">355–360 g</td><td>12K basalt-carbon</td><td>Carbon-Kevlar</td><td>EVA 28</td><td>None listed</td></tr>
+          <tr><td>Pallap Power Elite<small>2025</small></td><td class="n">$311<small>list</small></td><td>Diamond</td><td class="n">≈ 365 g</td><td>24K carbon</td><td>Carbon-Kevlar</td><td>Not confirmed</td><td>None listed</td></tr>
+          <tr><td>Pallap Evoforce Elite<small>2026</small></td><td class="n">€239<small>retail</small></td><td>Hybrid teardrop</td><td class="n">350–365 g</td><td>15K + 3K Dualforge carbon</td><td>Dual carbon</td><td>Not confirmed</td><td>None listed</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <span class="note">Retailers disagree on some weights and shapes, and street prices run well below list (the Tapia 18K was seen from about €238). Sources at the foot of the page.</span>
+
+    <div class="cols">
+      <div><h3>Where we match</h3><p>Weight, balance, 38 mm profile, shape and hole pattern are geometry. A printer hits those as easily as a mould does, and the trim pockets copy the one adjustability feature NOX sells at the top of its range.</p></div>
+      <div><h3>Where we are behind</h3><p>Stiffness. Printed PA12-CF is roughly 6 to 8 GPa; a woven carbon laminate is 50 GPa or more. The spars and bonded skins exist to close that gap. Expect a softer, control-biased feel in v1, not a Tapia-stiff cannon.</p></div>
+      <div><h3>Where we can lead</h3><p>A core that changes across the face. Die-cut EVA is one density everywhere. Zoned foam now, and a graded lattice later, let us widen the sweet spot in a way a pressed sandwich cannot.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="cost">
+  <div class="wrap">
+    <div class="eyebrow">Unit economics</div>
+    <h2>How $99 works.</h2>
+    <div class="split">
+      <div>
+        <p>Estimated cost of one racket at about 1,000 units a month, built on an in-house farm of 300 to 350 mm enclosed printers.</p>
+        <p>At roughly 11 print hours per racket, one printer makes two a day. A thousand a month needs about twenty machines, and the capital is tens of thousands of dollars, not a mould programme.</p>
+        <p>After shipping, payment fees and a warranty reserve, each racket leaves about $40 to cover marketing and overhead. That is thin, and it only holds if labour stays under half an hour per racket.</p>
+      </div>
+      <div class="tw" style="margin-top:0">
+        <table>
+          <thead><tr><th>Line</th><th class="n">USD</th></tr></thead>
+          <tbody id="bom"></tbody>
+        </table>
+      </div>
+    </div>
+    <span class="note">Planning estimates, not supplier quotes. Filament, plate and labour rates need real quotes before any price is announced.</span>
+  </div>
+</section>
+
+<section id="risk">
+  <div class="wrap">
+    <div class="eyebrow">What could break it</div>
+    <h2>Unproven until tested.</h2>
+    <p>Nothing here has been printed yet. These are the ways it fails, in the order we expect to meet them.</p>
+    <div class="risk">
+      <div><b>Neck and frame cracking</b><span>Layer lines are the weak axis. Wall strikes and mishits load them directly. Mitigation: spars, flat print orientation, TPU bumper. Test: drop and wall-strike rig.</span></div>
+      <div><b>Too soft, too dead</b><span>Low frame modulus plus PU foam could play like a beginner racket. Mitigation: skin lay-up and core density are both adjustable. Test: face deflection and ball rebound against the benchmark rackets.</span></div>
+      <div><b>Pour consistency</b><span>A few grams of foam moves weight and balance, and pour pressure can bow the skins. Mitigation: metered dispensing and a clamp fixture. Fallback: die-cut EVA.</span></div>
+      <div><b>Heat and moisture</b><span>A racket lives in a hot car. PLA and PETG are ruled out for that reason. PA12-CF tolerates it, but it must be dried before printing and checked for creep at 70 °C.</span></div>
+      <div><b>Skin delamination</b><span>The skin-to-frame bond sees every impact. Mitigation: wide bonding flange on the frame, primer, and foam locking the skin from inside. Test: 10,000-impact fatigue.</span></div>
+      <div><b>Labour creep</b><span>The price dies if assembly takes an hour. Every manual step (bonding, pouring, drilling, finishing) needs a jig before launch.</span></div>
+    </div>
+
+    <h3 style="margin-top:52px">Route to a racket you can hit with</h3>
+    <div class="steps">
+      <div><div class="num">P0 · 3 weeks</div><h3>Buy and measure</h3><p>Buy one NOX AT10 18K and one Pallap Elite. Measure weight, balance, swing weight, face deflection and rebound. That becomes the target sheet.</p></div>
+      <div><div class="num">P1 · 6 weeks</div><h3>Print and pour</h3><p>CAD the exo-frame, print ten, pour three core densities. Weigh everything against the mass budget.</p></div>
+      <div><div class="num">P2 · 6 weeks</div><h3>Break them</h3><p>Fatigue, wall strike, heat soak. Fix what cracks. Blind court test against the benchmarks with club players.</p></div>
+      <div><div class="num">P3 · 8 weeks</div><h3>Pilot 100</h3><p>Jigs, metered pour, timed assembly. Confirm cost per racket, then apply for approval and open orders.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="eyebrow">Bremo ONE</div>
+    <div class="big">$99</div>
+    <p style="font-size:20px;color:#fff;margin-top:18px">Every racket. Every player. No range, no tiers, no season tax.</p>
+    <p>Concept v0.1, published for review. Specifications are design targets and will change as prototypes are tested.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="eyebrow" style="margin-bottom:12px">Sources</div>
+    <ol>
+      <li>NOX, AT10 Genius 18K Alum 2026 by Agustín Tapia: <a href="https://noxsport.com/en/products/pala-at10-genius-18k-alum-2026-by-agustin-tapia">noxsport.com</a></li>
+      <li>Padelshop, NOX AT10 Genius 18K 2025 vs 2026: <a href="https://padelshop.com/en-it/blogs/padel-tips/nox-at10-genius-18k-2025-vs-2026">padelshop.com</a></li>
+      <li>Zona de Pádel, NOX AT10 Luxury Genius 12K LTD 2026: <a href="https://www.zonadepadel.com/nox/15945-nox-at10-luxury-genius-12k-ltd-2026.html">zonadepadel.com</a></li>
+      <li>Padelshack, Pallap Velocity Elite 2025: <a href="https://www.padelshack.com/product/pallap-velocity-elite-padel-racket-silvercarbon-2025/">padelshack.com</a></li>
+      <li>Tennispro, Pallap Velocity Elite: <a href="https://www.tennispro.eu/products/pallap-velocity-elite-padel-racket/">tennispro.eu</a></li>
+      <li>Padelshack, Pallap Power Velocity Elite 01: <a href="https://www.padelshack.com/product/pallap-power-velocity-elite-01-2025/">padelshack.com</a></li>
+      <li>Everything Padel, Pallap Power Elite: <a href="https://everythingpadel.co.uk/products/pallap-power-elite-padel-racket">everythingpadel.co.uk</a></li>
+      <li>Padel Reference, Pallap Evoforce Elite 2026: <a href="https://www.padelreference.com/en/padel-rackets/p/pallap-evoforce-elite-2026">padelreference.com</a></li>
+      <li>Stringers' World, Pallap Evoforce Elite 2026: <a href="https://www.stringersworld.com/product/pallap-evoforce-elite-padel-racket-2026/">stringersworld.com</a></li>
+      <li>FIP, Rules of Padel: <a href="https://www.padelfip.com/governance/rules-of-padel/">padelfip.com</a></li>
+      <li>M1 Padel, racket measurements: <a href="https://www.m1padel.com/se/blog/post/padel-racket-measurements">m1padel.com</a></li>
+      <li>Prior art, Padel Racket V1 (PETG-CF, three-part print): <a href="https://www.printables.com/model/1033579-padel-racket-v1">printables.com</a></li>
+      <li>Prior art, Wilson and Azul 3D lattice-core pickleball paddle: <a href="https://3dprint.com/285375/azul-3d-wilson-rethink-pickleball-paddle-design-with-3d-printed-lattice-cores/">3dprint.com</a></li>
+    </ol>
+    <p style="margin-top:18px">© 2026 Bremo. NOX and Pallap are trademarks of their owners and are named for comparison only. Prices and specifications as published by the brands and retailers in November 2026.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+/* ---------- parametric geometry (mm, y from butt cap to tip) ---------- */
+var L=455, HW=130, CY=325, HANDLE=125, ARM=17;
+function ss(t){t=Math.max(0,Math.min(1,t));return t*t*(3-2*t);}
+function halfW(y){
+  if(y<=0||y>=L) return 0;
+  var hx=0, t=(y-CY)/130;
+  if(Math.abs(t)<1){var n=t>0?2.5:2.0; hx=HW*Math.pow(1-Math.pow(Math.abs(t),n),1/n);}
+  var tx=0;
+  if(y<=HANDLE) tx=y<8?15+2.5*(1-y/8):15;
+  else tx=(15+73*ss((y-HANDLE)/135))*(1-ss((y-205)/95));
+  var k=6, x=Math.pow(Math.pow(hx,k)+Math.pow(tx,k),1/k);
+  if(y>L-1.5) x=Math.min(x,hx);
+  return Math.min(HW,x);
+}
+function halfZ(y){ return 13+6*ss((y-HANDLE)/75); }
+/* outline as closed polygon, right side up then left side down */
+var R=[],i,y;
+for(y=0;y<=L;y+=(y>440?1.5:5)) R.push([halfW(y),y]);
+R.push([0,L]);
+var OUT=R.concat(R.slice(0,-1).reverse().map(function(p){return[-p[0],p[1]];}));
+/* inner edge of head frame: offset the outline inward by 16 mm */
+function inset(d,ymin){
+  var pts=[],n=R.length;
+  for(var j=0;j<n;j++){
+    var a=R[Math.max(0,j-1)],b=R[Math.min(n-1,j+1)],p=R[j];
+    var dx=b[0]-a[0],dy=b[1]-a[1],l=Math.hypot(dx,dy)||1;
+    /* inward normal for the right side, traversed butt to tip, is (-dy, dx)/l */
+    var q=[p[0]-dy/l*d, p[1]+dx/l*d];
+    if(q[1]>=ymin && q[0]>=0) pts.push(q);
+  }
+  pts[pts.length-1][0]=0;
+  return pts.concat(pts.slice(0,-1).reverse().map(function(p){return[-p[0],p[1]];}));
+}
+var INNER=inset(16,216);
+/* throat window */
+var WIN=[];
+for(y=150;y<=202;y+=4){var w=halfW(y)-ARM; if(w>1) WIN.push([w,y]);}
+WIN=WIN.concat(WIN.slice().reverse().map(function(p){return[-p[0],p[1]];}));
+/* holes: hex grid inside the hitting zone */
+var HOLES=[],row=0,PITCH=23,x;
+for(y=238;y<L-28;y+=PITCH*0.866,row++){
+  for(x=-120+(row%2?PITCH/2:0);x<=120;x+=PITCH){
+    var ok=true;
+    [[0,0],[0,14],[0,-14]].forEach(function(o){ if(halfW(y+o[1])-Math.abs(x)<30) ok=false; });
+    if(ok) HOLES.push([x,y]);
+  }
+}
+var hn=document.getElementById('holeN'); if(hn) hn.textContent=HOLES.length;
+
+function path(pts,close){return pts.map(function(p,j){return(j?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1);}).join('')+(close?'Z':'');}
+var NS='http://www.w3.org/2000/svg';
+function el(parent,tag,attrs,text){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;parent.appendChild(e);return e;}
+var LINE='#8fd8ff',VOLT='#d4ff3a',DIM='#7f97ab';
+
+/* ---------- Fig. 2: front + side elevation ---------- */
+(function(){
+  var svg=document.getElementById('plan'); if(!svg) return;
+  var S=1.0, ox=215, oy=528;            /* y up */
+  var g=el(svg,'g',{transform:'translate('+ox+','+oy+') scale('+S+',-'+S+')',fill:'none','stroke-linejoin':'round'});
+  el(g,'path',{d:path(INNER,true),fill:'rgba(143,216,255,.06)',stroke:LINE,'stroke-width':.7,'stroke-dasharray':'3 2'});
+  el(g,'path',{d:path(OUT,true),stroke:'#fff','stroke-width':1.5});
+  el(g,'path',{d:path(WIN,true),stroke:LINE,'stroke-width':1});
+  HOLES.forEach(function(h){el(g,'circle',{cx:h[0],cy:h[1],r:5.5,stroke:LINE,'stroke-width':.8});});
+  /* spars */
+  [-7,7].forEach(function(sx){el(g,'path',{d:'M'+sx+' 6L'+sx+' 150L'+(sx*6.6)+' 300',stroke:VOLT,'stroke-width':1.1,'stroke-dasharray':'6 3'});});
+  /* grip hatch */
+  for(y=14;y<120;y+=9) el(g,'path',{d:'M-15 '+y+'L15 '+(y+7),stroke:DIM,'stroke-width':.6});
+  /* core zones */
+  el(g,'ellipse',{cx:0,cy:330,rx:52,ry:58,stroke:VOLT,'stroke-width':.9,'stroke-dasharray':'2 3'});
+  el(g,'ellipse',{cx:0,cy:332,rx:88,ry:92,stroke:VOLT,'stroke-width':.6,'stroke-dasharray':'2 3',opacity:.6});
+  /* centre line + balance */
+  el(g,'path',{d:'M0 -12L0 468',stroke:DIM,'stroke-width':.4,'stroke-dasharray':'10 3 2 3'});
+  el(g,'path',{d:'M-150 265L-134 265M134 265L150 265',stroke:VOLT,'stroke-width':1});
+
+  var t={fill:'#dcebf7','font-family':'ui-monospace,Menlo,Consolas,monospace','font-size':11,'letter-spacing':'.04em'};
+  function X(v){return ox+v*S;} function Y(v){return oy-v*S;}
+  function dimV(xv,y0,y1,label,side){
+    var xx=X(xv);
+    el(svg,'path',{d:'M'+xx+' '+Y(y0)+'L'+xx+' '+Y(y1)+'M'+(xx-4)+' '+Y(y0)+'h8M'+(xx-4)+' '+Y(y1)+'h8',stroke:DIM,'stroke-width':1,fill:'none'});
+    var tx=xx+(side<0?-8:8), ty=(Y(y0)+Y(y1))/2;
+    var a={}; for(var k in t)a[k]=t[k]; a.x=tx;a.y=ty;a['text-anchor']='middle';a.transform='rotate(-90 '+tx+' '+ty+')';a.dy=side<0?-2:9;
+    el(svg,'text',a,label);
+  }
+  function dimH(yv,x0,x1,label,above){
+    var yy=Y(yv);
+    el(svg,'path',{d:'M'+X(x0)+' '+yy+'L'+X(x1)+' '+yy+'M'+X(x0)+' '+(yy-4)+'v8M'+X(x1)+' '+(yy-4)+'v8',stroke:DIM,'stroke-width':1,fill:'none'});
+    var a={}; for(var k in t)a[k]=t[k]; a.x=(X(x0)+X(x1))/2;a.y=yy+(above?-7:15);a['text-anchor']='middle';
+    el(svg,'text',a,label);
+  }
+  function note(xv,yv,label,anchor,col){var a={}; for(var k in t)a[k]=t[k]; a.x=xv;a.y=yv;a['text-anchor']=anchor||'start'; if(col)a.fill=col; el(svg,'text',a,label);}
+  dimV(-172,0,455,'455 overall',-1);
+  dimV(-152,0,125,'125 handle',1);
+  dimH(478,-130,130,'260',true);
+  note(X(150)+6,Y(265)+4,'balance 265',null,VOLT);
+  el(svg,'path',{d:'M'+X(50)+' '+Y(318)+'L'+X(150)+' '+Y(300),stroke:VOLT,'stroke-width':.7,fill:'none'});
+  note(X(150)+6,Y(300)+4,'soft core zone',null,VOLT);
+  note(X(26),Y(100)+4,'carbon spar ×2',null,VOLT);
+  note(X(26),Y(50)+4,'grip 30 × 26');
+  note(X(66),Y(172)+4,'throat window');
+
+  /* side elevation */
+  var sx=600, sg=el(svg,'g',{transform:'translate('+sx+','+oy+') scale('+S+',-'+S+')',fill:'none'});
+  var P=[]; for(y=0;y<=L;y+=5){var z=halfZ(y); if(y>L-19) z=Math.sqrt(Math.max(0,361-Math.pow(y-(L-19),2))); if(y<4) z=z*(.6+.1*y); P.push([z,y]);}
+  var SIDE=P.concat(P.slice().reverse().map(function(p){return[-p[0],p[1]];}));
+  el(sg,'path',{d:path(SIDE,true),stroke:'#fff','stroke-width':1.5,'stroke-linejoin':'round'});
+  el(sg,'path',{d:'M-18.5 214L-18.5 440M18.5 214L18.5 440',stroke:VOLT,'stroke-width':1});
+  el(sg,'path',{d:'M-19 214L19 214',stroke:LINE,'stroke-width':.7,'stroke-dasharray':'3 2'});
+  el(sg,'path',{d:'M0 -12L0 468',stroke:DIM,'stroke-width':.4,'stroke-dasharray':'10 3 2 3'});
+  ox=sx;
+  dimH(478,-19,19,'38',true);
+  dimH(-16,-13,13,'26',false);
+  note(sx+30,Y(330),'0.5 skin',null,VOLT);
+  note(sx+30,Y(330)+15,'each side');
+  note(sx+30,Y(214)+4,'bridge');
+  note(sx,Y(-44),'SIDE','middle',DIM);
+  note(215,Y(-44),'FRONT','middle',DIM);
+})();
+
+/* ---------- Fig. 1: exploded view ---------- */
+(function(){
+  var svg=document.getElementById('explode'); if(!svg) return;
+  var layers=[
+    {n:1,kind:'skin'},{n:2,kind:'core'},{n:3,kind:'frame'},{n:4,kind:'handle'},{n:5,kind:'skin'},{n:6,kind:'bumper'}
+  ];
+  var HEAD=OUT.filter(function(p){return p[1]>=214;});
+  var HANDLEP=OUT.filter(function(p){return p[1]<=232;});
+  var COREP=INNER;
+  layers.forEach(function(l,idx){
+    var dy=70+idx*92;
+    /* (x,y) -> lay flat, long axis to the right and slightly up */
+    var m='matrix(0.34,0.25,0.78,-0.27,'+78+','+(dy+92)+')';
+    var g=el(svg,'g',{transform:m,fill:'none','stroke-linejoin':'round'});
+    if(l.kind==='skin'){
+      el(g,'path',{d:path(HEAD,true),fill:'rgba(255,255,255,.07)',stroke:'#fff','stroke-width':1.6});
+      HOLES.forEach(function(h){el(g,'circle',{cx:h[0],cy:h[1],r:5.5,stroke:LINE,'stroke-width':1});});
+    } else if(l.kind==='core'){
+      el(g,'path',{d:path(COREP,true),fill:'rgba(212,255,58,.14)',stroke:VOLT,'stroke-width':1.6});
+      el(g,'ellipse',{cx:0,cy:330,rx:52,ry:58,stroke:VOLT,'stroke-width':1.4,'stroke-dasharray':'4 4'});
+      el(g,'ellipse',{cx:0,cy:332,rx:88,ry:92,stroke:VOLT,'stroke-width':1,'stroke-dasharray':'4 4'});
+    } else if(l.kind==='frame'){
+      el(g,'path',{d:path(HEAD,true)+path(INNER,true),fill:'rgba(143,216,255,.16)','fill-rule':'evenodd',stroke:LINE,'stroke-width':1.6});
+    } else if(l.kind==='handle'){
+      el(g,'path',{d:path(HANDLEP,true),fill:'rgba(143,216,255,.12)',stroke:LINE,'stroke-width':1.6});
+      el(g,'path',{d:path(WIN,true),fill:'#081320',stroke:LINE,'stroke-width':1.2});
+      [-7,7].forEach(function(sx){el(g,'path',{d:'M'+sx+' 6L'+sx+' 150L'+(sx*6.6)+' 300',stroke:VOLT,'stroke-width':2.2});});
+    } else {
+      var B=OUT.filter(function(p){return p[1]>=300;});
+      el(g,'path',{d:path(B,false),stroke:'#fff','stroke-width':5,'stroke-linecap':'round'});
+      el(g,'circle',{cx:0,cy:448,r:7,fill:VOLT});
+    }
+    var cy=dy+(l.kind==='handle'?44:3);
+    el(svg,'circle',{cx:26,cy:cy,r:13,fill:'none',stroke:'#dcebf7','stroke-width':1.5});
+    el(svg,'text',{x:26,y:cy+4.5,'text-anchor':'middle',fill:'#dcebf7','font-family':'ui-monospace,Menlo,Consolas,monospace','font-size':13,'font-weight':700},l.n);
+    el(svg,'path',{d:'M41 '+cy+'L'+(l.kind==='handle'?70:190)+' '+cy,stroke:DIM,'stroke-width':1,'stroke-dasharray':'2 3'});
+  });
+})();
+
+/* ---------- tables ---------- */
+(function(){
+  var M=[
+    ['Head exo-frame','PA12-CF, 0.9 mm wall, ribbed',85],
+    ['Face skins × 2','0.5 mm carbon/glass plate',72],
+    ['Core','Flexible PU foam, ~65 kg/m³, ~1,300 cm³',85],
+    ['Throat and handle shell','PA12-CF, 1.0 to 1.2 mm wall',46],
+    ['Twin spars','Pultruded carbon tube 6 × 4 mm, 300 mm',15],
+    ['Grip, butt cap, wrist cord','PU grip, TPU cap',30],
+    ['Bumper','TPU 95A',10],
+    ['Adhesive and finish','Structural PU adhesive, clear coat',12]
+  ], tot=0, tb=document.getElementById('mass'), h='';
+  M.forEach(function(r){tot+=r[2];});
+  M.forEach(function(r){h+='<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td class="n">'+r[2]+' g</td><td><div class="bar"><i style="width:'+(r[2]/85*100).toFixed(0)+'%"></i></div></td></tr>';});
+  h+='<tr class="tot"><td>Total before trim weights</td><td></td><td class="n">'+tot+' g</td><td></td></tr>';
+  if(tb) tb.innerHTML=h;
+
+  var B=[
+    ['PA12-CF filament, 150 g incl. waste',6.75],['Face plates × 2',8.00],['Carbon spars × 2',2.40],
+    ['PU foam system',1.00],['TPU bumper',0.50],['Adhesive and primer',1.20],['Grip, cap, cord',2.50],
+    ['Finish and decals',2.00],['Printer time, 11 h',2.75],['Labour, 25 min',10.00],['Scrap allowance, 6%',2.25],['Packaging',2.50]
+  ], bt=0, bb=document.getElementById('bom'), b='';
+  B.forEach(function(r){bt+=r[1]; b+='<tr><td>'+r[0]+'</td><td class="n">'+r[1].toFixed(2)+'</td></tr>';});
+  b+='<tr class="tot"><td>Cost per racket</td><td class="n">'+bt.toFixed(2)+'</td></tr>';
+  b+='<tr><td>Shipping, payment fees, warranty reserve</td><td class="n">'+(16.20).toFixed(2)+'</td></tr>';
+  b+='<tr class="us"><td>Left from $99</td><td class="n">'+(99-bt-16.2).toFixed(2)+'</td></tr>';
+  if(bb) bb.innerHTML=b;
+})();
+
+/* ---------- 3D wireframe ---------- */
+(function(){
+  var cv=document.getElementById('wire'); if(!cv||!cv.getContext) return;
+  var ctx=cv.getContext('2d'), SEG=[];
+  function ring(pts,zf,col,w,closed){
+    for(var j=0;j<pts.length-(closed?0:1);j++){
+      var a=pts[j],b=pts[(j+1)%pts.length];
+      SEG.push([a[0],a[1],zf(a[1]),b[0],b[1],zf(b[1]),col,w]);
+    }
+  }
+  var up=function(y){return halfZ(y);}, dn=function(y){return -halfZ(y);};
+  ring(OUT,up,0,1.4,true); ring(OUT,dn,0,1.4,true);
+  OUT.forEach(function(p,j){ if(j%3===0) SEG.push([p[0],p[1],halfZ(p[1]),p[0],p[1],-halfZ(p[1]),0,.7]); });
+  ring(INNER,up,1,.8,true); ring(INNER,dn,1,.8,true);
+  ring(WIN,up,1,1,true); ring(WIN,dn,1,1,true);
+  WIN.forEach(function(p,j){ if(j%2===0) SEG.push([p[0],p[1],halfZ(p[1]),p[0],p[1],-halfZ(p[1]),1,.6]); });
+  HOLES.forEach(function(h){
+    var c=[],k; for(k=0;k<10;k++) c.push([h[0]+5.5*Math.cos(k*Math.PI/5),h[1]+5.5*Math.sin(k*Math.PI/5)]);
+    ring(c,function(){return 19;},1,.8,true); ring(c,function(){return -19;},1,.8,true);
+  });
+  [-7,7].forEach(function(sx){
+    SEG.push([sx,6,0,sx,150,0,2,1.6]); SEG.push([sx,150,0,sx*6.6,300,0,2,1.6]);
+  });
+  var COL=['255,255,255','143,216,255','212,255,58'];
+  var yaw=-.55, pitch=.18, drag=false, lx=0, auto=!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches), W=0,H=0,dpr=1;
+  function size(){dpr=Math.min(2,window.devicePixelRatio||1);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;}
+  function draw(){
+    ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
+    var sc=Math.min(W/330,H/500), cyw=Math.cos(yaw), syw=Math.sin(yaw), cp=Math.cos(pitch), sp=Math.sin(pitch), D=1100;
+    function pr(x,y,z){
+      y-=232; var x1=x*cyw+z*syw, z1=-x*syw+z*cyw, y1=y*cp-z1*sp, z2=y*sp+z1*cp, f=D/(D+z2);
+      return [W/2+x1*f*sc, H/2-y1*f*sc, z2];
+    }
+    ctx.lineCap='round';
+    for(var j=0;j<SEG.length;j++){
+      var s=SEG[j], a=pr(s[0],s[1],s[2]), b=pr(s[3],s[4],s[5]);
+      var depth=(a[2]+b[2])/2, al=Math.max(.16,Math.min(.95,.58-depth/260));
+      ctx.strokeStyle='rgba('+COL[s[6]]+','+al.toFixed(2)+')'; ctx.lineWidth=s[7];
+      ctx.beginPath(); ctx.moveTo(a[0],a[1]); ctx.lineTo(b[0],b[1]); ctx.stroke();
+    }
+  }
+  function tick(){ if(auto&&!drag){yaw+=.006;} draw(); requestAnimationFrame(tick); }
+  cv.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;cv.setPointerCapture(e.pointerId);});
+  cv.addEventListener('pointermove',function(e){if(drag){yaw+=(e.clientX-lx)*.01;lx=e.clientX;}});
+  cv.addEventListener('pointerup',function(){drag=false;});
+  cv.addEventListener('pointercancel',function(){drag=false;});
+  window.addEventListener('resize',size);
+  size(); tick();
+})();
+})();
+</script>
+</body>
+</html>

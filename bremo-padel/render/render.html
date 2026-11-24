@@ -1,0 +1,140 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;height:100%;overflow:hidden}
+body{background:radial-gradient(ellipse at 50% 40%,#f6f7f8 0%,#e6e8eb 50%,#c9cdd3 100%)}
+canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+// Bremo ONE v0.2 render model. Units: mm. y runs from butt cap (0) to tip (455).
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { toCreasedNormals } from 'three/addons/utils/BufferGeometryUtils.js';
+
+const Q = new URLSearchParams(location.search);
+const VIEW = Q.get('view') || 'hero', VAR = Q.get('variant') || 'volt';
+const VARS = {
+  volt:  { frame:0xffffff, face:0xf4f4f2, core:0xc9f23a, grip:0xf2f2f0, ink:'#14171c', accent:'#c9f23a' },
+  pure:  { frame:0xffffff, face:0xf4f4f2, core:0x2a2d33, grip:0x17181b, ink:'#14171c', accent:'#14171c' },
+};
+const C = VARS[VAR];
+
+/* ---------- outline ---------- */
+const L=455, HW=130, CY=338, HANDLE=125;
+const ss=t=>{t=Math.max(0,Math.min(1,t));return t*t*(3-2*t);};
+function halfW(y){
+  if(y<=HANDLE) return 15;
+  if(y>=L) return 0;
+  if(y<=CY){ const s=(y-HANDLE)/(CY-HANDLE); return 15+(HW-15)*Math.pow(Math.sin(s*Math.PI/2),0.9); }
+  const t=(y-CY)/(L-CY), n=2.5; return HW*Math.pow(1-Math.pow(t,n),1/n);
+}
+const halfZ=y=>13+6*ss((y-HANDLE)/75);
+const R=[]; for(let y=110;y<L;y+=1.5) R.push([halfW(y),y]); R.push([0,L]);
+/* inward offset of the right-hand side, then mirrored; flat closures at ymin / ymax */
+function region(d,ymin,ymax){
+  const pts=[];
+  for(let j=0;j<R.length;j++){
+    const a=R[Math.max(0,j-1)], b=R[Math.min(R.length-1,j+1)], p=R[j];
+    const dx=b[0]-a[0], dy=b[1]-a[1], l=Math.hypot(dx,dy)||1;
+    const q=[p[0]-dy/l*d, p[1]+dx/l*d];
+    if(q[1]>=ymin && q[1]<=ymax && q[0]>1.5) pts.push(q);
+  }
+  /* drop points that fold back (offset of a concave corner) */
+  const mono=[]; for(const q of pts){ while(mono.length && q[1]<=mono[mono.length-1][1]) mono.pop(); mono.push(q); }
+  const top=mono[mono.length-1]; const closeTop = top[1] < ymax-3 ? [[0,top[1]+ (d>0?0:0)]] : [];
+  const right=mono, left=mono.slice().reverse().map(p=>[-p[0],p[1]]);
+  return right.concat(closeTop.length?[]:[], left);
+}
+const toShape=(pts,Cls=THREE.Shape)=>{const s=new Cls(); pts.forEach((p,i)=>i?s.lineTo(p[0],p[1]):s.moveTo(p[0],p[1])); s.closePath(); return s;};
+
+const B=6, FRAME=21, ARM=21, FACE_Y=226, WIN_TOP=204, WIN_BOT=128;
+const frameShape=toShape(region(B,112,1e9));
+frameShape.holes.push(toShape(region(FRAME-B,FACE_Y-B,1e9),THREE.Path));
+frameShape.holes.push(toShape(region(ARM-B,WIN_BOT,WIN_TOP+B),THREE.Path));
+
+function taper(geo){ const p=geo.attributes.position; for(let i=0;i<p.count;i++){ p.setZ(i,p.getZ(i)*halfZ(p.getY(i))/19); } p.needsUpdate=true; return geo; }
+function extrude(shape,depth,bevelT,bevelS,seg){
+  const g=new THREE.ExtrudeGeometry(shape,{depth:depth-2*bevelT,bevelEnabled:true,bevelThickness:bevelT,bevelSize:bevelS,bevelOffset:0,bevelSegments:seg,steps:1,curveSegments:24});
+  g.translate(0,0,-(depth-2*bevelT)/2); return g;
+}
+const scene=new THREE.Scene();
+const racket=new THREE.Group(); scene.add(racket);
+
+/* frame */
+const frameMat=new THREE.MeshPhysicalMaterial({color:C.frame,roughness:.32,metalness:0,clearcoat:1,clearcoatRoughness:.12});
+let fg=taper(extrude(frameShape,38,9,B,10)); fg=toCreasedNormals(fg,THREE.MathUtils.degToRad(50));
+const frame=new THREE.Mesh(fg,frameMat); frame.castShadow=frame.receiveShadow=true; racket.add(frame);
+
+/* face plate with graded holes: 9 mm in the sweet spot, growing to 13 mm at the edge */
+const facePts=region(FRAME-1,FACE_Y-1,1e9), faceShape=toShape(facePts);
+const HOLES=[]; let row=0; const P=24.5, SWEET=[0,335];
+function inside(x,y,m){ if(y<258||y>L-FRAME-m) return false; for(const dy of [-m,0,m]){ if(halfW(y+dy)-Math.abs(x)<FRAME+m+2) return false; } return true; }
+for(let y=262;y<L;y+=P*0.866,row++){
+  for(let x=-P*6+(row%2?P/2:0);x<=P*6;x+=P){
+    const dist=Math.hypot(x-SWEET[0],y-SWEET[1]), r=4.5+2*Math.min(1,dist/105);
+    if(inside(x,y,r+7)) HOLES.push([x,y,r]);
+  }
+}
+HOLES.forEach(h=>{const p=new THREE.Path(); p.absarc(h[0],h[1],h[2],0,Math.PI*2,true); faceShape.holes.push(p);});
+function sandTex(){ const c=document.createElement('canvas'); c.width=c.height=512; const x=c.getContext('2d'); const d=x.createImageData(512,512);
+  for(let i=0;i<d.data.length;i+=4){const v=110+Math.random()*145; d.data[i]=d.data[i+1]=d.data[i+2]=v; d.data[i+3]=255;} x.putImageData(d,0,0);
+  const t=new THREE.CanvasTexture(c); t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(.02,.02); return t; }
+const faceMat=new THREE.MeshPhysicalMaterial({color:C.face,roughness:.78,bumpMap:sandTex(),bumpScale:.6});
+const coreMat=new THREE.MeshStandardMaterial({color:C.core,roughness:.9});
+let pg=extrude(faceShape,34.4,.5,.5,2);
+const plate=new THREE.Mesh(pg,[faceMat,coreMat]); plate.castShadow=plate.receiveShadow=true; racket.add(plate);
+
+/* wordmark decals on both faces */
+function decal(text,w,h,font,color,ls){ const c=document.createElement('canvas'); c.width=2048; c.height=Math.round(2048*h/w); const x=c.getContext('2d');
+  x.fillStyle=color; x.font=font; x.textAlign='center'; x.textBaseline='middle'; try{x.letterSpacing=ls;}catch(e){}
+  x.fillText(text,c.width/2+parseFloat(ls)/2,c.height/2);
+  const t=new THREE.CanvasTexture(c); t.anisotropy=8; t.colorSpace=THREE.SRGBColorSpace;
+  return new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshStandardMaterial({map:t,transparent:true,roughness:.6,polygonOffset:true,polygonOffsetFactor:-4})); }
+for(const s of [1,-1]){
+  const d=decal('BREMO',118,22,'900 300px Inter, Arial, sans-serif',C.ink,'110px'); d.position.set(0,243,s*17.26); if(s<0) d.rotation.y=Math.PI; racket.add(d);
+  const o=decal('ONE',30,7,'700 300px Inter, Arial, sans-serif',C.ink,'150px'); o.position.set(0,430,s*17.26); if(s<0) o.rotation.y=Math.PI; racket.add(o);
+}
+/* accent pin on the bridge */
+const pin=new THREE.Mesh(new THREE.CylinderGeometry(3.2,3.2,38.6,32),new THREE.MeshStandardMaterial({color:C.accent,roughness:.4})); pin.rotation.x=Math.PI/2; pin.position.set(0,215,0); racket.add(pin);
+
+/* grip + butt cap */
+function tube(y0,y1,rx0,rz0,rx1,rz1,n=3){ const g=new THREE.CylinderGeometry(1,1,y1-y0,64,24,false); const p=g.attributes.position;
+  for(let i=0;i<p.count;i++){ const yy=p.getY(i), t=(yy+(y1-y0)/2)/(y1-y0); const a=Math.atan2(p.getZ(i),p.getX(i)); const rad=Math.hypot(p.getX(i),p.getZ(i));
+    const rx=rx0+(rx1-rx0)*t, rz=rz0+(rz1-rz0)*t, c=Math.cos(a), s=Math.sin(a), k=Math.pow(Math.pow(Math.abs(c),n)+Math.pow(Math.abs(s),n),-1/n)*rad;
+    p.setX(i,c*k*rx); p.setZ(i,s*k*rz); }
+  g.translate(0,(y0+y1)/2,0); g.computeVertexNormals(); return g; }
+function gripTex(){ const c=document.createElement('canvas'); c.width=512; c.height=1024; const x=c.getContext('2d'); x.fillStyle='#808080'; x.fillRect(0,0,512,1024);
+  for(let k=-4;k<12;k++){ const y=k*128; const g=x.createLinearGradient(0,y,0,y+128); g.addColorStop(0,'#3a3a3a'); g.addColorStop(.08,'#b0b0b0'); g.addColorStop(1,'#8a8a8a');
+    x.fillStyle=g; x.beginPath(); x.moveTo(0,y+256); x.lineTo(512,y); x.lineTo(512,y+128); x.lineTo(0,y+384); x.fill(); }
+  x.fillStyle='rgba(40,40,40,.5)'; for(let i=0;i<32;i++)for(let j=0;j<64;j++){ x.beginPath(); x.arc(i*16+(j%2?8:0),j*16,1.6,0,7); x.fill(); }
+  const t=new THREE.CanvasTexture(c); t.wrapS=t.wrapT=THREE.RepeatWrapping; return t; }
+const gripMat=new THREE.MeshStandardMaterial({color:C.grip,roughness:.85,bumpMap:gripTex(),bumpScale:3.5});
+const grip=new THREE.Mesh(tube(8,130,17,14.8,16.2,14.2),gripMat); grip.castShadow=true; racket.add(grip);
+const capMat=new THREE.MeshPhysicalMaterial({color:C.frame,roughness:.35,clearcoat:.6});
+const cap=new THREE.Mesh(tube(0,9,19.5,17,18,15.6),capMat); cap.castShadow=true; racket.add(cap);
+const collar=new THREE.Mesh(tube(127,137,18,15.6,17.6,15.2),new THREE.MeshStandardMaterial({color:C.accent,roughness:.5})); racket.add(collar);
+
+/* ---------- stage ---------- */
+const W=innerWidth,H=innerHeight;
+const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});
+renderer.setSize(W,H); renderer.setPixelRatio(1); renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.VSMShadowMap;
+renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=1.0; document.body.appendChild(renderer.domElement);
+const pm=new THREE.PMREMGenerator(renderer); scene.environment=pm.fromScene(new RoomEnvironment(),.04).texture; scene.environmentIntensity=.55;
+const key=new THREE.DirectionalLight(0xffffff,2.6); key.position.set(-380,1250,820); key.castShadow=true;
+key.shadow.mapSize.set(4096,4096); Object.assign(key.shadow.camera,{left:-500,right:500,top:600,bottom:-200,near:100,far:2600}); key.shadow.radius=16; key.shadow.blurSamples=24; key.shadow.bias=-.0004;
+scene.add(key); const rim=new THREE.DirectionalLight(0xdfe8ff,1.1); rim.position.set(600,300,-500); scene.add(rim);
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(6000,6000),new THREE.ShadowMaterial({opacity:.13})); floor.rotation.x=-Math.PI/2; floor.receiveShadow=true; scene.add(floor);
+
+const VIEWS={
+  hero:  {yaw:-34, cam:[0,330,1750], tgt:[0,232,0], fov:19},
+  front: {yaw:0,   cam:[0,250,1750], tgt:[0,232,0], fov:19},
+  side:  {yaw:90,  cam:[0,250,1750], tgt:[0,232,0], fov:19},
+  back:  {yaw:148, cam:[0,300,1750], tgt:[0,232,0], fov:19},
+  throat:{yaw:-28, cam:[60,300,760], tgt:[0,205,0], fov:19},
+  face:  {yaw:38,  cam:[0,470,620],  tgt:[0,345,0], fov:19},
+};
+const V=VIEWS[VIEW]; racket.rotation.y=THREE.MathUtils.degToRad(V.yaw);
+const cam=new THREE.PerspectiveCamera(V.fov,W/H,10,8000); cam.position.set(...V.cam); cam.lookAt(...V.tgt);
+renderer.render(scene,cam); renderer.render(scene,cam);
+window.__info={holes:HOLES.length,tris:renderer.info.render.triangles}; window.__done=true;
+</script></body></html>
